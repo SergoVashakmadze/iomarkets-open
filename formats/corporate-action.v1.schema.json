@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/corporate-action.v1.schema.json",
+  "title": "Corporate action event, version 1",
+  "description": "One corporate action of a listed company, read from its own regulatory filing, with the sentence it was read from. Dates are YYYY-MM-DD. An event is published only when the filing states every fact its type needs.",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "company",
+    "dates",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(dividend|split|reverse-split|merger)-\\d{10}-\\d{4}-\\d{2}-\\d{2}(-special)?$",
+      "description": "Type, the company's SEC CIK and the event's key date (dividends: payment date; others: effective date)."
+    },
+    "type": {
+      "enum": [
+        "dividend",
+        "split",
+        "reverse-split",
+        "merger"
+      ],
+      "description": "Announced in ISO 20022 seev.031 as DVCA, SPLF, SPLR and MRGR."
+    },
+    "company": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "cik"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "cik": {
+          "type": "string",
+          "pattern": "^\\d{10}$"
+        },
+        "ticker": {
+          "type": "string"
+        },
+        "figi": {
+          "type": "string",
+          "pattern": "^BBG[0-9A-Z]{9}$"
+        }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "announced"
+      ],
+      "properties": {
+        "announced": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "record": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "ex": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "pay": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "effective": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    },
+    "exDateRule": {
+      "const": true,
+      "description": "The filing gives no ex-date, so it is the record date, as under US T+1 settlement."
+    },
+    "cash": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "string",
+          "pattern": "^\\d+(\\.\\d+)?$"
+        },
+        "currency": {
+          "const": "USD"
+        }
+      }
+    },
+    "ratio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "new",
+        "old"
+      ],
+      "description": "Shares after : shares before, for a split; acquirer shares per share, for a stock merger.",
+      "properties": {
+        "new": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "old": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "frequency": {
+      "enum": [
+        "monthly",
+        "quarterly",
+        "semi-annual",
+        "annual",
+        "special",
+        "other"
+      ]
+    },
+    "acquirer": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "form",
+        "accession",
+        "filed",
+        "quote"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "form": {
+          "type": "string"
+        },
+        "accession": {
+          "type": "string",
+          "pattern": "^\\d{10}-\\d{2}-\\d{6}$"
+        },
+        "filed": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

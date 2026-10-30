@@ -1,0 +1,10 @@
+IoMarkets open tools
+Copyright 2026 Sergo Vashakmadze (IoMarkets)
+
+The code in this repository is licensed under the Apache License, Version 2.0 (LICENSE).
+
+The format schemas in formats/ are released under CC0 1.0 Universal (public domain dedication):
+https://creativecommons.org/publicdomain/zero/1.0/ . They are governed by IoMarkets.org: https://iomarkets.org/formats
+
+bench/schemas/ holds the ISO 20022 base message schemas (XSD), published by ISO 20022 (https://www.iso20022.org);
+they are not covered by this repository's licence. See bench/README.md, "Schemas and licence".

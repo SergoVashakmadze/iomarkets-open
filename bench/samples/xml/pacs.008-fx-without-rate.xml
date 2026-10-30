@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>BENCH-PACS008-0001</MsgId>
+      <CreDtTm>2026-10-27T09:30:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf>
+        <SttlmMtd>INDA</SttlmMtd>
+      </SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <InstrId>BENCH-INSTR-0001</InstrId>
+        <EndToEndId>INV-2026-1187</EndToEndId>
+        <TxId>BENCH-TX-0001</TxId>
+        <UETR>8a562c67-ca16-48ba-b074-65581be6f001</UETR>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="EUR">25000.00</IntrBkSttlmAmt>
+      <IntrBkSttlmDt>2026-10-27</IntrBkSttlmDt>
+      <InstdAmt Ccy="GBP">21500.00</InstdAmt>
+      <ChrgBr>SHAR</ChrgBr>
+      <InstgAgt>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </InstgAgt>
+      <InstdAgt>
+        <FinInstnId>
+          <BICFI>COBADEFFXXX</BICFI>
+        </FinInstnId>
+      </InstdAgt>
+      <Dbtr>
+        <Nm>Northwind Traders Ltd</Nm>
+        <PstlAdr>
+          <StrtNm>Lombard Street</StrtNm>
+          <BldgNb>12</BldgNb>
+          <PstCd>EC3V 9AA</PstCd>
+          <TwnNm>London</TwnNm>
+          <Ctry>GB</Ctry>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <LEI>5299000J2N45DDNE4Y28</LEI>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>GB82WEST12345698765432</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtrAgt>
+        <FinInstnId>
+          <BICFI>COBADEFFXXX</BICFI>
+        </FinInstnId>
+      </CdtrAgt>
+      <Cdtr>
+        <Nm>Contoso Maschinenbau GmbH</Nm>
+        <PstlAdr>
+          <TwnNm>Frankfurt am Main</TwnNm>
+          <Ctry>DE</Ctry>
+        </PstlAdr>
+      </Cdtr>
+      <CdtrAcct>
+        <Id>
+          <IBAN>DE89370400440532013000</IBAN>
+        </Id>
+      </CdtrAcct>
+      <RmtInf>
+        <Ustrd>Invoice 2026-1187, order 55410</Ustrd>
+      </RmtInf>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>

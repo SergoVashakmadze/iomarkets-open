@@ -1,0 +1,22 @@
+{
+  "name": "iomarkets-open",
+  "version": "1.0.0",
+  "description": "Open tools for capital-markets plumbing: the ISO 20022 Test Bench, the Tokenized Asset Map, and a corporate actions feed from SEC EDGAR, with their open formats.",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "repository": { "type": "git", "url": "git+https://github.com/SergoVashakmadze/iomarkets-open.git" },
+  "homepage": "https://iomarkets.tech",
+  "scripts": {
+    "test": "vitest run",
+    "validate": "node bench/cli.ts"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^3.2.0"
+  },
+  "devDependencies": {
+    "vitest": "^5.0.5",
+    "xmllint-wasm": "^5.1.0"
+  }
+}

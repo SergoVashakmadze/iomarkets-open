@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>BENCH-PAIN001-0001</MsgId>
+      <CreDtTm>2026-10-27T08:00:00</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>4150.75</CtrlSum>
+      <InitgPty>
+        <Nm>Northwind Traders Ltd</Nm>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>SUPPLIERS-2026-10-27</PmtInfId>
+      <PmtMtd>CHK</PmtMtd>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>4150.75</CtrlSum>
+      <ReqdExctnDt>
+        <Dt>2026-10-28</Dt>
+      </ReqdExctnDt>
+      <Dbtr>
+        <Nm>Northwind Traders Ltd</Nm>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>GB33BUKB20201555555555</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BICFI>BUKBGB22XXX</BICFI>
+        </FinInstnId>
+      </DbtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>SUP-4471</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">3200.00</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>ABNANL2AXXX</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Fabrikam BV</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>NL91ABNA0417164300</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>Invoice F-88213</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>SUP-4472</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">950.75</InstdAmt>
+        </Amt>
+        <Cdtr>
+          <Nm>Adatum SARL</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>FR1420041010050500013M02606</IBAN>
+          </Id>
+        </CdtrAcct>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

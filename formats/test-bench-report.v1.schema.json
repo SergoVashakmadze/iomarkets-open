@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/test-bench-report.v1.schema.json",
+  "title": "ISO 20022 Test Bench report, version 1",
+  "description": "The result of checking one ISO 20022 message: schema checks against the base standard, then business rules. Issue codes are stable, so tests and agents can key on them.",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "valid",
+    "message",
+    "title",
+    "errors",
+    "warnings",
+    "issues",
+    "truncated",
+    "checked"
+  ],
+  "properties": {
+    "valid": {
+      "type": "boolean",
+      "description": "True when there are no errors (warnings allowed)."
+    },
+    "message": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Message identifier, e.g. pacs.008.001.08."
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "errors": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "warnings": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "severity",
+          "layer",
+          "code",
+          "path",
+          "line",
+          "message"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "error",
+              "warning"
+            ]
+          },
+          "layer": {
+            "enum": [
+              "schema",
+              "rule"
+            ]
+          },
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "truncated": {
+      "type": "boolean"
+    },
+    "checked": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "rules"
+      ],
+      "properties": {
+        "schema": {
+          "type": "boolean"
+        },
+        "rules": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+name: ISO 20022 Test Bench
+description: Check ISO 20022 messages (pacs.008, pacs.009, pain.001, camt.053, seev.031) against the base schemas and business rules. Each failure is annotated on its line.
+author: IoMarkets
+branding:
+  icon: check-square
+  color: purple
+
+inputs:
+  files:
+    description: Files or globs to check, separated by spaces or new lines (bash globstar, so **/*.xml works).
+    required: true
+  schema-only:
+    description: "true to skip the business rules."
+    default: "false"
+  strict:
+    description: "true to fail on warnings too."
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 24
+    - shell: bash
+      env:
+        FILES: ${{ inputs.files }}
+        SCHEMA_ONLY: ${{ inputs.schema-only }}
+        STRICT: ${{ inputs.strict }}
+      run: |
+        set -euo pipefail
+        shopt -s globstar nullglob
+        flags=(--github)
+        [ "$SCHEMA_ONLY" = "true" ] && flags+=(--schema-only)
+        [ "$STRICT" = "true" ] && flags+=(--strict)
+        files=()
+        for pattern in $FILES; do files+=($pattern); done
+        if [ ${#files[@]} -eq 0 ]; then echo "::error::No files matched: $FILES"; exit 1; fi
+        node "$GITHUB_ACTION_PATH/cli.ts" "${flags[@]}" "${files[@]}"

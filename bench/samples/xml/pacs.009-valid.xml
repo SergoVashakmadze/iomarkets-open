@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
+  <FICdtTrf>
+    <GrpHdr>
+      <MsgId>BENCH-PACS009-0001</MsgId>
+      <CreDtTm>2026-10-27T10:05:00+01:00</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <TtlIntrBkSttlmAmt Ccy="USD">5000000.00</TtlIntrBkSttlmAmt>
+      <IntrBkSttlmDt>2026-10-27</IntrBkSttlmDt>
+      <SttlmInf>
+        <SttlmMtd>INDA</SttlmMtd>
+      </SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <InstrId>BENCH-FI-0001</InstrId>
+        <EndToEndId>FX-SWAP-77812</EndToEndId>
+        <UETR>3f1d2b9e-6c4a-4e1b-9d7a-2b8c5e0a9f12</UETR>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="USD">5000000.00</IntrBkSttlmAmt>
+      <InstgAgt>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </InstgAgt>
+      <InstdAgt>
+        <FinInstnId>
+          <BICFI>CHASUS33XXX</BICFI>
+        </FinInstnId>
+      </InstdAgt>
+      <Dbtr>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </Dbtr>
+      <Cdtr>
+        <FinInstnId>
+          <BICFI>CHASUS33XXX</BICFI>
+        </FinInstnId>
+      </Cdtr>
+    </CdtTrfTxInf>
+  </FICdtTrf>
+</Document>

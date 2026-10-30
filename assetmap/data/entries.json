@@ -1,0 +1,3495 @@
+[
+  {
+    "id": "franklin-fobxx",
+    "security": {
+      "name": "Franklin OnChain U.S. Government Money Fund",
+      "issuer": "Franklin Templeton",
+      "kind": "money-market-fund",
+      "figi": "BBG00XNQN5B5",
+      "ticker": "FOBXX",
+      "token": "1 BENJI token corresponds to 1 share of the fund."
+    },
+    "tokens": [
+      {
+        "chain": "stellar",
+        "address": "BENJI:GBHNGLLIE3KWGKCHIKMHJ5HVZHYIK7WTBE4QF5PLAKL4CJGSEU7HZIW5",
+        "symbol": "BENJI",
+        "source": 1
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x408A634B8a8f0dE729B48574a3a7Ec3fE820B00A",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "arbitrum",
+        "address": "0xB9e4765BCE2609bC1949592059B17Ea72fEe6C6A",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "avalanche",
+        "address": "0xE08b4c1005603427420e64252a8b120cacE4D122",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0x60CfC2b186a4CF647486e42c42B11cC6D571d1E4",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "aptos",
+        "address": "0x7b5e9cac3433e9202f28527f707c89e1e47b19de2c33e4db9521a63ad219b739",
+        "symbol": "BENJI",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1",
+        "symbol": "BENJI",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://digitalassets.franklintempleton.com/benji/benji-contracts/",
+        "publisher": "Franklin Templeton",
+        "kind": "issuer-page",
+        "checked": "2026-10-29"
+      },
+      {
+        "url": "https://www.franklintempleton.com/.well-known/stellar.toml",
+        "publisher": "Franklin Templeton",
+        "kind": "stellar-toml",
+        "checked": "2026-10-29"
+      },
+      {
+        "url": "https://www.openfigi.com/",
+        "publisher": "OpenFIGI",
+        "kind": "openfigi",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "d0fc83a5a92a4457dba62a81e75ae95a60e046839d74be756ee070debe7f8a9a7929240ecd46b45a328c41098eba7f17b084049da85db96dc23761bc46d03e06"
+      }
+    ]
+  },
+  {
+    "id": "franklin-onchain-lux-ib",
+    "security": {
+      "name": "Franklin OnChain U.S. Government Money Fund (gBENJI share class)",
+      "issuer": "Franklin Templeton",
+      "kind": "money-market-fund",
+      "figi": "BBG01QZB6RD8",
+      "isin": "LU2900381208",
+      "token": "1 gBENJI token corresponds to 1 share of the fund."
+    },
+    "tokens": [
+      {
+        "chain": "stellar",
+        "address": "gBENJI:GD5J73EKK5IYL5XS3FBTHHX7CZIYRP7QXDL57XFWGC2WVYWT326OBXRP",
+        "symbol": "gBENJI",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.franklintempleton.com/.well-known/stellar.toml",
+        "publisher": "Franklin Templeton",
+        "kind": "stellar-toml",
+        "checked": "2026-10-29"
+      },
+      {
+        "url": "https://www.openfigi.com/",
+        "publisher": "OpenFIGI",
+        "kind": "openfigi",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "2aabd94266ee5d5d61fefa8dbe2385100770ba9d7b8a96aa4677840fa235b11c63378a466733b5afeb71cdeb732a2275def2c8e46d0ea9069a3a0a0d11912b09"
+      }
+    ]
+  },
+  {
+    "id": "franklin-onchain-lux-ab-ddis",
+    "security": {
+      "name": "Franklin OnChain U.S. Government Money Fund AB (Ddis) USD",
+      "issuer": "Franklin Templeton",
+      "kind": "money-market-fund",
+      "figi": "BBG01ZK3RDZ6",
+      "isin": "LU3258450587",
+      "token": "1 grBENJI token corresponds to 1 share of the fund."
+    },
+    "tokens": [
+      {
+        "chain": "stellar",
+        "address": "grBENJI:GA3ZBL3LBRKOF7CZ6MCA7JLPHWQCGYCCGKH4GVWNEDZOXW4IPXFGN2FQ",
+        "symbol": "grBENJI",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.franklintempleton.com/.well-known/stellar.toml",
+        "publisher": "Franklin Templeton",
+        "kind": "stellar-toml",
+        "checked": "2026-10-29"
+      },
+      {
+        "url": "https://www.openfigi.com/",
+        "publisher": "OpenFIGI",
+        "kind": "openfigi",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "94110e075d8e884d015e4d84d93dfc979864cec8e716dc950a3269806a0743cc6425c27da19f70bd248f3f8146f11f69a9d082df3eed4951e242f7e9d5234e01"
+      }
+    ]
+  },
+  {
+    "id": "franklin-onchain-sg-usd-st",
+    "security": {
+      "name": "Franklin OnChain U.S. Dollar Short-Term Money Market Fund A(acc)USD",
+      "issuer": "Franklin Templeton",
+      "kind": "money-market-fund",
+      "figi": "BBG01VW1Z1C8",
+      "isin": "SGXZ71843866",
+      "token": "1 sgBENJI token corresponds to 1 share of the fund."
+    },
+    "tokens": [
+      {
+        "chain": "stellar",
+        "address": "sgBENJI:GAGICV3VBJSKKH5H5MQQIUTUP462YVHC23KUHZY6FJERRJFBDIVZBM5C",
+        "symbol": "sgBENJI",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.franklintempleton.com/.well-known/stellar.toml",
+        "publisher": "Franklin Templeton",
+        "kind": "stellar-toml",
+        "checked": "2026-10-29"
+      },
+      {
+        "url": "https://www.openfigi.com/",
+        "publisher": "OpenFIGI",
+        "kind": "openfigi",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "3117e1457f36cb7686a8f58694070e3099a0069e7d6d167a97a38f2eb1b00d683af53cec3a1394452dfd6bfd470f5716c42aa51ae821e6cd23b9b3d17c9a1e0b"
+      }
+    ]
+  },
+  {
+    "id": "ondo-ousg",
+    "security": {
+      "name": "Ondo Short-Term US Government Treasuries (OUSG)",
+      "issuer": "Ondo Finance",
+      "kind": "fund",
+      "token": "Each OUSG token represents an interest in a fund holding short-term US Treasuries; transfers are limited to eligible, onboarded holders."
+    },
+    "tokens": [
+      {
+        "chain": "ethereum",
+        "address": "0x1B19C19393e2d034D8Ff31ff34c81252FcBbee92",
+        "symbol": "OUSG",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0xbA11C5effA33c4D6F8f593CFA394241CfE925811",
+        "symbol": "OUSG",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "i7u4r16TcsJTgq1kAG8opmVZyVnAKBwLKu6ZPMwzxNc",
+        "symbol": "OUSG",
+        "source": 0
+      },
+      {
+        "chain": "xrpl",
+        "address": "4F55534700000000000000000000000000000000.rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+        "symbol": "OUSG",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/addresses",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "f14a7b28ff67f38dfa8c902c7d96db07baf26ba4d5e76343a6be846a74330bac3610939ddaef80e5ffbc6a15d8e8dbb65686f64c723062112f7a13eb4643aa01"
+      }
+    ]
+  },
+  {
+    "id": "ondo-usdy",
+    "security": {
+      "name": "Ondo US Dollar Yield (USDY)",
+      "issuer": "Ondo Finance",
+      "kind": "note",
+      "token": "Each USDY token is a tokenized note backed by short-term US Treasuries and bank deposits; holders must be eligible under Ondo’s terms."
+    },
+    "tokens": [
+      {
+        "chain": "ethereum",
+        "address": "0x96F6eF951840721AdBF46Ac996b59E0235CB985C",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xaf37c1167910ebC994e266949387d2c7C326b879",
+        "symbol": "rUSDY",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x608593d17A2decBbc4399e4185bE4922F97eD32E",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x5bE26527e817998A7206475496fDE1E68957c5A6",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "arbitrum",
+        "address": "0x35e050d3C0eC2d29D269a8EcEa763a183bDF9A9D",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "plume",
+        "address": "0xD2B65e851Be3d80D3c2ce795eB2E78f16cB088b2",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "sei",
+        "address": "0x54cD901491AeF397084453F4372B93c33260e2A6",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "tempo",
+        "address": "0x20c000000000000000000000D479B9f6eC0ceFf9",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "sui",
+        "address": "0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "aptos",
+        "address": "0xcfea864b32833f157f042618bd845145256b1bf4c0da34a7013b76e42daa53cc::usdy::USDY",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "USDY:GAJMPX5NBOG6TQFPQGRABJEEB2YE7RFRLUKJDZAZGAD5GFX4J7TADAZ6",
+        "symbol": "USDY",
+        "source": 0
+      },
+      {
+        "chain": "noble",
+        "address": "ausdy",
+        "symbol": "USDY",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/addresses",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "6200423713f187a1923145a9fa91930a3700661153c3167b25bbdc3f40c50dc98b90c620479eebec678cf017c2c86d4ae6a750d303fa00b1f34dc38ae080d10a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-strcx",
+    "security": {
+      "name": "Strategy PP Variable xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1500008482",
+      "ticker": "STRCx",
+      "token": "1 STRCx is backed 1:1 by STRC held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "STRC",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xs78JED6PFZxWc2wCEPspZW9kL3Se5J7L5TChKgsidH",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCY_xOUxnGsF91w0w3azMdk1SMdBKNr7kJedDWTZlQ13duK",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TUsRFkJG8LZ5fqh2TSmHUSw7kRWUbzfqAF",
+        "symbol": "STRCx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x1aad217b8f78dba5e6693460e8470f8b1a3977f3",
+        "symbol": "STRCx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/STRCx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "7a4d6f78da309bad402586622dbda146590f15fca420b6a4be86af31d9f6c1ae73c2802861552e62ff04733d48d14915ba13d555d1b90dfd04cb579577ed970c"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-mstrx",
+    "security": {
+      "name": "MicroStrategy xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219633",
+      "ticker": "MSTRx",
+      "token": "1 MSTRx is backed 1:1 by MSTR held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "MSTR",
+        "figi": "BBG000GQJPZ0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQBbsLYH5sD74gYO4DOoj0QsHaNL81NLD13AdhkmD0Up-46H",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TYiMPNKE31VcfwaYgU8Wn1RzjLDi932LkV",
+        "symbol": "MSTRx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "symbol": "MSTRx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/MSTRx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "bad28e2d4f9d33dab89bc0288f9eecf2553c0e1434f6066ab84840b15b2a2fbf7da4860cf2ee38a843363880205361ad085c4e02e2dfe25b1781c7a45c87d709"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-crclx",
+    "security": {
+      "name": "Circle xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219773",
+      "ticker": "CRCLx",
+      "token": "1 CRCLx is backed 1:1 by CRCL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "CRCL",
+        "figi": "BBG01T61V2V3",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQB-RPtAAQeFSGW3gIj0zREh4N92MGXfqFzxAc6TRvu-zvYT",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TRXfha1owZvFk5ru7cmd5SXDX1uKtcCRJN",
+        "symbol": "CRCLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "symbol": "CRCLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/CRCLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "563d2ec7370a9ad71921eab4f2a71f909dd5427b03e245d4bf33fb8af0362fa5d88dc9b939464f396127bc5742e5b2e86d05a934184e574a13dd8cc37318640c"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-tslax",
+    "security": {
+      "name": "Tesla xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219252",
+      "ticker": "TSLAx",
+      "token": "1 TSLAx is backed 1:1 by TSLA held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "TSLA",
+        "figi": "BBG000N9MNX3",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQB4IwqWZPUczntdry8vSN2tsJKt-9F7iIb7gEFREYYOB563",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TTfj39Vm7ATpNJMsfDUWYVzxK8mPPA4yYE",
+        "symbol": "TSLAx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "symbol": "TSLAx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/TSLAx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "164a039749fa6cc13daa4c7bb9b4d16a9ff7084b37b8b4f526b6667e8beb31bf079b40862040572d9a9741d0347da54c5f67fe85ac5ef8644c3da82e30d9a804"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-spcxx",
+    "security": {
+      "name": "SpaceX xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1564487366",
+      "ticker": "SPCXx",
+      "token": "1 SPCXx is backed 1:1 by SPCX held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "SPCX",
+        "figi": "BBG000NQF3Z5",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQAAsfl1a-BA8dSSUX2VpLCveFYzDOLrJX9ll89baSbmvl2V",
+        "symbol": "SPCXx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "symbol": "SPCXx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/SPCXx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "3c14eac12448489fefb7ee9b32e8c0ae1b1ad8c3081517eff8342002590d7b61804a307f33ecfb0a6137a0159b78c590bac0e44f91d079e286485f9ac1a6af08"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-spyx",
+    "security": {
+      "name": "SP500 xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219716",
+      "ticker": "SPYx",
+      "token": "1 SPYx is backed 1:1 by SPY held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "SPY",
+        "figi": "BBG000BDTBL9",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQB1fyBAA9qQDP6LEGaF3cbU-Xbr-p6ESBZGnqlHkHIHAJZv",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TKN6A3wSWHdZGanW5wBFkeFq2Yw3rhGqNz",
+        "symbol": "SPYx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "symbol": "SPYx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/SPYx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "0eabfac74a4a7d4dfd782f39a911fdbbcd8aafa661b17ccfdbf1ea5377efe87f453dda9f93638c0473f337e10afc3635c4fea8562989d39d5a59b8d980b6d60c"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-googlx",
+    "security": {
+      "name": "Alphabet xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219237",
+      "ticker": "GOOGLx",
+      "token": "1 GOOGLx is backed 1:1 by GOOGL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "GOOGL",
+        "figi": "BBG009S39JX6",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQALwJzXnxFjckNsurCi9O2kVg_0b1KdtjOSfvOedlY37iZc",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TX34MBKqsHzvon1JX4mokJ8CLeh5QmBqNd",
+        "symbol": "GOOGLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "symbol": "GOOGLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/GOOGLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "1646e0b73b7c937a830cce38cf98c1575ce0856f216dffe648ea6e6a9fcbcf5f5a8b6487fad05206d22b03d0eb468b8e40056054328723bfe593b6c3bd7cc90a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-qqqx",
+    "security": {
+      "name": "Nasdaq xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219724",
+      "ticker": "QQQx",
+      "token": "1 QQQx is backed 1:1 by QQQ held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "QQQ",
+        "figi": "BBG000BSWKH7",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCe6utwqROmrO_cOUUvVNYkvyecUjfugtugvhUwlVYSEm7x",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TVBbuZ4hUisCPSsrR46BCQHDGtsBNAMjVh",
+        "symbol": "QQQx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "symbol": "QQQx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/QQQx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "54fd7a891d1aaa3fb0ba9ccf99f916b636ad34b0f0e53abb45003506a1711f6414fff8ebe0115041d45303843c8335d929048cd4b569f002f1dd4c698253340e"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-nvdax",
+    "security": {
+      "name": "NVIDIA xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219195",
+      "ticker": "NVDAx",
+      "token": "1 NVDAx is backed 1:1 by NVDA held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "NVDA",
+        "figi": "BBG000BBJQV0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCva-Of7acQdU_piADdlcbzsFtA-xJwZoctz8ZOXBdBoaB8",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TNMR6r9Z4cL7eWNrNQ4e4sm2XPhhifexZU",
+        "symbol": "NVDAx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "symbol": "NVDAx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/NVDAx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "c3ad48bd5c087f555630a95a7f6224b8bc6494d795828f58fb2fa0a4d523caef1de27e3946988048198203e173cbe044edac53014bf7cddf89f1f913eb0ddc0a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-sndkx",
+    "security": {
+      "name": "Sandisk Corporation xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1500008748",
+      "ticker": "SNDKx",
+      "token": "1 SNDKx is backed 1:1 by SNDK held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "SNDK",
+        "figi": "BBG01R388JG1",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xswbpc8UqU6e1j9QZEWCjBMjyvz4twqD7PCy6j2e7jj",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDueP2yEIESbcrwJrH6WI8JOym4Zjb6zw1hTclaQ-r0aP5n",
+        "symbol": "SNDKx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
+        "symbol": "SNDKx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/SNDKx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "abdbc80bd2b92e8cea7ea0036bad077c80b11191324a711f63c2bf99c3fdc1836abcc52eff2d7ebb5b051347ea02c499d024220077d1c5e0dacf0ea06f91e10d"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-mux",
+    "security": {
+      "name": "Micron Technology xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1473121320",
+      "ticker": "MUx",
+      "token": "1 MUx is backed 1:1 by MU held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "MU",
+        "figi": "BBG000C5Z1S3",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsQLZycSZ7QnBBdBXQaTbQdiUcbRqjNJgyBGAMzhHav",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCnPM-kDm6ijBqBxR7R6lkoLzLJ8Oyi5CrEclZ0oVc16dFe",
+        "symbol": "MUx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "symbol": "MUx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/MUx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "37f114841e0f34b6d3f4167d2a7f99ec752f2d8e856eaed9bfecfa5fc04e1949b36d13519296f6dc9a9e791acc7919e17a8136cc949d52ed1a669d6b2da22509"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-coinx",
+    "security": {
+      "name": "Coinbase xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219708",
+      "ticker": "COINx",
+      "token": "1 COINx is backed 1:1 by COIN held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "COIN",
+        "figi": "BBG00ZGF7771",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCvk4Oq2l5Yts_S7Q4j08fB9Ftzx3IY-7UI1AqssyKGDt_I",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TCaGwbURbmdYkG7fE8uXdbnofhw1uhA9zL",
+        "symbol": "COINx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "symbol": "COINx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/COINx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "c6ef222f1fc7e3708f62f676395216b30496a227cc9b19dd9af9ad147dc42d8d06491c66b904ea871934cc2ebc7435ebbc78b44a43c4cccb6179ac03eed3220b"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-aaplx",
+    "security": {
+      "name": "Apple xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219187",
+      "ticker": "AAPLx",
+      "token": "1 AAPLx is backed 1:1 by AAPL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "AAPL",
+        "figi": "BBG000B9XRY4",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDsjAwfKo-6FVZv2EYt-1CaZTY_ZL-pfkSId6jeQchNwmdo",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TZ7nsyCuQq1cusCtex6V4qbzWcb3NbibAM",
+        "symbol": "AAPLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "symbol": "AAPLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/AAPLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "87e6d8576687ed34371b1033700478f7002fe8ea833e82bcead263a188ac75e406a59765e6a0854bac1e5ec14aab1f05c32af2be0c072dfabf8b03ed5382520d"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-skhyx",
+    "security": {
+      "name": "SK hynix xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1580497340",
+      "ticker": "SKHYx",
+      "token": "1 SKHYx is backed 1:1 by SKHY held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "SKHY",
+        "figi": "BBG0238L5JS9",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsnhgGRQwhExfS2bmWzR6EYddKGPRGDEjeJsatkmKqU",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQAAeiQvlTTyF48sbx1Am_muV5h6FXC0EMhrAJyK_yVG2qhB",
+        "symbol": "SKHYx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+        "symbol": "SKHYx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/SKHYx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "47009872bdea53ce4ed0357965358249803b1ecb7701bd65aae18df295bedffcdcae4dd476157a1c42ccfeccca8d5954b460605adfa0d95a5cf8c6b9ec91250c"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-gldx",
+    "security": {
+      "name": "Gold xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219740",
+      "ticker": "GLDx",
+      "token": "1 GLDx is backed 1:1 by GLD held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "GLD",
+        "figi": "BBG000CRF6Q8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQC49j6vUmrarJzSOlZfNHYHoNEHX3__0oX1dZLEfE7Vyybe",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TQnorYAdiQTAEexqaB53MFpKpnLAdMe4sw",
+        "symbol": "GLDx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+        "symbol": "GLDx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/GLDx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "7cb411c0ae6f758219e4423e60485b7672f15f3cddb06e11b88717a0aa0f6ea56f76748963ff7c109ae93e4446207defbab4cf0d76507a5e8503bee5d2765c0b"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-intcx",
+    "security": {
+      "name": "Intel xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219609",
+      "ticker": "INTCx",
+      "token": "1 INTCx is backed 1:1 by INTC held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "INTC",
+        "figi": "BBG000C0G1D1",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQBBnSFyNZkNmq7I4E9yWhZDZQurcQhGkFeGBV_UXibFlv4-",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TMkWtCUBF9zatuda6onxoPeAUvkGiwaCHP",
+        "symbol": "INTCx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "symbol": "INTCx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/INTCx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "9520fd7b5f23ecb8738cb1548b51cd6f38014ee22a46516be2f1dc64753a91a96a34b45fd28f71a1e60e5eee9eff613dd0ea4e84a63f9c4b8b860fdd5970f50c"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-metax",
+    "security": {
+      "name": "Meta xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219229",
+      "ticker": "METAx",
+      "token": "1 METAx is backed 1:1 by META held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "META",
+        "figi": "BBG000MM2P62",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQD3cgQg432BiCSRli-hMswoVuvNnO42FuMdc-AXqd83SfcV",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TGJaEbWPNmM6NErggxJwWQ5ChRH7KxXF3a",
+        "symbol": "METAx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "symbol": "METAx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/METAx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "95a9a3e0e4d61bb671d6a8ec57ae080ba20ebb59c0243f4ae6e06a63d92a5e3ec7762cc6a94d2162b19788b7bf18724f7b2e58bdd16470999bfebb2812697f0f"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-soxlx",
+    "security": {
+      "name": "Direxion Semiconductor Bull 3X xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1500008946",
+      "ticker": "SOXLx",
+      "token": "1 SOXLx is backed 1:1 by SOXL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "SOXL",
+        "figi": "BBG000QG1D78",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsdZDkoMdUb6iKDAKKappuM7C1Q2HmTqC8jNujbfmCu",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDrx0YmeevoA2hYIOZa-UxMQdwojDCNOMgAV2VCBXhyQ5KJ",
+        "symbol": "SOXLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "symbol": "SOXLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/SOXLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "f666790a192a943c89339cfe2335b62be34cb1272b6525bd59a2950fd766b77d3420db2051e423462c48d63663665a55f2cbe2fedf70aebea315d025cef94605"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-hoodx",
+    "security": {
+      "name": "Robinhood xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219666",
+      "ticker": "HOODx",
+      "token": "1 HOODx is backed 1:1 by HOOD held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "HOOD",
+        "figi": "BBG008NMBXN8",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQAHz1jK27NO5IdHrht8146-EFz9p4kSZZx2H1xXuNQOYp_r",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TUQsUkzfwKegioj2utgYxQ9scPFZ5Aj68M",
+        "symbol": "HOODx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "symbol": "HOODx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/HOODx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "7d91292301ff59339c8959bd2d37689bf283ffc93f926b8e8ebc58cb6fb2778bf5738625f5bba65739cdcc4f977555e7e99208b8e3bd26a8892d8e54766b7b0f"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-amznx",
+    "security": {
+      "name": "Amazon.com xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219211",
+      "ticker": "AMZNx",
+      "token": "1 AMZNx is backed 1:1 by AMZN held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "AMZN",
+        "figi": "BBG000BVPV84",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCtD2-7qxHhQoNhxri2JSzH-dlmWqKYCDtlEZqRi3-56gd9",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TKbZf7Ni93pAB6ZHQLR2BxbnukRsB3WNvh",
+        "symbol": "AMZNx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "symbol": "AMZNx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/AMZNx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "96e254d39e2857da21bddc51625234bc0230475a2e7b3e78549069d8321e8e8a22e604486f1541da56cb9a01ad2664822777612f299166c8f8b368d591139304"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-msftx",
+    "security": {
+      "name": "Microsoft xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219203",
+      "ticker": "MSFTx",
+      "token": "1 MSFTx is backed 1:1 by MSFT held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "MSFT",
+        "figi": "BBG000BPH459",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDI9JwkYTEHM2TSFPSWFbwznBq07_I4Apy9TBhxsDlZaBvg",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TDVHfwqTFimf8bAYSkzvQe3vwArRDMdcFh",
+        "symbol": "MSFTx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "symbol": "MSFTx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/MSFTx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "8feb888686860768f249c2ecf397314ea1ec6c44b9af4159790c5487a306e3b1ea5a384c122bcfdf47dc492741c2fed9665925522f0ce59ad2738f6798ebe20b"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-avgox",
+    "security": {
+      "name": "Broadcom xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219245",
+      "ticker": "AVGOx",
+      "token": "1 AVGOx is backed 1:1 by AVGO held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "AVGO",
+        "figi": "BBG00KHY5S69",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDs4k7PSAH3nuXw3bXPEZ7aFatcejkKrf_Mi4Cv3-yLAmuG",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TTsPtgroqB964V7dKq1bcur11Py6KCJjjE",
+        "symbol": "AVGOx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "symbol": "AVGOx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/AVGOx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "631a47887024cc8c75ac193519f392d2fa085149e60da7f9963f9ee5bc193384920f3c50752c39ca8d63f3c2cc34aeec7302ee985d821f7224c28ad8cd355e0a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-mrvlx",
+    "security": {
+      "name": "Marvell xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219658",
+      "ticker": "MRVLx",
+      "token": "1 MRVLx is backed 1:1 by MRVL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "MRVL",
+        "figi": "BBG00ZXBJ153",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsuxRGDzbLjnJ72v74b7p9VY6N66uYgTCyfwwRjVCJA",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQDr0UNbQ3fLjH9czsFp-Uq9AG_BLP87yc6abzKfQS727x51",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TB6SgnNZyqz2KnFRw6yQM7AqVSCphfvBXy",
+        "symbol": "MRVLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "symbol": "MRVLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/MRVLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "49eded49c7b487aa25106486c47df7f694c46212549f08220eaa5a7c151f2cfdcba386feab7e07634325c2bc8b0963cf48bc5a8ee6bd4c440e79dcb200285b0a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-amdx",
+    "security": {
+      "name": "AMD xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1473121254",
+      "ticker": "AMDx",
+      "token": "1 AMDx is backed 1:1 by AMD held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "AMD",
+        "figi": "BBG000BBQCY0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsXcJ6GZ9kVnjqGsjBnktRcuwMBmvKWh8S93RefZ1rF",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQC0gyePHOKu2qG8jfqc7wAIOOB-dVKfDeOiqXuCAsGzarL9",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TSrLhu1fVjPDtGbZD6Fn4ra9gHFUUAjzkN",
+        "symbol": "AMDx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "symbol": "AMDx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/AMDx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "84d2b158e521d22e3b5c72dcc637b2f187bee63541e4a669b3a4bc5b3978fee4ed8dfa0d551b0d42b72208aa4c968cda0efb1fe5498a53aa3df56d430093890a"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-tsmx",
+    "security": {
+      "name": "TSMC xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1473121247",
+      "ticker": "TSMx",
+      "token": "1 TSMx is backed 1:1 by TSM held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "TSM",
+        "figi": "BBG000BD8ZK0",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsafvsGtzFqqHgTnA3aPC83EAMkacU5mcGtcSayhpVV",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQCKRrt9nk6IBTqkt-pYpFnW5xrgAlniMr3SAdzuiIJueURO",
+        "symbol": "TSMx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "symbol": "TSMx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/TSMx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "f4680a702e11725890cd96ad6d77cd0ed15fc9df8d89f4fbba21b08916244060abd76edb98bc4055e142c636d87d09f68a0d61ec0b9809f18a97177b08cc8409"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-orclx",
+    "security": {
+      "name": "Oracle xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219450",
+      "ticker": "ORCLx",
+      "token": "1 ORCLx is backed 1:1 by ORCL held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "ORCL",
+        "figi": "BBG000BQLTW7",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsjFwUPiLofddX5cWFHW35GCbXcSu1BCUGfxoQAQjeL",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQBV-ZOPN0sq_kAEUeGJ3QTvllV_ass2ed-wA5CNmjs7i55l",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TWWTQF417iXzAeBfZDfNMfnzH74iKvVFtF",
+        "symbol": "ORCLx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "symbol": "ORCLx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/ORCLx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "4ecbfcf46330b5b416d13f544bfb4d8c31c5e052110376ab7f99fe19d67d5c1c8f7069998bc36b0de78e423bfa343bdf935f1d72fa16bbd53373644211393f03"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-ewyx",
+    "security": {
+      "name": "iShares MSCI South Korea xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1564487333",
+      "ticker": "EWYx",
+      "token": "1 EWYx is backed 1:1 by EWY held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "EWY",
+        "figi": "BBG000CDKWX8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XswenHXJtDWYMh89uRYx2tZcABxwXSn7j3jidDPS1Yo",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQBBVPhBi5InXHqIO-Xi55jsRi9ZYtbqgLmzoNTfQnHoEY1k",
+        "symbol": "EWYx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "symbol": "EWYx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/EWYx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "b1a77cd49dfc359ecfa859733ef92cc6cb07047cc1213c9ebcf4ba1914cde6f2242c8780b6d2784a1d46b236df0944e193380ec5fed17905cc331f13d41a0401"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-jaaax",
+    "security": {
+      "name": "Janus Henderson AAA CLO xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1564487218",
+      "ticker": "JAAAx",
+      "token": "1 JAAAx is backed 1:1 by JAAA held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "JAAA",
+        "figi": "BBG00XX897J8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsEYQJtVa51Ww3y28jV1FwheMgmDj8BpxYiCPThcLWW",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQC6zbhyBSjeXTfW40s9tKncwhOtW4QgOQU_87dAa9PEFHcg",
+        "symbol": "JAAAx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0x3bf2e3be4a829bb3a5f5be450ae4c8eb3488da71",
+        "symbol": "JAAAx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/JAAAx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "5beb599039e69b14b074f669466d65a9bb09ea7911f290b388f7bf9bc82a1bc90c19202b547060cf5650fb425c60636250a2af309af9254092ee0aa43b7cd908"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-tqqqx",
+    "security": {
+      "name": "TQQQ xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1436219757",
+      "ticker": "TQQQx",
+      "token": "1 TQQQx is backed 1:1 by TQQQ held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "TQQQ",
+        "figi": "BBG000QB9Y48",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQChEtBTqYzP3_VEAd-RGkxtnFHvZ-KPJVEBWdukdmweJOtX",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TQzRNTjWkmnL1Lup6fNzSdTaGQuc3ZYk1K",
+        "symbol": "TQQQx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "symbol": "TQQQx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/TQQQx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "fd121b57d97a111b40b87c20fdda30c37d306dabe1bb25918da8063b0565905558b1af152f8e28b64db03fe148bfe04c96f51b48399f38638de68d6a31519101"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-bmnrx",
+    "security": {
+      "name": "Bitmine xStock",
+      "issuer": "Backed (xStocks)",
+      "kind": "tokenized-stock",
+      "isin": "CH1173294385",
+      "ticker": "BMNRx",
+      "token": "1 BMNRx is backed 1:1 by BMNR held in custody, times a multiplier that rises as dividends are reinvested and moves with splits; not offered to US persons.",
+      "underlying": {
+        "ticker": "BMNR",
+        "figi": "BBG000BWFL03",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "ink",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "mantle",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "monad",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "optimism",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "XsrBCwaH8c46xiqXBChzobgufRKxQxAWUWbndgBNzFn",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "ton",
+        "address": "EQAvL-WWhFk51DEzdnE7fskWpip9EFZV8JTJAjZfGxgYIijL",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "tron",
+        "address": "TSYfjdt4x3QDEFADucb6TSzz1XUCTSq1NU",
+        "symbol": "BMNRx",
+        "source": 0
+      },
+      {
+        "chain": "xlayer",
+        "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "symbol": "BMNRx",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.xstocks.fi/api/v2/public/assets/BMNRx",
+        "publisher": "xStocks",
+        "kind": "issuer-api",
+        "checked": "2026-10-29"
+      }
+    ],
+    "updated": "2026-10-29",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "bcc4c7f46004503efc3ab2a2f459b11e140abb8d4153ffdb2ed5e0b0e7d5f663c7263b0de7fedcaa9a02aea18b1d0b8603187a5c7b3c7a6b68ff3c6510c46803"
+      }
+    ]
+  }
+]

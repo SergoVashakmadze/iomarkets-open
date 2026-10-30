@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/asset-map-entry.v1.schema.json",
+  "title": "Tokenized Asset Map entry, version 1",
+  "description": "One security and the token contracts that represent it, chain by chain, each from a source the issuer publishes itself. Signed over its canonical form: JSON with keys sorted at every level, no whitespace, undefined fields dropped, and the attestations field left out.",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "security",
+    "tokens",
+    "sources",
+    "updated",
+    "attestations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "issuer",
+        "kind",
+        "token"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "money-market-fund",
+            "fund",
+            "note",
+            "tokenized-stock"
+          ]
+        },
+        "figi": {
+          "type": "string",
+          "pattern": "^BBG[0-9A-Z]{9}$",
+          "description": "OpenFIGI's FIGI for the security."
+        },
+        "isin": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}[A-Z0-9]{9}[0-9]$",
+          "description": "Only as the issuer gives it. Never a US ISIN derived from a CUSIP."
+        },
+        "ticker": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string",
+          "description": "One sentence on what one token is."
+        },
+        "underlying": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ticker",
+            "exchange"
+          ],
+          "description": "For a tokenized stock or ETF: the listed security it tracks.",
+          "properties": {
+            "ticker": {
+              "type": "string"
+            },
+            "figi": {
+              "type": "string",
+              "pattern": "^BBG[0-9A-Z]{9}$"
+            },
+            "exchange": {
+              "type": "string",
+              "pattern": "^[A-Z0-9]{4}$",
+              "description": "ISO 10383 market identifier code."
+            }
+          }
+        }
+      }
+    },
+    "tokens": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "chain",
+          "address",
+          "symbol",
+          "source"
+        ],
+        "properties": {
+          "chain": {
+            "enum": [
+              "ethereum",
+              "polygon",
+              "arbitrum",
+              "avalanche",
+              "base",
+              "bnb",
+              "mantle",
+              "plume",
+              "sei",
+              "tempo",
+              "optimism",
+              "ink",
+              "monad",
+              "hyperevm",
+              "xlayer",
+              "solana",
+              "stellar",
+              "aptos",
+              "sui",
+              "xrpl",
+              "noble",
+              "ton",
+              "tron"
+            ]
+          },
+          "address": {
+            "type": "string",
+            "minLength": 1
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "source": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Index into sources of the issuer source that lists this contract."
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "publisher",
+          "kind",
+          "checked"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "issuer-page",
+              "issuer-api",
+              "stellar-toml",
+              "openfigi"
+            ]
+          },
+          "checked": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          }
+        }
+      }
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "attestations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "by",
+          "key",
+          "sig"
+        ],
+        "properties": {
+          "by": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string",
+            "description": "Key id: a key published by IoMarkets, or in the issuer's key file."
+          },
+          "sig": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{128}$"
+          }
+        }
+      }
+    }
+  }
+}

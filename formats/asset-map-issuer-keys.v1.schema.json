@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/asset-map-issuer-keys.v1.schema.json",
+  "title": "Tokenized Asset Map issuer key file, version 1",
+  "description": "Served by an issuer at https://<its domain>/.well-known/iomarkets-asset-map.json. Each key is an ed25519 public key; an attestation whose key is one of these, and whose signature verifies over the entry's canonical form, is the issuer's own signature on the entry.",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "keys"
+  ],
+  "properties": {
+    "keys": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "publicKey"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "publicKey": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  }
+}
