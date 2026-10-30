@@ -33,7 +33,8 @@ describe('the data', () => {
         expect(CHAINS[t.chain], t.chain).toBeDefined()
         expect(['issuer-page', 'issuer-api', 'stellar-toml']).toContain(e.sources[t.source]?.kind)
         if (CHAINS[t.chain].evm) expect(t.address).toMatch(/^0x[0-9a-fA-F]{40}$/)
-        if (t.chain === 'stellar') expect(t.address).toMatch(/^[A-Za-z0-9]{1,12}:G[A-Z2-7]{55}$/)
+        if (t.chain === 'stellar') expect(t.address).toMatch(/^(?:[A-Za-z0-9]{1,12}:G[A-Z2-7]{55}|C[A-Z2-7]{55})$/)
+        if (t.chain === 'starknet') expect(t.address).toMatch(/^0x[0-9a-fA-F]{1,64}$/)
       }
       if (e.security.isin) expect(isinOk(e.security.isin), e.security.isin).toBe(true)
       if (e.security.figi) expect(e.security.figi).toMatch(/^BBG[0-9A-Z]{9}$/)
@@ -70,7 +71,9 @@ describe('checkContract', () => {
   })
 
   it('searches by issuer, ticker, ISIN and FIGI', () => {
-    expect(search(ENTRIES, 'ondo').map((e) => e.id)).toEqual(['ondo-ousg', 'ondo-usdy'])
+    expect(search(ENTRIES, 'ondo finance').map((e) => e.id)).toEqual(['ondo-ousg', 'ondo-usdy'])
+    expect(search(ENTRIES, 'NVDA').map((e) => e.id)).toEqual(['xstocks-nvdax', 'ondo-stocks-nvdaon'])
+    expect(search(ENTRIES, 'FR001400ODM9').map((e) => e.id)).toEqual(['spiko-ustbl'])
     expect(search(ENTRIES, 'FOBXX')[0].id).toBe('franklin-fobxx')
     expect(search(ENTRIES, 'LU2900381208')).toHaveLength(1)
     expect(search(ENTRIES, 'bbg00xnqn5b5')).toHaveLength(1)

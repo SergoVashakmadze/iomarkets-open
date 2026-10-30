@@ -1,4 +1,4 @@
-// The monthly xStocks refresh in one command, on the founder's machine (signing needs the key,
+// The monthly xStocks (and matching Ondo Stocks) refresh in one command, on the founder's machine (signing needs the key,
 // which never leaves it): a branch from master, the import, signing, the tests, a commit and a PR.
 // .github/workflows/assetmap-refresh-reminder.yml opens an issue on the 1st of each month as a nudge.
 //
@@ -27,6 +27,7 @@ const branch = `assetmap/xstocks-${month}`;
 run('git', ['fetch', 'origin', 'master']);
 run('git', ['checkout', '-b', branch, 'origin/master']);
 run('node', ['assetmap/scripts/import-xstocks.ts']);
+run('node', ['assetmap/scripts/import-ondo-stocks.ts']); // the Ondo tokens for the same stocks, from Ondo's registry
 run('node', ['assetmap/scripts/sign.ts', keyFile]);
 if (!run('git', ['status', '--porcelain', 'assetmap/data'], true).trim()) {
   console.log('The issuer lists the same contracts as last time: nothing to commit.');
@@ -39,6 +40,6 @@ try {
   process.exit(1);
 }
 run('git', ['add', 'assetmap/data', 'corpactions/data/figi.json']);
-run('git', ['commit', '-m', `Asset Map: xStocks refresh ${month}\n\nFrom the issuer's own API (assetmap/scripts/import-xstocks.ts), re-signed.`]);
+run('git', ['commit', '-m', `Asset Map: xStocks refresh ${month}\n\nFrom the issuers' own API and registry (assetmap/scripts/import-xstocks.ts, import-ondo-stocks.ts), re-signed.`]);
 run('git', ['push', '-u', 'origin', branch]);
-run('gh', ['pr', 'create', '--base', 'master', '--head', branch, '--title', `Asset Map: xStocks refresh ${month}`, '--body', 'Monthly refresh of the 30 most-held US-listed xStocks from the issuer\'s own API, re-signed with the current key. `npm test` passed locally.']);
+run('gh', ['pr', 'create', '--base', 'master', '--head', branch, '--title', `Asset Map: xStocks refresh ${month}`, '--body', 'Monthly refresh of the 30 most-held US-listed xStocks from the issuer\'s own API, and the Ondo Stocks for the same 30 from Ondo\'s token registry, re-signed with the current key. `npm test` passed locally.']);

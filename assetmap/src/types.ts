@@ -8,15 +8,15 @@
 
 export type Chain =
   | 'ethereum' | 'polygon' | 'arbitrum' | 'avalanche' | 'base' | 'bnb' | 'mantle' | 'plume' | 'sei' | 'tempo'
-  | 'optimism' | 'ink' | 'monad' | 'hyperevm' | 'xlayer'
-  | 'solana' | 'stellar' | 'aptos' | 'sui' | 'xrpl' | 'noble' | 'ton' | 'tron';
+  | 'optimism' | 'ink' | 'monad' | 'hyperevm' | 'xlayer' | 'etherlink' | 'arc' | 'robinhood'
+  | 'solana' | 'stellar' | 'aptos' | 'sui' | 'xrpl' | 'noble' | 'ton' | 'tron' | 'starknet';
 
 export type Token = {
   chain: Chain;
   /**
    * The contract as the chain names it: a 0x address on EVM chains, a mint on Solana,
-   * CODE:ISSUER on Stellar, a type tag on Aptos and Sui, CURRENCY.ISSUER on the XRP Ledger,
-   * a denom on Noble, a user-friendly address on TON, a base58 address on Tron.
+   * CODE:ISSUER on Stellar (or a C… contract ID for a Soroban token), a type tag on Aptos and Sui, CURRENCY.ISSUER on the XRP Ledger,
+   * a denom on Noble, a user-friendly address on TON, a base58 address on Tron, a 0x contract address on Starknet.
    */
   address: string;
   symbol: string;
@@ -78,14 +78,18 @@ export const CHAINS: Record<Chain, { name: string; evm: boolean; caseSensitive: 
   monad: { name: 'Monad', evm: true, caseSensitive: false },
   hyperevm: { name: 'HyperEVM', evm: true, caseSensitive: false },
   xlayer: { name: 'X Layer', evm: true, caseSensitive: false },
+  etherlink: { name: 'Etherlink', evm: true, caseSensitive: false, explorer: (a) => `https://explorer.etherlink.com/token/${a}` },
+  arc: { name: 'Arc', evm: true, caseSensitive: false },
+  robinhood: { name: 'Robinhood Chain', evm: true, caseSensitive: false, explorer: (a) => `https://robin.etherscan.io/token/${a}` },
   solana: { name: 'Solana', evm: false, caseSensitive: true, explorer: (a) => `https://solscan.io/token/${a}` },
-  stellar: { name: 'Stellar', evm: false, caseSensitive: true, explorer: (a) => `https://stellar.expert/explorer/public/asset/${a.replace(':', '-')}` },
+  stellar: { name: 'Stellar', evm: false, caseSensitive: true, explorer: (a) => (a.includes(':') ? `https://stellar.expert/explorer/public/asset/${a.replace(':', '-')}` : `https://stellar.expert/explorer/public/contract/${a}`) },
   aptos: { name: 'Aptos', evm: false, caseSensitive: false },
   sui: { name: 'Sui', evm: false, caseSensitive: false },
   xrpl: { name: 'XRP Ledger', evm: false, caseSensitive: true },
   noble: { name: 'Noble', evm: false, caseSensitive: true },
   ton: { name: 'TON', evm: false, caseSensitive: true, explorer: (a) => `https://tonviewer.com/${a}` },
   tron: { name: 'Tron', evm: false, caseSensitive: true, explorer: (a) => `https://tronscan.org/#/token20/${a}` },
+  starknet: { name: 'Starknet', evm: false, caseSensitive: false, explorer: (a) => `https://starkscan.co/contract/${a}` },
 };
 
 export const isChain = (c: unknown): c is Chain => typeof c === 'string' && Object.prototype.hasOwnProperty.call(CHAINS, c);

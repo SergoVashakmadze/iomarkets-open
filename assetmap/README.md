@@ -12,7 +12,14 @@ chain, and cites the issuer page each contract came from.
 | `franklin-onchain-sg-usd-st` | Franklin OnChain U.S. Dollar Short-Term Money Market Fund A(acc)USD (sgBENJI) | Stellar |
 | `ondo-ousg` | Ondo Short-Term US Government Treasuries (OUSG) | 4 chains |
 | `ondo-usdy` | Ondo US Dollar Yield (USDY, rUSDY) | 12 chains |
+| `superstate-ustb`, `-uscc`, `-cushy`, `-vbdc` | Superstate funds: Invesco USTB, Bitwise USCC, Coinbase CUSHY, Valinor VBDC | 1 to 3 chains each |
+| `superstate-fwdi` | Forward Industries shares tokenized by Superstate (Opening Bell) | Solana |
+| `circle-usyc` | Hashnote International Short Duration Yield Fund (USYC), issued by Circle | 4 chains |
+| `spiko-*` (9) | Spiko T-Bills (USTBL, EUTBL, UKTBL), Cash & Carry (SPKCC, eurSPKCC) and Smart Cash (SAFO, eurSAFO, gbpSAFO, chfSAFO), with their ISINs | 8 chains each, 72 in all |
 | `xstocks-*` (30) | xStocks: tokenized US stocks and ETFs issued by Backed (NVDAx, AAPLx, SPYx, …) | 10 to 12 chains each, 351 in all |
+| `ondo-stocks-*` (30) | Ondo Stocks for the same 30 stocks and ETFs (NVDAon, AAPLon, SPYon, …) | 3 to 5 chains each, 123 in all |
+
+81 entries, 588 contracts, 27 chains (2026-10-30).
 
 Use it on the web at <https://iomarkets.tech/asset-map>, from an AI assistant through the MCP server at
 `https://iomarkets.tech/mcp` (tools `check_token_contract`, `list_tokenized_assets`, `get_tokenized_asset`,
@@ -36,8 +43,8 @@ curl -X POST https://iomarkets.tech/api/asset-map \
 
 ## What goes in
 
-Only facts an issuer publishes itself: contracts from the issuer's own contracts page, its own public API, or its
-`/.well-known/stellar.toml` (SEP-1), ISINs only as the issuer gives them, FIGIs from OpenFIGI. **No CUSIPs**, and no
+Only facts an issuer publishes itself: contracts from the issuer's own contracts page or token registry, its own
+public API, or its `/.well-known/stellar.toml` (SEP-1), ISINs only as the issuer gives them, FIGIs from OpenFIGI. **No CUSIPs**, and no
 US ISINs derived from them: CUSIP data is licensed and can't be republished. `tests/assetmap.test.ts` fails if a
 contract cites no issuer source or an identifier is malformed (ISIN check digit, FIGI shape, address format).
 
@@ -62,6 +69,29 @@ issuer now" re-reads it.
 - Imported 2026-10-29. Contracts change as the issuer adds chains. Refresh monthly with
   `node assetmap/scripts/refresh-xstocks.ts`, which runs the import, signs, tests and opens a PR. An issue opens on
   the 1st of each month as a reminder.
+
+## Tokenized stocks (Ondo Stocks)
+
+`node assetmap/scripts/import-ondo-stocks.ts` reads Ondo's own token registry
+(<https://docs.ondo.finance/partner-docs/tokens>, linked from its contracts page), which lists every Ondo tokenized stock
+and ETF with its contract on Ethereum, BNB Chain, Solana, HyperEVM and Robinhood Chain. The registry gives no holdings,
+so the import takes the Ondo token for each stock or ETF the `xstocks-*` entries track: run it after
+`import-xstocks.ts`. Each entry cites the registry page, which carries every address in its HTML, so "Check with the
+issuer now" re-reads it. The registry's ISIN column is the underlying's US ISIN and is not copied; the underlying's
+FIGI comes from OpenFIGI and its MIC from the matching xStocks entry. Ondo calls its tokens total return trackers: the
+shares behind each token (its "stock-to-token multiplier") rise as dividends are reinvested. Not offered in the US.
+
+## Funds added 2026-10-30
+
+| Issuer | Source the entries cite | Live re-check |
+|---|---|---|
+| Superstate | <https://docs.superstate.com/investors/smart-contracts> | Yes: the page carries every address |
+| Circle (USYC) | <https://developers.circle.com/tokenized/usyc/smart-contracts> | Yes |
+| Spiko | <https://docs.spiko.io/documentation/tokenization/addresses>, ISINs from its fund pages | Yes |
+
+Spiko's Stellar tokens are Soroban contracts (a `C…` contract ID rather than `CODE:ISSUER`). WisdomTree publishes its
+funds' contracts on its own fund pages, but its site refuses scripted requests (403), so its entries couldn't be
+re-checked live and are left out until they can.
 
 ## Signatures
 

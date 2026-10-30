@@ -1,7 +1,7 @@
 // Plain words for an event, and its tokenized versions in the Asset Map. No event data is
 // imported here, so the page can load the feed itself (lazily) and still use these.
 
-import { ENTRIES } from '../../assetmap/src/index.ts';
+import { ENTRIES, type Entry } from '../../assetmap/src/index.ts';
 import type { CorporateAction } from './types.ts';
 
 /**
@@ -16,8 +16,14 @@ export const tokenizedVersions = (e: CorporateAction) =>
     return !!e.company.ticker && u.ticker === e.company.ticker && /^(?:XNAS|XNYS|ARCX|XASE|BATS)$/.test(u.exchange);
   });
 
+/** Issuers whose tokenized stocks are the shares themselves (their docs: "legal shares of public companies, tokenized onchain"). */
+const SHARE_TOKEN_ISSUERS = ['Superstate'];
+
 /** What a corporate action does to a token that tracks the stock, in the issuer's words where it says. */
-export function tokenEffect(e: CorporateAction): string {
+export function tokenEffect(e: CorporateAction, tokens: Entry[] = []): string {
+  // Superstate's tokenized equities are the shares themselves, recorded onchain, not trackers with a multiplier.
+  if (tokens.length && tokens.every((a) => SHARE_TOKEN_ISSUERS.includes(a.security.issuer)))
+    return 'each token is a share of the stock itself, so the event applies to its holders as to any shareholder';
   if (e.type === 'dividend') return 'the issuer reinvests the dividend, so the token’s multiplier rises around the ex-date';
   if (e.type === 'split' || e.type === 'reverse-split') return `the token’s multiplier moves by ${e.ratio!.new}:${e.ratio!.old} when the split takes effect`;
   return 'the stock stops trading at the merger, and what the token becomes is set by the issuer’s terms';
@@ -38,5 +44,5 @@ export function describe(e: CorporateAction): string {
 export const eventForApi = (e: CorporateAction) => ({
   ...e,
   summary: describe(e),
-  tokenized: tokenizedVersions(e).map((a) => ({ id: a.id, name: a.security.name, symbol: a.security.ticker ?? null, chains: [...new Set(a.tokens.map((t) => t.chain))], effect: tokenEffect(e) })),
+  tokenized: tokenizedVersions(e).map((a) => ({ id: a.id, name: a.security.name, symbol: a.security.ticker ?? null, chains: [...new Set(a.tokens.map((t) => t.chain))], effect: tokenEffect(e, [a]) })),
 });

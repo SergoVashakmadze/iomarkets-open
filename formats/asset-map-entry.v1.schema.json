@@ -115,6 +115,9 @@
               "monad",
               "hyperevm",
               "xlayer",
+              "etherlink",
+              "arc",
+              "robinhood",
               "solana",
               "stellar",
               "aptos",
@@ -122,7 +125,8 @@
               "xrpl",
               "noble",
               "ton",
-              "tron"
+              "tron",
+              "starknet"
             ]
           },
           "address": {

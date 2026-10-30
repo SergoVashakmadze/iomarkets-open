@@ -60,7 +60,7 @@ export async function checkWithIssuer(e: Entry, fetchText: Fetcher): Promise<Iss
     // A contract may be written in another case, or Stellar as CODE-ISSUER, on the page.
     const needles = [t.address, t.address.toLowerCase(), t.address.replace(':', '-')];
     const hay = text.toLowerCase();
-    const found = needles.some((n) => hay.includes(n.toLowerCase())) || (t.chain === 'stellar' && hay.includes(t.address.split(':')[1].toLowerCase()));
+    const found = needles.some((n) => hay.includes(n.toLowerCase())) || (t.chain === 'stellar' && t.address.includes(':') && hay.includes(t.address.split(':')[1].toLowerCase()));
     results.push({ token: label, url: src.url, ok: found, reason: found ? `found on ${new URL(src.url).hostname}` : `not found on ${new URL(src.url).hostname} (the page may load it with JavaScript, or it changed)` });
   }
   return results;

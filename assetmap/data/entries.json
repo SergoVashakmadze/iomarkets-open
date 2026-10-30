@@ -368,6 +368,1016 @@
     ]
   },
   {
+    "id": "superstate-ustb",
+    "security": {
+      "name": "Invesco Short Duration US Government Securities Fund (USTB)",
+      "issuer": "Superstate",
+      "kind": "fund",
+      "ticker": "USTB",
+      "token": "Each USTB token is one share of the fund, which holds short-duration US Treasury bills; tokens move only between addresses on Superstate's allowlist."
+    },
+    "tokens": [
+      {
+        "chain": "ethereum",
+        "address": "0x43415eB6ff9DB7E26A15b704e7A3eDCe97d31C4e",
+        "symbol": "USTB",
+        "source": 0
+      },
+      {
+        "chain": "plume",
+        "address": "0xe4fa682f94610ccd170680cc3b045d77d9e528a8",
+        "symbol": "USTB",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "CCz3SGVziFeLYk2xfEstkiqJfYkjaSWb2GCABYsVcjo2",
+        "symbol": "USTB",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.superstate.com/investors/smart-contracts",
+        "publisher": "Superstate",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "f6dca3088344b15dea7701620c8976efc28d497add831f067b9599da31376fe521a65731c53669948d254811cac1ef59ef41842789a6ad128a07e1e9f595950e"
+      }
+    ]
+  },
+  {
+    "id": "superstate-uscc",
+    "security": {
+      "name": "Bitwise Crypto Carry Fund (USCC)",
+      "issuer": "Superstate",
+      "kind": "fund",
+      "ticker": "USCC",
+      "token": "Each USCC token is one share of the fund, which runs crypto basis and carry strategies alongside US Treasuries; tokens move only between addresses on Superstate's allowlist."
+    },
+    "tokens": [
+      {
+        "chain": "ethereum",
+        "address": "0x14d60e7fdc0d71d8611742720e4c50e7a974020c",
+        "symbol": "USCC",
+        "source": 0
+      },
+      {
+        "chain": "plume",
+        "address": "0x4c21b7577c8fe8b0b0669165ee7c8f67fa1454cf",
+        "symbol": "USCC",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "BTRR3sj1Bn2ZjuemgbeQ6SCtf84iXS81CS7UDTSxUCaK",
+        "symbol": "USCC",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.superstate.com/investors/smart-contracts",
+        "publisher": "Superstate",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "877b1e03ce936962a82e0cce4242165631ca2cfcd7f3966671c9c1802c4e391b11f5be62aeef6633dba8d08e34fa0bf37000c2e2ef0e25356377a7ac43188806"
+      }
+    ]
+  },
+  {
+    "id": "superstate-cushy",
+    "security": {
+      "name": "Coinbase USD Stablecoin Yield Fund (CUSHY)",
+      "issuer": "Superstate",
+      "kind": "fund",
+      "ticker": "CUSHY",
+      "token": "Each CUSHY token is one share of the fund, managed by Coinbase Asset Management, which lends against stablecoin private credit; tokens move only between allowlisted addresses."
+    },
+    "tokens": [
+      {
+        "chain": "base",
+        "address": "0x140C50f6dB6932DC5758937c05122b7881C57F8C",
+        "symbol": "CUSHY",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "HSWt2izBvgNnxG982DcsysGikDnrgSq3EAWMYCSMGziP",
+        "symbol": "CUSHY",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.superstate.com/investors/smart-contracts",
+        "publisher": "Superstate",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "20271f32f0d43c85e2289a11498b219e332628a3bd144a92c9b0603df096312ad7760beea11017077a7c46e519db666e1a592e371f7ac795676ee987e5ed670a"
+      }
+    ]
+  },
+  {
+    "id": "superstate-vbdc",
+    "security": {
+      "name": "Valinor BDC Exposure Fund (VBDC)",
+      "issuer": "Superstate",
+      "kind": "fund",
+      "ticker": "VBDC",
+      "token": "Each VBDC token is one share of the fund, which holds a basket of listed business development companies; tokens move only between allowlisted addresses."
+    },
+    "tokens": [
+      {
+        "chain": "ethereum",
+        "address": "0xA4E0Ac02de99e23C76480dD75e55894fD74cDECF",
+        "symbol": "VBDC",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.superstate.com/investors/smart-contracts",
+        "publisher": "Superstate",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "12fc30d3f65df312cdeb7b5c7189f28c94956d03dff09760c67ae4f2aea6caa2a2cd7c24ae726b5f4be8632723c57d58cbd5905701264cea712843ea0a66f90b"
+      }
+    ]
+  },
+  {
+    "id": "superstate-fwdi",
+    "security": {
+      "name": "Forward Industries, Inc. common stock (Superstate Opening Bell)",
+      "issuer": "Superstate",
+      "kind": "tokenized-stock",
+      "ticker": "FWDI",
+      "token": "Each FWDI token is a share of Forward Industries common stock recorded onchain by Superstate, not a derivative; held only by allowlisted addresses.",
+      "underlying": {
+        "ticker": "FWDI",
+        "figi": "BBG020WJG333",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "solana",
+        "address": "7GzQgf6DPo6ZANjnbhe9tNCpkGTv3zqHbsDx74jyQf9",
+        "symbol": "FWDI",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.superstate.com/investors/smart-contracts",
+        "publisher": "Superstate",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://www.openfigi.com/",
+        "publisher": "OpenFIGI",
+        "kind": "openfigi",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "8d5dab57247f472b2192ff9427728968974903e71ede1de4bb205905f880a533a3497ebd85d3a635eac3fb1b3889e3a4008408533355cb61bde4bfc7ad57600f"
+      }
+    ]
+  },
+  {
+    "id": "circle-usyc",
+    "security": {
+      "name": "Hashnote International Short Duration Yield Fund (USYC)",
+      "issuer": "Circle",
+      "kind": "fund",
+      "ticker": "USYC",
+      "token": "USYC is the onchain representation of an interest in the fund, which invests mainly in reverse repo backed by US government securities; issued by Circle International Bermuda, not to US persons."
+    },
+    "tokens": [
+      {
+        "chain": "arc",
+        "address": "0x8a5D989Bbb96929F689B0200f435f53dA42bF490",
+        "symbol": "USYC",
+        "source": 0
+      },
+      {
+        "chain": "bnb",
+        "address": "0x8D0fA28f221eB5735BC71d3a0Da67EE5bC821311",
+        "symbol": "USYC",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b",
+        "symbol": "USYC",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "7LWanZteUKtvFjv4MHYgKXXdAuCQYFPJysL9pxxdRQGn",
+        "symbol": "USYC",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://developers.circle.com/tokenized/usyc/smart-contracts",
+        "publisher": "Circle",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "876fbfb19a0a8d1a04c47d7fbc1c3b536ce64ead2c3bb6419d0cecad97857e3aa919a3cfff732343991990267d16aaaffcaa584510b1925d2de6b5460a24d004"
+      }
+    ]
+  },
+  {
+    "id": "spiko-ustbl",
+    "security": {
+      "name": "Spiko US T-Bills Money Market Fund",
+      "issuer": "Spiko",
+      "kind": "money-market-fund",
+      "isin": "FR001400ODM9",
+      "ticker": "USTBL",
+      "token": "Each USTBL token is one share of the fund, a French-regulated fund tracking US Treasury bills, in dollars; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x021289588cd81dc1ac87ea91e91607eef68303f5",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xe4880249745eAc5F1eD9d8F7DF844792D560e750",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xe4880249745eAc5F1eD9d8F7DF844792D560e750",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0xe4880249745eAc5F1eD9d8F7DF844792D560e750",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0xe4880249745eAc5F1eD9d8F7DF844792D560e750",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "3E2qphMMBQtH3HZH2ZSg7CkbF8gSLePuoy7yVpkDxHGn",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x020ff2f6021ada9edbceaf31b96f9f67b746662a6e6b2bc9d30c0d3e290a71f6",
+        "symbol": "USTBL",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CARUUX2FZNPH6DGJOEUFSIUQWYHNL5AVDV7PMVSHWL7OBYIBFC76F4TO",
+        "symbol": "USTBL",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/tbills/spiko_MMFs",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "cfd2c765336f95951b4c476283ab6eb8bfd1656908881a77cda795ecbaf473018d0079cf6a32ecf356377bfdcab3a77f2c7fbf63a970a30a027c925f1725cf03"
+      }
+    ]
+  },
+  {
+    "id": "spiko-eutbl",
+    "security": {
+      "name": "Spiko EU T-Bills Money Market Fund",
+      "issuer": "Spiko",
+      "kind": "money-market-fund",
+      "isin": "FR001400ODL1",
+      "ticker": "EUTBL",
+      "token": "Each EUTBL token is one share of the fund, a French-regulated fund tracking euro-area government bills, in euros; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xcbeb19549054cc0a6257a77736fc78c367216ce7",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "6rS8E5CQHLHmLenNNevUdJ9APzKNairr1kfWAM3EhDX3",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x04f5e0de717daa6aa8de63b1bf2e8d7823ec5b21a88461b1519d9dbc956fb7f2",
+        "symbol": "EUTBL",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CBGV2QFQBBGEQRUKUMCPO3SZOHDDYO6SCP5CH6TW7EALKVHCXTMWDDOF",
+        "symbol": "EUTBL",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/tbills/spiko_MMFs",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "becc71c8042aec1ee34562799a0cf0df1dbb6f7c0c293231f834bd52a85c047fb3a6e0124a1b1d3e6e251e3e13b8695d48e3764eb79f9d9a983056b21ce5530a"
+      }
+    ]
+  },
+  {
+    "id": "spiko-uktbl",
+    "security": {
+      "name": "Spiko UK T-Bills Money Market Fund",
+      "issuer": "Spiko",
+      "kind": "money-market-fund",
+      "isin": "FR0014012MN7",
+      "ticker": "UKTBL",
+      "token": "Each UKTBL token is one share of the fund, a French-regulated fund tracking UK Treasury bills, in pounds; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x903d5990119bC799423e9C25c56518Ba7DD19474",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xA8De1f55Aa0E381cb456e1DcC9ff781eA0079068",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xf695Df6c0f3bB45918A7A82e83348FC59517734E",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0x970E2aDC2fdF53AEa6B5fa73ca6dc30eAFEDfe3D",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x970E2aDC2fdF53AEa6B5fa73ca6dc30eAFEDfe3D",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "DEtiguzuMC72hRkMHETcsXeKrJ6Djb6tMebQqjZoBSgt",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x0153d6e0462080bb2842109e9b64f589ef5aa06bb32b26bbdb894aca92674395",
+        "symbol": "UKTBL",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CDT3KU6TQZNOHKNOHNAFFDQZDURVC3MSTL4ML7TUTZGNOPBZCLABP4FR",
+        "symbol": "UKTBL",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/tbills/spiko_MMFs",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "1be05f96cc8b8e9c670e8fafbfd073c793790d9fdc24e5c68641f7d86d20211e78afc1f073f66930a11b40e0cd09d0ea582ba34d3a8ae1915ec0934a786b230c"
+      }
+    ]
+  },
+  {
+    "id": "spiko-spkcc",
+    "security": {
+      "name": "Spiko Digital Assets Cash and Carry Fund - USD Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014010OM9",
+      "ticker": "SPKCC",
+      "token": "Each SPKCC token is one share of the fund, a French-regulated fund tracking a market-neutral bitcoin and ether basis trade, in dollars; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x99F70A0e1786402a6796c6B0AA997ef340a5c6da",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xf695Df6c0f3bB45918A7A82e83348FC59517734E",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x4f33aCf823E6eEb697180d553cE0c710124C8D59",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0x4f33aCf823E6eEb697180d553cE0c710124C8D59",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x903d5990119bC799423e9C25c56518Ba7DD19474",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "14Rg7TaptSo1Ndkz1ngBw2rE4EuFhQd2PzCrkyjGdsL1",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x04bade88e79a6120f893d64e51006ac6853eceeefa1a50868d19601b1f0a567d",
+        "symbol": "SPKCC",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CDS2GCAQTNQINSCJUJIVBJXILKBWP5PU7LOBGHMP3X47QCQBFKPMTCNT",
+        "symbol": "SPKCC",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/cash_and_carry/fund",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "9f02598485d180078ca1d7966eaa22a09d04f521a874d7b79f0b3381cdf5cda61e6bbb0b90310f623f0d7e4003839134728c5bb2738846f5475ca26cfba82803"
+      }
+    ]
+  },
+  {
+    "id": "spiko-eurspkcc",
+    "security": {
+      "name": "Spiko Digital Assets Cash and Carry Fund - EUR Hedged Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014010ON7",
+      "ticker": "eurSPKCC",
+      "token": "Each eurSPKCC token is one share of the fund, a French-regulated fund tracking a market-neutral bitcoin and ether basis trade, hedged to euros; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x0e389C83Bc1d16d86412476F6103027555C03265",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0x4f33aCf823E6eEb697180d553cE0c710124C8D59",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3868D4e336d14D38031cf680329d31e4712e11cC",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0x3868D4e336d14D38031cf680329d31e4712e11cC",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x99F70A0e1786402a6796c6B0AA997ef340a5c6da",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "H99pu9fKt15asYk3Mcs8rajaRX3aYx3kDwXy6pY3n6My",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x06472cabc51a3805975b9c60c7dec63897c9a287f2db173a1d6c589d18dd1e07",
+        "symbol": "eurSPKCC",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CDWOB6T7SVSMMQN5V3P2OPTBAXOP7DAZHGVW3PYTZIKHVFKN6TBSXR6A",
+        "symbol": "eurSPKCC",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/cash_and_carry/fund",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "404df59e8840b66681ddca618059b6a7362bf02d97c22bb3e28c30426a26d1551be0be2ae42e4b1be877e4b42a3d03cffd9b552eee8e6d94ce17562e9db1c70d"
+      }
+    ]
+  },
+  {
+    "id": "spiko-safo",
+    "security": {
+      "name": "Spiko Amundi Overnight Swap Fund - USD Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014015LE1",
+      "ticker": "SAFO",
+      "token": "Each SAFO token is one share of the fund, a French-regulated fund tracking the overnight dollar rate (SOFR) plus a spread; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x0c709396739b9cfb72bcea6ac691ce0ddf66479c",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0x0bb754d8940e283d9ff6855ab5dafbc14165c059",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xcbade7d9bdee88411cb6cbcbb29952b742036992",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0x5677a4dc7484762ffccee13cba20b5c979def446",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x6f64f47f95cf656f21b40e14798f6b49f80b3dc5",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "BYwEFWHUQp7Biqye6TvcjSF1ZYbL1StE5BuFRkKejexo",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x035bdc17f7a7d09c45d31ab476a576d4f7aad916676b2948fe172c3bcb33725a",
+        "symbol": "SAFO",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CDGSC6BA4TCAOVSFQCUEHDMOIIHYYVNYBT6YEARS4MX3ITAHUINVGQHX",
+        "symbol": "SAFO",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/smart_cash/funds",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "2193eb7d20dd68c98f9bb3a36f33d30dc08a7cca7dc8169d4bae0d37eb3ebea000dbca7795df9b39333f060f627c581f946a5b359d29c0e950c096851f289f04"
+      }
+    ]
+  },
+  {
+    "id": "spiko-eursafo",
+    "security": {
+      "name": "Spiko Amundi Overnight Swap Fund - EUR Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014015LD3",
+      "ticker": "eurSAFO",
+      "token": "Each eurSAFO token is one share of the fund, a French-regulated fund tracking the overnight euro rate (€STR) plus a spread; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x1412632f2b89e87bfa20c1318a43ced25f1d7b76",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xd879846cbe20751bde8a9342a3cca00a3e56ca47",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x0990b149e915cb08e2143a5c6f669c907eddc8b0",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0x35dfec1813c43d82e6b87c682f560bbb8ea0c121",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x272ea767712cc4839f4a27ee35eb73116158c8a2",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "6ALgseJyDVHbXVep9hcqEB92xNUZJFLQ66PWoHbGu4P7",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x0128f41ef8017ab56140ffad6439305a3196ed862841ba61ff4d78e380c346a6",
+        "symbol": "eurSAFO",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+        "symbol": "eurSAFO",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/smart_cash/funds",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "819a6f4c6d7e6d62102cdfbcb0c100d8e26baeb8757d3aacaced46dda43bb789f6da78acc95d014d0d4429e5f67fa765dfdc0675b3a513c010642a6652b1a40c"
+      }
+    ]
+  },
+  {
+    "id": "spiko-gbpsafo",
+    "security": {
+      "name": "Spiko Amundi Overnight Swap Fund - GBP Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014015LF8",
+      "ticker": "gbpSAFO",
+      "token": "Each gbpSAFO token is one share of the fund, a French-regulated fund tracking the overnight sterling rate (SONIA) plus a spread; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0xbe023308ac2ef7e1c3799f4e6a3003ee6d342635",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0x2f6c0e5e06b43512706a9cdf66cd21f723fe0ec3",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xc273986a91e4bfc543610a5cb5860b7cfefb6cc0",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0xfe20ebe3881491b2e158b9d10cb95bcfa652262d",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x4fe515c67eeeadb3282780325f09bb7c244fe774",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "7fnYygJyxQ2RsFJymjnRRa4wptPhUkfo6RT2j4BU4qhP",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x06e8a99926ff6d56f4cb93c37b63286d736cd1f81740d53f88b4875b4cbe7f49",
+        "symbol": "gbpSAFO",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CAGYRRKPFSWKM6SJOE4QAAVYMOSHMDS5WOQ4T5A2E6XNCU7LZZKUNQKP",
+        "symbol": "gbpSAFO",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/smart_cash/funds",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "56c24ab645b6ccb54556072b24add50b4fcf13b8d7e8065b14438e43c46b4149d0453d0ad24727fb32dbbf33f42a78dbed412c16fc8b0c0be958f31eba850c0f"
+      }
+    ]
+  },
+  {
+    "id": "spiko-chfsafo",
+    "security": {
+      "name": "Spiko Amundi Overnight Swap Fund - CHF Share",
+      "issuer": "Spiko",
+      "kind": "fund",
+      "isin": "FR0014015LG6",
+      "ticker": "chfSAFO",
+      "token": "Each chfSAFO token is one share of the fund, a French-regulated fund tracking the overnight Swiss franc rate (SARON) plus a spread; the blockchain is the fund's share register, and transfers are limited to Spiko's verified clients."
+    },
+    "tokens": [
+      {
+        "chain": "arbitrum",
+        "address": "0x97e7962bcd091e7ecfb583fc96289b1e1553ac6e",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "base",
+        "address": "0xd9aa2300e126869182dfb6ecf54984e4c687f36b",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x18b5c15e5196a38a162b1787875295b76e4313fb",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "etherlink",
+        "address": "0xef53e7d17822b641c6481837238a64a688709301",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "polygon",
+        "address": "0x9de2b2dcdcf43540e47143f28484b6d15118f089",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "6Gst8o3L5uNtkUvhEg23HpDLpYRdNQTgdn1Bc7jnCM5c",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "starknet",
+        "address": "0x06723dcb428eddb160c5adfc2d0a5e5adc184bf6a7298780c3cbf3fa764f709b",
+        "symbol": "chfSAFO",
+        "source": 0
+      },
+      {
+        "chain": "stellar",
+        "address": "CAJD2IBSP7VO2VYJQUYJSOGPJINTUYV7MQITINXVPTIH3CCLCUENNMW4",
+        "symbol": "chfSAFO",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.spiko.io/documentation/tokenization/addresses",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      },
+      {
+        "url": "https://docs.spiko.io/documentation/product_overview/smart_cash/funds",
+        "publisher": "Spiko",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "63f6274ac6bcfdca23a60e2ee2e26d5232cc0e3ce6099a964adc9bb76917f6b8e897724e2669be5139329fc50ee640ddb65c5e2d5b4cb87136024d9bcb51bb01"
+      }
+    ]
+  },
+  {
     "id": "xstocks-strcx",
     "security": {
       "name": "Strategy PP Variable xStock",
@@ -3489,6 +4499,1733 @@
         "by": "IoMarkets",
         "key": "iomarkets-assetmap-2026-10",
         "sig": "bcc4c7f46004503efc3ab2a2f459b11e140abb8d4153ffdb2ed5e0b0e7d5f663c7263b0de7fedcaa9a02aea18b1d0b8603187a5c7b3c7a6b68ff3c6510c46803"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-aaplon",
+    "security": {
+      "name": "Apple (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "AAPLon",
+      "token": "AAPLon is fully backed by AAPL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "AAPL",
+        "figi": "BBG000B9XRY4",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+        "symbol": "AAPLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x14c3abF95Cb9C93a8b82C1CdCB76D72Cb87b2d4c",
+        "symbol": "AAPLon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x81db0DF77669b3BE563e7a0591685a2C8C3EE1c5",
+        "symbol": "AAPLon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x9bf86418caf2b7a939603d6c24219a77bf7f9b33",
+        "symbol": "AAPLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "123mYEnRLM2LLYsJW3K6oyYh8uP1fngj732iG638ondo",
+        "symbol": "AAPLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "21cbcea5084dbbf2ca15cef0991b3f3cd26d2f9a369dfdf9931353401f3a3e5aa15f30d756caeac5b06b0ac75f94e6d914a9620901de7235429f978a1f2dc809"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-amdon",
+    "security": {
+      "name": "AMD (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "AMDon",
+      "token": "AMDon is fully backed by AMD and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "AMD",
+        "figi": "BBG000BBQCY0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+        "symbol": "AMDon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x0C1f3412A44Ff99E40bF14e06e5Ea321aE7B3938",
+        "symbol": "AMDon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x33706203A7a7c82B6F6c09dd9Ae4E6e881d36386",
+        "symbol": "AMDon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "14diAn5z8kjrKwSC8WLqvBqqe5YmihJhjxRxd8Z6ondo",
+        "symbol": "AMDon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "c23ffc47700078a06832a8966ce1c7c90f41097ac514b4dc46b23d1695acde6b43e1a05525697bd9e61d15496745ecdabfa48a32016d3bbcc3762f48a22aef05"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-amznon",
+    "security": {
+      "name": "Amazon (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "AMZNon",
+      "token": "AMZNon is fully backed by AMZN and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "AMZN",
+        "figi": "BBG000BVPV84",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+        "symbol": "AMZNon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xbb8774FB97436d23d74C1b882E8E9A69322cFD31",
+        "symbol": "AMZNon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xeD68F063264a01fd7f93087DC19CC1E0D614e8De",
+        "symbol": "AMZNon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "14Tqdo8V1FhzKsE3W2pFsZCzYPQxxupXRcqw9jv6ondo",
+        "symbol": "AMZNon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "553f6fc0aee6d1d2eacd061d9a6d8c49abd0349787be1dca7812a321269c21b087b35b42c9b7771d8520a4558e900c96306bbe5502be5b21cab9854390e06903"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-avgoon",
+    "security": {
+      "name": "Broadcom (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "AVGOon",
+      "token": "AVGOon is fully backed by AVGO and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "AVGO",
+        "figi": "BBG00KHY5S69",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x0ed2e3180edf393e6bf8db124bd15ddd54de150a",
+        "symbol": "AVGOon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x0d54D4279B9E8c54cD8547c2C75A8Ee81A0BcaE8",
+        "symbol": "AVGOon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "1FWZtdWN7y38BSXGzbs8D6Shk88oL9atDNgbVz9ondo",
+        "symbol": "AVGOon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "e66c015b2024183cce5d7ea66ff42192f315321bf2467800d926b943b80c993d6331258a8e823bb5b9675f6cfaddc0fd26160ffa20e1a9d8ed65efbc95426c02"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-bmnron",
+    "security": {
+      "name": "BitMine Immersion Technologies (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "BMNRon",
+      "token": "BMNRon is fully backed by BMNR and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "BMNR",
+        "figi": "BBG000BWFL03",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
+        "symbol": "BMNRon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+        "symbol": "BMNRon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+        "symbol": "BMNRon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "MYXqkDYbzr7vjXAz2BapR4AiYRXzoikGirrLoRzondo",
+        "symbol": "BMNRon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "768ae1633f47776e0461818c5ea076d7d14998d6c6fd390f7db26d26351955be43e1e6ede219d2d7d7fa92966fd63256c7c570d3a58c27ecf08101968f28620f"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-coinon",
+    "security": {
+      "name": "Coinbase (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "COINon",
+      "token": "COINon is fully backed by COIN and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "COIN",
+        "figi": "BBG00ZGF7771",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xf8589b526fdd65f7f301c605a6e04f0f1b4b3620",
+        "symbol": "COINon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xF042cfa86cf1D598a75Bdb55c3507a1F39f9493b",
+        "symbol": "COINon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x639Bcd00422facAcA534063e3d860e8fcf78B46F",
+        "symbol": "COINon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "5u6KDiNJXxX4rGMfYT4BApZQC5CuDNrG6MHkwp1ondo",
+        "symbol": "COINon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "1701fcb8b896480b84f9f467aa526477f256b0cd0e336f0fc5bfc90fde1fc1299eb6cb319a5c97af34d60884bef54cabfc8716d1878ce08895503848ecdbc50c"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-crclon",
+    "security": {
+      "name": "Circle Internet Group (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "CRCLon",
+      "token": "CRCLon is fully backed by CRCL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "CRCL",
+        "figi": "BBG01T61V2V3",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x992879cd8ce0c312d98648875b5a8d6d042cbf34",
+        "symbol": "CRCLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3632DEa96A953C11dac2f00b4A05a32CD1063fAE",
+        "symbol": "CRCLon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x13a81c5e8b4AB05Fc721DfF7bA95e250b29458F8",
+        "symbol": "CRCLon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x369c4748e98c153e9b7adebc3e71e9e2a5f60dc0",
+        "symbol": "CRCLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "6xHEyem9hmkGtVq6XGCiQUGpPsHBaoYuYdFNZa5ondo",
+        "symbol": "CRCLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "9d95390a7494da0598061d1d134074d2b74a7d3799ee5aef621f7c1a140b2b6f37d649c046641b8f2713afa29d7fccef12a4862d6e1f13fd363c1d5e67701f0a"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-ewyon",
+    "security": {
+      "name": "iShares MSCI South Korea ETF (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "EWYon",
+      "token": "EWYon is fully backed by EWY and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "EWY",
+        "figi": "BBG000CDKWX8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x12B7aDC48416A103F63E7e6210f62C81dfB91fD0",
+        "symbol": "EWYon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xbd660e96D45e7C175512d1ed0cCc119Cb980b81a",
+        "symbol": "EWYon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xed871e0D99369AB869Fc38255a284361A137746B",
+        "symbol": "EWYon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "C8pSaSgjkiTWixS3GM6Hxd6HKnKrgAbY9WDgfVeondo",
+        "symbol": "EWYon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "9677058a58b1707b7457726fac3e248853e7b7538a0dd6d7f0fc8d50a9d2db1ba4a41139e531443b9f88465e1dc2f85b83d1954c5c676bd9d429b24d8610c108"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-gldon",
+    "security": {
+      "name": "SPDR Gold Shares (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "GLDon",
+      "token": "GLDon is fully backed by GLD and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "GLD",
+        "figi": "BBG000CRF6Q8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+        "symbol": "GLDon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+        "symbol": "GLDon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x95FebDd6f447B5278c9b98743B4254eB02c6EA1d",
+        "symbol": "GLDon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "hWfiw4mcxT8rnNFkk6fsCQSxoxgZ9yVhB6tyeVcondo",
+        "symbol": "GLDon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "b378d67059dffe0f1d68a2e46269db288c8b50a47c68b459533c41d6287f63c1dd65d6ea4fcd9ea4e699554bc5952f609c4751b9e5e0e30bb6d781a7a2427a0b"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-googlon",
+    "security": {
+      "name": "Alphabet Class A (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "GOOGLon",
+      "token": "GOOGLon is fully backed by GOOGL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "GOOGL",
+        "figi": "BBG009S39JX6",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x091fc7778e6932d4009b087b191d1ee3bac5729a",
+        "symbol": "GOOGLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xbA47214eDd2bb43099611b208f75E4b42FDcfEDc",
+        "symbol": "GOOGLon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x4D34798f18Eb747F7225663F0553eA2D880cf75D",
+        "symbol": "GOOGLon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0xe10cc5f0cd0c90322ebeb33e7757b2c9090146dc",
+        "symbol": "GOOGLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "bbahNA5vT9WJeYft8tALrH1LXWffjwqVoUbqYa1ondo",
+        "symbol": "GOOGLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "d3f40298d2a60ecf4579885e130f93793cf60e7889f8580b3b9c6d3693c555d57c52f5e800c9d399764ba900a0cae30d824991e5dfe882814e7655057abd4d05"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-hoodon",
+    "security": {
+      "name": "Robinhood Markets (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "HOODon",
+      "token": "HOODon is fully backed by HOOD and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "HOOD",
+        "figi": "BBG008NMBXN8",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x19601179a60f55ff6636f5d1a8b6671053bd60a8",
+        "symbol": "HOODon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x998f02A9E343EF6E3E6f28700d5A20F839fD74E6",
+        "symbol": "HOODon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xF1Df92AC8E22763A16bf4Bd9a966EEBcD70fA5a3",
+        "symbol": "HOODon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x43cac729218c62210d71d66b7f0ec93990d8d8cc",
+        "symbol": "HOODon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "BVdXGvmgi6A9oAiwWvBvP76fyTqcCNRJMM7zMN6ondo",
+        "symbol": "HOODon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "04e11da4ac3add7c24519638709e6f7ace1e9d19e0598d36548af38834c8b072cf9c9ec81b6119b0ed511e229a229f2ae7177b3d9c9e0c7dd83176cc21063707"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-intcon",
+    "security": {
+      "name": "Intel (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "INTCon",
+      "token": "INTCon is fully backed by INTC and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "INTC",
+        "figi": "BBG000C0G1D1",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xa528caaa2f96090e379d43f90834c75df54d6e74",
+        "symbol": "INTCon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xFdA09936DbD717368De0835bA441d9E62069d36f",
+        "symbol": "INTCon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x7bf529bb5Db370D679F33f4fe5420F48eE234bB7",
+        "symbol": "INTCon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "cJpUMp5R7rZ6fGeLHbHhrRuJzK9mkyKDjZqNpT3ondo",
+        "symbol": "INTCon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "2188a34a9b67df39fbe5112b17727ebdf61a347230aaf4914be32a564aad7eb18391828dbe394f44810684ceeb1ad3089c0a3ef890ff800c3ac1b2a5a88f4709"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-jaaaon",
+    "security": {
+      "name": "Janus Henderson AAA CLO ETF (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "JAAAon",
+      "token": "JAAAon is fully backed by JAAA and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "JAAA",
+        "figi": "BBG00XX897J8",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x84719a1082ed487c7eeac7d69885e3cc2009ea78",
+        "symbol": "JAAAon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x219a1b27baa08d72fac836665a3b752f3c9acbbc",
+        "symbol": "JAAAon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "KZtqx9BJbpcGY7vdzhqPXM3ECKChxE5YhXaDiwRondo",
+        "symbol": "JAAAon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "5d422f01c8668644f5a481b75773bcbd1e6c13039bdb11862e0c2a9a34c08613a583f6f071df59c7a89364114bcaa56ed7712fa479703a6a4c20223bcafe880e"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-metaon",
+    "security": {
+      "name": "Meta Platforms (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "METAon",
+      "token": "METAon is fully backed by META and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "META",
+        "figi": "BBG000MM2P62",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xd7df5863a3e742f0c767768cdfcb63f09e0422f6",
+        "symbol": "METAon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x59644165402b611b350645555B50Afb581C71EB2",
+        "symbol": "METAon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x46FA18Ffe2707bbecc46D457D40EFBE6B932f711",
+        "symbol": "METAon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x7b5026cfcb4de0cf3d9a39fe2a541514b71437a2",
+        "symbol": "METAon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "fDxs5y12E7x7jBwCKBXGqt71uJmCWsAQ3Srkte6ondo",
+        "symbol": "METAon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "75a329afc15ea9ffd8391001ae76e6fd9e2fa9ded4ea2d63f53f078550bfbb04ff2f6f8dc1c640c67e45147302e8a335832ab714c608d6dd4e4664ba6e298209"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-mrvlon",
+    "security": {
+      "name": "Marvell Technology (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "MRVLon",
+      "token": "MRVLon is fully backed by MRVL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "MRVL",
+        "figi": "BBG00ZXBJ153",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x1501ec83ffef405b4331cc4f73277a40fb0c627d",
+        "symbol": "MRVLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xF404E5f887dBd5508e16a1198fCDD5DE1A4296B8",
+        "symbol": "MRVLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "FovBwhoV5KQjZCdhoM6jgXYwXLX3F8vgAfvmLH7ondo",
+        "symbol": "MRVLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "7d15e6b9e0e129b47738409ce5316a23b02097b6fffb92f299f863e691e277151b3da6f3c4c2b5e9f0c7c111ef7796765a5ea3caf7206956a979e318e6a03109"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-msfton",
+    "security": {
+      "name": "Microsoft (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "MSFTon",
+      "token": "MSFTon is fully backed by MSFT and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "MSFT",
+        "figi": "BBG000BPH459",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x6bfe75d1ad432050ea973c3a3dcd88f02e2444c3",
+        "symbol": "MSFTon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xB812837b81a3a6b81d7CD74CfB19A7f2784555E5",
+        "symbol": "MSFTon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xD53471f6D493f7eD766181D88Ba9c2Bfc371399A",
+        "symbol": "MSFTon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "FRmH6iRkMr33DLG6zVLR7EM4LojBFAuq6NtFzG6ondo",
+        "symbol": "MSFTon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "0348ee18ce99f881d8c78161027957978529b635f8b004e1d6bf72256a688da70e95f8e3bc45092d864bb6c223a60d226fae50b5f50bbc2963369d053f9b6d06"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-mstron",
+    "security": {
+      "name": "MicroStrategy (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "MSTRon",
+      "token": "MSTRon is fully backed by MSTR and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "MSTR",
+        "figi": "BBG000GQJPZ0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x7313ea16493b2f55054df0131a3a14b043ec8992",
+        "symbol": "MSTRon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xCabD955322dfbf94C084929ac5E9Eca3fEB5556F",
+        "symbol": "MSTRon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x8a64FDf0857c1C734A594cd1DB20B3f8E3f133f6",
+        "symbol": "MSTRon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x09dedc334fc47ab543e5d70c7fd9d2b1aea175bd",
+        "symbol": "MSTRon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "FSz4ouiqXpHuGPcpacZfTzbMjScoj5FfzHkiyu2ondo",
+        "symbol": "MSTRon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "ed1b9d93c2659424fc54f7603429c114fda3639c27dabbab0a10b50d1d4231de480e26bd232bbf39077dcd47069bb3ab83a31a4ab8d9e2905068d8f1f5189f03"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-muon",
+    "security": {
+      "name": "Micron Technology (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "MUon",
+      "token": "MUon is fully backed by MU and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "MU",
+        "figi": "BBG000C5Z1S3",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x8b6acf6041a81567f012ff6a4c6d96d5818d74bf",
+        "symbol": "MUon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x050362Ab1072Cb2Ce74d74770E22A3203Ad04ee5",
+        "symbol": "MUon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x0f8E33F5CdefAE9C2E59de8fB61feD347046D046",
+        "symbol": "MUon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Fz9edBpaURPPzpKVRR1A8PENYDEgHqwx5D5th28ondo",
+        "symbol": "MUon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "944f4e31b748cfba5c61f054caaa6c5d50fa8ae31c9335017fb1d6502333657bc38fa43a183713bf9fd9e5fc22d955b243f19ace328b7c0e1bdaba722bcdbb0a"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-nvdaon",
+    "security": {
+      "name": "NVIDIA (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "NVDAon",
+      "token": "NVDAon is fully backed by NVDA and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "NVDA",
+        "figi": "BBG000BBJQV0",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xa9ee28c80f960b889dfbd1902055218cba016f75",
+        "symbol": "NVDAon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x2D1F7226Bd1F780AF6B9A49DCC0aE00E8Df4bDEE",
+        "symbol": "NVDAon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xB989ad9b91886b1Aaed8DaADb26F028b29b40945",
+        "symbol": "NVDAon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0xf1b95ae4e7700b962714702ea53784dc8492a856",
+        "symbol": "NVDAon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "gEGtLTPNQ7jcg25zTetkbmF7teoDLcrfTnQfmn2ondo",
+        "symbol": "NVDAon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "f01dd9346c93649b90155db4a38cf8afce7dc773725975e2ab5593e481c6b59ab7df516dcbd8bbdd8b9b805d900041ef18bbbc9014a45825e0b8bd53a83b9c0d"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-orclon",
+    "security": {
+      "name": "Oracle (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "ORCLon",
+      "token": "ORCLon is fully backed by ORCL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "ORCL",
+        "figi": "BBG000BQLTW7",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x03e4bd1ea53f1da84513da0319d1f03dd1bbcf93",
+        "symbol": "ORCLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x8a23C6BaadB88512b30475C83Df6A63881e33e1E",
+        "symbol": "ORCLon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x4775e99a13651B1D077c2fa04Eb9BF007f684af5",
+        "symbol": "ORCLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "GmDADFpfwjfzZq9MfCafMDTS69MgVjtzD7Fd9a4ondo",
+        "symbol": "ORCLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "830c52b6f21794b07f80bde2cabd23dcd60844c0913e996fab955b92f4bea5c23571558bb3beaa3191a5a52a1212b653c4d81a6e4a42c0c897717ed7899f850c"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-qqqon",
+    "security": {
+      "name": "Invesco QQQ (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "QQQon",
+      "token": "QQQon is fully backed by QQQ and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "QQQ",
+        "figi": "BBG000BSWKH7",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x0cde6936d305d5b34667fc46425e852efd73559a",
+        "symbol": "QQQon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x0e397938C1Aa0680954093495B70A9F5e2249aBa",
+        "symbol": "QQQon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x911e2dCD2b70F44231F3F0f1C6ec9aF75068FD85",
+        "symbol": "QQQon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x300fe8a40701ce81460503fb886f9ed81a3b5e14",
+        "symbol": "QQQon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "HrYNm6jTQ71LoFphjVKBTdAE4uja7WsmLG8VxB8ondo",
+        "symbol": "QQQon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "83c0c98478dfd8c85f032fd742019adadfa5bbeaa3b2a5d851fd33317937f89f6710e49ddf152aa6e48e70f9e77ab68bcef0c7d902c7eb23e432be8b042be602"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-skhyon",
+    "security": {
+      "name": "SK Hynix (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "SKHYon",
+      "token": "SKHYon is fully backed by SKHY and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "SKHY",
+        "figi": "BBG0238L5JS9",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x4268F2Bfb23A7496504AA5eD1Ee325248586299F",
+        "symbol": "SKHYon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xc0fE36F4FFBDf1B38E192215073590a68f9A2Af7",
+        "symbol": "SKHYon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "Huyb2fyDDjSuDKCRWsN9ci2rmcgPo6NFiLbx9ZDondo",
+        "symbol": "SKHYon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "2ff3d7de19395fdaeedae291f704adc923261d13f02a9775b0b1a3303d5fa8db2457d56f4be3607fc1df456aad5e69655948587ac42949b70667dda980677a00"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-sndkon",
+    "security": {
+      "name": "SanDisk (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "SNDKon",
+      "token": "SNDKon is fully backed by SNDK and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "SNDK",
+        "figi": "BBG01R388JG1",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x4Fd67CB8CFEdc718BAc984b5936abE3330d0a2A4",
+        "symbol": "SNDKon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x71E2400CF1Cb83204f33794eD326636A71a9AAfC",
+        "symbol": "SNDKon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0xB8927cfF399E23328eEC0e457e75c709DCfcF382",
+        "symbol": "SNDKon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "EJmUVvDqAdfH5zEohkdS4234bi3c6iunqEMobjmondo",
+        "symbol": "SNDKon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "e77f263e88e9b772c9e820ecb3300d5671e69b534d5ce156c754615f2de4f5ff3cae6eae5b9697326c87f9d8552d4807a7f2795429649906a63f23e211cfd909"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-spyon",
+    "security": {
+      "name": "SPDR S&P 500 ETF (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "SPYon",
+      "token": "SPYon is fully backed by SPY and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "SPY",
+        "figi": "BBG000BDTBL9",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x6a708ead771238919d85930b5a0f10454e1c331a",
+        "symbol": "SPYon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xFeDC5f4a6c38211c1338aa411018DFAf26612c08",
+        "symbol": "SPYon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x32eC2792aeC02122eDD9f28866B720db1e1c1B54",
+        "symbol": "SPYon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x533c5571ae586985e1fddfaa24304284d970c62a",
+        "symbol": "SPYon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "k18WJUULWheRkSpSquYGdNNmtuE2Vbw1hpuUi92ondo",
+        "symbol": "SPYon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "1ba90c5a21f78219667bacba34005f65798c0fd789565b14cd1b94c15852a7464aa90baba3db3840e17069a8210b8ca4ffcbd92afee059626c930463bcd40f0b"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-strcon",
+    "security": {
+      "name": "Strategy STRC Preferred (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "STRCon",
+      "token": "STRCon is fully backed by STRC and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "STRC",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x71E9dc9DEbc18650BD2342B93623B88C2aD00c89",
+        "symbol": "STRCon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xECABE1Ff8a9e1dC55899cf58dac8497ecE5Ae84c",
+        "symbol": "STRCon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "y6kSRF4i9tfMMjZziPHtQE1PeUS6bWEHTzZMFgXondo",
+        "symbol": "STRCon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "3c8c177346f712af69349dbee709f9203b37c9f0851bf023775966b41c16ccc2f837a4d6cd6be8ed0437224f1ba7c33ea60d3ab524d339bc341310bdd40c530e"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-tqqqon",
+    "security": {
+      "name": "ProShares UltraPro QQQ (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "TQQQon",
+      "token": "TQQQon is fully backed by TQQQ and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "TQQQ",
+        "figi": "BBG000QB9Y48",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+        "symbol": "TQQQon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+        "symbol": "TQQQon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "14W1itEkV7k1W819mLSknFTaMmkCtPokbF2tRkPUondo",
+        "symbol": "TQQQon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "5b56d6ee8cc1f7e56f390f63f491bf32466ec2a76b8d482562ee824c83605b90daebc7fac518785a792936bf33fcb8cc5c26f632c66568dea3e12018a0a02301"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-tslaon",
+    "security": {
+      "name": "Tesla (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "TSLAon",
+      "token": "TSLAon is fully backed by TSLA and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "TSLA",
+        "figi": "BBG000N9MNX3",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0x2494b603319d4d9f9715c9f4496d9e0364b59d93",
+        "symbol": "TSLAon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xf6b1117ec07684D3958caD8BEb1b302bfD21103f",
+        "symbol": "TSLAon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x417883b1709545f1211A25b00ad13455fC7F1bc5",
+        "symbol": "TSLAon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0xb197f36c25ba9b66960688882a4dc595c6b04309",
+        "symbol": "TSLAon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "KeGv7bsfR4MheC1CkmnAVceoApjrkvBhHYjWb67ondo",
+        "symbol": "TSLAon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "58f37d89f98907b33fec986e8fe9b7a80555795957a1f531c48062567c6c0a8ba22e96a30e01a6704d9a857d7ab788b0a8b58f08b83811c0bee16bd0277ef608"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-tsmon",
+    "security": {
+      "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "TSMon",
+      "token": "TSMon is fully backed by TSM and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "TSM",
+        "figi": "BBG000BD8ZK0",
+        "exchange": "XNYS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+        "symbol": "TSMon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0x3Cafdbfe682aec17d5acE2f97A2f3ab3dCf6a4A9",
+        "symbol": "TSMon",
+        "source": 0
+      },
+      {
+        "chain": "hyperevm",
+        "address": "0x3254cdffDDEDdb1F61B9eF6f67e178615CCb0E85",
+        "symbol": "TSMon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "keybg184d4vyXeQdFqs4o99YsMg7xBthxTJ6Ky3ondo",
+        "symbol": "TSMon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "e0aa8d0117703338051ea051fe821d0ad2f61d362b264fbd3463d1563aee166a20649423f532deb57498c073d4e6e206a4bf573d3f471b5eb6716ad93c7bdb0c"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-soxlon",
+    "security": {
+      "name": "Direxion Daily Semi Bull 3X ETF (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "SOXLon",
+      "token": "SOXLon is fully backed by SOXL and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "SOXL",
+        "figi": "BBG000QG1D78",
+        "exchange": "ARCX"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xb943c8a0d77b656Daf5244Da060D647Fd9152289",
+        "symbol": "SOXLon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xd318bBBE6B6E83F74e7aCAEb5e94C08ddbDb44c0",
+        "symbol": "SOXLon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "isRSJECP9yFPv9YejzGUdjzAGHbF2x5DpVeDqAiondo",
+        "symbol": "SOXLon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "331a368763e64b0a8b82399243e1e81d147331d321b25b34526202e8ebf53c8ff83a9d235bb729ae2f435178581d3d700e4bd92d6125ed5d5fce3a577e5b7607"
+      }
+    ]
+  },
+  {
+    "id": "ondo-stocks-spcxon",
+    "security": {
+      "name": "SpaceX (Ondo Tokenized)",
+      "issuer": "Ondo Global Markets",
+      "kind": "tokenized-stock",
+      "ticker": "SPCXon",
+      "token": "SPCXon is fully backed by SPCX and tracks its total return: dividends are reinvested, so the shares behind each token (the issuer's multiplier) rise; not offered in the US.",
+      "underlying": {
+        "ticker": "SPCX",
+        "figi": "BBG000NQF3Z5",
+        "exchange": "XNAS"
+      }
+    },
+    "tokens": [
+      {
+        "chain": "bnb",
+        "address": "0xd0a58BC9D88D3FF48C0294Cb7e45937d0E41A928",
+        "symbol": "SPCXon",
+        "source": 0
+      },
+      {
+        "chain": "ethereum",
+        "address": "0xc9eef266834730340A55B6CC24621B31BAF55581",
+        "symbol": "SPCXon",
+        "source": 0
+      },
+      {
+        "chain": "robinhood",
+        "address": "0x9b8294f24453379aa87c807ab82bf1d5722153fc",
+        "symbol": "SPCXon",
+        "source": 0
+      },
+      {
+        "chain": "solana",
+        "address": "wzAyQTorWyoVXuJKj2x8EqKEGJpS13z6EWE9z5Aondo",
+        "symbol": "SPCXon",
+        "source": 0
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ondo.finance/partner-docs/tokens",
+        "publisher": "Ondo Finance",
+        "kind": "issuer-page",
+        "checked": "2026-10-30"
+      }
+    ],
+    "updated": "2026-10-30",
+    "attestations": [
+      {
+        "by": "IoMarkets",
+        "key": "iomarkets-assetmap-2026-10",
+        "sig": "5f61396243a0c7a2194c7d743dbdfecd05a3ccf9dc3ad01688154fb5fc813965a2e9ff13d2be2c5981e202560eb76bf8eb3e6aef231118c5c91383b871110e0e"
       }
     ]
   }

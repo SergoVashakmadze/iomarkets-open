@@ -184,9 +184,13 @@ describe('FIGIs from OpenFIGI', () => {
 describe('tokenized versions in the Asset Map', () => {
   it('links an event to tokens by the underlying FIGI, or by a US ticker when either side has no FIGI', () => {
     const nvda: CorporateAction = { ...dividend, id: 'dividend-0001045810-2026-12-26', company: { name: 'NVIDIA CORP', cik: '0001045810', ticker: 'NVDA', figi: 'BBG000BBJQV0' } }
-    expect(tokenizedVersions(nvda).map((a) => a.security.ticker)).toEqual(['NVDAx'])
-    expect(tokenizedVersions({ ...nvda, company: { ...nvda.company, figi: undefined } }).map((a) => a.security.ticker)).toEqual(['NVDAx'])
+    expect(tokenizedVersions(nvda).map((a) => a.security.ticker)).toEqual(['NVDAx', 'NVDAon'])
+    expect(tokenizedVersions({ ...nvda, company: { ...nvda.company, figi: undefined } }).map((a) => a.security.ticker)).toEqual(['NVDAx', 'NVDAon'])
     expect(tokenizedVersions({ ...nvda, company: { ...nvda.company, figi: 'BBG000000000' } })).toEqual([])
     expect(tokenEffect(split)).toBe('the token’s multiplier moves by 3:1 when the split takes effect')
+    // Superstate's tokenized FWDI is the share itself, so no multiplier.
+    const fwdi = { ...dividend, company: { name: 'FORWARD INDUSTRIES INC', cik: '0000038264', ticker: 'FWDI', figi: 'BBG020WJG333' } }
+    expect(tokenizedVersions(fwdi).map((a) => a.id)).toEqual(['superstate-fwdi'])
+    expect(tokenEffect(fwdi, tokenizedVersions(fwdi))).toMatch(/share of the stock itself/)
   })
 })
