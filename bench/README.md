@@ -53,7 +53,7 @@ node bench/cli.ts --help
 ## GitHub Action
 
 ```yaml
-- uses: SergoVashakmadze/iomarkets-tech/bench@master   # once the repository is public
+- uses: SergoVashakmadze/iomarkets-open/bench@main
   with:
     files: test/fixtures/**/*.xml
     strict: false
