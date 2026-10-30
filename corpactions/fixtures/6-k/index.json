@@ -1,0 +1,1134 @@
+[
+  {
+    "file": "0001171843-26-006868_exh_991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1144800/000117184326006868/exh_991.htm",
+    "accession": "0001171843-26-006868",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "TRANSALTA CORP",
+      "cik": "0001144800"
+    },
+    "tickers": [
+      "TAC"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.07",
+          "currency": "CAD"
+        },
+        "dates": {
+          "record": "2026-12-01",
+          "pay": "2027-01-01"
+        }
+      }
+    ],
+    "note": "Common shares listed on the NYSE; \"$\" is Canadian dollars by the release's own statement."
+  },
+  {
+    "file": "0001654954-26-008329_a6785u.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426008329/a6785u.htm",
+    "accession": "0001654954-26-008329",
+    "form": "6-K",
+    "filed": "2026-09-14",
+    "company": {
+      "name": "HSBC HOLDINGS PLC",
+      "cik": "0001089113"
+    },
+    "tickers": [
+      "HSBC"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-ads",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.50",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-08-14",
+          "pay": "2026-09-25"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "The ADS amount and its dates are stated; the per-share amount is not what an ADS holder gets."
+  },
+  {
+    "file": "0001628280-26-067899_q32026earnings-exhibit991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1483934/000162828026067899/q32026earnings-exhibit991.htm",
+    "accession": "0001628280-26-067899",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "Scorpio Tankers Inc.",
+      "cik": "0001483934"
+    },
+    "tickers": [
+      "STNG"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.75",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-13",
+          "pay": "2026-12-04"
+        }
+      }
+    ],
+    "note": "Missed on purpose: a bare \"$\" in a release that also names Euronext Growth Oslo, so which dollars is not said."
+  },
+  {
+    "file": "0000217410-26-000061_a2026-10x28xunileverq320.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/217410/000021741026000061/a2026-10x28xunileverq320.htm",
+    "accession": "0000217410-26-000061",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "UNILEVER PLC",
+      "cik": "0000217410"
+    },
+    "tickers": [
+      "UL"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.5219",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-13",
+          "pay": "2026-12-18",
+          "ex": "2026-11-13"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "Missed: the ADR dates are only in a table."
+  },
+  {
+    "file": "0001171843-26-006962_exh_991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1306965/000117184326006962/exh_991.htm",
+    "accession": "0001171843-26-006962",
+    "form": "6-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "Shell plc",
+      "cik": "0001306965"
+    },
+    "tickers": [
+      "SHEL"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.7812",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-13",
+          "pay": "2026-12-21",
+          "ex": "2026-11-13"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "Missed: the ADS amount and dates are only in tables. The per-share US$0.3906 is not what an ADS (two shares) holder gets."
+  },
+  {
+    "file": "0001104659-26-119833_tm2628392d1_ex99-2.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/879764/000110465926119833/tm2628392d1_ex99-2.htm",
+    "accession": "0001104659-26-119833",
+    "form": "6-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "TotalEnergies SE",
+      "cik": "0000879764"
+    },
+    "tickers": [
+      "TTE"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.90",
+          "currency": "EUR"
+        },
+        "dates": {
+          "record": "2027-03-31",
+          "pay": "2027-04-20",
+          "ex": "2027-03-31"
+        }
+      }
+    ],
+    "note": "Missed: a two-market timetable (Euronext and NYSE columns) whose columns are not said in words."
+  },
+  {
+    "file": "0000919574-26-006764_p15109678_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1604481/000091957426006764/p15109678_ex99-1.htm",
+    "accession": "0000919574-26-006764",
+    "form": "6-K",
+    "filed": "2026-10-08",
+    "company": {
+      "name": "CMB.TECH NV",
+      "cik": "0001604481"
+    },
+    "tickers": [
+      "CMBT"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.21",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-10-16",
+          "pay": "2026-10-22",
+          "ex": "2026-10-16"
+        }
+      }
+    ],
+    "note": "Missed: the dividend comes with a share premium repayment in one distribution, dates in a three-market table."
+  },
+  {
+    "file": "0001104659-26-118865_tm2628297d2_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465926118865/tm2628297d2_ex99-1.htm",
+    "accession": "0001104659-26-118865",
+    "form": "6-K",
+    "filed": "2026-10-26",
+    "company": {
+      "name": "GERDAU S.A.",
+      "cik": "0001073404"
+    },
+    "tickers": [
+      "GGB"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.34",
+          "currency": "BRL"
+        },
+        "dates": {
+          "record": "2026-11-12",
+          "pay": "2026-12-22"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "Missed: numeric dates (11/12/2026) in a table; day and month order is never guessed."
+  },
+  {
+    "file": "0001193125-26-429504_d41547dex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/733099/000119312526429504/d41547dex991.htm",
+    "accession": "0001193125-26-429504",
+    "form": "6-K",
+    "filed": "2026-10-23",
+    "company": {
+      "name": "ROGERS COMMUNICATIONS INC",
+      "cik": "0000733099"
+    },
+    "tickers": [
+      "RCI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "No currency stated (\"50 cents per share\", a Canadian company)."
+  },
+  {
+    "file": "0001499505-26-000088_cashdividendsannouncement2.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1499505/000149950526000088/cashdividendsannouncement2.htm",
+    "accession": "0001499505-26-000088",
+    "form": "6-K",
+    "filed": "2026-10-26",
+    "company": {
+      "name": "Adecoagro S.A.",
+      "cik": "0001499505"
+    },
+    "tickers": [
+      "AGRO"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Approximate amount (\"~$0.12128986\")."
+  },
+  {
+    "file": "0001140361-26-040608_ef20084229_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/2095591/000114036126040608/ef20084229_ex99-1.htm",
+    "accession": "0001140361-26-040608",
+    "form": "6-K",
+    "filed": "2026-10-23",
+    "company": {
+      "name": "AI OKTO Corp.",
+      "cik": "0002095591"
+    },
+    "tickers": [
+      "AIOK"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Cash or shares (an election), and the payment date is only expected."
+  },
+  {
+    "file": "0001468522-26-000079_a20261027secondscripdivi.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1468522/000146852226000079/a20261027secondscripdivi.htm",
+    "accession": "0001468522-26-000079",
+    "form": "6-K",
+    "filed": "2026-10-27",
+    "company": {
+      "name": "Ferrovial N.V.",
+      "cik": "0001468522"
+    },
+    "tickers": [
+      "FER"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Scrip dividend: new shares or cash, by election."
+  },
+  {
+    "file": "0001546066-26-000074_october52026pressrelease.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000074/october52026pressrelease.htm",
+    "accession": "0001546066-26-000074",
+    "form": "6-K",
+    "filed": "2026-10-06",
+    "company": {
+      "name": "PEMBINA PIPELINE CORP",
+      "cik": "0001546066"
+    },
+    "tickers": [
+      "PBA"
+    ],
+    "securityType": "Common Stock",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Preferred shares only."
+  },
+  {
+    "file": "0001193125-26-433007_6k_261027_dividend.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1263043/000119312526433007/6k_261027_dividend.htm",
+    "accession": "0001193125-26-433007",
+    "form": "6-K",
+    "filed": "2026-10-27",
+    "company": {
+      "name": "SHINHAN FINANCIAL GROUP CO LTD",
+      "cik": "0001263043"
+    },
+    "tickers": [
+      "SHG"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "KRW per ordinary share; the US security is the ADS and its amount is not stated."
+  },
+  {
+    "file": "0001628280-26-065578_a2610133q26dividend.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/892450/000162828026065578/a2610133q26dividend.htm",
+    "accession": "0001628280-26-065578",
+    "form": "6-K",
+    "filed": "2026-10-13",
+    "company": {
+      "name": "KT CORP",
+      "cik": "0000892450"
+    },
+    "tickers": [
+      "KT"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "KRW per ordinary share; the ADS amount is not stated."
+  },
+  {
+    "file": "0001193125-26-435015_d236994d6k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526435015/d236994d6k.htm",
+    "accession": "0001193125-26-435015",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "SK hynix Inc.",
+      "cik": "0002120882"
+    },
+    "tickers": [
+      "SKHY"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "No payment date yet; KRW per ordinary share."
+  },
+  {
+    "file": "0001193125-26-409738_d116258d6k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/842180/000119312526409738/d116258d6k.htm",
+    "accession": "0001193125-26-409738",
+    "form": "6-K",
+    "filed": "2026-10-01",
+    "company": {
+      "name": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+      "cik": "0000842180"
+    },
+    "tickers": [
+      "BBVA"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "EUR per share; the US security is the ADS and its amount is not stated."
+  },
+  {
+    "file": "0001171843-26-006880_exh_991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1140625/000117184326006880/exh_991.htm",
+    "accession": "0001171843-26-006880",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "EQUINOR ASA",
+      "cik": "0001140625"
+    },
+    "tickers": [
+      "EQNR"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "An amount for the shares, labelled, with no \"per share\" or \"per ADS\"; the US security is the ADS."
+  },
+  {
+    "file": "0001104659-26-119043_tm2628195d1_6k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1002242/000110465926119043/tm2628195d1_6k.htm",
+    "accession": "0001104659-26-119043",
+    "form": "6-K",
+    "filed": "2026-10-27",
+    "company": {
+      "name": "ENI SPA",
+      "cik": "0001002242"
+    },
+    "tickers": [
+      "E"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "A distribution from reserves \"in place of the dividend\" (capital, not a cash dividend), and an extraordinary dividend with no dates."
+  },
+  {
+    "file": "0001193125-26-435048_d77369d6k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163653/000119312526435048/d77369d6k.htm",
+    "accession": "0001193125-26-435048",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "NOMURA HOLDINGS INC",
+      "cik": "0001163653"
+    },
+    "tickers": [
+      "NMR"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Results with a half-year dividend in yen per share; the ADS amount is not stated."
+  },
+  {
+    "file": "0001193125-26-437051_d159047dex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1668717/000119312526437051/d159047dex991.htm",
+    "accession": "0001193125-26-437051",
+    "form": "6-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "Anheuser-Busch InBev SA",
+      "cik": "0001668717"
+    },
+    "tickers": [
+      "BUD"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Results: interim dividend in EUR per share, dates in a table elsewhere, nothing per ADS."
+  },
+  {
+    "file": "0001104659-26-117972_tm2628115d1_6k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm",
+    "accession": "0001104659-26-117972",
+    "form": "6-K",
+    "filed": "2026-10-22",
+    "company": {
+      "name": "NOKIA CORP",
+      "cik": "0000924613"
+    },
+    "tickers": [
+      "NOK"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Results: EUR per share; the ADS amount is not stated."
+  },
+  {
+    "file": "0001654954-26-009181_a6993a.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009181/a6993a.htm",
+    "accession": "0001654954-26-009181",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "GSK plc",
+      "cik": "0001131399"
+    },
+    "tickers": [
+      "GSK"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Results: pence per share and an \"expected dividend for 2026\"; the ADR amount is calculated later."
+  },
+  {
+    "file": "0001193125-26-424083_d413725dex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1329394/000119312526424083/d413725dex991.htm",
+    "accession": "0001193125-26-424083",
+    "form": "6-K",
+    "filed": "2026-10-16",
+    "company": {
+      "name": "Silicon Motion Technology CORP",
+      "cik": "0001329394"
+    },
+    "tickers": [
+      "SIMO"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Per ADS, but the record and payment dates are \"anticipated\"."
+  },
+  {
+    "file": "0001193125-26-435034_d70385dex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1372920/000119312526435034/d70385dex991.htm",
+    "accession": "0001193125-26-435034",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "New Oriental Education & Technology Group Inc.",
+      "cik": "0001372920"
+    },
+    "tickers": [
+      "EDU"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Per ADS, but the payment date is \"expected to be on or around\", and dates are given \"respectively\"."
+  },
+  {
+    "file": "0001104659-26-105667_tm2624924d1_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1823986/000110465926105667/tm2624924d1_ex99-1.htm",
+    "accession": "0001104659-26-105667",
+    "form": "6-K",
+    "filed": "2026-09-08",
+    "company": {
+      "name": "Waterdrop Inc.",
+      "cik": "0001823986"
+    },
+    "tickers": [
+      "WDH"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "dividend-negative",
+    "truth": [],
+    "note": "Results: per ADS, payment date \"expected to be on or around\"."
+  },
+  {
+    "file": "0001171843-26-006910_exh_991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1296484/000117184326006910/exh_991.htm",
+    "accession": "0001171843-26-006910",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "TOP SHIPS INC.",
+      "cik": "0001296484"
+    },
+    "tickers": [
+      "TOPS"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 10
+        },
+        "dates": {
+          "effective": "2026-11-06"
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "file": "0001171843-26-006911_exh_991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006911/exh_991.htm",
+    "accession": "0001171843-26-006911",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "Rubico Inc.",
+      "cik": "0001943421"
+    },
+    "tickers": [
+      "RUBI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 25
+        },
+        "dates": {
+          "effective": "2026-10-30"
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "file": "0001213900-26-097242_ea030461601ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1990251/000121390026097242/ea030461601ex99-1.htm",
+    "accession": "0001213900-26-097242",
+    "form": "6-K",
+    "filed": "2026-09-03",
+    "company": {
+      "name": "Wellchange Holdings Co Ltd",
+      "cik": "0001990251"
+    },
+    "tickers": [
+      "WCT"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 5
+        },
+        "dates": {
+          "effective": "2026-09-08"
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "file": "0001213900-26-107822_ea030806401ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1966750/000121390026107822/ea030806401ex99-1.htm",
+    "accession": "0001213900-26-107822",
+    "form": "6-K",
+    "filed": "2026-10-08",
+    "company": {
+      "name": "Zhibao Technology Inc.",
+      "cik": "0001966750"
+    },
+    "tickers": [
+      "ZBAO"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 50
+        },
+        "dates": {
+          "effective": "2026-10-12"
+        }
+      }
+    ],
+    "note": "Approved by shareholders; effective date set."
+  },
+  {
+    "file": "0001213900-26-111243_ea030613201ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1897532/000121390026111243/ea030613201ex99-1.htm",
+    "accession": "0001213900-26-111243",
+    "form": "6-K",
+    "filed": "2026-10-21",
+    "company": {
+      "name": "Ping An Biomedical Co., Ltd.",
+      "cik": "0001897532"
+    },
+    "tickers": [
+      "PASW"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 40
+        },
+        "dates": {
+          "effective": "2026-10-23"
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "file": "0001213900-26-111752_ea0309389-6k_enlivex.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1596812/000121390026111752/ea0309389-6k_enlivex.htm",
+    "accession": "0001213900-26-111752",
+    "form": "6-K",
+    "filed": "2026-10-22",
+    "company": {
+      "name": "Enlivex Ltd.",
+      "cik": "0001596812"
+    },
+    "tickers": [
+      "ENLV"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 16
+        },
+        "dates": {
+          "effective": "2026-10-27"
+        }
+      }
+    ],
+    "note": "The ratio chosen from an approved range, and the trading date."
+  },
+  {
+    "file": "0001213900-26-112139_ea030894201ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/2047273/000121390026112139/ea030894201ex99-1.htm",
+    "accession": "0001213900-26-112139",
+    "form": "6-K",
+    "filed": "2026-10-23",
+    "company": {
+      "name": "BUUU Group Ltd",
+      "cik": "0002047273"
+    },
+    "tickers": [
+      "BUUU"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "split",
+        "ratio": {
+          "new": 10,
+          "old": 1
+        },
+        "dates": {
+          "effective": "2026-10-26"
+        }
+      }
+    ],
+    "note": "A forward split (share subdivision)."
+  },
+  {
+    "file": "0001493152-26-047162_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1687542/000149315226047162/ex99-1.htm",
+    "accession": "0001493152-26-047162",
+    "form": "6-K",
+    "filed": "2026-10-15",
+    "company": {
+      "name": "Freight Technologies, Inc.",
+      "cik": "0001687542"
+    },
+    "tickers": [
+      "FRGT"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 10
+        },
+        "dates": {
+          "effective": "2026-10-19"
+        }
+      }
+    ],
+    "note": ""
+  },
+  {
+    "file": "0001213900-26-113069_ea030953701ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1958399/000121390026113069/ea030953701ex99-1.htm",
+    "accession": "0001213900-26-113069",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "Huachen AI Parking Management Technology Holding Co., Ltd",
+      "cik": "0001958399"
+    },
+    "tickers": [
+      "HCAI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 20
+        },
+        "dates": {
+          "effective": "2026-10-23"
+        }
+      }
+    ],
+    "note": "Filed a week after the release; the split had taken effect."
+  },
+  {
+    "file": "0001213900-26-109026_ea030846101ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1720250/000121390026109026/ea030846101ex99-1.htm",
+    "accession": "0001213900-26-109026",
+    "form": "6-K",
+    "filed": "2026-10-13",
+    "company": {
+      "name": "Kandi Technologies Group, Inc.",
+      "cik": "0001720250"
+    },
+    "tickers": [
+      "KNDI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split-missed",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 10
+        },
+        "dates": {
+          "effective": "2026-10-16"
+        }
+      }
+    ],
+    "note": "Missed on purpose: \"expects to implement\"."
+  },
+  {
+    "file": "0001213900-26-105914_ea030742501ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1781446/000121390026105914/ea030742501ex99-1.htm",
+    "accession": "0001213900-26-105914",
+    "form": "6-K",
+    "filed": "2026-10-01",
+    "company": {
+      "name": "Gauzy Ltd.",
+      "cik": "0001781446"
+    },
+    "tickers": [
+      "GAUZ"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split-missed",
+    "truth": [
+      {
+        "type": "reverse-split",
+        "ratio": {
+          "new": 1,
+          "old": 20
+        },
+        "dates": {
+          "effective": "2026-09-11"
+        }
+      }
+    ],
+    "note": "Missed: furnished three weeks after the split took effect."
+  },
+  {
+    "file": "0001213900-26-113380_ea030999302ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1795251/000121390026113380/ea030999302ex99-1.htm",
+    "accession": "0001213900-26-113380",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "Nano-X Imaging Ltd.",
+      "cik": "0001795251"
+    },
+    "tickers": [
+      "NNOX"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split-negative",
+    "truth": [],
+    "note": "A meeting notice: a reverse split range to approve."
+  },
+  {
+    "file": "0001493152-26-047888_form6-k.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1838716/000149315226047888/form6-k.htm",
+    "accession": "0001493152-26-047888",
+    "form": "6-K",
+    "filed": "2026-10-21",
+    "company": {
+      "name": "Genenta Science S.p.A.",
+      "cik": "0001838716"
+    },
+    "tickers": [
+      "GNTA"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "split-negative",
+    "truth": [],
+    "note": "ADS issuer: a range approved, not effected."
+  },
+  {
+    "file": "0001213900-26-096964_ea030426001ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1935172/000121390026096964/ea030426001ex99-1.htm",
+    "accession": "0001213900-26-096964",
+    "form": "6-K",
+    "filed": "2026-09-03",
+    "company": {
+      "name": "Xiao-I Corp",
+      "cik": "0001935172"
+    },
+    "tickers": [
+      "AIXI"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "ads-ratio",
+    "truth": [],
+    "note": "An ADS ratio change (\"the same effect as a one-for-seven reverse ADS split\"): the shares are not split, so no split event."
+  },
+  {
+    "file": "0001193125-26-414887_d64414dex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1816007/000119312526414887/d64414dex991.htm",
+    "accession": "0001193125-26-414887",
+    "form": "6-K",
+    "filed": "2026-10-06",
+    "company": {
+      "name": "Lufax Holding Ltd",
+      "cik": "0001816007"
+    },
+    "tickers": [
+      "LU"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "ads-ratio",
+    "truth": [],
+    "note": "A planned ADS ratio change."
+  },
+  {
+    "file": "0001213900-26-101141_ea030567601ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1825349/000121390026101141/ea030567601ex99-1.htm",
+    "accession": "0001213900-26-101141",
+    "form": "6-K",
+    "filed": "2026-09-18",
+    "company": {
+      "name": "Chanson International Holding",
+      "cik": "0001825349"
+    },
+    "tickers": [
+      "CHSN"
+    ],
+    "securityType": "Common Stock",
+    "kind": "split-negative",
+    "truth": [],
+    "note": "Results restated for reverse splits that happened months ago."
+  },
+  {
+    "file": "0001104659-26-118301_tm2627441d2_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1899830/000110465926118301/tm2627441d2_ex99-1.htm",
+    "accession": "0001104659-26-118301",
+    "form": "6-K",
+    "filed": "2026-10-23",
+    "company": {
+      "name": "Perfect Corp.",
+      "cik": "0001899830"
+    },
+    "tickers": [
+      "PERF"
+    ],
+    "securityType": null,
+    "kind": "merger",
+    "truth": [
+      {
+        "type": "merger",
+        "cash": {
+          "amount": "2.00",
+          "currency": "USD"
+        },
+        "dates": {
+          "effective": "2026-10-23"
+        }
+      }
+    ],
+    "note": "Going private: US$2.00 a share in cash, effective time stated."
+  },
+  {
+    "file": "0001104659-26-051976_tm2613184d1_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1834253/000110465926051976/tm2613184d1_ex99-1.htm",
+    "accession": "0001104659-26-051976",
+    "form": "6-K",
+    "filed": "2026-04-30",
+    "company": {
+      "name": "Smart Share Global Ltd",
+      "cik": "0001834253"
+    },
+    "tickers": [
+      "EM"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "Completion announced \"today\", but the effective date is not stated."
+  },
+  {
+    "file": "0001104659-25-123525_tm2534059d1_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1954042/000110465925123525/tm2534059d1_ex99-1.htm",
+    "accession": "0001104659-25-123525",
+    "form": "6-K",
+    "filed": "2025-12-22",
+    "company": {
+      "name": "ZEEKR Intelligent Technology Holding Ltd",
+      "cik": "0001954042"
+    },
+    "tickers": [
+      "ZK"
+    ],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "Cash or shares at the holder's election."
+  },
+  {
+    "file": "0001213900-26-071390_ea029562501ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1946399/000121390026071390/ea029562501ex99-1.htm",
+    "accession": "0001213900-26-071390",
+    "form": "6-K",
+    "filed": "2026-06-24",
+    "company": {
+      "name": "LakeShore Biopharma Co., Ltd.",
+      "cik": "0001946399"
+    },
+    "tickers": [],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "OTC only: no US exchange listing."
+  },
+  {
+    "file": "0001493152-26-049093_ex99-1.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1804583/000149315226049093/ex99-1.htm",
+    "accession": "0001493152-26-049093",
+    "form": "6-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "Cloopen Group Holding Ltd",
+      "cik": "0001804583"
+    },
+    "tickers": [],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "OTC only (RAASY): no US exchange listing."
+  },
+  {
+    "file": "0001279569-26-000709_ex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1680056/000127956926000709/ex991.htm",
+    "accession": "0001279569-26-000709",
+    "form": "6-K",
+    "filed": "2026-07-29",
+    "company": {
+      "name": "Orla Mining Ltd.",
+      "cik": "0001680056"
+    },
+    "tickers": [
+      "ORLA"
+    ],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "Court approval: \"expected to close\"."
+  },
+  {
+    "file": "0001279569-26-000721_ex991.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1680056/000127956926000721/ex991.htm",
+    "accession": "0001279569-26-000721",
+    "form": "6-K",
+    "filed": "2026-07-31",
+    "company": {
+      "name": "Orla Mining Ltd.",
+      "cik": "0001680056"
+    },
+    "tickers": [
+      "ORLA"
+    ],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "Completion announced without the terms or the date restated."
+  },
+  {
+    "file": "0001944057-26-000007_exhibit991-pressreleased.txt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1944057/000194405726000007/exhibit991-pressreleased.htm",
+    "accession": "0001944057-26-000007",
+    "form": "6-K",
+    "filed": "2026-01-09",
+    "company": {
+      "name": "Cool Co Ltd.",
+      "cik": "0001944057"
+    },
+    "tickers": [
+      "CLCO"
+    ],
+    "securityType": null,
+    "kind": "merger-negative",
+    "truth": [],
+    "note": "Completed, but no effective date stated, and the NYSE holders' amount is by reference."
+  }
+]

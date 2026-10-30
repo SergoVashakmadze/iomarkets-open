@@ -7,6 +7,10 @@
 
 import { EVENT_CODES, type CorporateAction } from './types.ts';
 
+/** The security as the event names it: the common stock, or (6-K issuers) the shares or ADSs that trade in the US. */
+const securityName = (e: CorporateAction) =>
+  e.instrument === 'ADS' ? `${e.company.name} American depositary shares` : /^6-K/.test(e.source.form) ? `${e.company.name} shares` : `${e.company.name} common stock`;
+
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const max = (s: string, n: number) => (s.length > n ? s.slice(0, n - 3) + '...' : s);
 
@@ -19,7 +23,7 @@ function security(e: CorporateAction, pad: string): string {
     e.company.figi ? `${pad}  <OthrId>\n${pad}    <Id>${esc(e.company.figi)}</Id>\n${pad}    <Tp>\n${pad}      <Prtry>FIGI</Prtry>\n${pad}    </Tp>\n${pad}  </OthrId>` : '',
     e.company.ticker ? `${pad}  <OthrId>\n${pad}    <Id>${esc(e.company.ticker)}</Id>\n${pad}    <Tp>\n${pad}      <Prtry>TICKER</Prtry>\n${pad}    </Tp>\n${pad}  </OthrId>` : '',
   ].filter(Boolean);
-  return [`${pad}<FinInstrmId>`, ...ids, `${pad}  <Desc>${esc(max(`${e.company.name} common stock`, 140))}</Desc>`, `${pad}</FinInstrmId>`].join('\n');
+  return [`${pad}<FinInstrmId>`, ...ids, `${pad}  <Desc>${esc(max(securityName(e), 140))}</Desc>`, `${pad}</FinInstrmId>`].join('\n');
 }
 
 const date = (tag: string, d: string | undefined, pad: string) => (d ? `${pad}<${tag}>\n${pad}  <Dt>${d}</Dt>\n${pad}</${tag}>` : '');
@@ -42,7 +46,7 @@ function option(e: CorporateAction): string {
       `${p}  </DtDtls>`,
       `${p}  <RateAndAmtDtls>`,
       `${p}    <GrssDvddRate>`,
-      `${p}      <Amt Ccy="USD">${e.cash!.amount}</Amt>`,
+      `${p}      <Amt Ccy="${e.cash!.currency}">${e.cash!.amount}</Amt>`,
       `${p}    </GrssDvddRate>`,
       `${p}  </RateAndAmtDtls>`,
       `${p}</CshMvmntDtls>`,
@@ -69,7 +73,7 @@ function option(e: CorporateAction): string {
       `${p}  </RateDtls>`,
       `${p}</SctiesMvmntDtls>`,
     );
-  if (e.type === 'split' || e.type === 'reverse-split') return lines(head('SECU'), securities(e.ratio!, `${e.company.name} common stock, after the split`));
+  if (e.type === 'split' || e.type === 'reverse-split') return lines(head('SECU'), securities(e.ratio!, `${securityName(e)}, after the split`));
   // A merger: cash per share, shares of the acquirer per share, or both.
   const cash = e.cash
     ? lines(
@@ -82,7 +86,7 @@ function option(e: CorporateAction): string {
         `${p}    <GncCshPricRcvdPerPdct>`,
         `${p}      <AmtPric>`,
         `${p}        <AmtPricTp>ACTU</AmtPricTp>`,
-        `${p}        <PricVal Ccy="USD">${e.cash.amount}</PricVal>`,
+        `${p}        <PricVal Ccy="${e.cash.currency}">${e.cash.amount}</PricVal>`,
         `${p}      </AmtPric>`,
         `${p}    </GncCshPricRcvdPerPdct>`,
         `${p}  </PricDtls>`,

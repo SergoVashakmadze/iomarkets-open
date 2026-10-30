@@ -4,7 +4,7 @@
 // filtered by URL, the calendar subscription at /api/corporate-actions/calendar (calendarUrl).
 
 import { describe } from './describe.ts';
-import { EVENT_NAMES, type CorporateAction, type EventType } from './types.ts';
+import { EVENT_NAMES, money, type CorporateAction, type EventType } from './types.ts';
 
 const ORIGIN = 'https://iomarkets.tech';
 /** Where calendar apps subscribe. Its query string is the only one the site's middleware keeps. */
@@ -53,7 +53,7 @@ const nextDay = (d: string) => {
 /** What happens, in a calendar entry's few words: "SNDK stock split 8:1", "POOL cash dividend $1.30". */
 export function headline(e: CorporateAction): string {
   const who = e.company.ticker ?? e.company.name;
-  if (e.type === 'dividend') return `${who} cash dividend $${e.cash!.amount}`;
+  if (e.type === 'dividend') return `${who} cash dividend ${money(e.cash!)}${e.instrument === 'ADS' ? ' per ADS' : ''}`;
   if (e.type === 'split' || e.type === 'reverse-split') return `${who} ${e.type === 'split' ? 'stock split' : 'reverse split'} ${e.ratio!.new}:${e.ratio!.old}`;
   return e.acquirer ? `${who} acquired by ${e.acquirer}` : `${who} merger`;
 }

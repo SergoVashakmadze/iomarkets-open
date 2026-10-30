@@ -2,7 +2,7 @@
 // imported here, so the page can load the feed itself (lazily) and still use these.
 
 import { ENTRIES, type Entry } from '../../assetmap/src/index.ts';
-import type { CorporateAction } from './types.ts';
+import { money, unitOf, type CorporateAction } from './types.ts';
 
 /**
  * Asset Map entries that track this company's stock: its tokenized versions, if any. Matched on
@@ -31,13 +31,14 @@ export function tokenEffect(e: CorporateAction, tokens: Entry[] = []): string {
 
 /** One line for a person or an agent: what happens, to whom, when. */
 export function describe(e: CorporateAction): string {
-  const who = `${e.company.name}${e.company.ticker ? ` (${e.company.ticker})` : ''}`;
+  const who = `${e.company.name}${e.company.ticker ? ` (${e.company.ticker}${e.instrument === 'ADS' ? ' ADS' : ''})` : ''}`;
+  const unit = unitOf(e);
   if (e.type === 'dividend')
-    return `${who}: ${e.frequency && e.frequency !== 'other' ? `${e.frequency} ` : ''}cash dividend of $${e.cash!.amount} a share; ex-date ${e.dates.ex}${e.exDateRule ? ' (T+1 rule: the record date)' : ''}, record ${e.dates.record}, paid ${e.dates.pay}.`;
+    return `${who}: ${e.frequency && e.frequency !== 'other' ? `${e.frequency} ` : ''}cash dividend of ${money(e.cash!)} ${unit === 'ADS' ? 'an ADS' : 'a share'}; ex-date ${e.dates.ex}${e.exDateRule ? ' (T+1 rule: the record date)' : ''}, record ${e.dates.record}, paid ${e.dates.pay}.`;
   if (e.type === 'split' || e.type === 'reverse-split')
     return `${who}: ${e.type === 'split' ? 'stock split' : 'reverse stock split'}, ${e.ratio!.new} new share${e.ratio!.new === 1 ? '' : 's'} for every ${e.ratio!.old} held, effective ${e.dates.effective}.`;
-  const terms = [e.cash ? `$${e.cash.amount} in cash` : '', e.ratio ? `${e.ratio.new} ${e.acquirer ?? 'acquirer'} share${e.ratio.new === 1 ? '' : 's'}` : ''].filter(Boolean).join(' and ');
-  return `${who}: acquired${e.acquirer ? ` by ${e.acquirer}` : ''}, effective ${e.dates.effective}; each share became ${terms}.`;
+  const terms = [e.cash ? `${money(e.cash)} in cash` : '', e.ratio ? `${e.ratio.new} ${e.acquirer ?? 'acquirer'} share${e.ratio.new === 1 ? '' : 's'}` : ''].filter(Boolean).join(' and ');
+  return `${who}: acquired${e.acquirer ? ` by ${e.acquirer}` : ''}, effective ${e.dates.effective}; each ${unit} became ${terms}.`;
 }
 
 /** An event as the API and webhooks send it: with its plain-words summary and its tokenized versions. */

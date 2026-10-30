@@ -9,20 +9,20 @@ import type { Company, CorporateAction, EventType, Ratio } from './types.ts';
 
 export type Filing = {
   company: Company;
-  /** Every ticker EDGAR lists for the filer, common stock usually first. */
+  /** Every ticker EDGAR lists for the filer, common stock usually first. For a 6-K, only those on a US exchange (edgar.ts). */
   tickers: string[];
   form: string;
   accession: string;
   filed: string;
   url: string;
-  /** The 8-K items the filing reports, e.g. ["2.01", "3.01", "9.01"]. */
+  /** The 8-K items the filing reports, e.g. ["2.01", "3.01", "9.01"]. None for a 6-K. */
   items: string[];
   text: string;
 };
 
 const mentions = (s: string, w: RegExp) => w.test(s);
-const PREFERRED = /\bpreferred\b|\bseries [a-z]\b|\bdepositary shares\b/i;
-const COMMON = /\bcommon\b|\bclass [ab] (?:shares|stock)\b|\bordinary shares\b/i;
+export const PREFERRED = /\bpreferred\b|\bseries [a-z]\b|\bdepositary shares\b/i;
+export const COMMON = /\bcommon\b|\bclass [ab] (?:shares|stock)\b|\bordinary shares\b/i;
 
 function eventId(type: EventType, cik: string, date: string) {
   return `${type}-${cik}-${date}`;
@@ -46,7 +46,7 @@ function base(f: Filing, type: EventType, key: string, quote: string, anchor?: R
 }
 
 // "compared to a cash dividend of $0.37 per share declared in the prior quarter": not this one.
-const COMPARED = /(?:compared (?:to|with)|\bfrom\b|\bprior\b|\bprevious(?:ly)?\b|\blast\b|\bversus\b|\bvs\.?|\bup\b|\bhigher than\b|\bover\b)[^$]{0,45}$/i;
+export const COMPARED = /(?:compared (?:to|with)|\bfrom\b|\bprior\b|\bprevious(?:ly)?\b|\blast\b|\bversus\b|\bvs\.?|\bup\b|\bhigher than\b|\bover\b)[^$]{0,45}$/i;
 
 // ---- dividends -------------------------------------------------------------------------
 
@@ -131,7 +131,7 @@ export function splitRatio(s: string): Ratio | undefined {
   return { new: a, old: b };
 }
 
-const NOT_YET = /\bpropos|\bseek(?:s|ing)?\b|\bintends? to\b|\bmay effect\b|\bat the discretion\b|\brange of\b|\bwithin a range\b|\bproxy\b|\bsubject to (?:stockholder|shareholder) approval\b|\bin the event\b|\badjust(?:ed|ment)? for\b|\bif approved\b|\bto approve\b|\bwould\b/i;
+export const NOT_YET = /\bpropos|\bseek(?:s|ing)?\b|\bintends? to\b|\bmay effect\b|\bat the discretion\b|\brange of\b|\bwithin a range\b|\bproxy\b|\bsubject to (?:stockholder|shareholder) approval\b|\bin the event\b|\badjust(?:ed|ment)? for\b|\bif approved\b|\bto approve\b|\bwould\b/i;
 
 function splits(f: Filing, ss: string[]): CorporateAction[] {
   for (let i = 0; i < ss.length; i++) {
@@ -178,8 +178,8 @@ function closingDate(f: Filing, ss: string[]): { date: string; idx: number } | u
   return undefined;
 }
 
-const CASH_TERMS = /\bright to receive\b[^;]{0,80}?(?:\$\s?(\d{1,6}(?:,\d{3})*(?:\.\d+)?)(?:\s+per share)?\s+in cash|an amount in cash(?: equal to)?\s+\$\s?(\d{1,6}(?:\.\d+)?))/i;
-const STOCK_TERMS = /\bright to receive\b[^;$]{0,80}?\b(\d+(?:\.\d+)?)\s+(?:fully paid[^,]*,\s*)?(?:validly issued\s+)?(?:shares?|of a share)\s+of\b/i;
+export const CASH_TERMS = /\bright to receive\b[^;]{0,80}?(?:\$\s?(\d{1,6}(?:,\d{3})*(?:\.\d+)?)(?:\s+per share)?\s+in cash|an amount in cash(?: equal to)?\s+\$\s?(\d{1,6}(?:\.\d+)?))/i;
+export const STOCK_TERMS = /\bright to receive\b[^;$]{0,80}?\b(\d+(?:\.\d+)?)\s+(?:fully paid[^,]*,\s*)?(?:validly issued\s+)?(?:shares?|of a share)\s+of\b/i;
 
 function mergers(f: Filing, ss: string[]): CorporateAction[] {
   // The company being acquired reports the closing (2.01) with its delisting (3.01) or change in control (5.01).

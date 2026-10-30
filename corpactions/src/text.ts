@@ -3,6 +3,9 @@
 const ENTITIES: Record<string, string> = {
   nbsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", rsquo: "'", lsquo: "'", rdquo: '"', ldquo: '"',
   ndash: '-', mdash: '-', hellip: '...', bull: ' ', middot: ' ', reg: '', trade: '', copy: '',
+  // Currencies and the accented letters foreign issuers' names and towns are written with (6-Ks).
+  pound: '£', euro: '€', yen: '¥', cent: '¢', eacute: 'é', egrave: 'è', aacute: 'á', agrave: 'à', iacute: 'í', oacute: 'ó',
+  uacute: 'ú', ntilde: 'ñ', ccedil: 'ç', atilde: 'ã', otilde: 'õ', auml: 'ä', ouml: 'ö', uuml: 'ü', oslash: 'ø', aring: 'å',
 };
 
 /** A filed HTML or text document as plain text: tags gone, entities decoded, quotes and dashes plain, one space between words. */
@@ -39,6 +42,13 @@ const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', '
 /** A date as filings write it: "January 4, 2027", "Jan. 4, 2027", "December 18th, 2026", "December 1" (year inferred). */
 export const DATE = String.raw`(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan\.?|Feb\.?|Mar\.?|Apr\.?|Jun\.?|Jul\.?|Aug\.?|Sept?\.?|Oct\.?|Nov\.?|Dec\.?)\s+\d{1,2}(?:st|nd|rd|th)?(?:\s*,\s*\d{4}|\s+\d{4})?`;
 
+/**
+ * Dates as foreign issuers also write them, day first: "15 October 2026", "4th December 2026". Not
+ * "1 June 30, 2026" (a number before a US-style date). Numeric dates (11/10/2026) are never read: the
+ * day and month order differs by country.
+ */
+export const DATE_ANY = String.raw`(?:\b\d{1,2}(?:st|nd|rd|th)?\s+(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan\.?|Feb\.?|Mar\.?|Apr\.?|Jun\.?|Jul\.?|Aug\.?|Sept?\.?|Oct\.?|Nov\.?|Dec\.?)(?![a-z])(?!\s+\d{1,2}\b)(?:\s*,?\s*\d{4})?|${DATE})`;
+
 const iso = (y: number, m: number, d: number) => `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
 const real = (y: number, m: number, d: number) => {
   const t = new Date(Date.UTC(y, m - 1, d));
@@ -50,7 +60,9 @@ const real = (y: number, m: number, d: number) => {
  * before the filing (a release in December saying "payable January 4" means next year).
  */
 export function parseDate(s: string, filed: string): string | undefined {
-  const m = /^([A-Za-z]+)\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:\s*,?\s*(\d{4}))?$/.exec(s.trim());
+  const t = s.trim();
+  const dayFirst = /^(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)\.?(?:\s*,?\s*(\d{4}))?$/.exec(t);
+  const m = dayFirst ? [t, dayFirst[2], dayFirst[1], dayFirst[3]] : /^([A-Za-z]+)\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:\s*,?\s*(\d{4}))?$/.exec(t);
   if (!m) return undefined;
   const mon = MONTHS.indexOf(m[1].slice(0, 3).toLowerCase()) + 1;
   const day = Number(m[2]);
@@ -69,10 +81,11 @@ export function addDays(d: string, n: number): string {
 /**
  * The first date after a phrase, within `gap` characters of it and with no `avoid` word between,
  * e.g. dateAfter(s, /payable/, filed, 50, /record/) skips "payable to holders of record on <date>".
+ * `date` is DATE (US style, the 8-K reader) or DATE_ANY (day first too, the 6-K reader).
  */
-export function dateAfter(s: string, phrase: RegExp, filed: string, gap = 60, avoid?: RegExp): string | undefined {
+export function dateAfter(s: string, phrase: RegExp, filed: string, gap = 60, avoid?: RegExp, date = DATE): string | undefined {
   const between = avoid ? `(?:(?!${avoid.source})[^.;]){0,${gap}}?` : `[^.;]{0,${gap}}?`;
-  const re = new RegExp(`(?:${phrase.source})${between}(${DATE})`, 'i');
+  const re = new RegExp(`(?:${phrase.source})${between}(${date})`, 'i');
   const m = re.exec(s.replace(/\b([ap])\.m\./gi, '$1m'));
   return m ? parseDate(m[1], filed) : undefined;
 }

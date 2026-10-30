@@ -1,5 +1,6 @@
 // The corporate actions feed's data model. One event per corporate action of a US-listed
-// company, taken from its own SEC EDGAR filing: the 8-K or the press release filed with it.
+// company, taken from its own SEC EDGAR filing: the 8-K (US companies) or the 6-K (foreign
+// private issuers), or the press release filed with it.
 // Every event keeps the sentence it was read from and the filing's address, so anyone can
 // check it. Identifiers are open ones only: the SEC's CIK, the ticker, OpenFIGI's FIGI. No
 // CUSIPs or US ISINs, which are licensed.
@@ -49,8 +50,16 @@ export type CorporateAction = {
   };
   /** True when the ex-date was not stated and follows the T+1 rule: ex-date = record date. */
   exDateRule?: boolean;
-  /** Dividend per share, or cash per share in a merger. */
-  cash?: { amount: string; currency: 'USD' };
+  /**
+   * Dividend per share (or per ADS), or cash per share in a merger, as the filing states it: 8-K
+   * amounts are in US dollars, 6-K amounts in the currency the filing names (ISO 4217).
+   */
+  cash?: { amount: string; currency: string };
+  /**
+   * What the amount and dates are for, when it is not the shares themselves: 'ADS', the American
+   * depositary shares that trade in the US (6-K issuers only). Left out for the shares.
+   */
+  instrument?: 'ADS';
   /** Shares after : shares before, for a split; acquirer shares per share, for a stock merger. */
   ratio?: Ratio;
   frequency?: 'monthly' | 'quarterly' | 'semi-annual' | 'annual' | 'special' | 'other';
@@ -58,6 +67,7 @@ export type CorporateAction = {
   acquirer?: string;
   source: {
     url: string;
+    /** The form the document was filed with: 8-K, 6-K (or an amendment, 8-K/A, 6-K/A). */
     form: string;
     accession: string;
     filed: string;
@@ -65,3 +75,9 @@ export type CorporateAction = {
     quote: string;
   };
 };
+
+/** An amount as people read it: "$1.30" for US dollars, "EUR 0.54" or "CAD 0.07" for the rest. */
+export const money = (c: { amount: string; currency: string }) => (c.currency === 'USD' ? `$${c.amount}` : `${c.currency} ${c.amount}`);
+
+/** What one unit of the security is called: "share", or "ADS" for American depositary shares. */
+export const unitOf = (e: { instrument?: 'ADS' }) => (e.instrument === 'ADS' ? 'ADS' : 'share');

@@ -3,6 +3,8 @@
 // matched to the Tokenized Asset Map and to any system keyed by FIGI.
 
 export type FigiCache = Record<string, string | null>;
+/** OpenFIGI's security type for a ticker ("Common Stock", "Depositary Receipt", ...), null when it has none. Asked for 6-K issuers' tickers (extract6k.ts, fitsListing). */
+export type KindCache = Record<string, string | null>;
 
 const MAPPING = 'https://api.openfigi.com/v3/mapping';
 
@@ -13,9 +15,12 @@ export const postJson: Post = async (url, body) => {
   return { status: r?.status ?? 0, text: r ? await r.text() : '' };
 };
 
-/** Look up tickers not yet in the cache; null records "OpenFIGI has none", so it isn't asked again. */
-export async function lookupFigis(tickers: string[], cache: FigiCache, post: Post = postJson, gapMs = 2600): Promise<FigiCache> {
-  const todo = [...new Set(tickers)].filter((t) => !(t in cache));
+/**
+ * Look up tickers not yet in the cache; null records "OpenFIGI has none", so it isn't asked again.
+ * With `kinds`, the tickers in `kinds.for` are also asked for (once) when their security type isn't known yet.
+ */
+export async function lookupFigis(tickers: string[], cache: FigiCache, post: Post = postJson, gapMs = 2600, kinds?: { cache: KindCache; for: Set<string> }): Promise<FigiCache> {
+  const todo = [...new Set(tickers)].filter((t) => !(t in cache) || (kinds?.for.has(t) && !(t in kinds.cache)));
   for (let i = 0; i < todo.length; i += 10) {
     const batch = todo.slice(i, i + 10);
     // OpenFIGI writes share classes with a slash: BRK/B, not BRK-B or BRK.B.
@@ -26,11 +31,12 @@ export async function lookupFigis(tickers: string[], cache: FigiCache, post: Pos
       r = await post(MAPPING, body);
     }
     if (r.status !== 200) break; // try the rest next run
-    const rows = JSON.parse(r.text) as { data?: { compositeFIGI?: string; figi: string; securityType?: string }[] }[];
+    const rows = JSON.parse(r.text) as { data?: { compositeFIGI?: string; figi: string; securityType?: string; securityType2?: string }[] }[];
     batch.forEach((t, k) => {
       const d = rows[k]?.data ?? [];
       const pick = d.find((x) => /common|ordinary|reit|adr|depositary/i.test(x.securityType ?? '')) ?? d[0];
       cache[t] = pick ? (pick.compositeFIGI ?? pick.figi) : null;
+      if (kinds?.for.has(t)) kinds.cache[t] = pick ? (pick.securityType2 ?? pick.securityType ?? null) : null;
     });
     if (i + 10 < todo.length) await new Promise((res) => setTimeout(res, gapMs));
   }
