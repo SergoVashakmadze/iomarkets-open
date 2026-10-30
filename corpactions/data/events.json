@@ -580,35 +580,6 @@
     "frequency": "other"
   },
   {
-    "id": "dividend-0001031308-2026-09-29",
-    "type": "dividend",
-    "company": {
-      "name": "BENTLEY SYSTEMS INC",
-      "cik": "0001031308",
-      "ticker": "BSY",
-      "figi": "BBG000BMSRR9"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1031308/000103130826000026/exhibit991pr9112026.htm",
-      "form": "8-K",
-      "accession": "0001031308-26-000026",
-      "filed": "2026-09-11",
-      "quote": "Document Exhibit 99.1 Bentley Systems, Incorporated Declares Third Quarter 2026 Dividend EXTON, PA. - September 11, 2026 - Bentley Systems, Incorporated (Nasdaq: BSY) (the \"Company\"), the infrastructure engineering software company, today announced that its Board of Directors (the \" Board \" ) declared a $0.07 per share dividend for the third quarter of 2026. The cash dividend is payable on September 29, 2026, to all stockholders of record of Class A and Class B common stock as of the close of business on September 22, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-11",
-      "record": "2026-09-22",
-      "ex": "2026-09-22",
-      "pay": "2026-09-29"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.07",
-      "currency": "USD"
-    },
-    "frequency": "other"
-  },
-  {
     "id": "dividend-0001687932-2026-10-07",
     "type": "dividend",
     "company": {
@@ -921,80 +892,6 @@
       "currency": "USD"
     },
     "frequency": "special"
-  },
-  {
-    "id": "reverse-split-0001104038-2026-09-29",
-    "type": "reverse-split",
-    "company": {
-      "name": "VerifyMe, Inc.",
-      "cik": "0001104038",
-      "ticker": "VRME"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1104038/000121465926011966/ex99_1.htm",
-      "form": "8-K",
-      "accession": "0001214659-26-011966",
-      "filed": "2026-09-25",
-      "quote": "Exhibit 99.1 VerifyMe Announces Reverse Stock Split of the Company's Common Stock LAKE MARY, Fla., September 25, 2026 - (BUSINESS WIRE) - VerifyMe, Inc. (NASDAQ: VRME) (\"VerifyMe\"), a provider of authentication and precision logistics technologies today announced a planned reverse stock split of its shares of common stock at a ratio of 1-for-10. The reverse stock split will take effect as of 12:01 a.m. ET, on September 29, 2026, and shares of VerifyMe will trade on a post-split basis on Nasdaq under the existing trading symbol, \"VRME,\" at the market open on September 29, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-25",
-      "effective": "2026-09-29"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 10
-    }
-  },
-  {
-    "id": "reverse-split-0001849380-2026-09-29",
-    "type": "reverse-split",
-    "company": {
-      "name": "OneMedNet Corp",
-      "cik": "0001849380",
-      "ticker": "ONMD",
-      "figi": "BBG00ZLKW5Y0"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1849380/000149315226044801/ex99-1.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-044801",
-      "filed": "2026-09-29",
-      "quote": "Exhibit 99.1 OneMedNet Corporation Announces 1-for-10 Reverse Stock Split MINNEAPOLIS, Minn.- September 25, 2026- OneMedNet Corporation (Nasdaq: ONMD) (the \"Company,\" \"we,\" or \"our\"), a leading provider of first-party (direct-from-source) regulatory decision-grade, AI-driven Real-World Data (RWD), today announced that it will implement a 1-for-10 reverse stock split of its issued and outstanding shares of common stock (the \"Reverse Stock Split\"), effective at 12:01 a.m. Eastern Time on September 29, 2026. The Reverse Stock Split was approved by the Company's stockholders at its Annual Meeting..."
-    },
-    "dates": {
-      "announced": "2026-09-29",
-      "effective": "2026-09-29"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 10
-    }
-  },
-  {
-    "id": "reverse-split-0001857086-2026-09-29",
-    "type": "reverse-split",
-    "company": {
-      "name": "TruGolf Holdings, Inc.",
-      "cik": "0001857086",
-      "ticker": "TRUG",
-      "figi": "BBG012LSMN95"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1857086/000149315226044920/form8-k.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-044920",
-      "filed": "2026-09-29",
-      "quote": "...of Nevada a Certificate of Change (the \"Certificate of Change\"), pursuant to Nevada Revised Statutes 78.209, to effect a one-for-ten (1-for-10) reverse stock split (the \"Reverse Split\") of the Company's issued and outstanding common stock, par value $0.0001 per share (the \"Common Stock\"). The Reverse Split became effective as of 12:01 a.m. Eastern Time on September 29, 2026 (the \"Effective Time\"). Pursuant to the Nevada Revised Statutes 78.207, the Company's board of directors has the authority to effect a reverse stock split without stockholder approval if the number of authorized shares of..."
-    },
-    "dates": {
-      "announced": "2026-09-29",
-      "effective": "2026-09-29"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 10
-    }
   },
   {
     "id": "dividend-0000073309-2026-11-10",
@@ -2342,14 +2239,14 @@
       "figi": "BBG000BBTV11"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/718413/000165495426008469/cmtv_ex991.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/718413/000165495426009149/cmtv_ex991.htm",
       "form": "8-K",
-      "accession": "0001654954-26-008469",
-      "filed": "2026-09-18",
-      "quote": "ANNOUNCES QUARTERLY DIVIDEND Derby, VT For Immediate Release For more information, contact Christopher Caldwell, CEO at 802-334-7915 Trading Symbol: CMTV (Traded on The Nasdaq Stock Market LLC) Community Bancorp. the parent company of Community National Bank, has declared a dividend of $0.26 per share payable November 1, 2026 to shareholders of record as of October 15, 2026."
+      "accession": "0001654954-26-009149",
+      "filed": "2026-10-27",
+      "quote": "As always, we are grateful for the trust our communities, clients, and shareholders have placed in us.\" 2 As previously announced, the Company declared a quarterly cash dividend of $0.26 per share payable November 1, 2026, to shareholders of record as of October 15, 2026."
     },
     "dates": {
-      "announced": "2026-09-18",
+      "announced": "2026-10-27",
       "record": "2026-10-15",
       "ex": "2026-10-15",
       "pay": "2026-11-01"
@@ -2371,14 +2268,14 @@
       "figi": "BBG000BFJFX3"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/726854/000072685426000175/ex99-1dividendincrease9302.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/726854/000072685426000190/chco09-30x2026exhibit991.htm",
       "form": "8-K",
-      "accession": "0000726854-26-000175",
-      "filed": "2026-09-30",
-      "quote": "Bumgarner, Senior EVP & CFO (304) 769-1169 City Holding Company Increases Quarterly Dividend On Common Shares Charleston, West Virginia - City Holding Company, \"the Company\" (NASDAQ: CHCO), a $6.8 billion bank holding company headquartered in Charleston, on September 30, 2026 declared a dividend of $1.00 per common share for shareholders of record as of October 15, 2026. The dividend is payable on October 30, 2026."
+      "accession": "0000726854-26-000190",
+      "filed": "2026-10-26",
+      "quote": "On September 30, 2026, the Board of Directors of the Company approved a quarterly cash dividend of $1.00 per share, payable October 30, 2026 to shareholders of record as of October 15, 2026."
     },
     "dates": {
-      "announced": "2026-09-30",
+      "announced": "2026-10-26",
       "record": "2026-10-15",
       "ex": "2026-10-15",
       "pay": "2026-10-30"
@@ -4293,14 +4190,14 @@
       "figi": "BBG000JQJC22"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/800457/000117184326006663/exh_991.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/800457/000117184326006950/exh_991.htm",
       "form": "8-K",
-      "accession": "0001171843-26-006663",
-      "filed": "2026-10-15",
-      "quote": "EdgarFiling EXHIBIT 99.1 Donegal Group Inc. Announces Quarterly Dividend MARIETTA, Pa., Oct. 15, 2026 (GLOBE NEWSWIRE) -- Donegal Group Inc. (NASDAQ:DGICA) and (NASDAQ:DGICB) reported today that its board of directors declared a regular quarterly cash dividend of $0.1925 per share of the Company's Class A common stock and $0.175 per share of the Company's Class B common stock. The dividends are payable on November 16, 2026 to stockholders of record as of the close of business on November 2, 2026."
+      "accession": "0001171843-26-006950",
+      "filed": "2026-10-29",
+      "quote": "Dividend Information On October 15, 2026, we declared a regular quarterly cash dividend of $0.1925 per share for our Class A common stock and $0.175 per share for our Class B common stock, which are payable on November 16, 2026 to stockholders of record as of the close of business on November 2, 2026."
     },
     "dates": {
-      "announced": "2026-10-15",
+      "announced": "2026-10-29",
       "record": "2026-11-02",
       "ex": "2026-11-02",
       "pay": "2026-11-16"
@@ -4612,14 +4509,14 @@
       "figi": "BBG01J337QF6"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/2105965/000210596526000037/dividenddeclaration10192026.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/2105965/000210596526000040/q32026earningsrelease-ex991.htm",
       "form": "8-K",
-      "accession": "0002105965-26-000037",
-      "filed": "2026-10-19",
-      "quote": "Document West Coast Community Bancorp Declares Third Quarter Cash Dividend SANTA CRUZ, Calif., Oct. 19, 2026 (GLOBE NEWSWIRE) -- The Board of Directors of West Coast Community Bancorp (Nasdaq: WCCB), the parent company of West Coast Community Bank, has declared a regular quarterly cash dividend of $0.29 per share of common stock, payable on or about November 6, 2026, to shareholders of record as of November 2, 2026."
+      "accession": "0002105965-26-000040",
+      "filed": "2026-10-27",
+      "quote": "We continue to execute on our strategic priorities and growth initiatives, such as hiring our Private Banking team and opening new branches.\" As previously announced on October 19, 2026, the Bancorp Board of Directors declared a quarterly cash dividend of $0.29 per common share, reflecting a $0.04 per share increase over the previous quarterly dividend. This dividend is payable on or about November 6, 2026, to shareholders of record as of November 2, 2026."
     },
     "dates": {
-      "announced": "2026-10-19",
+      "announced": "2026-10-27",
       "record": "2026-11-02",
       "ex": "2026-11-02",
       "pay": "2026-11-06"
@@ -4873,14 +4770,14 @@
       "figi": "BBG001Z0Q6T5"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1573516/000157351626000191/exhibit9912026q4dividendan.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1573516/000157351626000193/exh991_09302026er.htm",
       "form": "8-K",
-      "accession": "0001573516-26-000191",
-      "filed": "2026-10-22",
-      "quote": "Document Exhibit 99.1 Murphy USA Inc. Announces Dividend Increase EL DORADO, Arkansas, October 22, 2026 - The Board of Directors of Murphy USA Inc. (NYSE: MUSA) today declared a quarterly cash dividend on the Common Stock of Murphy USA Inc. of $0.72 per share, or $2.88 per share on an annualized basis. This represents an increase of 11% from the Q3 2026 dividend. The dividend is payable on December 1, 2026, to stockholders of record as of November 4, 2026."
+      "accession": "0001573516-26-000193",
+      "filed": "2026-10-28",
+      "quote": "On October 22, 2026, the Company announced that the Board of Directors had declared a quarterly cash dividend of $0.72 per common share, or $2.88 per share on an annualized basis. The dividend is payable on December 1, 2026, to stockholders of record as of November 4, 2026. * * * * * Earnings Call Information The Company will issue management commentary today, October 28, 2026 at approximately 3:30 p.m. Central Time and will host a webcasted question and answer session on October 29, 2026 at 10:00 a.m. Central Time to discuss third quarter 2026 results."
     },
     "dates": {
-      "announced": "2026-10-22",
+      "announced": "2026-10-28",
       "record": "2026-11-04",
       "ex": "2026-11-04",
       "pay": "2026-12-01"
@@ -5962,6 +5859,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001596993-2026-11-24",
+    "type": "dividend",
+    "company": {
+      "name": "DORIAN LPG LTD.",
+      "cik": "0001596993",
+      "ticker": "LPG",
+      "figi": "BBG006476H39"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1596993/000159699326000049/lpg-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001596993-26-000049",
+      "filed": "2026-10-30",
+      "quote": "Exhibit 99.1 Dorian LPG Ltd. Declares Irregular Cash Dividend of $1.25 Per Share and Announces Second Quarter 2027 Earnings Conference Call Date STAMFORD, Conn., October 30, 2026 -- Dorian LPG Ltd. (NYSE: LPG) (the \"Company\" or \"Dorian LPG\"), a leading owner and operator of modern and ECO very large gas carriers (\"VLGCs\"), today announced that its Board of Directors has declared an irregular cash dividend of $1.25 per share of the Company's common stock, returning approximately $53.7 million of capital to shareholders . The irregular dividend is payable on or about November 24, 2026 to all..."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-09",
+      "ex": "2026-11-09",
+      "pay": "2026-11-24"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.25",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001667313-2026-11-23",
     "type": "dividend",
     "company": {
@@ -6537,6 +6463,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.30",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000880631-2026-11-25",
+    "type": "dividend",
+    "company": {
+      "name": "WisdomTree, Inc.",
+      "cik": "0000880631",
+      "ticker": "WT",
+      "figi": "BBG000KLDTJ2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/880631/000121465926013478/b10282638k.htm",
+      "form": "8-K",
+      "accession": "0001214659-26-013478",
+      "filed": "2026-10-30",
+      "quote": "On October 28, 2026, the Company's Board of Directors declared a quarterly cash dividend of $0.03 per share of common stock, payable on November 25, 2026 to stockholders of record as of the close of business on November 11, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-11",
+      "ex": "2026-11-11",
+      "pay": "2026-11-25"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.03",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -7508,21 +7463,21 @@
       "figi": "BBG000H6K1B0"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1019849/000114036126039661/ef20083686_ex99-1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1019849/000162828026067753/q326exhibit99_1.htm",
       "form": "8-K",
-      "accession": "0001140361-26-039661",
-      "filed": "2026-10-15",
-      "quote": "...transportation services company and one of the world's premier automotive and commercial truck retailers, today announced that its Board of Directors has declared a quarterly cash dividend of $1.46 per share. The dividend represents an increase of $0.02 per share (+1.4%), bringing the annualized dividend to $5.84 per share. The dividend is payable December 1, 2026, to shareholders of record on November 13, 2026."
+      "accession": "0001628280-26-067753",
+      "filed": "2026-10-28",
+      "quote": "During October 2026, the Board of Directors approved an increase in the quarterly dividend of 1.4%, or $0.02 per share, to $1.46 per share, bringing the annualized dividend to $5.84 per share. The dividend is payable December 1, 2026, to shareholders of record as of November 13, 2026."
     },
     "dates": {
-      "announced": "2026-10-15",
+      "announced": "2026-10-28",
       "record": "2026-11-13",
       "ex": "2026-11-13",
       "pay": "2026-12-01"
     },
     "exDateRule": true,
     "cash": {
-      "amount": "1.46",
+      "amount": "0.02",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -7581,6 +7536,64 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.33",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001178970-2026-11-27",
+    "type": "dividend",
+    "company": {
+      "name": "PROVIDENT FINANCIAL SERVICES INC",
+      "cik": "0001178970",
+      "ticker": "PFS",
+      "figi": "BBG000P23KW4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1178970/000162828026068322/a10292026dividenddeclarati.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-068322",
+      "filed": "2026-10-30",
+      "quote": "Document Provident Financial Services, Inc. Declares Quarterly Cash Dividend ISELIN, NJ, October 29, 2026 - Provident Financial Services, Inc. (NYSE:PFS) (the \"Company\") Board of Directors declared a quarterly cash dividend of $0.24 per common share payable on November 27, 2026 to stockholders of record as of the close of business on November 13, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-11-27"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.24",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001325618-2026-11-27",
+    "type": "dividend",
+    "company": {
+      "name": "IRADIMED CORP",
+      "cik": "0001325618",
+      "ticker": "IRMD",
+      "figi": "BBG006NM92X2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1325618/000162828026068454/irmd-2026930xexx991.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-068454",
+      "filed": "2026-10-30",
+      "quote": "The Company's board of directors declared a regular quarterly cash dividend of $0.20 per share of our outstanding common stock. The dividend is payable to stockholders of record as of the close of business on November 13, 2026 and will be paid on November 27, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-11-27"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.20",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -7668,6 +7681,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.1475",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001531031-2026-12-01",
+    "type": "dividend",
+    "company": {
+      "name": "Esquire Financial Holdings, Inc.",
+      "cik": "0001531031",
+      "ticker": "ESQ",
+      "figi": "BBG003BCFHX4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1531031/000110465926120304/esq-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-120304",
+      "filed": "2026-10-30",
+      "quote": "Exhibit 99.1 Esquire Financial Holdings, Inc. Declares Regular Quarterly Dividend for Common Stockholders Jericho, NY - October 29, 2026 - Esquire Financial Holdings, Inc. (NASDAQ: ESQ) (the \"Company\"), the financial holding company for Esquire Bank, National Association (\"Esquire Bank\" or the \"Bank\"), today announced its regular quarterly dividend of $0.20 per share of common stock, payable on December 1, 2026, to each stockholder of record on November 13, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-12-01"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.20",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -7842,6 +7884,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.4523",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0002035149-2026-11-24",
+    "type": "dividend",
+    "company": {
+      "name": "Flowco Holdings Inc.",
+      "cik": "0002035149",
+      "ticker": "FLOC",
+      "figi": "BBG01R6F2N88"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2035149/000119312526439872/floc-ex99_1.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-439872",
+      "filed": "2026-10-30",
+      "quote": "EX-99.1 Exhibit 99.1 Flowco Holdings Inc. Announces Quarterly Cash Dividend HOUSTON--(BUSINESS WIRE)-- Flowco Holdings Inc. (NYSE: FLOC) (\"Flowco\" or the \"Company\"), a provider of production optimization, artificial lift and emissions management and monetization solutions for the oil and natural gas industry, today announced that its Board of Directors has approved a quarterly cash dividend of $0.09 per share of Class A common stock payable on November 24, 2026 to Class A common stockholders of record as of the close of business on November 13, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-11-24"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.09",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -8193,6 +8264,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0002115436-2026-12-10",
+    "type": "dividend",
+    "company": {
+      "name": "ExxonMobil Holdings Corp",
+      "cik": "0002115436",
+      "ticker": "XOM",
+      "figi": "BBG023CY9MM1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/livef8k3q26991.htm",
+      "form": "8-K",
+      "accession": "0002115436-26-000018",
+      "filed": "2026-10-30",
+      "quote": "Declared a fourth-quarter dividend of $1.07 per share, payable on December 10, 2026, to shareholders of record of common stock at the close of business on November 16, 2026 2 EARNINGS AND VOLUME SUMMARY BY SEGMENT 3Q26 2Q26 Dollars in millions (unless otherwise noted) YTD 2026 YTD 2025 Earnings/(Loss) (U.S. GAAP) 7,088 7,927 Upstream 20,752 17,837 7,169 5,465 Energy Products 11,372 4,033 735 1,131 Chemical Products 1,976 1,081 1,285 956 Specialty Products 2,892 2,175 (864) (954) Corporate and Financing (2,871) (2,783) 15,413 14,525 Total Earnings/(Loss) (U.S. GAAP) 34,121 22,343 Adjusted..."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-16",
+      "ex": "2026-11-16",
+      "pay": "2026-12-10"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.07",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0000714712-2026-12-01",
@@ -8711,6 +8811,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000872589-2026-12-03",
+    "type": "dividend",
+    "company": {
+      "name": "REGENERON PHARMACEUTICALS, INC.",
+      "cik": "0000872589",
+      "ticker": "REGN",
+      "figi": "BBG000C734W3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm",
+      "form": "8-K",
+      "accession": "0000872589-26-000032",
+      "filed": "2026-10-30",
+      "quote": "In October 2026, the Company declared a cash dividend of $0.94 per share on the Company's common stock and Class A stock, payable on December 3, 2026 to shareholders of record as of November 20, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-20",
+      "ex": "2026-11-20",
+      "pay": "2026-12-03"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.94",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0001059556-2026-12-11",
@@ -9331,14 +9460,14 @@
       "figi": "BBG000BL0T06"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/912767/000091276726000050/ufpi-20261021x8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/912767/000091276726000058/ufpi-ex99d1.htm",
       "form": "8-K",
-      "accession": "0000912767-26-000050",
-      "filed": "2026-10-21",
-      "quote": "On October 21, 2026, the Board of Directors of UFP Industries, Inc. declared a quarterly cash dividend of $0.36 per share of the Company's common stock. This dividend is payable on December 15, 2026, to shareholders of record on December 1, 2026."
+      "accession": "0000912767-26-000058",
+      "filed": "2026-10-28",
+      "quote": "O n October 21, 2026, the Board declared a quarterly cash dividend of $0.36 per share. This dividend is payable on December 15, 2026, to shareholders of record on December 1, 2026."
     },
     "dates": {
-      "announced": "2026-10-21",
+      "announced": "2026-10-28",
       "record": "2026-12-01",
       "ex": "2026-12-01",
       "pay": "2026-12-15"
@@ -9670,6 +9799,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000049938-2027-01-01",
+    "type": "dividend",
+    "company": {
+      "name": "IMPERIAL OIL LTD",
+      "cik": "0000049938",
+      "ticker": "IMO",
+      "figi": "BBG000C32XT3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/49938/000004993826000048/q42026dividend8-kexhibit.htm",
+      "form": "8-K",
+      "accession": "0000049938-26-000048",
+      "filed": "2026-10-30",
+      "quote": "Document Exhibit 99.1 Imperial declares fourth quarter 2026 dividend Calgary, AB - October 30, 2026 - Imperial Oil Limited (TSE: IMO, NYSE American: IMO) today declared a quarterly dividend of 87 cents per share on the outstanding common shares of the company, payable on January 1, 2027, to shareholders of record at the close of business on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2027-01-01"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.87",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001481582-2026-12-17",
     "type": "dividend",
     "company": {
@@ -9900,6 +10058,35 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0001109357-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "EXELON CORP",
+      "cik": "0001109357",
+      "ticker": "EXC",
+      "figi": "BBG000J6XT05"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm",
+      "form": "8-K",
+      "accession": "0001109357-26-000092",
+      "filed": "2026-10-30",
+      "quote": "Dividend: On October 30, 2026, Exelon's Board of Directors declared a regular quarterly dividend of $0.42 per share on Exelon's common stock. The dividend is payable on December 15, 2026, to Exelon shareholders of record as of the close of business on December 4, 2026.."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.42",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0001120193-2026-12-18",
@@ -11003,6 +11190,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0000034903-2027-01-15",
+    "type": "dividend",
+    "company": {
+      "name": "FEDERAL REALTY INVESTMENT TRUST",
+      "cik": "0000034903",
+      "ticker": "FRT",
+      "figi": "BBG000BJVN28"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000054/frt-9302026xex991.htm",
+      "form": "8-K",
+      "accession": "0000034903-26-000054",
+      "filed": "2026-10-30",
+      "quote": "Regular Quarterly Dividends Federal Realty announced today that its Board of Trustees declared a regular quarterly cash dividend of $1.16 per common share, resulting in an indicated annual rate of $4.64 per common share. The regular common dividend will be payable on January 15, 2027 to common shareholders of record as of January 4, 2027."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2027-01-04",
+      "ex": "2027-01-04",
+      "pay": "2027-01-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "4.64",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001060391-2027-01-15",
     "type": "dividend",
     "company": {
@@ -11114,6 +11330,64 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.30",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001286043-2027-01-15",
+    "type": "dividend",
+    "company": {
+      "name": "KITE REALTY GROUP TRUST",
+      "cik": "0001286043",
+      "ticker": "KRG",
+      "figi": "BBG000BC2KW8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1286043/000128604326000054/exhibit99_1xq32026.htm",
+      "form": "8-K",
+      "accession": "0001286043-26-000054",
+      "filed": "2026-10-30",
+      "quote": "Total dividends declared for 2026 of $1.16 per common share represents a 5.5% increase year-over-year. The fourth quarter dividend will be paid on or about January 15, 2027, to shareholders of record as of January 9, 2027."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2027-01-09",
+      "ex": "2027-01-09",
+      "pay": "2027-01-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.16",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
+    "id": "dividend-0001551152-2027-02-16",
+    "type": "dividend",
+    "company": {
+      "name": "AbbVie Inc.",
+      "cik": "0001551152",
+      "ticker": "ABBV",
+      "figi": "BBG0025Y4RY4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm",
+      "form": "8-K",
+      "accession": "0001551152-26-000033",
+      "filed": "2026-10-30",
+      "quote": "Company Declares Dividend Increase of 5.2 Percent AbbVie is announcing today that its board of directors declared an increase in the company's quarterly cash dividend from $1.73 per share to $1.82 per share beginning with the dividend payable on February 16, 2027 to shareholders of record as of January 15, 2027."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2027-01-15",
+      "ex": "2027-01-15",
+      "pay": "2027-02-16"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.82",
       "currency": "USD"
     },
     "frequency": "quarterly"

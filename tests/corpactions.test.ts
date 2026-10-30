@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { validate } from '../bench/src/index'
 import { describe as describeEvent, eventById, eventRef, EVENTS, FEED_META, parseQuery, query, toSeev031, tokenEffect, tokenizedVersions, weekOf, type CorporateAction } from '../corpactions/src/index'
-import { toIcs } from '../corpactions/src/ics'
+import { calendarName, calendarUrl, eventUrl, fold, headline, icsText, toIcs, webcalUrl } from '../corpactions/src/ics'
 import { lookupFigis } from '../corpactions/src/figi'
 import { prune } from '../corpactions/src/query'
 
@@ -86,13 +86,84 @@ describe('asking the feed', () => {
     expect(prune([dividend], '2026-12-26')).toHaveLength(0)
   })
 
-  it('writes a calendar file', () => {
-    const ics = toIcs([dividend, split], new Date('2026-10-29T12:00:00Z'))
-    expect(ics.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0\r\n')).toBe(true)
+})
+
+describe('the calendar (iCalendar, RFC 5545)', () => {
+  const unfold = (s: string) => s.replace(/\r\n /g, '')
+
+  it('writes a calendar file, CRLF throughout, one all-day entry per day that matters', () => {
+    const ics = toIcs([dividend, split], { stamp: new Date('2026-10-29T12:00:00Z') })
+    expect(ics.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:')).toBe(true)
+    expect(ics.endsWith('END:VCALENDAR\r\n')).toBe(true)
+    expect(ics.replace(/\r\n/g, '')).not.toMatch(/[\r\n]/)
     expect(ics.match(/BEGIN:VEVENT/g)).toHaveLength(5) // dividend: ex = record, then pay; split: record, pay, effective
     expect(ics).toContain('DTSTART;VALUE=DATE:20261125\r\nDTEND;VALUE=DATE:20261126')
-    expect(ics).toContain('SUMMARY:POOL payment')
+    expect(ics).toContain('SUMMARY:POOL cash dividend $1.30 (pay date)')
+    expect(ics).toContain('SUMMARY:POOL cash dividend $1.30 (ex-date\\, record date)') // one entry for both
+    expect(ics).toContain('SUMMARY:POOL stock split 3:1 (effective)')
+    expect(ics).toContain('DTSTAMP:20261029T120000Z')
     for (const line of ics.split('\r\n')) expect(new TextEncoder().encode(line).length).toBeLessThanOrEqual(75)
+  })
+
+  it('gives every entry a stable UID from the event id, and date-only values', () => {
+    const a = toIcs([dividend, split], { stamp: new Date('2026-10-29T12:00:00Z') })
+    const b = toIcs([split, dividend], { stamp: new Date('2026-11-02T06:00:00Z') })
+    const uids = (s: string) => [...s.matchAll(/^UID:(.+)$/gm)].map((m) => m[1]).sort()
+    expect(uids(a)).toEqual(uids(b))
+    expect(uids(a)).toEqual([
+      'dividend-0000945841-2026-11-25-ex@iomarkets.tech',
+      'dividend-0000945841-2026-11-25-pay@iomarkets.tech',
+      'split-0000945841-2026-12-11-effective@iomarkets.tech',
+      'split-0000945841-2026-12-11-pay@iomarkets.tech',
+      'split-0000945841-2026-12-11-record@iomarkets.tech',
+    ])
+    for (const m of a.matchAll(/^DT(START|END)([^:]*):(.*)$/gm)) {
+      expect(m[2]).toBe(';VALUE=DATE')
+      expect(m[3]).toMatch(/^\d{8}$/)
+    }
+    // DTEND is the next day (exclusive), across a month and a year end.
+    expect(a).toContain('DTSTART;VALUE=DATE:20261130\r\nDTEND;VALUE=DATE:20261201')
+    expect(toIcs([{ ...dividend, dates: { ...dividend.dates, pay: '2026-12-31' } }])).toContain('DTSTART;VALUE=DATE:20261231\r\nDTEND;VALUE=DATE:20270101')
+  })
+
+  it("describes each entry with the filing's own sentence, the event on iomarkets.tech and the SEC filing", () => {
+    const ics = unfold(toIcs([dividend]))
+    const desc = /^DESCRIPTION:(.*)$/m.exec(ics)![1]
+    expect(desc).toContain(icsText(`From the filing: "${dividend.source.quote}"`))
+    expect(desc).toContain(`On iomarkets.tech: ${eventUrl(dividend)}`)
+    expect(desc).toContain(dividend.source.url)
+    expect(desc.split('\\n\\n')).toHaveLength(4)
+    expect(eventUrl(dividend)).toBe('https://iomarkets.tech/corporate-actions#for=POOL&event=dividend-0000945841-2026-11-25')
+    expect(ics).toContain(`URL:${eventUrl(dividend)}`)
+    expect(headline(reverse)).toBe('POOL reverse split 1:20')
+    expect(headline(cashMerger)).toBe('POOL acquired by Willow Parent, LLC')
+    expect(unfold(toIcs([cashMerger]))).toContain('SUMMARY:POOL acquired by Willow Parent\\, LLC (effective)')
+  })
+
+  it('escapes TEXT and folds long lines at 75 octets without splitting a character', () => {
+    expect(icsText('a\\b;c,d\ne\r\nf\rg')).toBe('a\\\\b\\;c\\,d\\ne\\nf\\ng')
+    const long = `DESCRIPTION:${'é'.repeat(30)}${'x'.repeat(100)}€€€`
+    const parts = fold(long).split('\r\n')
+    expect(parts.length).toBeGreaterThan(2)
+    for (const [i, p] of parts.entries()) {
+      expect(new TextEncoder().encode(p).length).toBeLessThanOrEqual(75)
+      if (i) expect(p.startsWith(' ')).toBe(true)
+    }
+    expect(parts.map((p, i) => (i ? p.slice(1) : p)).join('')).toBe(long) // nothing lost, no character split
+    expect(fold('SUMMARY:short')).toBe('SUMMARY:short')
+    const odd = toIcs([{ ...dividend, source: { ...dividend.source, quote: 'Payable; to holders, of record\\ "as of" — Nov. 11\nnext' } }])
+    expect(unfold(odd)).toContain('Payable\\; to holders\\, of record\\\\ "as of" — Nov. 11\\nnext')
+  })
+
+  it('builds the subscription address for holdings and kinds of event', () => {
+    expect(calendarUrl()).toBe('https://iomarkets.tech/api/corporate-actions/calendar')
+    expect(calendarUrl({ holdings: ['sndk', ' POOL ', 'SNDK', 'BRK.B'], types: ['split', 'dividend'] })).toBe('https://iomarkets.tech/api/corporate-actions/calendar?holdings=SNDK,POOL,BRK.B&types=dividend,split')
+    expect(calendarUrl({ types: ['dividend', 'split', 'reverse-split', 'merger'] })).toBe('https://iomarkets.tech/api/corporate-actions/calendar')
+    expect(calendarUrl({ holdings: ['A&B'] })).toBe('https://iomarkets.tech/api/corporate-actions/calendar?holdings=A%26B')
+    expect(webcalUrl(calendarUrl({ holdings: ['POOL'] }))).toBe('webcal://iomarkets.tech/api/corporate-actions/calendar?holdings=POOL')
+    expect(calendarName({ holdings: ['SNDK', 'POOL'] })).toBe('Corporate actions: SNDK, POOL (IoMarkets.tech)')
+    expect(calendarName({ holdings: ['A', 'B', 'C', 'D', 'E', 'F'] })).toBe('Corporate actions: A, B, C, D and 2 more (IoMarkets.tech)')
+    expect(toIcs([], { name: calendarName({ holdings: ['SNDK', 'POOL'] }) })).toContain('\r\nX-WR-CALNAME:Corporate actions: SNDK\\, POOL (IoMarkets.tech)\r\n')
   })
 })
 
