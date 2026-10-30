@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10">
+  <FIToFIPmtStsRpt>
+    <GrpHdr>
+      <MsgId>BENCH-PACS002-0001</MsgId>
+      <CreDtTm>2026-10-27T09:42:00Z</CreDtTm>
+      <InstgAgt>
+        <FinInstnId>
+          <BICFI>COBADEFFXXX</BICFI>
+        </FinInstnId>
+      </InstgAgt>
+      <InstdAgt>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </InstdAgt>
+    </GrpHdr>
+    <OrgnlGrpInfAndSts>
+      <OrgnlMsgId>BENCH-PACS008-0001</OrgnlMsgId>
+      <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>
+      <OrgnlCreDtTm>2026-10-27T09:30:00Z</OrgnlCreDtTm>
+      <OrgnlNbOfTxs>1</OrgnlNbOfTxs>
+      <GrpSts>RJCT</GrpSts>
+    </OrgnlGrpInfAndSts>
+    <TxInfAndSts>
+      <StsId>BENCH-STS-0001</StsId>
+      <OrgnlInstrId>BENCH-INSTR-0001</OrgnlInstrId>
+      <OrgnlEndToEndId>INV-2026-1187</OrgnlEndToEndId>
+      <OrgnlTxId>BENCH-TX-0001</OrgnlTxId>
+      <OrgnlUETR>8a562c67-ca16-48ba-b074-65581be6f001</OrgnlUETR>
+      <TxSts>REJECTED</TxSts>
+      <StsRsnInf>
+        <Orgtr>
+          <Id>
+            <OrgId>
+              <AnyBIC>COBADEFFXXX</AnyBIC>
+            </OrgId>
+          </Id>
+        </Orgtr>
+        <Rsn>
+          <Cd>AC04</Cd>
+        </Rsn>
+        <AddtlInf>Creditor account closed on 2026-09-30</AddtlInf>
+      </StsRsnInf>
+      <OrgnlTxRef>
+        <IntrBkSttlmAmt Ccy="EUR">25000.00</IntrBkSttlmAmt>
+        <IntrBkSttlmDt>2026-10-27</IntrBkSttlmDt>
+      </OrgnlTxRef>
+    </TxInfAndSts>
+  </FIToFIPmtStsRpt>
+</Document>

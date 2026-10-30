@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.09">
+  <PmtRtr>
+    <GrpHdr>
+      <MsgId>BENCH-PACS004-0001</MsgId>
+      <CreDtTm>2026-10-28T08:15:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <TtlRtrdIntrBkSttlmAmt Ccy="EUR">24990.00</TtlRtrdIntrBkSttlmAmt>
+      <IntrBkSttlmDt>2026-10-28</IntrBkSttlmDt>
+      <SttlmInf>
+        <SttlmMtd>INDA</SttlmMtd>
+      </SttlmInf>
+      <InstgAgt>
+        <FinInstnId>
+          <BICFI>COBADEFFXXX</BICFI>
+        </FinInstnId>
+      </InstgAgt>
+      <InstdAgt>
+        <FinInstnId>
+          <BICFI>WESTGB2LXXX</BICFI>
+        </FinInstnId>
+      </InstdAgt>
+    </GrpHdr>
+    <OrgnlGrpInf>
+      <OrgnlMsgId>BENCH-PACS008-0001</OrgnlMsgId>
+      <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>
+      <OrgnlCreDtTm>2026-10-27T09:30:00Z</OrgnlCreDtTm>
+    </OrgnlGrpInf>
+    <TxInf>
+      <RtrId>BENCH-RTR-0001</RtrId>
+      <OrgnlInstrId>BENCH-INSTR-0001</OrgnlInstrId>
+      <OrgnlEndToEndId>INV-2026-1187</OrgnlEndToEndId>
+      <OrgnlTxId>BENCH-TX-0001</OrgnlTxId>
+      <OrgnlUETR>8a562c67-ca16-48ba-b074-65581be6f001</OrgnlUETR>
+      <OrgnlIntrBkSttlmAmt Ccy="EUR">25000.00</OrgnlIntrBkSttlmAmt>
+      <OrgnlIntrBkSttlmDt>2026-10-27</OrgnlIntrBkSttlmDt>
+      <RtrdInstdAmt Ccy="EUR">25000.00</RtrdInstdAmt>
+      <ChrgBr>CRED</ChrgBr>
+      <ChrgsInf>
+        <Amt Ccy="EUR">10.00</Amt>
+        <Agt>
+          <FinInstnId>
+            <BICFI>COBADEFFXXX</BICFI>
+          </FinInstnId>
+        </Agt>
+      </ChrgsInf>
+      <RtrRsnInf>
+        <Orgtr>
+          <Id>
+            <OrgId>
+              <AnyBIC>COBADEFFXXX</AnyBIC>
+            </OrgId>
+          </Id>
+        </Orgtr>
+        <Rsn>
+          <Cd>AC04</Cd>
+        </Rsn>
+        <AddtlInf>Creditor account closed on 2026-09-30</AddtlInf>
+      </RtrRsnInf>
+    </TxInf>
+  </PmtRtr>
+</Document>

@@ -5,6 +5,9 @@
 // (bench/cli.ts) and in the GitHub Action.
 
 import camt053 from '../models/camt.053.001.08.json' with { type: 'json' };
+import camt054 from '../models/camt.054.001.08.json' with { type: 'json' };
+import pacs002 from '../models/pacs.002.001.10.json' with { type: 'json' };
+import pacs004 from '../models/pacs.004.001.09.json' with { type: 'json' };
 import pacs008 from '../models/pacs.008.001.08.json' with { type: 'json' };
 import pacs009 from '../models/pacs.009.001.08.json' with { type: 'json' };
 import pain001 from '../models/pain.001.001.09.json' with { type: 'json' };
@@ -24,13 +27,16 @@ export type MessageInfo = { id: string; family: string; title: string; what: str
 export const MESSAGES: MessageInfo[] = [
   { id: 'pacs.008.001.08', family: 'pacs.008', title: 'FI to FI customer credit transfer', what: "A bank-to-bank payment carrying a customer's credit transfer: the main cross-border and high-value payment message (SWIFT CBPR+, Fedwire, CHAPS, TARGET2 use this version)." },
   { id: 'pacs.009.001.08', family: 'pacs.009', title: 'Financial institution credit transfer', what: 'A payment between banks for their own account, or the cover leg of a customer payment (pacs.009 COV).' },
+  { id: 'pacs.002.001.10', family: 'pacs.002', title: 'FI to FI payment status report', what: 'The answer a bank sends back about payments it received: accepted, pending or rejected, and why (the reason code). CBPR+ uses this version.' },
+  { id: 'pacs.004.001.09', family: 'pacs.004', title: 'Payment return', what: 'A bank sending the money of a settled payment back, for example because the account is closed, with the reason and any charges taken.' },
   { id: 'pain.001.001.09', family: 'pain.001', title: 'Customer credit transfer initiation', what: 'A company or person asking their bank to make one or more payments: payroll and supplier batches.' },
   { id: 'camt.053.001.08', family: 'camt.053', title: 'Bank to customer statement', what: 'The end-of-day account statement a bank sends its customer: balances and every booked entry.' },
+  { id: 'camt.054.001.08', family: 'camt.054', title: 'Bank to customer debit/credit notification', what: 'A bank telling its customer that money has come in or gone out of an account, entry by entry, as it happens.' },
   { id: 'seev.031.001.14', family: 'seev.031', title: 'Corporate action notification', what: 'An announcement of a corporate action (a dividend, split, merger…) from an issuer agent or custodian to account holders.' },
 ];
 
 const MODELS: Record<string, MessageModel> = Object.fromEntries(
-  [pacs008, pacs009, pain001, camt053, seev031].map((m) => [m.id, m as unknown as MessageModel]),
+  [pacs008, pacs009, pacs002, pacs004, pain001, camt053, camt054, seev031].map((m) => [m.id, m as unknown as MessageModel]),
 );
 
 export const NS_PREFIX = 'urn:iso:std:iso:20022:tech:xsd:';

@@ -1,5 +1,5 @@
 name: ISO 20022 Test Bench
-description: Check ISO 20022 messages (pacs.008, pacs.009, pain.001, camt.053, seev.031) against the base schemas and business rules. Each failure is annotated on its line.
+description: Check ISO 20022 messages (pacs.008, pacs.009, pacs.002, pacs.004, pain.001, camt.053, camt.054, seev.031) against the base schemas and business rules. Each failure is annotated on its line.
 author: IoMarkets
 branding:
   icon: check-square

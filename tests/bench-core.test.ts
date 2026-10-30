@@ -7,9 +7,95 @@ import { formatReport, validate } from '../bench/src/index.ts';
 import { sumDecimal, sameDecimal } from '../bench/src/rules.ts';
 import { checkValue, compareDecimal } from '../bench/src/schema.ts';
 import { parseXml, XmlError } from '../bench/src/xml.ts';
-import { PACS_008 } from '../bench/samples/valid.ts';
+import { CAMT_054, PACS_002, PACS_004, PACS_008, PACS_009 } from '../bench/samples/valid.ts';
 
 const dir = new URL('../bench/', import.meta.url);
+
+/** The codes a message raises, after text edits that must all apply. */
+function codesAfter(xml: string, ...edits: [string | RegExp, string][]): string[] {
+  for (const [from, to] of edits) {
+    const next = xml.replace(from, to);
+    if (next === xml) throw new Error(`edit not found: ${from}`);
+    xml = next;
+  }
+  const r = validate(xml, { now: new Date('2026-10-28T12:00:00Z') });
+  expect(r.checked.rules, JSON.stringify(r.issues)).toBe(true);
+  return r.issues.map((i) => `${i.severity === 'error' ? '' : '~'}${i.code}`);
+}
+
+describe('rules for pacs.002, pacs.004 and camt.054', () => {
+  const tx2 = (sts: string) => ['<TxSts>RJCT</TxSts>', `<TxSts>${sts}</TxSts>`] as [string, string];
+
+  it('pacs.002: group and transaction statuses agree (GroupStatus…Rule)', () => {
+    expect(codesAfter(PACS_002, tx2('ACSP'))).toEqual(['GROUP_STATUS']);
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT', '<GrpSts>RCVD'], tx2('ACSP'))).toEqual(['GROUP_STATUS']);
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT', '<GrpSts>PDNG'])).toEqual(['GROUP_STATUS']);
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT', '<GrpSts>PART'])).toEqual([]);
+  });
+
+  it('pacs.002: PART is a group status only, and unknown codes are a warning', () => {
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT', '<GrpSts>PART'], tx2('PART'))).toEqual(['STATUS_CODE']);
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT', '<GrpSts>PART'], tx2('ZZZZ'))).toEqual(['~STATUS_CODE']);
+  });
+
+  it('pacs.002: group reason text only when rejected or pending; per-status counts only with PART', () => {
+    const reason = '<GrpSts>ACCP</GrpSts>\n      <StsRsnInf>\n        <AddtlInf>All fine</AddtlInf>\n      </StsRsnInf>';
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT</GrpSts>', reason], tx2('ACCP'))).toEqual(['STATUS_REASON_INFO']);
+    const counts = (gs: string, n: number) => `<GrpSts>${gs}</GrpSts>\n      <NbOfTxsPerSts>\n        <DtldNbOfTxs>${n}</DtldNbOfTxs>\n        <DtldSts>RJCT</DtldSts>\n      </NbOfTxsPerSts>`;
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT</GrpSts>', counts('RJCT', 1)])).toEqual(['~STATUS_COUNT']);
+    expect(codesAfter(PACS_002, ['<GrpSts>RJCT</GrpSts>', counts('PART', 2)])).toEqual(['~STATUS_COUNT']);
+  });
+
+  it('pacs.002: with no group block, each transaction names its original message', () => {
+    const noGroup = PACS_002.replace(/ {4}<OrgnlGrpInfAndSts>[\s\S]*?<\/OrgnlGrpInfAndSts>\n/, '');
+    expect(codesAfter(noGroup)).toEqual(['ORIGINAL_GROUP_REFERENCE']);
+  });
+
+  it('pacs.002: the original settlement information follows the settlement method rules', () => {
+    expect(codesAfter(PACS_002, ['<IntrBkSttlmDt>2026-10-27</IntrBkSttlmDt>\n      </OrgnlTxRef>', '<IntrBkSttlmDt>2026-10-27</IntrBkSttlmDt>\n        <SttlmInf>\n          <SttlmMtd>COVE</SttlmMtd>\n        </SttlmInf>\n      </OrgnlTxRef>'])).toEqual(['SETTLEMENT_METHOD']);
+  });
+
+  it('pacs.004: a whole-message return carries no transactions or control sum, and says why', () => {
+    const whole = PACS_004.replace(/ {4}<TxInf>[\s\S]*<\/TxInf>\n/, '').replace(/ {6}<TtlRtrdIntrBkSttlmAmt[^\n]*\n/, '');
+    expect(codesAfter(whole, ['<NbOfTxs>1</NbOfTxs>', '<NbOfTxs>1</NbOfTxs>\n      <CtrlSum>1</CtrlSum>\n      <GrpRtr>true</GrpRtr>'])).toEqual(['GROUP_RETURN', 'GROUP_RETURN']);
+    expect(codesAfter(whole, ['<NbOfTxs>1</NbOfTxs>', '<NbOfTxs>3</NbOfTxs>\n      <GrpRtr>true</GrpRtr>'], ['</OrgnlCreDtTm>', '</OrgnlCreDtTm>\n      <RtrRsnInf>\n        <Rsn>\n          <Cd>AM05</Cd>\n        </Rsn>\n      </RtrRsnInf>'])).toEqual([]);
+    // Not a whole-message return, yet no transaction: both the presence and the count rule fail.
+    expect(codesAfter(whole)).toEqual(['GROUP_RETURN', 'NB_OF_TXS']);
+  });
+
+  it('pacs.004: counts, dates, agents and narratives', () => {
+    expect(codesAfter(PACS_004, ['<NbOfTxs>1', '<NbOfTxs>2'])).toEqual(['NB_OF_TXS']);
+    expect(codesAfter(PACS_004, ['<IntrBkSttlmDt>2026-10-28</IntrBkSttlmDt>\n', ''])).toEqual(['SETTLEMENT_DATE_MISSING', 'SETTLEMENT_DATE_MISSING']);
+    expect(codesAfter(PACS_004, ['<RtrdInstdAmt Ccy="EUR">25000.00</RtrdInstdAmt>', '<RtrdInstdAmt Ccy="EUR">25000.00</RtrdInstdAmt>\n      <XchgRate>1.1</XchgRate>'])).toEqual(['EXCHANGE_RATE_NOT_ALLOWED']);
+    expect(codesAfter(PACS_004, ['<Cd>AC04</Cd>', '<Cd>NARR</Cd>'], [/\n {8}<AddtlInf>[^\n]*<\/AddtlInf>\n {6}<\/RtrRsnInf>/, '\n      </RtrRsnInf>'])).toEqual(['NARRATIVE_MISSING']);
+    expect(codesAfter(PACS_004, [/ {6}<RtrRsnInf>[\s\S]*<\/RtrRsnInf>\n/, ''])).toEqual(['~RETURN_REASON_MISSING']);
+    // OriginalGroupInformationRule: named for the whole message, so not again in a transaction.
+    expect(codesAfter(PACS_004, ['<RtrId>BENCH-RTR-0001</RtrId>', '<RtrId>BENCH-RTR-0001</RtrId>\n      <OrgnlGrpInf>\n        <OrgnlMsgId>BENCH-PACS008-0001</OrgnlMsgId>\n        <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>\n      </OrgnlGrpInf>'])).toEqual(['ORIGINAL_GROUP_REFERENCE']);
+  });
+
+  it('pacs.004: a returned direct debit is not settled by cover (NoCoverSettlementMethodRule)', () => {
+    const cover = '<SttlmMtd>COVE</SttlmMtd>\n        <InstgRmbrsmntAgt>\n          <FinInstnId>\n            <BICFI>COBADEFFXXX</BICFI>\n          </FinInstnId>\n        </InstgRmbrsmntAgt>';
+    expect(codesAfter(PACS_004, ['<SttlmMtd>INDA</SttlmMtd>', cover])).toEqual([]);
+    expect(codesAfter(PACS_004, ['<SttlmMtd>INDA</SttlmMtd>', cover], ['<OrgnlMsgNmId>pacs.008.001.08', '<OrgnlMsgNmId>pacs.003.001.08'])).toEqual(['SETTLEMENT_METHOD']);
+  });
+
+  it('every pacs message: INDA, INGA and COVE take no clearing system', () => {
+    const clrSys = (m: string) => [`<SttlmMtd>${m}</SttlmMtd>`, `<SttlmMtd>${m}</SttlmMtd>\n        <ClrSys>\n          <Cd>TGT</Cd>\n        </ClrSys>`] as [string, string];
+    expect(codesAfter(PACS_008, clrSys('INDA'))).toEqual(['SETTLEMENT_METHOD']);
+    expect(codesAfter(PACS_009, clrSys('INDA'))).toEqual(['SETTLEMENT_METHOD']);
+    expect(codesAfter(PACS_004, clrSys('INDA'))).toEqual(['SETTLEMENT_METHOD']);
+  });
+
+  it('camt.054: counts, references, security ids, empty notifications', () => {
+    expect(codesAfter(CAMT_054, ['<NbOfNtries>2</NbOfNtries>\n          <Sum>', '<NbOfNtries>3</NbOfNtries>\n          <Sum>'])).toEqual(['ENTRY_COUNT']);
+    expect(codesAfter(CAMT_054, ['<Amt>26800.50</Amt>', '<Amt>26800.00</Amt>'])).toEqual(['ENTRY_NET']);
+    expect(codesAfter(CAMT_054, ['<Refs>\n              <EndToEndId>INV-2026-1190</EndToEndId>\n            </Refs>', '<Refs>\n            </Refs>'])).toEqual(['~REFERENCE_MISSING']);
+    expect(codesAfter(CAMT_054, ['<EndToEndId>INV-2026-1190</EndToEndId>\n            </Refs>', '<EndToEndId>INV-2026-1190</EndToEndId>\n            </Refs>\n            <FinInstrmId>\n            </FinInstrmId>'])).toEqual(['SECURITY_ID_MISSING']);
+    expect(codesAfter(CAMT_054, ['<NtryRef>N-0002', '<NtryRef>N-0001'])).toEqual(['~DUPLICATE_ID']);
+    const empty = CAMT_054.replace(/ {6}<TxsSummry>[\s\S]*<\/Ntry>\n/, '');
+    expect(codesAfter(empty)).toEqual(['~NO_ENTRIES']);
+  });
+});
 
 describe('compiled models', () => {
   it.each(readdirSync(new URL('schemas/', dir)).filter((f) => f.endsWith('.xsd')))('%s matches its model (run node bench/scripts/compile-xsd.ts)', (f) => {
