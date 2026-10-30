@@ -406,35 +406,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "dividend-0001585389-2026-09-30",
-    "type": "dividend",
-    "company": {
-      "name": "SmartStop Self Storage REIT, Inc.",
-      "cik": "0001585389",
-      "ticker": "SMA",
-      "figi": "BBG01T1Z99G0"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1585389/000119312526382053/ck0001585389-20260903.htm",
-      "form": "8-K",
-      "accession": "0001193125-26-382053",
-      "filed": "2026-09-03",
-      "quote": "On September 3, 2026, the Board of Directors of SmartStop Self Storage REIT, Inc. (the \"Company\") declared a dividend for the month of September 2026, which reflects a targeted annualized dividend of $1.60 per share. The dividend has a record date as of the close of business of the last business day of September 2026 and will be payable to stockholders of record as of the monthly record date set forth below: Record Date Payment Date Common Stock, per share September 30, 2026 October 15, 2026 $0.13150685 SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the..."
-    },
-    "dates": {
-      "announced": "2026-09-03",
-      "record": "2026-09-20",
-      "ex": "2026-09-20",
-      "pay": "2026-09-30"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "1.60",
-      "currency": "USD"
-    },
-    "frequency": "other"
-  },
-  {
     "id": "dividend-0001006655-2026-09-30",
     "type": "dividend",
     "company": {
@@ -2883,35 +2854,6 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
-  },
-  {
-    "id": "dividend-0001585389-2026-10-30",
-    "type": "dividend",
-    "company": {
-      "name": "SmartStop Self Storage REIT, Inc.",
-      "cik": "0001585389",
-      "ticker": "SMA",
-      "figi": "BBG01T1Z99G0"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1585389/000119312526410701/ck0001585389-20260928.htm",
-      "form": "8-K",
-      "accession": "0001193125-26-410701",
-      "filed": "2026-10-01",
-      "quote": "On October 1, 2026, the Board of Directors of SmartStop Self Storage REIT, Inc. (the \"Company\") declared a dividend for the month of October 2026, which reflects a targeted annualized dividend of $1.60 per share. The dividend has a record date as of the close of business of the last business day of October 2026 and will be payable to stockholders of record as of the monthly record date set forth below: Record Date Payment Date Common Stock, per share October 30, 2026 November 13, 2026 $0.13589041 SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant..."
-    },
-    "dates": {
-      "announced": "2026-10-01",
-      "record": "2026-10-20",
-      "ex": "2026-10-20",
-      "pay": "2026-10-30"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "1.60",
-      "currency": "USD"
-    },
-    "frequency": "other"
   },
   {
     "id": "merger-0000915840-2026-10-20",
@@ -6353,6 +6295,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001280784-2026-11-17",
+    "type": "dividend",
+    "company": {
+      "name": "Hercules Capital, Inc.",
+      "cik": "0001280784",
+      "ticker": "HTGC",
+      "figi": "BBG000C2R8K2"
+    },
+    "dates": {
+      "announced": "2026-10-29",
+      "record": "2026-11-10",
+      "ex": "2026-11-10",
+      "pay": "2026-11-17"
+    },
+    "cash": {
+      "amount": "0.47",
+      "currency": "USD"
+    },
+    "frequency": "other",
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000055/htgc-20261027.htm",
+      "form": "8-K",
+      "accession": "0001280784-26-000055",
+      "filed": "2026-10-29",
+      "quote": "Distribution Payable in November 2026 [Ex-Dividend and Record Date | Payment Date | Total Distribution Per Share] [November 10, 2026 | November 17, 2026 | $0.47]",
+      "table": true
+    }
+  },
+  {
     "id": "dividend-0001337068-2026-11-24",
     "type": "dividend",
     "company": {
@@ -7917,6 +7888,36 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001306965-2026-12-21",
+    "type": "dividend",
+    "company": {
+      "name": "Shell plc",
+      "cik": "0001306965",
+      "ticker": "SHEL",
+      "figi": "BBG0147BN6G2"
+    },
+    "instrument": "ADS",
+    "dates": {
+      "announced": "2026-10-29",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-12-21"
+    },
+    "cash": {
+      "amount": "0.7812",
+      "currency": "USD"
+    },
+    "frequency": "other",
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1306965/000117184326006962/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006962",
+      "filed": "2026-10-29",
+      "quote": "[Per ADS (US7802593050) | Q3 2026] [Shell ADSs (US$) | 0.7812] Dividend timetable for the third quarter 2026 interim dividend [Event | Date] [Ex- Dividend Date for ADSs | November 13, 2026] [Record date | November 13, 2026] [Payment date | December 21, 2026]",
+      "table": true
+    }
   },
   {
     "id": "dividend-0001325618-2026-11-27",
@@ -11684,6 +11685,36 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0002040290-2027-01-29",
+    "type": "dividend",
+    "company": {
+      "name": "LOGPROSTYLE INC.",
+      "cik": "0002040290",
+      "ticker": "LGPS",
+      "figi": "BBG01QXD1SJ3"
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-12-31",
+      "ex": "2026-12-31",
+      "pay": "2027-01-29"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.0115",
+      "currency": "USD"
+    },
+    "frequency": "quarterly",
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2040290/000149315226049358/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-049358",
+      "filed": "2026-10-30",
+      "quote": "The remaining quarterly installments relating to the previously announced US$0.046 per share dividend are scheduled as follows: [Applicable quarter | Record date | Payment date | Dividend payable] [FQ3 | December 31, 2026 | January 29, 2027 | US$ 0.0115]",
+      "table": true
+    }
+  },
+  {
     "id": "dividend-0000034903-2027-01-15",
     "type": "dividend",
     "company": {
@@ -11885,5 +11916,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0002040290-2027-04-30",
+    "type": "dividend",
+    "company": {
+      "name": "LOGPROSTYLE INC.",
+      "cik": "0002040290",
+      "ticker": "LGPS",
+      "figi": "BBG01QXD1SJ3"
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2027-03-31",
+      "ex": "2027-03-31",
+      "pay": "2027-04-30"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.0115",
+      "currency": "USD"
+    },
+    "frequency": "quarterly",
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2040290/000149315226049358/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-049358",
+      "filed": "2026-10-30",
+      "quote": "The remaining quarterly installments relating to the previously announced US$0.046 per share dividend are scheduled as follows: [Applicable quarter | Record date | Payment date | Dividend payable] [FQ4 | March 31, 2027 | April 30, 2027 | US$ 0.0115]",
+      "table": true
+    }
   }
 ]

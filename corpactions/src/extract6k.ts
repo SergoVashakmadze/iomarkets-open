@@ -23,10 +23,20 @@ import { COMMON, COMPARED, NOT_YET, PREFERRED, splitRatio, type Filing } from '.
 import { addDays, clip, DATE_ANY, dateAfter, numberWord, sentences } from './text.ts';
 import type { CorporateAction, EventType } from './types.ts';
 
-const US_EXCHANGE = /\b(?:NYSE(?:\s+American|\s+Arca)?|NASDAQ|Nasdaq(?!\s+(?:Stockholm|Copenhagen|Helsinki|Iceland|Riga|Tallinn|Vilnius|Baltic|Nordic|First North))|New York Stock Exchange|XNYS|XNAS|XASE|Cboe)\b/;
-const NON_US_EXCHANGE =
+export const US_EXCHANGE = /\b(?:NYSE(?:\s+American|\s+Arca)?|NASDAQ|Nasdaq(?!\s+(?:Stockholm|Copenhagen|Helsinki|Iceland|Riga|Tallinn|Vilnius|Baltic|Nordic|First North))|New York Stock Exchange|XNYS|XNAS|XASE|Cboe)\b/;
+export const NON_US_EXCHANGE =
   /\b(?:TSX(?:V|\s+Venture)?|Toronto Stock Exchange|London Stock Exchange|LSE|XLON|Euronext|XAMS|XPAR|XBRU|Oslo|OSE|B[øo]rs|ASX|Australian Securities Exchange|Borsa|Bolsa|BME|Spanish Stock Exchanges|B3|Xetra|Frankfurt Stock Exchange|SIX Swiss|Korea Exchange|KRX|KOSPI|KOSDAQ|Tokyo Stock Exchange|Hong Kong Stock Exchange|Stock Exchange of Hong Kong|HKEX|SEHK|Johannesburg Stock Exchange|JSE|Tel Aviv Stock Exchange|TASE|Nasdaq\s+(?:Stockholm|Copenhagen|Helsinki|Iceland|Riga|Tallinn|Vilnius)|Bombay Stock Exchange|BSE|National Stock Exchange of India|Mexican Stock Exchange|BMV|Taiwan Stock Exchange|TWSE|Singapore Exchange|SGX|Bursa Malaysia|Philippine Stock Exchange|Santiago Stock Exchange)\b/;
-const ADS = /\bAmerican Deposit[ao]ry (?:Shares?|Receipts?)\b|\bADSs?\b|\bADRs?\b/;
+export const ADS = /\bAmerican Deposit[ao]ry (?:Shares?|Receipts?)\b|\bADSs?\b|\bADRs?\b/;
+/**
+ * Whether a filing speaks of ADSs, not counting "its common shares ... rather than through American Depositary Receipts
+ * (ADRs)" or a hotel's "average daily rate (ADR)".
+ */
+export const mentionsAds = (text: string) =>
+  ADS.test(
+    text
+      .replace(/\b(?:rather than|instead of|not) (?:through |via |in the form of )?(?:American Deposit[ao]ry (?:Shares|Receipts)|ADSs|ADRs)(?:\s*\((?:ADSs|ADRs)\))?/gi, '')
+      .replace(/\baverage daily rates?\s*\(ADRs?\)/gi, ''),
+  );
 const ADS_UNIT = /^(?:ADSs?|ADRs?|American Deposit[ao]ry (?:Shares?|Receipts?))$/i;
 
 // ---- money ------------------------------------------------------------------------------
@@ -47,9 +57,9 @@ const SYMBOL: [RegExp, string][] = [
   [/^(?:RMB|CNY)$/i, 'CNY'],
   [/^(?:CHF|SEK|NOK|DKK|MXN|INR|ILS|ZAR)$/i, ''],
 ];
-const BEFORE = String.raw`US\$|U\.S\.\s?\$|USD|EUR|€|euros?|GBP|£|JPY|¥|KRW|₩|C\$|CAD|CDN\$|Cdn\$|R\$|BRL|A\$|AUD|HK\$|HKD|NT\$|TWD|S\$|SGD|NZ\$|NZD|RMB|CNY|CHF|SEK|NOK|DKK|MXN|INR|ILS|ZAR|\$`;
-const AFTER = String.raw`USD|EUR|GBP|JPY|KRW|CAD|BRL|AUD|HKD|TWD|SGD|NZD|CNY|RMB|CHF|SEK|NOK|DKK|MXN|INR|ILS|ZAR|euros?|euro cents|cents?|pence|yen|won|U\.S\. dollars?|US dollars?`;
-const NUM = String.raw`\d{1,7}(?:,\d{3})*(?:\.\d+)?`;
+export const BEFORE = String.raw`US\$|U\.S\.\s?\$|USD|EUR|€|euros?|GBP|£|JPY|¥|KRW|₩|C\$|CAD|CDN\$|Cdn\$|R\$|BRL|A\$|AUD|HK\$|HKD|NT\$|TWD|S\$|SGD|NZ\$|NZD|RMB|CNY|CHF|SEK|NOK|DKK|MXN|INR|ILS|ZAR|\$`;
+export const AFTER = String.raw`USD|EUR|GBP|JPY|KRW|CAD|BRL|AUD|HKD|TWD|SGD|NZD|CNY|RMB|CHF|SEK|NOK|DKK|MXN|INR|ILS|ZAR|euros?|euro cents|cents?|pence|yen|won|U\.S\. dollars?|US dollars?`;
+export const NUM = String.raw`\d{1,7}(?:,\d{3})*(?:\.\d+)?`;
 /** An amount and what it is per: "US$0.75 per common share", "€ 0.54 per ADR", "0.40 EUR per share", "10.5 pence per ordinary share". */
 const PER_UNIT = new RegExp(
   String.raw`(?:(${BEFORE})\s?(${NUM})|(${NUM})\s?(${AFTER})\b)\s*(?:\((?:gross|net)\)\s*)?(?:per|for each|a|/)\s*(?:(?:[A-Z][\w.&'-]*|ordinary|common|outstanding|issued)\s+){0,4}?(shares?|ADSs?|ADRs?|American Deposit[ao]ry (?:Shares?|Receipts?))\b`,
@@ -57,7 +67,7 @@ const PER_UNIT = new RegExp(
 );
 
 /** Which currency an amount is in, or undefined when the filing doesn't say. */
-function currencyOf(token: string, doc: string): string | undefined {
+export function currencyOf(token: string, doc: string): string | undefined {
   const t = token.trim();
   if (t === '$' || /^cents?$/i.test(t)) {
     // A bare dollar sign: the filing's own statement of which dollars ("All currency is expressed in Canadian dollars"), else US
@@ -74,10 +84,10 @@ function currencyOf(token: string, doc: string): string | undefined {
   return undefined;
 }
 
-type Amount = { amount: string; currency: string; ads: boolean; at: number; text: string };
+export type Amount = { amount: string; currency: string; ads: boolean; at: number; text: string };
 
 /** Every amount per share or per ADS in a sentence, with its currency, skipping comparisons and approximations. */
-function amounts(s: string, doc: string): Amount[] {
+export function amounts(s: string, doc: string): Amount[] {
   const out: Amount[] = [];
   for (const m of s.matchAll(PER_UNIT)) {
     const before = s.slice(Math.max(0, m.index! - 70), m.index!);
@@ -95,7 +105,7 @@ function amounts(s: string, doc: string): Amount[] {
 }
 
 /** "50" cents as "0.50", "10.5" pence as "0.105": the decimal point moved, no floating point. */
-function hundredth(raw: string): string {
+export function hundredth(raw: string): string {
   const [whole, frac = ''] = raw.split('.');
   const digits = whole.padStart(3, '0') + frac;
   const at = digits.length - frac.length - 2;
@@ -107,7 +117,7 @@ function hundredth(raw: string): string {
 type Doc = { f: Filing; ss: string[]; text: string; ads: boolean; usNamed: boolean; nonUs: boolean };
 
 /** The ticker the release gives on a US exchange ("(NYSE: TAC)"), if it is one of the filer's US tickers, else the first. */
-function tickerOf(f: Filing): string | undefined {
+export function tickerOf(f: Filing): string | undefined {
   for (const m of f.text.matchAll(/\b(?:NYSE(?:\s+American)?|NASDAQ(?:\s?GS|\s?GM|\s?CM)?|Nasdaq(?:\s?GS|\s?GM|\s?CM)?|XNYS|XNAS)\s*:\s*"?([A-Z][A-Z.\-]{0,6})\b/g)) if (f.tickers.includes(m[1])) return m[1];
   return f.tickers[0];
 }
@@ -125,16 +135,16 @@ function base(d: Doc, type: EventType, key: string, quote: string, anchor: RegEx
 
 // ---- dividends --------------------------------------------------------------------------
 
-const DECLARED = /\b(?:declare[ds]?|approved|resolved|authori[sz]ed|determined|decided)\b/i;
+export const DECLARED = /\b(?:declare[ds]?|approved|resolved|authori[sz]ed|determined|decided)\b/i;
 const NOT_DECIDED = /\bpropos|\brecommend|\bsubject to\b[^.]{0,60}\bapprov|\bannual general meeting\b|\bAGM\b|\bforecast|\bguidance\b|\bexpected dividend|\bintends? to\b|\bplans? to\b|\bpolicy\b|\banticipated\b|\btarget/i;
-const NOT_CASH = /\bscrip\b|\bstock dividend\b|\bdividend (?:payable )?in (?:the form of )?(?:new |additional )?(?:shares|stock)\b|\bin-kind\b|\belect(?:ion)? to receive (?:new |additional )?shares\b|\beither cash or\b|\bcash or (?:the company's |its )?(?:common |ordinary )?shares\b|\bin cash or (?:in )?shares\b/i;
-const CAPITAL = /\bshare premium\b|\breturn of capital\b|\bcapital (?:repayment|reduction|distribution)\b|\bin place of (?:the )?dividend\b|\b(?:from|out of) (?:the )?(?:available |distributable )?reserves\b|\breserve for invested unrestricted equity\b/i;
+export const NOT_CASH = /\bscrip\b|\bstock dividend\b|\bdividend (?:payable )?in (?:the form of )?(?:new |additional )?(?:shares|stock)\b|\bin-kind\b|\belect(?:ion)? to receive (?:new |additional )?shares\b|\beither cash or\b|\bcash or (?:the company's |its )?(?:common |ordinary )?shares\b|\bin cash or (?:in )?shares\b/i;
+export const CAPITAL = /\bshare premium\b|\breturn of capital\b|\bcapital (?:repayment|reduction|distribution)\b|\bin place of (?:the )?dividend\b|\b(?:from|out of) (?:the )?(?:available |distributable )?reserves\b|\breserve for invested unrestricted equity\b/i;
 const NOT_FIRM = /\b(?:expected|anticipated|estimated|tentative|indicative|provisional)\s+(?:dividend\s+)?(?:payment|record|ex-dividend|pay)\b|\bexpected to be paid\b|\b(?:is|are) expected to be\b|\bon or around\b|\bto be (?:determined|announced|confirmed)\b|\bin due course\b|\brespectively\b/i;
 const PAY = /\b(?:payable|to be paid|will be paid|be paid|paid|payment date|with a payment date of)\b(?:\s+(?:on|or about|on or about|beginning))?/;
 const RECORD = /\b(?:of record|record date|record holders|holders on the register)\b/;
 const US_EX = /\bex-?(?:dividend\s+)?date\s*(?:for\s+(?:the\s+)?(?:ADSs?|ADRs?|American Deposit[ao]ry \w+)|(?:on\s+(?:the\s+)?)?(?:New York Stock Exchange|NYSE|Nasdaq))|\b(?:US|U\.S\.|NYSE|Nasdaq|ADSs?|ADRs?)\s+ex-?(?:dividend\s+)?date\b/i;
 
-const FREQ6: [RegExp, CorporateAction['frequency']][] = [
+export const FREQ6: [RegExp, CorporateAction['frequency']][] = [
   [/\bspecial\b|\bextra(?:ordinary)?\b|\bone-time\b/i, 'special'],
   [/\bmonthly\b/i, 'monthly'],
   [/\bquarterly\b/i, 'quarterly'],
@@ -300,7 +310,7 @@ export function extract6k(f: Filing): CorporateAction[] {
   // As for 8-Ks, a filer with no ticker on a US exchange is left out.
   if (!f.tickers.length) return [];
   const ss = sentences(f.text);
-  const d: Doc = { f, ss, text: f.text, ads: ADS.test(f.text), usNamed: US_EXCHANGE.test(f.text), nonUs: NON_US_EXCHANGE.test(f.text) };
+  const d: Doc = { f, ss, text: f.text, ads: mentionsAds(f.text), usNamed: US_EXCHANGE.test(f.text), nonUs: NON_US_EXCHANGE.test(f.text) };
   return [...dividends(d), ...splits(d), ...mergers(d)];
 }
 

@@ -1,7 +1,9 @@
 import { readFileSync } from 'node:fs'
+import { gunzipSync } from 'node:zlib'
 import { describe, expect, it } from 'vitest'
 import { validate } from '../bench/src/index'
 import { extract6k, fitsListing } from '../corpactions/src/extract6k'
+import { extractAll } from '../corpactions/src/extractTable'
 import type { Filing } from '../corpactions/src/extract'
 import { parseListings, usTickers } from '../corpactions/src/edgar'
 import { lookupFigis } from '../corpactions/src/figi'
@@ -11,19 +13,20 @@ import { toSeev031 } from '../corpactions/src/seev031'
 import { DATE_ANY, dateAfter, parseDate } from '../corpactions/src/text'
 import type { CorporateAction } from '../corpactions/src/types'
 
-// Real 6-K filings (corpactions/fixtures/6-k/, README "6-K filings"): each document's text as the feed reads
-// it, and in index.json what a careful reader finds in it for the security that trades in the US ("truth"),
+// Real 6-K filings (corpactions/fixtures/6-k/, README "6-K filings"): each document as filed (.htm.gz) and its text as
+// the feed reads it (.txt), and in index.json what a careful reader finds in it for the security that trades in the US ("truth"),
 // labelled by hand. The reader may miss events (recall) but must never state one wrongly (precision).
 
 type Truth = Pick<CorporateAction, 'type' | 'cash' | 'ratio' | 'instrument'> & { dates: Partial<CorporateAction['dates']> }
-type Fixture = { file: string; url: string; accession: string; form: string; filed: string; company: { name: string; cik: string }; tickers: string[]; securityType: string | null; kind: string; truth: Truth[]; note: string }
+type Fixture = { file: string; html: string; url: string; accession: string; form: string; filed: string; company: { name: string; cik: string }; tickers: string[]; securityType: string | null; kind: string; truth: Truth[]; note: string }
 
 const DIR = new URL('../corpactions/fixtures/6-k/', import.meta.url)
 const FIXTURES = JSON.parse(readFileSync(new URL('index.json', DIR), 'utf8')) as Fixture[]
 const textOf = (f: Fixture) => readFileSync(new URL(f.file, DIR), 'utf8')
-const filingOf = (f: Fixture): Filing => ({ company: f.company, tickers: f.tickers, form: f.form, accession: f.accession, filed: f.filed, url: f.url, items: [], text: textOf(f) })
-/** What the feed keeps from one filing: the reader, then the OpenFIGI security type check ingest() does. */
-const read = (f: Fixture) => extract6k(filingOf(f)).filter((e) => fitsListing(e, f.securityType))
+const htmlOf = (f: Fixture) => gunzipSync(readFileSync(new URL(f.html, DIR))).toString('utf8')
+const filingOf = (f: Fixture): Filing => ({ company: f.company, tickers: f.tickers, form: f.form, accession: f.accession, filed: f.filed, url: f.url, items: [], text: textOf(f), html: htmlOf(f) })
+/** What the feed keeps from one filing: its sentences (extract6k) and tables (extractTable.ts), then the OpenFIGI security type check ingest() does. */
+const read = (f: Fixture) => extractAll(filingOf(f)).filter((e) => fitsListing(e, f.securityType))
 
 const same = (e: CorporateAction, t: Truth) =>
   e.type === t.type &&
@@ -52,11 +55,11 @@ describe('6-K fixtures: real filings', () => {
   it('precision 1: every event read is in the filing, as stated', () => {
     const wrong = emitted.filter((x) => !x.right).map((x) => `${x.f.file}: ${describeEvent(x.e)}`)
     expect(wrong).toEqual([])
-    expect(emitted).toHaveLength(12)
+    expect(emitted).toHaveLength(13)
   })
 
-  it('recall: 12 of the 20 events the filings state, every miss one the reader leaves out on purpose', () => {
-    expect(truths.filter((t) => t.found)).toHaveLength(12)
+  it('recall: 13 of the 20 events the filings state, every miss one the reader leaves out on purpose', () => {
+    expect(truths.filter((t) => t.found)).toHaveLength(13)
     expect(truths).toHaveLength(20)
     const missed = truths.filter((t) => !t.found).map((t) => t.f.kind)
     expect(missed.every((k) => k.endsWith('-missed'))).toBe(true)
@@ -72,7 +75,8 @@ describe('6-K fixtures: real filings', () => {
   it('each event quotes its filing, links it, says it is a 6-K, and is valid seev.031 with no warnings', () => {
     for (const { f, e } of emitted) {
       expect(e.source).toMatchObject({ url: f.url, form: '6-K', accession: f.accession, filed: f.filed })
-      for (const part of e.source.quote.split('...').map((s) => s.trim()).filter((s) => s.length > 20)) expect(textOf(f), e.id).toContain(part)
+      // A table event's quote (rows in [brackets]) is checked against the filing's tables in corpactions-tables.test.ts.
+      if (!e.source.table) for (const part of e.source.quote.split('...').map((s) => s.trim()).filter((s) => s.length > 20)) expect(textOf(f), e.id).toContain(part)
       const r = validate(toSeev031(e))
       expect(r.issues.map((i) => `${i.code} ${i.message}`), e.id).toEqual([])
       expect(e.company.ticker, e.id).toBe(f.tickers[0])
@@ -158,6 +162,13 @@ describe('the 6-K reader, rule by rule', () => {
     expect(extract6k(filing(`${split} Each American Depositary Share represents ten ordinary shares.`))).toEqual([])
     expect(extract6k(filing(split.replace('has determined to effect', 'expects to implement')))).toEqual([])
     expect(extract6k(filing('Example plc (Nasdaq: EXPL) will effect a share consolidation on the basis that every five (5) ordinary shares will be consolidated into one (1) ordinary share. The ordinary shares will begin trading on a post-consolidation basis on November 9, 2026.'))[0]).toMatchObject({ type: 'reverse-split', ratio: { new: 1, old: 5 }, dates: { effective: '2026-11-09' } })
+  })
+
+  it('an ADS only when the filing speaks of one', () => {
+    const lgps = 'LogProstyle Inc. (NYSE American: LGPS) declared a cash dividend of US$0.0115 per share, payable on October 30, 2026 to shareholders of record on September 30, 2026.'
+    for (const t of [' Hotel revenue rose on a higher average daily rate (ADR).', ' It lists its common shares directly on a US exchange rather than through American Depositary Receipts (ADRs).'])
+      expect(extract6k(filing(lgps + t, { tickers: ['LGPS'] }))[0], t).toMatchObject({ cash: { amount: '0.0115', currency: 'USD' } })
+    expect(extract6k(filing(lgps + ' Each ADS represents one share.', { tickers: ['LGPS'] }))).toEqual([])
   })
 
   it('a filer with no ticker on a US exchange is left out', () => {

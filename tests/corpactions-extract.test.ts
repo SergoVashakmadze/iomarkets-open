@@ -61,6 +61,14 @@ describe('dividends', () => {
     expect(e).toMatchObject({ cash: { amount: '0.38' }, dates: { pay: '2026-11-27', record: '2026-11-12' } })
   })
 
+  it("a yearly rate is not the dividend, and the common stock's ticker is the one on the 8-K cover", () => {
+    // SmartStop, 2026-10-01: the monthly amount is only in a table (extractTable.ts).
+    expect(extract(filing('On October 1, 2026, the Board of Directors of SmartStop Self Storage REIT, Inc. (the "Company") declared a dividend for the month of October 2026, which reflects a targeted annualized dividend of $1.60 per share. The dividend has a record date as of the close of business of the last business day of October 2026 and will be payable to stockholders of record as of the monthly record date set forth below: Record Date Payment Date Common Stock, per share October 30, 2026 November 13, 2026 $0.13589041'))).toEqual([])
+    const cover = 'Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.001 per share HTGC New York Stock Exchange 6.25% Notes due 2033 HCXY New York Stock Exchange. '
+    const [e] = extract(filing(cover + 'The Board declared a cash dividend of $0.47 per share, payable on November 17, 2026 to shareholders of record on November 10, 2026.', { tickers: ['HCXY', 'HTGC'] }))
+    expect(e.company.ticker).toBe('HTGC')
+  })
+
   it("doesn't read the record date as the payment date", () => {
     const [e] = extract(filing('At its October 2026 meeting, the Board of Directors approved a cash dividend of $0.45 per common share, up five cents or 12.50% from the cash dividend declared a year ago. The cash dividend is payable to shareholders of record on November 3, 2026, and will be paid on November 13, 2026.'))
     expect(e.dates).toMatchObject({ record: '2026-11-03', pay: '2026-11-13' })

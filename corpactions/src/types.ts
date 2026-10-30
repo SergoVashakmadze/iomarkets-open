@@ -71,8 +71,14 @@ export type CorporateAction = {
     form: string;
     accession: string;
     filed: string;
-    /** The sentence(s) the event was read from, as filed. */
+    /**
+     * The sentence(s) the event was read from, as filed. When `table` is true, it also quotes the rows of the
+     * filing's table it was read from, each in [square brackets] with its cells joined by " | ", after the
+     * table's heading (and the sentence before it, if the amount came from there).
+     */
     quote: string;
+    /** True when the event was read from a table in the filing (its own HTML <table>), not only from sentences. */
+    table?: true;
   };
 };
 

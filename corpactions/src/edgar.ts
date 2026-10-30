@@ -1,20 +1,22 @@
 // Finding corporate action filings on SEC EDGAR. EDGAR full-text search finds the 8-Ks of US
 // companies and the 6-Ks of foreign private issuers (and the press releases filed with them)
-// whose words announce an action; each matching document is fetched and handed to extract()
-// or extract6k(). SEC's fair-access rules: a User-Agent naming who is asking, and at most 10
+// whose words announce an action; each matching document is fetched and handed to extractAll()
+// (extractTable.ts): its sentences to extract() or extract6k(), then its tables. SEC's fair-access rules: a User-Agent naming who is asking, and at most 10
 // requests a second (this keeps well under).
 
-import { extract, type Filing } from './extract.ts';
-import { extract6k } from './extract6k.ts';
+import type { Filing } from './extract.ts';
+import { extractAll } from './extractTable.ts';
 import { htmlToText } from './text.ts';
 import type { CorporateAction } from './types.ts';
 
 export const USER_AGENT = 'IoMarkets corporate actions feed info@iomarkets.org';
 const SEARCH = 'https://efts.sec.gov/LATEST/search-index';
 
-/** The searches that find each kind of action. Every hit is still read in full by extract() or extract6k(). */
+/** The searches that find each kind of action. Every hit is still read in full by extractAll(). */
 export const QUERIES: { kind: string; q: string; form?: '8-K' | '6-K'; items?: (items: string[]) => boolean }[] = [
   { kind: 'dividend', q: '"dividend" "of record" "payable"' },
+  // Dividends stated in a table ("Record Date | Payment Date | Amount"), which often has neither "of record" nor "payable".
+  { kind: 'dividend', q: '"dividend" "record date" "payment date"' },
   { kind: 'split', q: '"stock split" "split-adjusted"' },
   { kind: 'split', q: '"reverse stock split" "effective"', items: (i) => i.some((x) => ['3.03', '5.03', '7.01', '8.01'].includes(x)) },
   { kind: 'split', q: '"stock split" "of record" "distributed"' },
@@ -131,8 +133,8 @@ export async function ingest(get: Get, from: string, to: string, log: (s: string
       }
       stats.documents++;
       const { name, tickers } = parseDisplayName(src.display_names[0] ?? '');
-      const filing: Filing = { company: { name, cik }, tickers: form === '6-K' ? usTickers(tickers, listings!) : tickers, form: src.form, accession: src.adsh, filed: src.file_date, url, items, text: htmlToText(r.text) };
-      for (const e of form === '6-K' ? extract6k(filing) : extract(filing)) if (!byId.has(e.id)) byId.set(e.id, e);
+      const filing: Filing = { company: { name, cik }, tickers: form === '6-K' ? usTickers(tickers, listings!) : tickers, form: src.form, accession: src.adsh, filed: src.file_date, url, items, text: htmlToText(r.text), html: r.text };
+      for (const e of extractAll(filing)) if (!byId.has(e.id)) byId.set(e.id, e);
     }
   }
   stats.events = byId.size;

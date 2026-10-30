@@ -1,0 +1,896 @@
+[
+  {
+    "file": "0001428205-26-000111_prconfirmingoctobercommona.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1428205/000142820526000111/prconfirmingoctobercommona.htm",
+    "accession": "0001428205-26-000111",
+    "form": "8-K",
+    "filed": "2026-10-01",
+    "company": {
+      "name": "Armour Residential REIT, Inc.",
+      "cik": "0001428205"
+    },
+    "tickers": [
+      "ARR",
+      "ARR-PC"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.24",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-10-15",
+          "pay": "2026-10-29"
+        }
+      }
+    ],
+    "note": "Common stock table (\"October 2026 Common Stock Dividend Information\"); the Series C preferred table beside it is not the common stock."
+  },
+  {
+    "file": "0001428205-26-000118_prfornovember2026commondiv.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1428205/000142820526000118/prfornovember2026commondiv.htm",
+    "accession": "0001428205-26-000118",
+    "form": "8-K",
+    "filed": "2026-10-20",
+    "company": {
+      "name": "Armour Residential REIT, Inc.",
+      "cik": "0001428205"
+    },
+    "tickers": [
+      "ARR",
+      "ARR-PC"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.24",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-16",
+          "pay": "2026-11-27"
+        }
+      }
+    ],
+    "note": "Common stock table, one month."
+  },
+  {
+    "file": "0001428205-26-000109_prforoctober2026commondivi.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1428205/000142820526000109/prforoctober2026commondivi.htm",
+    "accession": "0001428205-26-000109",
+    "form": "8-K",
+    "filed": "2026-09-24",
+    "company": {
+      "name": "Armour Residential REIT, Inc.",
+      "cik": "0001428205"
+    },
+    "tickers": [
+      "ARR",
+      "ARR-PC"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Guidance, not a declaration: \"today announced guidance on the October 2026 cash dividend\", in the same table layout as the confirmation a week later (0001428205-26-000111)."
+  },
+  {
+    "file": "0001213900-26-107199_ea030779301ex99-1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026107199/ea030779301ex99-1.htm",
+    "accession": "0001213900-26-107199",
+    "form": "8-K",
+    "filed": "2026-10-06",
+    "company": {
+      "name": "SARATOGA INVESTMENT CORP.",
+      "cik": "0001377936"
+    },
+    "tickers": [
+      "SAJ",
+      "SAR",
+      "SAV",
+      "SAX",
+      "SAY",
+      "SAZ"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.25",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-10-06",
+          "pay": "2026-10-22"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.25",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-05",
+          "pay": "2026-11-24"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.25",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-12-03",
+          "pay": "2026-12-22"
+        }
+      }
+    ],
+    "note": "Three monthly dividends in a table (\"Month | Amount Per Share | Record Date | Payment Date\"); the results table above lists past \"Dividends per share (record date)\" with no dates."
+  },
+  {
+    "file": "0000074208-26-000081_udr-ex99d1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000081/udr-ex99d1.htm",
+    "accession": "0000074208-26-000081",
+    "form": "8-K",
+    "filed": "2026-10-21",
+    "company": {
+      "name": "UDR, Inc.",
+      "cik": "0000074208"
+    },
+    "tickers": [
+      "UDR"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.145",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-10-19",
+          "pay": "2026-11-02"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.145",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-11-16",
+          "pay": "2026-11-30"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.145",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-12-15",
+          "pay": "2026-12-31"
+        }
+      }
+    ],
+    "note": "Three monthly common dividends, \"$0.145 per common share\" in each row of an earnings release."
+  },
+  {
+    "file": "0001280784-26-000055_htgc-20261027.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000055/htgc-20261027.htm",
+    "accession": "0001280784-26-000055",
+    "form": "8-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "Hercules Capital, Inc.",
+      "cik": "0001280784"
+    },
+    "tickers": [
+      "HCXY",
+      "HTGC"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.47",
+          "currency": "USD"
+        },
+        "dates": {
+          "ex": "2026-11-10",
+          "record": "2026-11-10",
+          "pay": "2026-11-17"
+        }
+      }
+    ],
+    "note": "One row; \"Ex-Dividend and Record Date\" is both dates. EDGAR lists the notes (HCXY) first: the cover gives HTGC for the common stock."
+  },
+  {
+    "file": "0001193125-26-410701_ck0001585389-20260928.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1585389/000119312526410701/ck0001585389-20260928.htm",
+    "accession": "0001193125-26-410701",
+    "form": "8-K",
+    "filed": "2026-10-01",
+    "company": {
+      "name": "SmartStop Self Storage REIT, Inc.",
+      "cik": "0001585389"
+    },
+    "tickers": [
+      "SMA"
+    ],
+    "securityType": null,
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.13589041",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-10-30",
+          "pay": "2026-11-13"
+        }
+      }
+    ],
+    "note": "The monthly amount is only in the table; the sentence before it gives the \"targeted annualized dividend of $1.60 per share\", which is not the dividend (the sentence reader read it as one before this change)."
+  },
+  {
+    "file": "0001193125-26-423400_mstr-20261015.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526423400/mstr-20261015.htm",
+    "accession": "0001193125-26-423400",
+    "form": "8-K",
+    "filed": "2026-10-16",
+    "company": {
+      "name": "Strategy Inc",
+      "cik": "0001050446"
+    },
+    "tickers": [
+      "MSTR",
+      "STRC",
+      "STRD",
+      "STRF",
+      "STRK"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Daily dividends on STRC, a preferred stock, in two side-by-side column groups; the filer's first ticker is MSTR."
+  },
+  {
+    "file": "0001050446-26-000047_mstr-20261029x8kxex9912.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/mstr-20261029x8kxex9912.htm",
+    "accession": "0001050446-26-000047",
+    "form": "8-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "Strategy Inc",
+      "cik": "0001050446"
+    },
+    "tickers": [
+      "MSTR",
+      "STRC",
+      "STRD",
+      "STRF",
+      "STRK"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Past STRC (preferred) dividends \"since the start of FY 2026\"."
+  },
+  {
+    "file": "0001628280-26-065594_asst-20261012.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1920406/000162828026065594/asst-20261012.htm",
+    "accession": "0001628280-26-065594",
+    "form": "8-K",
+    "filed": "2026-10-13",
+    "company": {
+      "name": "Strive, Inc.",
+      "cik": "0001920406"
+    },
+    "tickers": [
+      "ASST",
+      "SATA"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Daily dividends on SATA, a perpetual preferred stock; the table itself does not say which stock."
+  },
+  {
+    "file": "0001805526-26-000132_dfdv-20261014.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000132/dfdv-20261014.htm",
+    "accession": "0001805526-26-000132",
+    "form": "8-K",
+    "filed": "2026-10-15",
+    "company": {
+      "name": "DeFi Development Corp.",
+      "cik": "0001805526"
+    },
+    "tickers": [
+      "CHAD",
+      "DFDV",
+      "DFDVW",
+      "DFUKF"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Daily dividends on \"CHAD Stock\", a Series C perpetual preferred stock that EDGAR lists first among the filer's tickers."
+  },
+  {
+    "file": "0001193125-26-436149_msft-ex99_1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-ex99_1.htm",
+    "accession": "0001193125-26-436149",
+    "form": "8-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "MICROSOFT CORP",
+      "cik": "0000789019"
+    },
+    "tickers": [
+      "MSFT"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Annual financial statements: a table of dividends declared and paid in fiscal 2025 and 2026."
+  },
+  {
+    "file": "0001193125-26-436173_maa-ex99_2.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/912595/000119312526436173/maa-ex99_2.htm",
+    "accession": "0001193125-26-436173",
+    "form": "8-K",
+    "filed": "2026-10-28",
+    "company": {
+      "name": "MID AMERICA APARTMENT COMMUNITIES INC.",
+      "cik": "0000912595"
+    },
+    "tickers": [
+      "MAA"
+    ],
+    "securityType": null,
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Supplemental data: five quarters of past dividends, numeric dates."
+  },
+  {
+    "file": "0001171843-26-005059_exh_991.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1306965/000117184326005059/exh_991.htm",
+    "accession": "0001171843-26-005059",
+    "form": "6-K",
+    "filed": "2026-07-30",
+    "company": {
+      "name": "Shell plc",
+      "cik": "0001306965"
+    },
+    "tickers": [
+      "SHEL"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-ads",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.7812",
+          "currency": "USD"
+        },
+        "dates": {
+          "ex": "2026-08-14",
+          "record": "2026-08-14",
+          "pay": "2026-09-21"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "The ADS amount is only in a small table (\"Per ADS ... Shell ADSs (US$) 0.7812\"), the dates only in the timetable, with an ex-date row for ADSs and one for ordinary shares."
+  },
+  {
+    "file": "0001171843-26-006962_exh_993.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1306965/000117184326006962/exh_993.htm",
+    "accession": "0001171843-26-006962",
+    "form": "6-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "Shell plc",
+      "cik": "0001306965"
+    },
+    "tickers": [
+      "SHEL"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Next year's timetable (four quarters, no amounts): nothing declared yet."
+  },
+  {
+    "file": "0001493152-26-049358_ex99-1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/2040290/000149315226049358/ex99-1.htm",
+    "accession": "0001493152-26-049358",
+    "form": "6-K",
+    "filed": "2026-10-30",
+    "company": {
+      "name": "LOGPROSTYLE INC.",
+      "cik": "0002040290"
+    },
+    "tickers": [
+      "LGPS"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-one-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-09-30",
+          "pay": "2026-10-30"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-12-31",
+          "pay": "2027-01-29"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2027-03-31",
+          "pay": "2027-04-30"
+        }
+      }
+    ],
+    "note": "Installments of a US$0.046 per share dividend. The one paid that day is stated only in sentences that read nothing as declared (missed); the two to come are in a table. Common shares on NYSE American \"rather than through American Depositary Receipts (ADRs)\"."
+  },
+  {
+    "file": "0001493152-26-032937_ex99-1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/2040290/000149315226032937/ex99-1.htm",
+    "accession": "0001493152-26-032937",
+    "form": "6-K",
+    "filed": "2026-07-13",
+    "company": {
+      "name": "LOGPROSTYLE INC.",
+      "cik": "0002040290"
+    },
+    "tickers": [
+      "LGPS"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-07-31",
+          "pay": "2026-08-31"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-09-30",
+          "pay": "2026-10-30"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-12-31",
+          "pay": "2027-01-29"
+        }
+      },
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.0115",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2027-03-31",
+          "pay": "2027-04-30"
+        }
+      }
+    ],
+    "note": "The declaration: four installments in a table under \"declared a cash dividend of US$0.046 per share\". A hotel's \"average daily rate (ADR)\" is not an ADS."
+  },
+  {
+    "file": "0001683168-26-006121_caledonia_ex9901.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/766011/000168316826006121/caledonia_ex9901.htm",
+    "accession": "0001683168-26-006121",
+    "form": "6-K",
+    "filed": "2026-08-10",
+    "company": {
+      "name": "Caledonia Mining Corp Plc",
+      "cik": "0000766011"
+    },
+    "tickers": [
+      "CMCL"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.14",
+          "currency": "USD"
+        },
+        "dates": {
+          "ex": "2026-08-21",
+          "record": "2026-08-21",
+          "pay": "2026-09-04"
+        }
+      }
+    ],
+    "note": "Missed: the amount is \"14 United States cents (US$0.14) on each of the Company's shares\", not \"per share\", and the dates are \"Label: date\" lines."
+  },
+  {
+    "file": "0001279569-26-000750_ex995.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1487326/000127956926000750/ex995.htm",
+    "accession": "0001279569-26-000750",
+    "form": "6-K",
+    "filed": "2026-08-06",
+    "company": {
+      "name": "OceanaGold Corp",
+      "cik": "0001487326"
+    },
+    "tickers": [
+      "OGC"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.09",
+          "currency": "USD"
+        },
+        "dates": {
+          "record": "2026-08-19",
+          "pay": "2026-09-18"
+        }
+      }
+    ],
+    "note": "Missed: \"$0.09 per share\" three sentences before the table, beside the TSX; \"payable in United States dollars\" only after it."
+  },
+  {
+    "file": "0001193125-26-384439_d331501d6k.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1131399/000119312526384439/d331501d6k.htm",
+    "accession": "0001193125-26-384439",
+    "form": "6-K",
+    "filed": "2026-09-08",
+    "company": {
+      "name": "GSK plc",
+      "cik": "0001131399"
+    },
+    "tickers": [
+      "GSK"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Pence per share; \"the equivalent interim dividend receivable by ADR holders will be calculated\" later."
+  },
+  {
+    "file": "0000950157-26-000830_ex99-8.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1303523/000095015726000830/ex99-8.htm",
+    "accession": "0000950157-26-000830",
+    "form": "6-K",
+    "filed": "2026-08-03",
+    "company": {
+      "name": "British American Tobacco p.l.c.",
+      "cik": "0001303523"
+    },
+    "tickers": [
+      "BTI"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Two-market timetables (JSE, LSE, NYSE) without amounts, one of them \"proposed\"; the per-ADS amounts are only for dividends already paid."
+  },
+  {
+    "file": "0001654954-26-007892_a3216s.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1116578/000165495426007892/a3216s.htm",
+    "accession": "0001654954-26-007892",
+    "form": "6-K",
+    "filed": "2026-08-27",
+    "company": {
+      "name": "PRUDENTIAL PLC",
+      "cik": "0001116578"
+    },
+    "tickers": [
+      "PUK"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Scrip dividend alternative, \"on or around\" dates."
+  },
+  {
+    "file": "0001654954-26-006931_a0595o.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/312069/000165495426006931/a0595o.htm",
+    "accession": "0001654954-26-006931",
+    "form": "6-K",
+    "filed": "2026-07-28",
+    "company": {
+      "name": "BARCLAYS PLC",
+      "cik": "0000312069"
+    },
+    "tickers": [
+      "BCS"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.236",
+          "currency": "GBP"
+        },
+        "dates": {
+          "ex": "2026-08-07",
+          "record": "2026-08-07",
+          "pay": "2026-09-15"
+        },
+        "instrument": "ADS"
+      }
+    ],
+    "note": "Missed: the table is the ordinary shares' timetable (ex-date 6 August); the ADS amount (23.6p) and ex-date are in prose beneath it."
+  },
+  {
+    "file": "0000929869-26-000054_relx-20260723xex99d1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/929869/000092986926000054/relx-20260723xex99d1.htm",
+    "accession": "0000929869-26-000054",
+    "form": "6-K",
+    "filed": "2026-07-23",
+    "company": {
+      "name": "RELX PLC",
+      "cik": "0000929869"
+    },
+    "tickers": [
+      "RELX"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Financial calendar with ORD and ADR dates; the ADR amount is not stated (20.9p per ordinary share)."
+  },
+  {
+    "file": "0001193125-26-350275_6k_260814_1h2026.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1263043/000119312526350275/6k_260814_1h2026.htm",
+    "accession": "0001193125-26-350275",
+    "form": "6-K",
+    "filed": "2026-08-14",
+    "company": {
+      "name": "SHINHAN FINANCIAL GROUP CO LTD",
+      "cik": "0001263043"
+    },
+    "tickers": [
+      "SHG"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Record dates and \"(Expected) Payment Date\"; KRW, per share."
+  },
+  {
+    "file": "0001193125-26-339186_d339926d6k.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312526339186/d339926d6k.htm",
+    "accession": "0001193125-26-339186",
+    "form": "6-K",
+    "filed": "2026-08-07",
+    "company": {
+      "name": "POSCO HOLDINGS INC.",
+      "cik": "0000889132"
+    },
+    "tickers": [
+      "PKX"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "\"Provisional Dividend Payment Date\"; KRW per share, the US security is the ADS."
+  },
+  {
+    "file": "0001628280-26-054551_a6-k_resolutiononcashdivid.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1313310/000162828026054551/a6-k_resolutiononcashdivid.htm",
+    "accession": "0001628280-26-054551",
+    "form": "6-K",
+    "filed": "2026-08-07",
+    "company": {
+      "name": "GRAVITY Co., Ltd.",
+      "cik": "0001313310"
+    },
+    "tickers": [
+      "GRVY"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "KRW per share; the US security is the ADS, whose amount is not stated."
+  },
+  {
+    "file": "0001628280-26-059198_harmony-shortformxresultsf.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828026059198/harmony-shortformxresultsf.htm",
+    "accession": "0001628280-26-059198",
+    "form": "6-K",
+    "filed": "2026-08-27",
+    "company": {
+      "name": "HARMONY GOLD MINING CO LTD",
+      "cik": "0001023514"
+    },
+    "tickers": [
+      "HMY"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "JSE timetable for ordinary shares in SA cents; the ADS amount is not stated."
+  },
+  {
+    "file": "0001193125-26-355408_6k_q3_26.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1062579/000119312526355408/6k_q3_26.htm",
+    "accession": "0001193125-26-355408",
+    "form": "6-K",
+    "filed": "2026-08-18",
+    "company": {
+      "name": "AMDOCS LTD",
+      "cik": "0001062579"
+    },
+    "tickers": [
+      "DOX"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Dividends declared and paid in the last nine months (two tables)."
+  },
+  {
+    "file": "0000733099-26-000019_rci-09302026xexhibit992.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/733099/000073309926000019/rci-09302026xexhibit992.htm",
+    "accession": "0000733099-26-000019",
+    "form": "6-K",
+    "filed": "2026-10-23",
+    "company": {
+      "name": "ROGERS COMMUNICATIONS INC",
+      "cik": "0000733099"
+    },
+    "tickers": [
+      "RCI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-missed",
+    "truth": [
+      {
+        "type": "dividend",
+        "cash": {
+          "amount": "0.50",
+          "currency": "CAD"
+        },
+        "dates": {
+          "record": "2026-12-08",
+          "pay": "2027-01-05"
+        }
+      }
+    ],
+    "note": "Missed: the table lists past dividends (left out); the new one is a sentence, \"$0.50 per Class A Share and Class B Non-Voting Share\", in an MD&A whose dollars are Canadian by its own statement but which names no US exchange."
+  },
+  {
+    "file": "0001193125-26-364293_d344470dex991.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/844551/000119312526364293/d344470dex991.htm",
+    "accession": "0001193125-26-364293",
+    "form": "6-K",
+    "filed": "2026-08-25",
+    "company": {
+      "name": "WOODSIDE ENERGY GROUP LTD",
+      "cik": "0000844551"
+    },
+    "tickers": [
+      "WDS"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "US cents per share, current and previous period side by side, ASX and NYSE dates; the ADS amount is not stated."
+  },
+  {
+    "file": "0001193125-26-345758_d135444dex991.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/2091467/000119312526345758/d135444dex991.htm",
+    "accession": "0001193125-26-345758",
+    "form": "6-K",
+    "filed": "2026-08-12",
+    "company": {
+      "name": "Boyd Group Services Inc.",
+      "cik": "0002091467"
+    },
+    "tickers": [
+      "BGSI"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Dividends \"declared and paid\", totals in thousands."
+  },
+  {
+    "file": "0001062993-26-004038_exhibit99-1.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1627272/000106299326004038/exhibit99-1.htm",
+    "accession": "0001062993-26-004038",
+    "form": "6-K",
+    "filed": "2026-08-05",
+    "company": {
+      "name": "OR Royalties Inc.",
+      "cik": "0001627272"
+    },
+    "tickers": [
+      "OR"
+    ],
+    "securityType": "Common Stock",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "Past dividends in a table; the new \"$0.065 per common share\" is in a sentence whose dollars are not said (tabular amounts are US dollars \"except per share amounts\")."
+  },
+  {
+    "file": "0001193125-26-436876_d181899d6k.htm.gz",
+    "url": "https://www.sec.gov/Archives/edgar/data/1015650/000119312526436876/d181899d6k.htm",
+    "accession": "0001193125-26-436876",
+    "form": "6-K",
+    "filed": "2026-10-29",
+    "company": {
+      "name": "SK TELECOM CO LTD",
+      "cik": "0001015650"
+    },
+    "tickers": [
+      "SKM"
+    ],
+    "securityType": "Depositary Receipt",
+    "kind": "table-negative",
+    "truth": [],
+    "note": "KRW per share for common and preferred stock; the US security is the ADS."
+  }
+]

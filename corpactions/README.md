@@ -2,8 +2,9 @@
 
 A free, open feed of the corporate actions of US-listed companies, read from their filings (and the press releases
 filed with them) on SEC EDGAR: the 8-Ks of US companies and the 6-Ks of foreign private issuers. Each event keeps the
-sentence it came from and links its filing (`source.form` says which), and each is also written as an ISO 20022
-`seev.031.001.14` corporate action notification.
+sentence it came from (or, for a dividend stated only in a table, the table's rows: see "Tables" below) and links its
+filing (`source.form` says which), and each is also written as an ISO 20022 `seev.031.001.14` corporate action
+notification.
 
 | Type | ISO code | What the filing must state for it to go in |
 |---|---|---|
@@ -12,7 +13,8 @@ sentence it came from and links its filing (`source.form` says which), and each 
 | `reverse-split` | `SPLR` | The ratio and the date it takes effect |
 | `merger` | `MRGR` | A completed merger reported by the company acquired (8-K items 2.01 with 3.01 or 5.01), its closing date, and cash or shares per share |
 
-6-Ks ask for more before an event goes in: see "6-K filings" below.
+6-Ks ask for more before an event goes in: see "6-K filings" below. A dividend whose amount and dates are only in a
+table is read from the filing's own HTML table, under the same rules: see "Tables".
 
 Use it on the web at <https://iomarkets.tech/corporate-actions>, from an AI assistant through the MCP server at
 `https://iomarkets.tech/mcp` (tools `list_corporate_actions`, `holdings_calendar`, `get_corporate_action`), or over HTTP:
@@ -35,6 +37,7 @@ curl -X POST https://iomarkets.tech/api/corporate-actions \
 | Which of a 6-K issuer's tickers trade on a US exchange: SEC's `company_tickers_exchange.json` (one request a run) | `src/edgar.ts` (`usTickers`) |
 | Read each document: HTML to text, sentences, dates (day first too, for 6-Ks), amounts, ratios | `src/text.ts` |
 | Extract events, leaving out anything not stated in full | `src/extract.ts` (8-K), `src/extract6k.ts` (6-K) |
+| Dividends stated only in a table: the filing's `<table>` markup as a grid (colspan, a `$` in its own cell), one dividend per row or column | `src/tables.ts`, `src/extractTable.ts` (`extractAll`: sentences first, then tables) |
 | FIGIs for the tickers from OpenFIGI (no key; cached in `data/figi.json`); for 6-K tickers also the security type (`data/figi-kinds.json`), so an amount per share is never filed under an ADS | `src/figi.ts`, `fitsListing` in `src/extract6k.ts` |
 | Merge, de-duplicate, drop events 30 days after their last date | `src/query.ts`, `scripts/ingest.ts` |
 | Each event as `seev.031.001.14` | `src/seev031.ts` |
@@ -106,13 +109,85 @@ the reader on all of them:
 | Mergers | 8 | 1 | 1 (Perfect Corp) | 0 |
 | **All** | **50** | **20** | **12** | **0** |
 
-**Precision 12/12 = 1.0; recall 12/20 = 0.6.** The 8 misses are left out on purpose: tables (Unilever, Shell, CMB.TECH,
-TotalEnergies' two-market timetable), numeric dates (Gerdau), a bare `$` beside a foreign market (Scorpio Tankers), a
-split the company "expects to implement" (Kandi), and one furnished weeks after it took effect (Gauzy). The other 30
+**Precision 12/12 = 1.0; recall 12/20 = 0.6** from the sentences. With the tables (below), Shell's ADS dividend is read
+too: **13/13, recall 13/20.** The 7 misses are left out on purpose: Unilever (its "table" is slide images with a text
+layer, no `<table>`), CMB.TECH (a dividend and a share premium repayment in one distribution), TotalEnergies (the NYSE
+record date is only in a footnote under its two-market timetable), numeric dates (Gerdau), a bare `$` beside a foreign
+market (Scorpio Tankers), a split the company "expects to implement" (Kandi), and one furnished weeks after it took
+effect (Gauzy). The other 30
 filings state no event in full for the US security: per-share amounts of ADS issuers (Shinhan, KT, BBVA, Equinor, Nokia,
 Nomura), "anticipated" or "expected" dates, scrip and cash-or-shares elections, distributions from reserves (Eni),
 approximate amounts, results that mention past dividends or splits, proposals, two ADS ratio changes, OTC-only
 issuers, and merger notices without a closing date or terms.
+
+## Tables
+
+Some dividends are stated only in a table: a REIT's or BDC's months ("Month | Amount Per Share | Record Date | Payment
+Date"), a UK issuer's timetable ("Ex-Dividend Date for ADSs | November 13, 2026 ... Payment date | December 21, 2026").
+`src/extractTable.ts` reads them from the filing's own `<table>` markup (`src/tables.ts`; no OCR, no images, no PDFs)
+with the rules above, and asks the same of a table as of a sentence:
+
+- **Every value in one cell.** A record date and a payment date, each a single date with its year in its own cell
+  (numeric dates, "on or about", "15 days prior to" are not dates), and an amount with its currency (in the cell, or in
+  its label: "Shell ADSs (US$)", "(yen)", "US cents per share") and its unit (per share or per ADS, from the cell, the
+  label, the row, or the table's heading). An ex-date only when the table has one for the US security, or names no
+  other market; else the T+1 rule. "Ex-Dividend and Record Date" is both.
+- **One dividend per row or per column.** Labels across the top (one dividend a row, e.g. three months) or down the
+  side (one a column). Several rows or columns are several dividends only when they are periods (months, quarters,
+  "FQ3"); when they are markets, classes or series ("Euronext | NYSE", "Series A", "Class E | Class FA"), only the one
+  that names the US security ("NYSE (ADR program)", "for ADSs") is read, and none if no row or column says so. A column
+  that appears twice, or two cells that differ for the same thing, is not read.
+- **The amount from outside the table** only when the table has none and is one dividend: from the sentence that
+  introduces it, if that sentence declares the dividend and gives one amount for the US security, or else from the
+  document's only small table of amounts for that unit (Shell's "Per ADS ... 0.7812").
+- **Left out:** any table with a row paid before the filing (a table of past dividends, whatever else it lists) or that
+  "were declared" in a period; guidance ("announced guidance on the October 2026 cash dividend"); estimates ("expected", "anticipated", "provisional", "forecast", "proposed", "subject
+  to approval", "on or about"); scrip, elections, stock dividends, distributions of capital, interest on capital;
+  preferred stock (by name, or by "perpetual", "liquidation preference", "per annum dividend rate"), another of the
+  filer's tickers named in or before the table (Strategy's STRC, DeFi Development's CHAD); and, for 6-Ks, everything
+  the sentence reader leaves out: a per-share amount when the US security is the ADS, dates the table doesn't give for
+  ADS holders.
+- **A dividend already read from the sentences stays as it is**: the tables add only what they alone state.
+
+**The quote is the table.** `source.quote` gives the table's heading (and the sentence before it, when the amount came
+from there), then the rows the event was read from, each in `[square brackets]` with its cells joined by ` | `, as the
+filing renders them, and `source.table` is `true`: `Distribution Payable in November 2026 [Ex-Dividend and Record Date |
+Payment Date | Total Distribution Per Share] [November 10, 2026 | November 17, 2026 | $0.47]`. A `$` or `%` in a cell of
+its own is shown stuck to its number, as a browser shows it. Each row can be found in the filing as it reads.
+
+### How well it does: 34 more real filings
+
+`fixtures/tables/` holds 34 real filings (13 8-Ks, 21 6-Ks; July to October 2026) found by EDGAR full-text search for
+dividend timetables: the tables that state a dividend, and the ones that look like it and don't. Each is the document as
+filed (`.htm.gz`), with its accession number, and its events labelled by hand in `index.json`; the 50 6-K fixtures now
+carry their HTML too. `tests/corpactions-tables.test.ts` runs the whole reader (sentences, then tables, then the
+OpenFIGI check) on all 84:
+
+| | Filings | Events stated | Read correctly | Read wrongly |
+|---|---|---|---|---|
+| 8-K table dividends (Armour twice, Saratoga, UDR, Hercules, SmartStop) | 6 | 10 | 10 | 0 |
+| 6-K table dividends (Shell twice, LogProStyle twice) | 4 | 8 | 7 | 0 |
+| Missed on purpose (Caledonia, OceanaGold, Barclays, Rogers) | 4 | 4 | 0 | 0 |
+| Tricky negatives | 20 | 0 | 0 | 0 |
+| The 50 6-K fixtures | 50 | 20 | 13 | 0 |
+| **All** | **84** | **42** | **30** | **0** |
+
+**Precision 30/30 = 1.0; recall 30/42 = 0.71** (18 of the 30 from tables). The new misses: LogProStyle's installment
+paid on the day it filed (stated only in sentences that declare nothing), Caledonia ("14 United States cents on each of
+the Company's shares", not "per share"), OceanaGold (the amount three sentences before its table, beside the TSX),
+Barclays (its table is the ordinary shares' timetable; the ADS amount and ex-date are prose under it) and Rogers (a
+sentence in an MD&A that names no US exchange). The negatives are the tables that look like dividends: Armour's "guidance" for next month's dividend (same table as the declaration a week later), Strategy's
+daily STRC (preferred) dividends in two column groups and its year of past ones, Strive's SATA and DeFi Development's
+CHAD preferred, Microsoft's and Amdocs' tables of dividends declared and paid, Mid-America's quarters with numeric dates,
+Boyd's and OR Royalties' past dividends, Shell's next-year timetable with no amounts, BAT's proposed two-market
+timetable, Prudential's scrip, Shinhan's "(Expected) Payment Date", POSCO's "Provisional" date, GSK, RELX, Harmony,
+Woodside, Gravity and SK Telecom (per-share amounts for an ADS).
+
+Two sentence-reader fixes came with it: a "targeted annualized dividend of $1.60 per share" is no longer read as the
+dividend (SmartStop's monthly $0.13589041 is in its table), and an 8-K's ticker is the one its cover lists for the
+common stock before EDGAR's first (Hercules is HTGC, not its HCXY notes). A filing that says it lists shares "rather
+than through American Depositary Receipts (ADRs)", or a hotel's "average daily rate (ADR)", no longer counts as
+speaking of ADSs.
 
 ## Dates and identifiers
 

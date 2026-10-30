@@ -169,6 +169,10 @@
         "quote": {
           "type": "string",
           "minLength": 1
+        },
+        "table": {
+          "const": true,
+          "description": "Present when the event was read from a table in the filing (its own HTML table). The quote then gives the table's heading and the rows the event was read from, each in [square brackets] with its cells joined by \" | \", as the filing renders them."
         }
       }
     }

@@ -18,6 +18,8 @@ export type Filing = {
   /** The 8-K items the filing reports, e.g. ["2.01", "3.01", "9.01"]. None for a 6-K. */
   items: string[];
   text: string;
+  /** The document as filed (HTML), for its tables (extractTable.ts). `text` is htmlToText of it. */
+  html?: string;
 };
 
 const mentions = (s: string, w: RegExp) => w.test(s);
@@ -28,10 +30,15 @@ function eventId(type: EventType, cik: string, date: string) {
   return `${type}-${cik}-${date}`;
 }
 
-/** The ticker the release itself gives ("(NYSE: PVH)"), if EDGAR lists it, else EDGAR's first. */
-function tickerOf(f: Filing): string | undefined {
+/**
+ * The ticker the release itself gives ("(NYSE: PVH)"), if EDGAR lists it; else the one the 8-K cover lists for the common
+ * stock ("Common Stock, par value $0.001 per share HTGC New York Stock Exchange"); else EDGAR's first, which can be a note's.
+ */
+export function tickerOf(f: Filing): string | undefined {
   const m = /\((?:NYSE|NASDAQ|Nasdaq|NYSE American|NYSE Arca|Cboe|NASDAQ\s?GS|Nasdaq\s?GS)\s*:\s*([A-Z][A-Z.\-]{0,6})/.exec(f.text);
   if (m && f.tickers.includes(m[1])) return m[1];
+  const cover = /\bCommon (?:Stock|Shares)\b[^A-Z]{0,60}?\b([A-Z]{1,5})\s+(?:The\s+)?(?:New York Stock Exchange|Nasdaq|NYSE|NASDAQ)/.exec(f.text);
+  if (cover && f.tickers.includes(cover[1])) return cover[1];
   return f.tickers[0];
 }
 
@@ -50,7 +57,7 @@ export const COMPARED = /(?:compared (?:to|with)|\bfrom\b|\bprior\b|\bprevious(?
 
 // ---- dividends -------------------------------------------------------------------------
 
-const FREQ: [RegExp, CorporateAction['frequency']][] = [
+export const FREQ: [RegExp, CorporateAction['frequency']][] = [
   [/\bspecial\b|\bextra\b|\bone-time\b/i, 'special'],
   [/\bmonthly\b/i, 'monthly'],
   [/\bquarterly\b/i, 'quarterly'],
@@ -59,10 +66,12 @@ const FREQ: [RegExp, CorporateAction['frequency']][] = [
 ];
 
 /** The per-share amount for the common stock in a sentence that may also price preferred stock. */
-function commonAmount(s: string): string | undefined {
+export function commonAmount(s: string): string | undefined {
   const amounts = [...s.matchAll(/(\$\s?\d{1,6}(?:\.\d+)?|\d+(?:\.\d+)?\s+cents?)\s+(?:per|a|for each)\s+(?:common\s+|ordinary\s+|outstanding\s+)?share/gi)].filter(
     (m) =>
       !/^[^.]{0,40}(annualized|annual basis|annual rate|on an annual)/i.test(s.slice(m.index! + m[0].length)) &&
+      // "a targeted annualized dividend of $1.60 per share": a yearly rate, not the dividend declared.
+      !/\bannuali[sz]ed\b[^.$]{0,30}$/i.test(s.slice(Math.max(0, m.index! - 40), m.index!)) &&
       !COMPARED.test(s.slice(Math.max(0, m.index! - 60), m.index!)),
   );
   if (!amounts.length) return undefined;
@@ -75,7 +84,7 @@ function commonAmount(s: string): string | undefined {
   return best ? dollars(best.m[1]) : undefined;
 }
 
-const DECLARED = /\b(?:declare[ds]?|approved|authorized)\b/i;
+export const DECLARED = /\b(?:declare[ds]?|approved|authorized)\b/i;
 
 function dividends(f: Filing, ss: string[]): CorporateAction[] {
   const out: CorporateAction[] = [];

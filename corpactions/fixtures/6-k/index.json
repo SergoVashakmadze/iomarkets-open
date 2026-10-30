@@ -27,7 +27,8 @@
         }
       }
     ],
-    "note": "Common shares listed on the NYSE; \"$\" is Canadian dollars by the release's own statement."
+    "note": "Common shares listed on the NYSE; \"$\" is Canadian dollars by the release's own statement.",
+    "html": "0001171843-26-006868_exh_991.htm.gz"
   },
   {
     "file": "0001654954-26-008329_a6785u.txt",
@@ -58,7 +59,8 @@
         "instrument": "ADS"
       }
     ],
-    "note": "The ADS amount and its dates are stated; the per-share amount is not what an ADS holder gets."
+    "note": "The ADS amount and its dates are stated; the per-share amount is not what an ADS holder gets.",
+    "html": "0001654954-26-008329_a6785u.htm.gz"
   },
   {
     "file": "0001628280-26-067899_q32026earnings-exhibit991.txt",
@@ -88,7 +90,8 @@
         }
       }
     ],
-    "note": "Missed on purpose: a bare \"$\" in a release that also names Euronext Growth Oslo, so which dollars is not said."
+    "note": "Missed on purpose: a bare \"$\" in a release that also names Euronext Growth Oslo, so which dollars is not said.",
+    "html": "0001628280-26-067899_q32026earnings-exhibit991.htm.gz"
   },
   {
     "file": "0000217410-26-000061_a2026-10x28xunileverq320.txt",
@@ -120,7 +123,8 @@
         "instrument": "ADS"
       }
     ],
-    "note": "Missed: the ADR dates are only in a table."
+    "note": "Missed: the ADR dates are only in a table.",
+    "html": "0000217410-26-000061_a2026-10x28xunileverq320.htm.gz"
   },
   {
     "file": "0001171843-26-006962_exh_991.txt",
@@ -136,7 +140,7 @@
       "SHEL"
     ],
     "securityType": "Depositary Receipt",
-    "kind": "dividend-missed",
+    "kind": "dividend-ads-table",
     "truth": [
       {
         "type": "dividend",
@@ -152,7 +156,8 @@
         "instrument": "ADS"
       }
     ],
-    "note": "Missed: the ADS amount and dates are only in tables. The per-share US$0.3906 is not what an ADS (two shares) holder gets."
+    "note": "The ADS amount is only in a small table and the ADS dates only in the timetable (read from the tables). The per-share US$0.3906 is not what an ADS (two shares) holder gets.",
+    "html": "0001171843-26-006962_exh_991.htm.gz"
   },
   {
     "file": "0001104659-26-119833_tm2628392d1_ex99-2.txt",
@@ -183,7 +188,8 @@
         }
       }
     ],
-    "note": "Missed: a two-market timetable (Euronext and NYSE columns) whose columns are not said in words."
+    "note": "Missed: a two-market timetable (Euronext and NYSE columns) whose columns are not said in words.",
+    "html": "0001104659-26-119833_tm2628392d1_ex99-2.htm.gz"
   },
   {
     "file": "0000919574-26-006764_p15109678_ex99-1.txt",
@@ -214,7 +220,8 @@
         }
       }
     ],
-    "note": "Missed: the dividend comes with a share premium repayment in one distribution, dates in a three-market table."
+    "note": "Missed: the dividend comes with a share premium repayment in one distribution, dates in a three-market table.",
+    "html": "0000919574-26-006764_p15109678_ex99-1.htm.gz"
   },
   {
     "file": "0001104659-26-118865_tm2628297d2_ex99-1.txt",
@@ -245,7 +252,8 @@
         "instrument": "ADS"
       }
     ],
-    "note": "Missed: numeric dates (11/12/2026) in a table; day and month order is never guessed."
+    "note": "Missed: numeric dates (11/12/2026) in a table; day and month order is never guessed.",
+    "html": "0001104659-26-118865_tm2628297d2_ex99-1.htm.gz"
   },
   {
     "file": "0001193125-26-429504_d41547dex991.txt",
@@ -263,7 +271,8 @@
     "securityType": "Common Stock",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "No currency stated (\"50 cents per share\", a Canadian company)."
+    "note": "No currency stated (\"50 cents per share\", a Canadian company).",
+    "html": "0001193125-26-429504_d41547dex991.htm.gz"
   },
   {
     "file": "0001499505-26-000088_cashdividendsannouncement2.txt",
@@ -281,7 +290,8 @@
     "securityType": "Common Stock",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Approximate amount (\"~$0.12128986\")."
+    "note": "Approximate amount (\"~$0.12128986\").",
+    "html": "0001499505-26-000088_cashdividendsannouncement2.htm.gz"
   },
   {
     "file": "0001140361-26-040608_ef20084229_ex99-1.txt",
@@ -299,7 +309,8 @@
     "securityType": "Common Stock",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Cash or shares (an election), and the payment date is only expected."
+    "note": "Cash or shares (an election), and the payment date is only expected.",
+    "html": "0001140361-26-040608_ef20084229_ex99-1.htm.gz"
   },
   {
     "file": "0001468522-26-000079_a20261027secondscripdivi.txt",
@@ -317,7 +328,8 @@
     "securityType": "Common Stock",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Scrip dividend: new shares or cash, by election."
+    "note": "Scrip dividend: new shares or cash, by election.",
+    "html": "0001468522-26-000079_a20261027secondscripdivi.htm.gz"
   },
   {
     "file": "0001546066-26-000074_october52026pressrelease.txt",
@@ -335,7 +347,8 @@
     "securityType": "Common Stock",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Preferred shares only."
+    "note": "Preferred shares only.",
+    "html": "0001546066-26-000074_october52026pressrelease.htm.gz"
   },
   {
     "file": "0001193125-26-433007_6k_261027_dividend.txt",
@@ -353,7 +366,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "KRW per ordinary share; the US security is the ADS and its amount is not stated."
+    "note": "KRW per ordinary share; the US security is the ADS and its amount is not stated.",
+    "html": "0001193125-26-433007_6k_261027_dividend.htm.gz"
   },
   {
     "file": "0001628280-26-065578_a2610133q26dividend.txt",
@@ -371,7 +385,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "KRW per ordinary share; the ADS amount is not stated."
+    "note": "KRW per ordinary share; the ADS amount is not stated.",
+    "html": "0001628280-26-065578_a2610133q26dividend.htm.gz"
   },
   {
     "file": "0001193125-26-435015_d236994d6k.txt",
@@ -389,7 +404,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "No payment date yet; KRW per ordinary share."
+    "note": "No payment date yet; KRW per ordinary share.",
+    "html": "0001193125-26-435015_d236994d6k.htm.gz"
   },
   {
     "file": "0001193125-26-409738_d116258d6k.txt",
@@ -407,7 +423,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "EUR per share; the US security is the ADS and its amount is not stated."
+    "note": "EUR per share; the US security is the ADS and its amount is not stated.",
+    "html": "0001193125-26-409738_d116258d6k.htm.gz"
   },
   {
     "file": "0001171843-26-006880_exh_991.txt",
@@ -425,7 +442,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "An amount for the shares, labelled, with no \"per share\" or \"per ADS\"; the US security is the ADS."
+    "note": "An amount for the shares, labelled, with no \"per share\" or \"per ADS\"; the US security is the ADS.",
+    "html": "0001171843-26-006880_exh_991.htm.gz"
   },
   {
     "file": "0001104659-26-119043_tm2628195d1_6k.txt",
@@ -443,7 +461,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "A distribution from reserves \"in place of the dividend\" (capital, not a cash dividend), and an extraordinary dividend with no dates."
+    "note": "A distribution from reserves \"in place of the dividend\" (capital, not a cash dividend), and an extraordinary dividend with no dates.",
+    "html": "0001104659-26-119043_tm2628195d1_6k.htm.gz"
   },
   {
     "file": "0001193125-26-435048_d77369d6k.txt",
@@ -461,7 +480,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Results with a half-year dividend in yen per share; the ADS amount is not stated."
+    "note": "Results with a half-year dividend in yen per share; the ADS amount is not stated.",
+    "html": "0001193125-26-435048_d77369d6k.htm.gz"
   },
   {
     "file": "0001193125-26-437051_d159047dex991.txt",
@@ -479,7 +499,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Results: interim dividend in EUR per share, dates in a table elsewhere, nothing per ADS."
+    "note": "Results: interim dividend in EUR per share, dates in a table elsewhere, nothing per ADS.",
+    "html": "0001193125-26-437051_d159047dex991.htm.gz"
   },
   {
     "file": "0001104659-26-117972_tm2628115d1_6k.txt",
@@ -497,7 +518,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Results: EUR per share; the ADS amount is not stated."
+    "note": "Results: EUR per share; the ADS amount is not stated.",
+    "html": "0001104659-26-117972_tm2628115d1_6k.htm.gz"
   },
   {
     "file": "0001654954-26-009181_a6993a.txt",
@@ -515,7 +537,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Results: pence per share and an \"expected dividend for 2026\"; the ADR amount is calculated later."
+    "note": "Results: pence per share and an \"expected dividend for 2026\"; the ADR amount is calculated later.",
+    "html": "0001654954-26-009181_a6993a.htm.gz"
   },
   {
     "file": "0001193125-26-424083_d413725dex991.txt",
@@ -533,7 +556,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Per ADS, but the record and payment dates are \"anticipated\"."
+    "note": "Per ADS, but the record and payment dates are \"anticipated\".",
+    "html": "0001193125-26-424083_d413725dex991.htm.gz"
   },
   {
     "file": "0001193125-26-435034_d70385dex991.txt",
@@ -551,7 +575,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Per ADS, but the payment date is \"expected to be on or around\", and dates are given \"respectively\"."
+    "note": "Per ADS, but the payment date is \"expected to be on or around\", and dates are given \"respectively\".",
+    "html": "0001193125-26-435034_d70385dex991.htm.gz"
   },
   {
     "file": "0001104659-26-105667_tm2624924d1_ex99-1.txt",
@@ -569,7 +594,8 @@
     "securityType": "Depositary Receipt",
     "kind": "dividend-negative",
     "truth": [],
-    "note": "Results: per ADS, payment date \"expected to be on or around\"."
+    "note": "Results: per ADS, payment date \"expected to be on or around\".",
+    "html": "0001104659-26-105667_tm2624924d1_ex99-1.htm.gz"
   },
   {
     "file": "0001171843-26-006910_exh_991.txt",
@@ -598,7 +624,8 @@
         }
       }
     ],
-    "note": ""
+    "note": "",
+    "html": "0001171843-26-006910_exh_991.htm.gz"
   },
   {
     "file": "0001171843-26-006911_exh_991.txt",
@@ -627,7 +654,8 @@
         }
       }
     ],
-    "note": ""
+    "note": "",
+    "html": "0001171843-26-006911_exh_991.htm.gz"
   },
   {
     "file": "0001213900-26-097242_ea030461601ex99-1.txt",
@@ -656,7 +684,8 @@
         }
       }
     ],
-    "note": ""
+    "note": "",
+    "html": "0001213900-26-097242_ea030461601ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-107822_ea030806401ex99-1.txt",
@@ -685,7 +714,8 @@
         }
       }
     ],
-    "note": "Approved by shareholders; effective date set."
+    "note": "Approved by shareholders; effective date set.",
+    "html": "0001213900-26-107822_ea030806401ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-111243_ea030613201ex99-1.txt",
@@ -714,7 +744,8 @@
         }
       }
     ],
-    "note": ""
+    "note": "",
+    "html": "0001213900-26-111243_ea030613201ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-111752_ea0309389-6k_enlivex.txt",
@@ -743,7 +774,8 @@
         }
       }
     ],
-    "note": "The ratio chosen from an approved range, and the trading date."
+    "note": "The ratio chosen from an approved range, and the trading date.",
+    "html": "0001213900-26-111752_ea0309389-6k_enlivex.htm.gz"
   },
   {
     "file": "0001213900-26-112139_ea030894201ex99-1.txt",
@@ -772,7 +804,8 @@
         }
       }
     ],
-    "note": "A forward split (share subdivision)."
+    "note": "A forward split (share subdivision).",
+    "html": "0001213900-26-112139_ea030894201ex99-1.htm.gz"
   },
   {
     "file": "0001493152-26-047162_ex99-1.txt",
@@ -801,7 +834,8 @@
         }
       }
     ],
-    "note": ""
+    "note": "",
+    "html": "0001493152-26-047162_ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-113069_ea030953701ex99-1.txt",
@@ -830,7 +864,8 @@
         }
       }
     ],
-    "note": "Filed a week after the release; the split had taken effect."
+    "note": "Filed a week after the release; the split had taken effect.",
+    "html": "0001213900-26-113069_ea030953701ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-109026_ea030846101ex99-1.txt",
@@ -859,7 +894,8 @@
         }
       }
     ],
-    "note": "Missed on purpose: \"expects to implement\"."
+    "note": "Missed on purpose: \"expects to implement\".",
+    "html": "0001213900-26-109026_ea030846101ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-105914_ea030742501ex99-1.txt",
@@ -888,7 +924,8 @@
         }
       }
     ],
-    "note": "Missed: furnished three weeks after the split took effect."
+    "note": "Missed: furnished three weeks after the split took effect.",
+    "html": "0001213900-26-105914_ea030742501ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-113380_ea030999302ex99-1.txt",
@@ -906,7 +943,8 @@
     "securityType": "Common Stock",
     "kind": "split-negative",
     "truth": [],
-    "note": "A meeting notice: a reverse split range to approve."
+    "note": "A meeting notice: a reverse split range to approve.",
+    "html": "0001213900-26-113380_ea030999302ex99-1.htm.gz"
   },
   {
     "file": "0001493152-26-047888_form6-k.txt",
@@ -924,7 +962,8 @@
     "securityType": "Depositary Receipt",
     "kind": "split-negative",
     "truth": [],
-    "note": "ADS issuer: a range approved, not effected."
+    "note": "ADS issuer: a range approved, not effected.",
+    "html": "0001493152-26-047888_form6-k.htm.gz"
   },
   {
     "file": "0001213900-26-096964_ea030426001ex99-1.txt",
@@ -942,7 +981,8 @@
     "securityType": "Depositary Receipt",
     "kind": "ads-ratio",
     "truth": [],
-    "note": "An ADS ratio change (\"the same effect as a one-for-seven reverse ADS split\"): the shares are not split, so no split event."
+    "note": "An ADS ratio change (\"the same effect as a one-for-seven reverse ADS split\"): the shares are not split, so no split event.",
+    "html": "0001213900-26-096964_ea030426001ex99-1.htm.gz"
   },
   {
     "file": "0001193125-26-414887_d64414dex991.txt",
@@ -960,7 +1000,8 @@
     "securityType": "Depositary Receipt",
     "kind": "ads-ratio",
     "truth": [],
-    "note": "A planned ADS ratio change."
+    "note": "A planned ADS ratio change.",
+    "html": "0001193125-26-414887_d64414dex991.htm.gz"
   },
   {
     "file": "0001213900-26-101141_ea030567601ex99-1.txt",
@@ -978,7 +1019,8 @@
     "securityType": "Common Stock",
     "kind": "split-negative",
     "truth": [],
-    "note": "Results restated for reverse splits that happened months ago."
+    "note": "Results restated for reverse splits that happened months ago.",
+    "html": "0001213900-26-101141_ea030567601ex99-1.htm.gz"
   },
   {
     "file": "0001104659-26-118301_tm2627441d2_ex99-1.txt",
@@ -1007,7 +1049,8 @@
         }
       }
     ],
-    "note": "Going private: US$2.00 a share in cash, effective time stated."
+    "note": "Going private: US$2.00 a share in cash, effective time stated.",
+    "html": "0001104659-26-118301_tm2627441d2_ex99-1.htm.gz"
   },
   {
     "file": "0001104659-26-051976_tm2613184d1_ex99-1.txt",
@@ -1025,7 +1068,8 @@
     "securityType": "Depositary Receipt",
     "kind": "merger-negative",
     "truth": [],
-    "note": "Completion announced \"today\", but the effective date is not stated."
+    "note": "Completion announced \"today\", but the effective date is not stated.",
+    "html": "0001104659-26-051976_tm2613184d1_ex99-1.htm.gz"
   },
   {
     "file": "0001104659-25-123525_tm2534059d1_ex99-1.txt",
@@ -1043,7 +1087,8 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "Cash or shares at the holder's election."
+    "note": "Cash or shares at the holder's election.",
+    "html": "0001104659-25-123525_tm2534059d1_ex99-1.htm.gz"
   },
   {
     "file": "0001213900-26-071390_ea029562501ex99-1.txt",
@@ -1059,7 +1104,8 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "OTC only: no US exchange listing."
+    "note": "OTC only: no US exchange listing.",
+    "html": "0001213900-26-071390_ea029562501ex99-1.htm.gz"
   },
   {
     "file": "0001493152-26-049093_ex99-1.txt",
@@ -1075,7 +1121,8 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "OTC only (RAASY): no US exchange listing."
+    "note": "OTC only (RAASY): no US exchange listing.",
+    "html": "0001493152-26-049093_ex99-1.htm.gz"
   },
   {
     "file": "0001279569-26-000709_ex991.txt",
@@ -1093,7 +1140,8 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "Court approval: \"expected to close\"."
+    "note": "Court approval: \"expected to close\".",
+    "html": "0001279569-26-000709_ex991.htm.gz"
   },
   {
     "file": "0001279569-26-000721_ex991.txt",
@@ -1111,7 +1159,8 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "Completion announced without the terms or the date restated."
+    "note": "Completion announced without the terms or the date restated.",
+    "html": "0001279569-26-000721_ex991.htm.gz"
   },
   {
     "file": "0001944057-26-000007_exhibit991-pressreleased.txt",
@@ -1129,6 +1178,7 @@
     "securityType": null,
     "kind": "merger-negative",
     "truth": [],
-    "note": "Completed, but no effective date stated, and the NYSE holders' amount is by reference."
+    "note": "Completed, but no effective date stated, and the NYSE holders' amount is by reference.",
+    "html": "0001944057-26-000007_exhibit991-pressreleased.htm.gz"
   }
 ]
