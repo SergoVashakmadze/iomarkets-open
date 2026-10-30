@@ -2827,6 +2827,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001503584-2026-11-05",
+    "type": "dividend",
+    "company": {
+      "name": "Costamare Inc.",
+      "cik": "0001503584",
+      "ticker": "CMRE",
+      "figi": "BBG0017WYCC2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1503584/000117184326006884/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006884",
+      "filed": "2026-10-28",
+      "quote": "DIVIDEND ANNOUNCEMENTS On October 1, 2026, the Company declared a dividend of $0.125 per share on the common stock, which is payable on November 5, 2026, to holders of record of common stock as of October 20, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "record": "2026-10-20",
+      "ex": "2026-10-20",
+      "pay": "2026-11-05"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.125",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001571996-2026-10-30",
     "type": "dividend",
     "company": {
@@ -3153,6 +3182,56 @@
     "cash": {
       "amount": "150.00",
       "currency": "USD"
+    }
+  },
+  {
+    "id": "reverse-split-0001958399-2026-10-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "Huachen AI Parking Management Technology Holding Co., Ltd",
+      "cik": "0001958399",
+      "ticker": "HCAI",
+      "figi": "BBG01P85PY10"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1958399/000121390026113069/ea030953701ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-113069",
+      "filed": "2026-10-28",
+      "quote": "Exhibit 99.1 Huachen AI Parking Management Technology Holding Co., Ltd. Announces 1-for-20 Reverse Stock Split Effective October 23, 2026 SHANGHAI, China, Oct. 21, 2026 (GLOBE NEWSWIRE) -- Huachen AI Parking Management Technology Holding Co., Ltd. (NASDAQ: HCAI) (\"Huachen\" or the \"Company\"), today announced a 1-for-20 reverse stock split of the Company's Class A ordinary shares and Class B ordinary shares (the \"Reverse Stock Split\"). Beginning with the opening of trading on October 23, 2026, the Company's Class A ordinary shares will trade on the Nasdaq Capital Market on a..."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "effective": "2026-10-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 20
+    }
+  },
+  {
+    "id": "reverse-split-0002041829-2026-10-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "ChowChow Cloud International Holdings Ltd",
+      "cik": "0002041829",
+      "ticker": "CHOW",
+      "figi": "BBG01T5W84J2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2041829/000149315226048736/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-048736",
+      "filed": "2026-10-27",
+      "quote": "As a result of the Company's previously disclosed 1-for-10 reverse share split and redesignation, each approved by the Company's shareholders at the extraordinary general meeting held on September 14, 2026 and effective October 23, 2026, the number of shares issuable under the Securities Purchase Agreement was adjusted to 86,207 Class A Ordinary Shares and the purchase price was correspondingly adjusted to US$5.80 per share. On October 26, 2026, the Company received the outstanding balance of the purchase price payable under the Securities Purchase Agreement. Accordingly, the Company has now..."
+    },
+    "dates": {
+      "announced": "2026-10-27",
+      "effective": "2026-10-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
     }
   },
   {
@@ -3978,6 +4057,31 @@
     "frequency": "other"
   },
   {
+    "id": "reverse-split-0001943421-2026-10-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "Rubico Inc.",
+      "cik": "0001943421",
+      "ticker": "RUBI",
+      "figi": "BBG01H49V0X6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006911/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006911",
+      "filed": "2026-10-28",
+      "quote": "Exhibit 99.1 Rubico Inc. Announces Reverse Stock Split ATHENS, Greece, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Rubico Inc. (Nasdaq: RUBI) (the \"Company\" or \"Rubico\"), a global provider of shipping transportation services specializing in the ownership of vessels, announced today that its board of directors (the \"Board\") has determined to effect a 1 for 25 reverse stock split (the \"Reverse Stock Split\") of the Company's issued common shares, par value $0.01 (the \"Common Shares\"), effective at the opening of trading on October 30, 2026. Reverse Stock Split The Reverse Stock Split will be effective,..."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "effective": "2026-10-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 25
+    }
+  },
+  {
     "id": "dividend-0000706863-2026-11-05",
     "type": "dividend",
     "company": {
@@ -4529,6 +4633,31 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001930510-2026-11-02",
+    "type": "reverse-split",
+    "company": {
+      "name": "VCI Global Ltd",
+      "cik": "0001930510",
+      "ticker": "VCIG",
+      "figi": "BBG01BBNNYW6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1930510/000121390026113645/ea0309953-6k_vciglobal.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-113645",
+      "filed": "2026-10-29",
+      "quote": "...40-F: Form 20-F ☒ Form 40-F ☐ On October 13, 2026, VCI Global Limited (\"VCIG\" or the \"Company\") announced that its board of directors has approved a reverse stock split of its ordinary shares at a ratio of 1-for-18, effective at 12:01 a.m. Eastern Time on November 2, 2026, under the Company's existing trading symbol \"VCIG\" with the new CUSIP number G98218137 (the \"Reverse Stock Split\"). The Reverse Stock Split is being implemented to be in compliance with Nasdaq's minimum bid price requirement and to strategically position VCIG for a potential landmark institutional transaction. The Reverse..."
+    },
+    "dates": {
+      "announced": "2026-10-29",
+      "effective": "2026-11-02"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 18
+    }
+  },
+  {
     "id": "dividend-0000034782-2026-11-13",
     "type": "dividend",
     "company": {
@@ -4730,6 +4859,31 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "reverse-split-0002021688-2026-11-03",
+    "type": "reverse-split",
+    "company": {
+      "name": "Uni-Fuels Holdings Ltd",
+      "cik": "0002021688",
+      "ticker": "UFG",
+      "figi": "BBG01QJSNB36"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2021688/000149315226049307/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-049307",
+      "filed": "2026-10-29",
+      "quote": "Exhibit 99.1 Uni-Fuels Announces Effective Date of Share Consolidation SINGAPORE, Oct 29, 2026 (GLOBE NEWSWIRE) - Uni-Fuels Holdings Limited (\"Uni-Fuels\" or the \"Company\") (Nasdaq: UFG), a global provider of marine fuel solutions headquartered in Singapore, today announced that it will effect a share consolidation of its Class A ordinary shares of par value US$0.0001 each and Class B ordinary shares of par value US$0.0001 each at a ratio of 1-for-10, effective on November 3, 2026 (the \"Share Consolidation\"). The Company's Class A ordinary shares are expected to begin trading on a..."
+    },
+    "dates": {
+      "announced": "2026-10-29",
+      "effective": "2026-11-03"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
+    }
   },
   {
     "id": "dividend-0001046025-2026-11-18",
@@ -5573,6 +5727,31 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001296484-2026-11-06",
+    "type": "reverse-split",
+    "company": {
+      "name": "TOP SHIPS INC.",
+      "cik": "0001296484",
+      "ticker": "TOPS",
+      "figi": "BBG000Q46L54"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1296484/000117184326006910/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006910",
+      "filed": "2026-10-28",
+      "quote": "EdgarFiling EXHIBIT 99.1 TOP Ships Inc. Announces Reverse Stock Split ATHENS, Greece, Oct. 27, 2026 (GLOBE NEWSWIRE) -- TOP Ships Inc. (the \"Company\" or \"TOP Ships\") (NYSE American: TOPS), an international owner and operator of modern, fuel-efficient \"ECO\" tanker vessels, announced today that its board of directors (the \"Board\") has determined to effect a 1 for 10 reverse stock split (the \"Reverse Stock Split\") of the Company's issued common shares, par value $0.01 (the \"Common Shares\"), effective at the opening of trading on November 6, 2026 (the \"Effective Date\"). Reverse Stock Split The..."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "effective": "2026-11-06"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
+    }
+  },
+  {
     "id": "reverse-split-0001782107-2026-11-06",
     "type": "reverse-split",
     "company": {
@@ -5595,6 +5774,31 @@
     "ratio": {
       "new": 1,
       "old": 10
+    }
+  },
+  {
+    "id": "reverse-split-0001885408-2026-11-06",
+    "type": "reverse-split",
+    "company": {
+      "name": "Nexera Technologies Ltd",
+      "cik": "0001885408",
+      "ticker": "NEXR",
+      "figi": "BBG015HK85R5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026113293/ea0309947-6k_nexera.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-113293",
+      "filed": "2026-10-28",
+      "quote": "Reverse Split On October 28, 2026, the Company announced that it will effect a reverse share split of the Company's ordinary shares, no par value (the \"Ordinary Shares\") per share, at a ratio of 1-for-5, such that each five (5) Ordinary Shares will be consolidated into one (1) Ordinary Share (the \"Reverse Split\"). The Reverse Split will be effective as of November 6, 2026, and the Ordinary Shares will begin trading on a post-split basis on the Nasdaq Capital Market beginning at the market open on Friday, November 6, 2026. Following the implementation of the Reverse Split, the Company's..."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "effective": "2026-11-06"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
     }
   },
   {
@@ -6294,6 +6498,64 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001651717-2026-11-27",
+    "type": "dividend",
+    "company": {
+      "name": "Nomad Foods Ltd",
+      "cik": "0001651717",
+      "ticker": "NOMD",
+      "figi": "BBG0071GM7Y0"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1651717/000165171726000029/ex991pressrelease-dividend.htm",
+      "form": "6-K",
+      "accession": "0001651717-26-000029",
+      "filed": "2026-10-30",
+      "quote": "Document Exhibit 99.1 Nomad Foods Declares Quarterly Dividend Woking, England, October 30, 2026 - Nomad Foods Limited (NYSE: NOMD) today announced that its Board of Directors has declared a cash dividend of $0.17 per share. The dividend will be payable on November 27, 2026 to shareholders of record as of the close of business on November 10, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-10",
+      "ex": "2026-11-10",
+      "pay": "2026-11-27"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.17",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001653242-2026-11-25",
+    "type": "dividend",
+    "company": {
+      "name": "Bank of N.T. Butterfield & Son Ltd",
+      "cik": "0001653242",
+      "ticker": "NTB",
+      "figi": "BBG00DK7NM27"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1653242/000165324226000139/currentquarterlyfs.htm",
+      "form": "6-K",
+      "accession": "0001653242-26-000139",
+      "filed": "2026-10-27",
+      "quote": "...1,115 Other non-interest income 198 167 561 467 Interest and fees on loans 82 - 620 - Note 23: Subsequent events On October 27, 2026, the Board of Directors declared an interim dividend of $0.50 per common share to be paid on November 25, 2026 to shareholders of record on November 10, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-27",
+      "record": "2026-11-10",
+      "ex": "2026-11-10",
+      "pay": "2026-11-25"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.50",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001694426-2026-11-18",
     "type": "dividend",
     "company": {
@@ -6758,6 +7020,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001378789-2026-12-03",
+    "type": "dividend",
+    "company": {
+      "name": "AerCap Holdings N.V.",
+      "cik": "0001378789",
+      "ticker": "AER",
+      "figi": "BBG000Q9FZL4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1378789/000162828026067786/aer-09302026xinterimreport.htm",
+      "form": "6-K",
+      "accession": "0001628280-26-067786",
+      "filed": "2026-10-28",
+      "quote": "In October 2026, our Board of Directors declared a quarterly cash dividend of $0.40 per share, with a payment date of December 3, 2026, to shareholders of record as of the close of business on November 11, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "record": "2026-11-11",
+      "ex": "2026-11-11",
+      "pay": "2026-12-03"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.40",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001828588-2026-11-18",
     "type": "dividend",
     "company": {
@@ -7164,6 +7455,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001904856-2026-11-25",
+    "type": "dividend",
+    "company": {
+      "name": "Enerflex Ltd.",
+      "cik": "0001904856",
+      "ticker": "EFXT",
+      "figi": "BBG001QVSNG2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1904856/000119312526437439/efxt-ex99_1.htm",
+      "form": "6-K",
+      "accession": "0001193125-26-437439",
+      "filed": "2026-10-29",
+      "quote": "The Board of Directors has elected to declare the Company's quarterly dividend in U.S. Dollars and declared a quarterly dividend of $0.035 per share, payable on November 25, 2026 to shareholders of record on November 12, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-29",
+      "record": "2026-11-12",
+      "ex": "2026-11-12",
+      "pay": "2026-11-25"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.035",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001915657-2026-12-02",
     "type": "dividend",
     "company": {
@@ -7536,6 +7856,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.33",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001142417-2026-11-27",
+    "type": "dividend",
+    "company": {
+      "name": "NEXSTAR MEDIA GROUP, INC.",
+      "cik": "0001142417",
+      "ticker": "NXST",
+      "figi": "BBG000DZJVH0"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1142417/000119312526440976/nxst-ex99_1.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-440976",
+      "filed": "2026-10-30",
+      "quote": "EX-99.1 EXHIBIT 99.1 NEXSTAR MEDIA GROUP DECLARES QUARTERLY CASH DIVIDEND OF $1.86 PER SHARE IRVING, Texas (October 30, 2026) - Nexstar Media Group, Inc. (NASDAQ: NXST) announced today that its Board of Directors declared a quarterly cash dividend of $1.86 per share of its common stock. The dividend is payable on Friday, November 27, 2026, to shareholders of record on Friday, November 13, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-11-27"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.86",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -8063,6 +8412,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000093389-2026-12-01",
+    "type": "dividend",
+    "company": {
+      "name": "STANDARD MOTOR PRODUCTS, INC.",
+      "cik": "0000093389",
+      "ticker": "SMP",
+      "figi": "BBG000BT68C6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/93389/000009338926000098/a991pressrelease-93026.htm",
+      "form": "8-K",
+      "accession": "0000093389-26-000098",
+      "filed": "2026-10-30",
+      "quote": "Dividends The Board of Directors has approved payment of a quarterly dividend of 33 cents per share on the common stock outstanding, which will be paid on December 1, 2026 to stockholders of record on November 16, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-16",
+      "ex": "2026-11-16",
+      "pay": "2026-12-01"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.33",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000752642-2026-12-15",
     "type": "dividend",
     "company": {
@@ -8585,6 +8963,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0000701818-2026-12-03",
+    "type": "dividend",
+    "company": {
+      "name": "KINROSS GOLD CORP",
+      "cik": "0000701818",
+      "ticker": "KGC",
+      "figi": "BBG000BB2DM7"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/701818/000117184326006916/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006916",
+      "filed": "2026-10-28",
+      "quote": "EdgarFiling EXHIBIT 99.1 Kinross declares quarterly dividend TORONTO, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Kinross Gold Corporation (TSX: K; NYSE: KGC) (the \"Company\") today announced that the Company's Board of Directors has declared a dividend of US$0.04 per common share for the third quarter of 2026. The dividend is payable on December 3, 2026, to shareholders of record as of the close of business on November 19, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "record": "2026-11-19",
+      "ex": "2026-11-19",
+      "pay": "2026-12-03"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.04",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000743367-2026-12-18",
     "type": "dividend",
     "company": {
@@ -8866,6 +9273,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "1.03",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001275101-2026-12-04",
+    "type": "dividend",
+    "company": {
+      "name": "BANK OF THE JAMES FINANCIAL GROUP INC",
+      "cik": "0001275101",
+      "ticker": "BOTJ",
+      "figi": "BBG000BXNHY4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1275101/000127510126000027/botj-20261027xex99_1.htm",
+      "form": "8-K",
+      "accession": "0001275101-26-000027",
+      "filed": "2026-10-30",
+      "quote": "On October 27, 2026, the Company's board of directors approved a quarterly dividend of $0.15 per common share to stockholders of record as of November 20, 2026, to be paid on December 4, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-30",
+      "record": "2026-11-20",
+      "ex": "2026-11-20",
+      "pay": "2026-12-04"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.15",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -9480,6 +9916,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000918608-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "ELDORADO GOLD CORP",
+      "cik": "0000918608",
+      "ticker": "EGO",
+      "figi": "BBG000BN7277"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/918608/000091860826000027/managementsdiscussionandan.htm",
+      "form": "6-K",
+      "accession": "0000918608-26-000027",
+      "filed": "2026-10-28",
+      "quote": "On October 28, 2026, the Company declared a fourth quarter dividend of $0.075 per common share, payable on December 15, 2026 to shareholders of record at the close of business on December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.075",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001077428-2026-12-15",
     "type": "dividend",
     "company": {
@@ -9507,6 +9972,35 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0001144800-2027-01-01",
+    "type": "dividend",
+    "company": {
+      "name": "TRANSALTA CORP",
+      "cik": "0001144800",
+      "ticker": "TAC",
+      "figi": "BBG000BBR1G3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1144800/000117184326006868/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-006868",
+      "filed": "2026-10-28",
+      "quote": "EdgarFiling EXHIBIT 99.1 TransAlta Declares Dividends CALGARY, Alberta, Oct. 27, 2026 (GLOBE NEWSWIRE) -- The Board of Directors of TransAlta Corporation (TSX: TA) (NYSE: TAC) declared a quarterly dividend of $0.07 per common share payable on January 1, 2027, to shareholders of record at the close of business on December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-10-28",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2027-01-01"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.07",
+      "currency": "CAD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0001174850-2026-12-15",

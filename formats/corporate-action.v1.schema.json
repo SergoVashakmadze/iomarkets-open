@@ -52,6 +52,10 @@
         }
       }
     },
+    "instrument": {
+      "const": "ADS",
+      "description": "Present when the amounts and dates are per American depositary share, as a 6-K states them for ADS holders. Absent for ordinary shares."
+    },
     "dates": {
       "type": "object",
       "additionalProperties": false,
@@ -98,7 +102,9 @@
           "pattern": "^\\d+(\\.\\d+)?$"
         },
         "currency": {
-          "const": "USD"
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "description": "ISO 4217 code of the currency the filing names: USD for 8-Ks; a 6-K amount is kept in its own currency (CAD, EUR, KRW…), never converted."
         }
       }
     },
