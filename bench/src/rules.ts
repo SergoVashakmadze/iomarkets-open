@@ -611,7 +611,11 @@ function corporateAction(root: Node, report: Sink) {
   const ex = dateOf(dd && at(dd, 'ExDvddDt'));
   const rec = dateOf(dd && at(dd, 'RcrdDt'));
   const pays = opts.flatMap((o) => childrenNamed(o, 'CshMvmntDtls')).map((m) => ({ m, d: dateOf(at(m, 'DtDtls/PmtDt')) })).filter((x) => x.d);
-  if (ex && rec && ex > rec) {
+  // One exception is normal, not an error: for a distribution of 25% or more of the share's value, US markets set
+  // the ex-date to the first business day after the payment date (FINRA Rule 11140(b)(1)), so it falls after the
+  // record date. Zoned Properties' special dividend (8-K, 2026-11-10: record 11-11, paid 11-20, ex 11-23) is one.
+  const exAfterPay = !!ex && pays.length > 0 && pays.every((p) => p.d! < ex);
+  if (ex && rec && ex > rec && !exAfterPay) {
     const n = at(dd!, 'ExDvddDt')!;
     report({ severity: 'warning', code: 'DATE_ORDER', path: n.path, line: n.el.line, message: `The ex-date ${ex} is after the record date ${rec}; markets set the ex-date on or before the record date.` });
   }

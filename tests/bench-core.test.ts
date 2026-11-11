@@ -7,7 +7,7 @@ import { formatReport, validate } from '../bench/src/index.ts';
 import { sumDecimal, sameDecimal } from '../bench/src/rules.ts';
 import { checkValue, compareDecimal } from '../bench/src/schema.ts';
 import { parseXml, XmlError } from '../bench/src/xml.ts';
-import { CAMT_054, PACS_002, PACS_004, PACS_008, PACS_009 } from '../bench/samples/valid.ts';
+import { CAMT_054, PACS_002, PACS_004, PACS_008, PACS_009, SEEV_031 } from '../bench/samples/valid.ts';
 
 const dir = new URL('../bench/', import.meta.url);
 
@@ -94,6 +94,19 @@ describe('rules for pacs.002, pacs.004 and camt.054', () => {
     expect(codesAfter(CAMT_054, ['<NtryRef>N-0002', '<NtryRef>N-0001'])).toEqual(['~DUPLICATE_ID']);
     const empty = CAMT_054.replace(/ {6}<TxsSummry>[\s\S]*<\/Ntry>\n/, '');
     expect(codesAfter(empty)).toEqual(['~NO_ENTRIES']);
+  });
+});
+
+describe('seev.031 date order', () => {
+  const exDate = (d: string) => [/<ExDvddDt>\s*<Dt>2026-11-13<\/Dt>/, `<ExDvddDt>\n          <Dt>${d}</Dt>`] as [RegExp, string];
+
+  it('warns when the ex-date falls after the record date but before payment', () => {
+    expect(codesAfter(SEEV_031, exDate('2026-11-17'))).toEqual(['~DATE_ORDER']);
+  });
+
+  it('accepts an ex-date after the payment date: the large-distribution rule (FINRA 11140(b)(1))', () => {
+    // Record 11-13, paid 11-20, ex 11-23: the shape of Zoned Properties' 2026 special dividend.
+    expect(codesAfter(SEEV_031, exDate('2026-11-23'))).toEqual([]);
   });
 });
 
