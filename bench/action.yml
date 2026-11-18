@@ -15,6 +15,15 @@ inputs:
   strict:
     description: "true to fail on warnings too."
     default: "false"
+  pack:
+    description: "A counterparty test pack (iomarkets.conformance-pack.v1 JSON) to check on top of the base standard."
+    default: ""
+  baseline:
+    description: "With pack: a previous run (JSON) to compare with; new failures are marked NEW."
+    default: ""
+  out:
+    description: "With pack: where to write this run as JSON (keep it as the next baseline)."
+    default: ""
 
 runs:
   using: composite
@@ -27,12 +36,18 @@ runs:
         FILES: ${{ inputs.files }}
         SCHEMA_ONLY: ${{ inputs.schema-only }}
         STRICT: ${{ inputs.strict }}
+        PACK: ${{ inputs.pack }}
+        BASELINE: ${{ inputs.baseline }}
+        OUT: ${{ inputs.out }}
       run: |
         set -euo pipefail
         shopt -s globstar nullglob
         flags=(--github)
         [ "$SCHEMA_ONLY" = "true" ] && flags+=(--schema-only)
         [ "$STRICT" = "true" ] && flags+=(--strict)
+        [ -n "$PACK" ] && flags+=(--pack "$PACK")
+        [ -n "$PACK" ] && [ -n "$BASELINE" ] && [ -f "$BASELINE" ] && flags+=(--baseline "$BASELINE")
+        [ -n "$PACK" ] && [ -n "$OUT" ] && flags+=(--out "$OUT")
         files=()
         for pattern in $FILES; do files+=($pattern); done
         if [ ${#files[@]} -eq 0 ]; then echo "::error::No files matched: $FILES"; exit 1; fi

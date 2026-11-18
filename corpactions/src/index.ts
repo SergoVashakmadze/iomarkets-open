@@ -7,6 +7,8 @@
 
 import data from '../data/events.json' with { type: 'json' };
 import meta from '../data/meta.json' with { type: 'json' };
+import history from '../data/history.json' with { type: 'json' };
+import { eventAsOf, FEED_START, feedAsOf, provenance, type History } from './history.ts';
 import type { CorporateAction } from './types.ts';
 
 export const EVENTS = data as unknown as CorporateAction[];
@@ -19,3 +21,18 @@ export { CALENDAR_PATH, calendarName, calendarUrl, eventUrl, toIcs, webcalUrl, t
 export { EVENT_CODES, EVENT_NAMES, type CorporateAction, type EventType } from './types.ts';
 
 export const eventById = (id: string) => EVENTS.find((e) => e.id === id);
+
+// As-of records (history.ts): what the feed showed on a past day, and how each event changed.
+export const HISTORY = history as unknown as History;
+const CURRENT = new Map(EVENTS.map((e) => [e.id, e]));
+export { FEED_START };
+/** Checks an "as of" day: a YYYY-MM-DD from the feed's first day to today. */
+export function checkAsOf(day: unknown, today = new Date().toISOString().slice(0, 10)): string | { error: string } {
+  if (typeof day !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(day)) return { error: 'asOf is a day, YYYY-MM-DD.' };
+  if (day < FEED_START) return { error: `The feed started on ${FEED_START}; nothing is known as of an earlier day.` };
+  if (day > today) return { error: 'asOf cannot be in the future.' };
+  return day;
+}
+export const eventsAsOf = (day: string) => feedAsOf(HISTORY, EVENTS, day);
+export const eventByIdAsOf = (id: string, day: string) => eventAsOf(HISTORY, CURRENT, id, day);
+export const eventHistory = (id: string) => provenance(HISTORY, CURRENT, id);

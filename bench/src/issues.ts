@@ -2,10 +2,12 @@
 // the MCP tool explain_issue serves it. tests/bench-issues.test.ts fails when a code
 // the bench can raise is missing.
 
-export type IssueCode = { code: string; layer: 'schema' | 'rule'; meaning: string; fix: string };
+export type IssueCode = { code: string; layer: 'schema' | 'rule' | 'pack'; meaning: string; fix: string };
 
 const s = (code: string, meaning: string, fix: string): IssueCode => ({ code, layer: 'schema', meaning, fix });
 const r = (code: string, meaning: string, fix: string): IssueCode => ({ code, layer: 'rule', meaning, fix });
+/** Raised by a counterparty's test pack (conformance.ts), not by the standard: the rule id says which. */
+const p = (code: string, meaning: string, fix: string): IssueCode => ({ code, layer: 'pack', meaning, fix });
 
 export const ISSUE_CODES: IssueCode[] = [
   s('NOT_XML', 'The text is not well-formed XML, so nothing else could be checked.', 'Fix the tag or character on the line given: every opening tag needs its closing tag, and & and < in text are written &amp; and &lt;.'),
@@ -99,6 +101,13 @@ export const ISSUE_CODES: IssueCode[] = [
   r('CASH_MOVEMENT_MISSING', 'The cash option says neither what is paid nor when.', 'Add CshMvmntDtls with the payment date and rate.'),
   r('DIVIDEND_RATE_MISSING', 'No gross or net dividend rate is given.', 'Add GrssDvddRate or NetDvddRate.'),
   r('DATE_ORDER', 'The event dates are out of order: ex-date, record date and payment date should come in that order.', 'Check the dates against the issuer’s announcement.'),
+  p('PACK_MESSAGE', 'The counterparty’s test pack does not take this kind of message.', 'Send one of the messages the pack lists, or ask the counterparty whether it takes this one.'),
+  p('PACK_REQUIRED', 'The counterparty requires an element the standard leaves optional, and it is missing.', 'Add the element at the path the issue gives; the rule’s note says why the counterparty wants it.'),
+  p('PACK_FORBIDDEN', 'The counterparty does not accept an element the standard allows.', 'Leave the element out of messages to this counterparty.'),
+  p('PACK_VALUE', 'A value is allowed by the standard but not one the counterparty accepts.', 'Use one of the values the issue lists.'),
+  p('PACK_LENGTH', 'A value is longer than the counterparty accepts, though the standard allows it.', 'Shorten it to the length the issue gives; the rest is usually cut off downstream.'),
+  p('PACK_PATTERN', 'A value does not have the form the counterparty requires.', 'Rewrite it to match the pattern the issue gives.'),
+  p('PACK_COUNT', 'An element appears more often than the counterparty accepts.', 'Send fewer, or split the content into separate messages.'),
 ];
 
 export const issueCode = (code: string) => ISSUE_CODES.find((c) => c.code === code.trim().toUpperCase());

@@ -1,0 +1,15 @@
+{
+  "format": "iomarkets.conformance-pack.v1",
+  "name": "Example: outbound cross-border credit transfers",
+  "counterparty": "Example correspondent bank (illustrative, not a real bank's rules)",
+  "messages": ["pacs.008.001.08", "pacs.009.001.08", "pacs.002.001.10", "pacs.004.001.09"],
+  "strict": false,
+  "rules": [
+    { "id": "EX-01", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/PmtId/UETR", "require": true, "why": "every payment is tracked end to end by its UETR" },
+    { "id": "EX-02", "message": "pacs.008.001.08", "path": "GrpHdr/SttlmInf/SttlmMtd", "allowed": ["INDA", "INGA"], "why": "settled over our nostro or vostro accounts only" },
+    { "id": "EX-03", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/IntrBkSttlmAmt/@Ccy", "allowed": ["EUR", "USD", "GBP"], "why": "the currencies we clear" },
+    { "id": "EX-04", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/RmtInf/Ustrd", "maxLength": 140, "why": "longer remittance text is truncated downstream" },
+    { "id": "EX-05", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/ChrgBr", "allowed": ["DEBT", "CRED", "SHAR"], "severity": "warning", "why": "SLEV is for SEPA, not cross-border" },
+    { "id": "EX-06", "message": "pacs.008.001.08", "path": "GrpHdr/NbOfTxs", "allowed": ["1"], "why": "one transaction per message (serial method)" }
+  ]
+}

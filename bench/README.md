@@ -120,3 +120,20 @@ market practice, not from the guideline files.
 `models/` is compiled from `schemas/` by `node bench/scripts/compile-xsd.ts`; a test fails if
 they drift. To add a message version: put its XSD in `schemas/`, compile, add it to `MESSAGES`
 in `src/index.ts` and a valid sample to `samples/`.
+
+## Conformance CI: a counterparty's own rules
+
+A message the base standard accepts can still be refused by a bank applying its own usage rules. A **test pack**
+writes those rules down (`iomarkets.conformance-pack.v1`, see `packs/example-cbpr-outbound.json`, which is
+illustrative and not any real bank's rules): the messages it takes, the base issue codes it accepts, and rules
+on any element or attribute: `require`, `forbid`, `allowed`, `maxLength`, `pattern`, `maxCount`, each with an
+`id`, an optional `severity` and a `why`.
+
+```bash
+node bench/cli.ts --pack packs/acme.json --out run.json payments/*.xml          # check, keep the run
+node bench/cli.ts --pack packs/acme.json --baseline run.json payments/*.xml     # what is new since then
+```
+
+In the Action, pass `pack`, and optionally `baseline` (a previous run file) and `out`; failures that are new
+since the baseline are annotated `NEW`. Over HTTP, `POST https://iomarkets.tech/api/conformance` runs the same
+check; with an IoMarkets workspace key it also keeps the baseline for you and returns a signed report.

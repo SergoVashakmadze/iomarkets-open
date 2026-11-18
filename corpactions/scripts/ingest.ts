@@ -17,6 +17,7 @@ import { fitsListing } from '../src/extract6k.ts';
 import { lookupFigis, type FigiCache, type KindCache } from '../src/figi.ts';
 import { dedupe, keyDate, prune } from '../src/query.ts';
 import { addDays } from '../src/text.ts';
+import { emptyHistory, record, type History } from '../src/history.ts';
 import type { CorporateAction } from '../src/types.ts';
 
 const arg = (k: string) => {
@@ -67,9 +68,19 @@ for (const e of events) {
   if (f) e.company.figi = f;
 }
 
-const merged = new Map(read<CorporateAction[]>(out, []).map((e) => [e.id, e]));
+const previous = read<CorporateAction[]>(out, []);
+const merged = new Map(previous.map((e) => [e.id, e]));
 for (const e of events) merged.set(e.id, e);
 const kept = dedupe(prune([...merged.values()], today)).sort((a, b) => keyDate(a).localeCompare(keyDate(b)) || a.id.localeCompare(b.id));
 writeFileSync(out, JSON.stringify(kept, null, 2) + '\n');
+// As-of records (src/history.ts): what changed in this refresh, kept beside the feed. `code` is the commit
+// this run's code is at (GITHUB_SHA in the workflow).
+if (!arg('out')) {
+  const historyFile = join(dataDir, 'history.json');
+  const h = read<History>(historyFile, emptyHistory());
+  const r = record(h, previous, kept, { recorded: new Date().toISOString(), code: (process.env.GITHUB_SHA ?? 'local').slice(0, 12) });
+  writeFileSync(historyFile, JSON.stringify(h) + '\n');
+  console.log(`History: ${r.added} new, ${r.changed} changed, ${r.removed} dropped.`);
+}
 if (!arg('out')) writeFileSync(join(dataDir, 'meta.json'), JSON.stringify({ updated: new Date().toISOString(), from, to }, null, 2) + '\n');
 console.log(`${kept.length} events in ${out} (window ${from} to ${to}).`);

@@ -10,11 +10,15 @@
 //   node bench/cli.ts --strict payment.xml             warnings fail too
 //   node bench/cli.ts --list                           messages the bench checks
 //   node bench/cli.ts --samples [dir]                  write the sample library to dir
+//   node bench/cli.ts --pack acme.json f.xml           also check a counterparty's test pack (Conformance CI)
+//     --baseline last-run.json   list failures that are new since that run first
+//     --out run.json             write this run as JSON, to be the next baseline
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { SAMPLES } from './samples/index.ts';
 import { MESSAGES, formatReport, validate, type Report } from './src/index.ts';
+import { compareRuns, formatRun, parsePack, runPack, type Run } from './src/conformance.ts';
 
 const args = process.argv.slice(2);
 const flag = (f: string) => {
@@ -35,6 +39,9 @@ const github = flag('--github');
 const schemaOnly = flag('--schema-only');
 const strict = flag('--strict');
 const message = option('--message');
+const packFile = option('--pack');
+const baselineFile = option('--baseline');
+const outFile = option('--out');
 
 if (flag('--help') || flag('-h')) {
   console.log(readFileSync(new URL(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).map((l) => l.slice(3)).join('\n'));
@@ -58,6 +65,39 @@ if (!args.length) {
 
 /** GitHub workflow commands need %, CR and LF escaped. */
 const esc = (s: string) => s.replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A');
+
+if (packFile) {
+  // Conformance CI: the base standard and the pack, compared with a baseline run if given.
+  const pack = parsePack(readFileSync(packFile, 'utf8'));
+  if ('error' in pack) {
+    console.error(`${packFile}: ${pack.error}`);
+    process.exit(2);
+  }
+  const files: { name: string; xml: string }[] = [];
+  for (const name of args) {
+    try {
+      files.push({ name, xml: name === '-' ? readFileSync(0, 'utf8') : readFileSync(name, 'utf8') });
+    } catch (e) {
+      console.error(`${name}: can't read it (${(e as NodeJS.ErrnoException).code ?? (e as Error).message})`);
+      process.exit(2);
+    }
+  }
+  const run = runPack(pack, files);
+  const cmp = baselineFile ? compareRuns(JSON.parse(readFileSync(baselineFile, 'utf8')) as Run, run) : undefined;
+  if (outFile) writeFileSync(outFile, JSON.stringify(run, null, 2) + '\n');
+  if (json) console.log(JSON.stringify({ run, comparison: cmp ?? null }, null, 2));
+  else if (github) {
+    const fresh = new Set((cmp?.new_failures ?? []).map((n) => `${n.file} ${n.code} ${n.path}`));
+    for (const f of run.files)
+      for (const i of f.issues) {
+        const level = i.severity === 'error' || pack.strict ? 'error' : 'warning';
+        const tag = fresh.has(`${f.name} ${i.code} ${i.path}`) ? 'NEW ' : '';
+        console.log(`::${level} file=${f.name},line=${i.line},title=${tag}${i.code}::${esc(`${i.path ? i.path + ': ' : ''}${i.message}`)}`);
+      }
+    console.log(formatRun(run, cmp).split('\n')[0]);
+  } else console.log(formatRun(run, cmp));
+  process.exit(run.passed ? 0 : 1);
+}
 
 let failed = 0;
 const reports: { file: string; report: Report }[] = [];

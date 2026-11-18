@@ -9239,6 +9239,31 @@
     "frequency": "other"
   },
   {
+    "id": "reverse-split-0001735556-2026-11-16",
+    "type": "reverse-split",
+    "company": {
+      "name": "SANGRIX INC.",
+      "cik": "0001735556",
+      "ticker": "SGRX",
+      "figi": "BBG00LTYP447"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926129088/tm2629968d1_6k.htm",
+      "form": "6-K",
+      "accession": "0001104659-26-129088",
+      "filed": "2026-11-17",
+      "quote": "Attached to this report as Exhibit 99.1 is a copy of the press release dated November 12, 2026, titled \"Sangrix Inc. Announces 1-for-8 Reverse Stock Split Effective November 16, 2026\". EXHIBIT INDEX Exhibit No. Description 99.1 Press Release - Sangrix Inc. Announces 1-for-8 Reverse Stock Split Effective November 16, 2026 SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. Date: November 17, 2026 SANGRIX INC."
+    },
+    "dates": {
+      "announced": "2026-11-17",
+      "effective": "2026-11-16"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 8
+    }
+  },
+  {
     "id": "reverse-split-0001794783-2026-11-16",
     "type": "reverse-split",
     "company": {
@@ -11425,16 +11450,15 @@
       "figi": "BBG000C8XXR0"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1009891/000121390026118055/ea0311707-8k_airindus.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1009891/000121390026121478/ea031266401ex99-1.htm",
       "form": "8-K",
-      "accession": "0001213900-26-118055",
-      "filed": "2026-11-10",
-      "quote": "On November 10, 2026, Air Industries Group (\"AIR\"), announced a reverse stock split (the \"Reverse Stock Split\") of its authorized, issued and outstanding shares of common stock, par value $0.001 per share, at a ratio of 1-for-5. AIR anticipates that the Reverse Stock Split will be effective at 12:01 a.m., Eastern Time, on November 20, 2026 and that its common stock will begin trading on a split-adjusted basis when the market opens on November 20, 2026. A copy of the press release is filed herewith as Exhibit 99.1 ."
+      "accession": "0001213900-26-121478",
+      "filed": "2026-11-17",
+      "quote": "The Rights Record Date follows the Company's previously announced one-for-five reverse stock split, which is scheduled to become effective on November 20, 2026, so the Redemption Rights will be distributed on the basis of post-split shares. Each Redemption Right will entitle its holder, subject to the conditions described below, to require the Company to redeem the related share of AIR common stock for cash at a price equal to 107.3% of the Debt Adjusted AIR Share Price. The Redemption Rights may be exercised only during the 10 trading days following the first anniversary of the closing of..."
     },
     "dates": {
-      "announced": "2026-11-10",
-      "effective": "2026-11-20",
-      "ex": "2026-11-20"
+      "announced": "2026-11-17",
+      "effective": "2026-11-20"
     },
     "ratio": {
       "new": 1,
@@ -13220,6 +13244,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001207179-2026-12-09",
+    "type": "dividend",
+    "company": {
+      "name": "GOLAR LNG LTD",
+      "cik": "0001207179",
+      "ticker": "GLNG",
+      "figi": "BBG000K14TT5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1207179/000117184326007545/exh_991.htm",
+      "form": "6-K",
+      "accession": "0001171843-26-007545",
+      "filed": "2026-11-18",
+      "quote": "Golar LNG Limited (\"Golar\"), NASDAQ ticker: GLNG, has declared a total dividend of $0.25 per share to be paid on December 9, 2026. The record date will be November 30, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-11-30",
+      "ex": "2026-11-30",
+      "pay": "2026-12-09"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.25",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001270436-2026-12-14",
     "type": "dividend",
     "company": {
@@ -14323,6 +14376,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001462120-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "Live Oak Bancshares, Inc.",
+      "cik": "0001462120",
+      "ticker": "LOB",
+      "figi": "BBG000MHBSQ5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1462120/000146212026000087/lob-20261117.htm",
+      "form": "8-K",
+      "accession": "0001462120-26-000087",
+      "filed": "2026-11-17",
+      "quote": "On November 17, 2026, the Board of Directors of Live Oak Bancshares, Inc. (the \"Company\") declared a cash dividend of $0.03 per share of Voting Common Stock, a cash dividend of $0.52344 per depositary share of its 8.375% Fixed Rate Series A Non-Cumulative Perpetual Preferred Stock, and a cash dividend of $0.20052 per depositary share of its 8.750% Fixed Rate Series B Non-Cumulative Perpetual Preferred Stock, each such dividend payable December 15, 2026, to shareholders of record as of December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-17",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.03",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001567683-2026-12-15",
     "type": "dividend",
     "company": {
@@ -14613,6 +14695,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001921963-2026-12-16",
+    "type": "dividend",
+    "company": {
+      "name": "Atmus Filtration Technologies Inc.",
+      "cik": "0001921963",
+      "ticker": "ATMU",
+      "figi": "BBG01B079Z74"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1921963/000192196326000084/atmu2026q4dividend8-kex991.htm",
+      "form": "8-K",
+      "accession": "0001921963-26-000084",
+      "filed": "2026-11-18",
+      "quote": "Document EXHIBIT 99.1 November 18, 2026 Atmus Filtration Technologies Declares Quarterly Dividend NASHVILLE, Tenn. - Atmus Filtration Technologies Inc. (Atmus; NYSE: ATMU), a global leader in the filtration industry, announced today that its Board of Directors has declared a quarterly cash dividend in the amount of $0.06 per common share, payable on December 16, 2026, to shareholders of record at the close of business on December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-16"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.06",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001925283-2026-12-15",
     "type": "dividend",
     "company": {
@@ -14666,6 +14777,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.295",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000103730-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "VISHAY INTERTECHNOLOGY INC",
+      "cik": "0000103730",
+      "ticker": "VSH",
+      "figi": "BBG000BWKB81"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/103730/000010373026000086/vsh-20261117.htm",
+      "form": "8-K",
+      "accession": "0000103730-26-000086",
+      "filed": "2026-11-17",
+      "quote": "...par value $0.10 per share VSH New York Stock Exchange 1 Item 8.01 - Other Events Cash Dividend Declaration On November 17, 2026, Vishay Intertechnology, Inc. declared a quarterly cash dividend of $0.10 per share of common stock and Class B common stock outstanding payable on December 15, 2026 to stockholders of record at the close of business on December 2, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-17",
+      "record": "2026-12-02",
+      "ex": "2026-12-02",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.10",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -14956,6 +15096,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.87",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000057131-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "LA-Z-BOY INC",
+      "cik": "0000057131",
+      "ticker": "LZB",
+      "figi": "BBG000BNLC97"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/57131/000005713126000042/fy27q2pressrelease.htm",
+      "form": "8-K",
+      "accession": "0000057131-26-000042",
+      "filed": "2026-11-17",
+      "quote": "Returned approximately $32 million to shareholders in share repurchases and dividends, triple the prior year second quarter amount, including $22 million in share repurchases and $10 million in dividends Dividend: On November 17, 2026, the Board of Directors declared a quarterly cash dividend of $0.27 per share on the common stock of the company, a 12% increase over the previous dividend. This represents the 6 th consecutive year of double-digit increases to the dividend. The dividend will be paid on December 15, 2026, to shareholders of record on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-17",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.27",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -18032,6 +18201,35 @@
       "quote": "[Record Date | Payment Date | Amount] [December 18, 2026 | December 29, 2026 | $0.0475 per common share]",
       "table": true
     }
+  },
+  {
+    "id": "dividend-0000763563-2027-01-04",
+    "type": "dividend",
+    "company": {
+      "name": "CHEMUNG FINANCIAL CORP",
+      "cik": "0000763563",
+      "ticker": "CHMG",
+      "figi": "BBG000BHQ7B3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/763563/000117184326007521/exh_991.htm",
+      "form": "8-K",
+      "accession": "0001171843-26-007521",
+      "filed": "2026-11-17",
+      "quote": "EdgarFiling EXHIBIT 99.1 Chemung Financial Corporation Announces Quarterly Dividend ELMIRA, N.Y., Nov. 17, 2026 (GLOBE NEWSWIRE) -- Chemung Financial Corporation (Nasdaq: CHMG) announced today that its Board of Directors has approved a quarterly cash dividend of $0.36 per share, payable on January 4, 2027, to common stock shareholders of record as of the close of business on December 21, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-17",
+      "record": "2026-12-21",
+      "ex": "2026-12-21",
+      "pay": "2027-01-04"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.36",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0001109354-2027-01-07",
