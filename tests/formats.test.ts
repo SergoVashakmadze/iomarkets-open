@@ -9,13 +9,18 @@ import entrySchema from '../formats/asset-map-entry.v1.schema.json'
 import keysSchema from '../formats/asset-map-issuer-keys.v1.schema.json'
 import eventSchema from '../formats/corporate-action.v1.schema.json'
 import reportSchema from '../formats/test-bench-report.v1.schema.json'
+import packSchema from '../formats/conformance-pack.v1.schema.json'
+import historySchema from '../formats/record-history.v1.schema.json'
+import examplePack from '../bench/packs/example-cbpr-outbound.json'
+import feedHistory from '../corpactions/data/history.json'
+import mapHistory from '../assetmap/data/history.json'
 
 // The open formats (formats/*.schema.json), published at iomarkets.org/formats. Every real entry, event and report
 // must fit its schema, so the published formats describe what the tools actually emit.
 
 type Schema = {
   type?: string | string[]; enum?: unknown[]; const?: unknown; pattern?: string; minLength?: number; minimum?: number; exclusiveMinimum?: number
-  required?: string[]; properties?: Record<string, Schema>; additionalProperties?: boolean; items?: Schema; minItems?: number
+  required?: string[]; properties?: Record<string, Schema>; additionalProperties?: boolean | Schema; items?: Schema; minItems?: number
 }
 
 /** Enough of JSON Schema 2020-12 for these four schemas: a list of what doesn't fit. */
@@ -44,6 +49,7 @@ function check(s: Schema, v: unknown, at = '$'): string[] {
       if (x === undefined) continue
       if (s.properties?.[k]) out.push(...check(s.properties[k], x, `${at}.${k}`))
       else if (s.additionalProperties === false) out.push(`${at}: unexpected ${k}`)
+      else if (s.additionalProperties && typeof s.additionalProperties === 'object') out.push(...check(s.additionalProperties, x, `${at}.${k}`))
     }
   }
   return out
@@ -63,6 +69,17 @@ describe('the open formats', () => {
   it('every Test Bench report fits test-bench-report.v1, valid or not', () => {
     for (const s of SAMPLES) expect(check(reportSchema as Schema, validate(s.xml)), s.id).toEqual([])
     expect(check(reportSchema as Schema, validate('not xml'))).toEqual([])
+  })
+
+  it('the example test pack fits conformance-pack.v1, and a bad rule does not', () => {
+    expect(check(packSchema as Schema, examplePack)).toEqual([])
+    expect(check(packSchema as Schema, { ...examplePack, rules: [{ id: 'x', path: 'Grp Hdr' }] })).not.toEqual([])
+  })
+
+  it('both published histories fit record-history.v1', () => {
+    expect(check(historySchema as Schema, feedHistory).slice(0, 3)).toEqual([])
+    expect(check(historySchema as Schema, mapHistory).slice(0, 3)).toEqual([])
+    expect(check(historySchema as Schema, { format: 'iomarkets.x-history.v1', events: { a: { versions: [] } } })).not.toEqual([])
   })
 
   it('the issuer key file format accepts a key and refuses a bad one', () => {
@@ -85,7 +102,7 @@ function findOrg(): string | null {
 const org = findOrg()
 
 describe.skipIf(!org)('iomarkets.org publishes the same formats', () => {
-  it.each(['asset-map-entry.v1', 'asset-map-issuer-keys.v1', 'corporate-action.v1', 'test-bench-report.v1'])('%s', (name) => {
+  it.each(['asset-map-entry.v1', 'asset-map-issuer-keys.v1', 'corporate-action.v1', 'test-bench-report.v1', 'conformance-pack.v1', 'record-history.v1'])('%s', (name) => {
     const ours = readFileSync(join(process.cwd(), 'formats', `${name}.schema.json`), 'utf8')
     expect(readFileSync(join(org!, `${name}.schema.json`), 'utf8')).toBe(ours)
   })

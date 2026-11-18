@@ -36,3 +36,17 @@ export function checkAsOf(day: unknown, today = new Date().toISOString().slice(0
 export const eventsAsOf = (day: string) => feedAsOf(HISTORY, EVENTS, day);
 export const eventByIdAsOf = (id: string, day: string) => eventAsOf(HISTORY, CURRENT, id, day);
 export const eventHistory = (id: string) => provenance(HISTORY, CURRENT, id);
+
+/**
+ * Private deployment only (deploy/private/bundle.ts): swaps in a newer feed from a verified, signed data bundle, in
+ * place, so every route and MCP tool that holds these objects sees it.
+ */
+export function replaceFeed(events: CorporateAction[], meta: { updated: string; from: string; to: string }, history: History) {
+  EVENTS.splice(0, EVENTS.length, ...events);
+  Object.assign(FEED_META, meta);
+  HISTORY.format = history.format;
+  for (const k of Object.keys(HISTORY.events)) delete HISTORY.events[k];
+  Object.assign(HISTORY.events, history.events);
+  CURRENT.clear();
+  for (const e of EVENTS) CURRENT.set(e.id, e);
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/record-history.v1.schema.json",
+  "title": "As-of record history, version 1",
+  "description": "Every version a dataset has published of each record: when it was first published, which code produced it, what changed field by field, and when a record was dropped. A record as it stood on any past day is the current one with the later changes undone. Used by the corporate actions feed and the Tokenized Asset Map.",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "events"
+  ],
+  "properties": {
+    "format": {
+      "type": "string",
+      "pattern": "^iomarkets\\.[a-z-]+-history\\.v1$",
+      "description": "Which dataset, e.g. iomarkets.corporate-action-history.v1."
+    },
+    "events": {
+      "type": "object",
+      "description": "By record id.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "versions"
+        ],
+        "properties": {
+          "versions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "recorded",
+                "code",
+                "changes"
+              ],
+              "properties": {
+                "recorded": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}T",
+                  "description": "When the dataset first published this version (UTC)."
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "The commit whose code (or hand change) produced it."
+                },
+                "changes": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "Dotted path to the field; arrays are compared whole."
+                      },
+                      "from": {
+                        "description": "The value before; absent when the field is new."
+                      },
+                      "to": {
+                        "description": "The value after; absent when the field went."
+                      }
+                    }
+                  },
+                  "description": "null for the first version; otherwise what changed since the one before."
+                },
+                "note": {
+                  "type": "string",
+                  "description": "Why, when the change was made by hand."
+                }
+              }
+            }
+          },
+          "removed": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "recorded",
+              "code",
+              "last"
+            ],
+            "properties": {
+              "recorded": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "last": {
+                "type": "object",
+                "description": "The record's last published state."
+              }
+            }
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "from",
+                "to"
+              ],
+              "properties": {
+                "from": {
+                  "type": "string"
+                },
+                "to": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Times the record was out of the dataset before coming back."
+          }
+        }
+      }
+    }
+  }
+}

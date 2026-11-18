@@ -33,6 +33,8 @@ if (!run('git', ['status', '--porcelain', 'assetmap/data'], true).trim()) {
   console.log('The issuer lists the same contracts as last time: nothing to commit.');
   process.exit(0);
 }
+// Every change goes into the map's history (tests/assetmap-history.test.ts fails otherwise).
+run('node', ['assetmap/scripts/record-history.ts', '--note', `xStocks refresh ${month}, from the issuers' own API and registry`]);
 try {
   run('npm', ['test']);
 } catch {

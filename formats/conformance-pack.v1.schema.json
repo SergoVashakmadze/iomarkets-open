@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iomarkets.org/formats/conformance-pack.v1.schema.json",
+  "title": "Conformance test pack, version 1",
+  "description": "A counterparty's own rules for ISO 20022 messages, checked on top of the base standard: the messages it takes, the base issue codes it accepts, and rules on any element or attribute. Read by the ISO 20022 Test Bench (CLI --pack, GitHub Action, POST https://iomarkets.tech/api/conformance).",
+  "$comment": "Released under CC0 1.0 Universal (public domain): https://creativecommons.org/publicdomain/zero/1.0/. Governed by IoMarkets.org: https://iomarkets.org/formats",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "name",
+    "rules"
+  ],
+  "properties": {
+    "format": {
+      "const": "iomarkets.conformance-pack.v1"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The pack's name; runs are compared with the last run of the same name."
+    },
+    "counterparty": {
+      "type": "string",
+      "description": "Whose rules these are."
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{4}\\.\\d{3}\\.\\d{3}\\.\\d{2}$"
+      },
+      "description": "Message identifiers the counterparty takes; anything else fails. Absent or empty: any the Test Bench checks."
+    },
+    "ignore": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z0-9_]+$"
+      },
+      "description": "Base issue codes the counterparty accepts."
+    },
+    "strict": {
+      "type": "boolean",
+      "description": "Warnings fail too."
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "path"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Stable id, shown with every failure."
+          },
+          "message": {
+            "type": "string",
+            "description": "Only for this message identifier."
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9]+(/[A-Za-z0-9]+)*(/@[A-Za-z0-9:]+)?$",
+            "description": "Element names under the message's root element, joined by /, optionally ending in /@Attribute."
+          },
+          "require": {
+            "type": "boolean"
+          },
+          "forbid": {
+            "type": "boolean"
+          },
+          "allowed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maxLength": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "pattern": {
+            "type": "string",
+            "description": "A regular expression the value must match."
+          },
+          "maxCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "severity": {
+            "enum": [
+              "error",
+              "warning"
+            ]
+          },
+          "why": {
+            "type": "string",
+            "description": "Why the counterparty asks for it; shown with the failure."
+          }
+        }
+      }
+    }
+  }
+}

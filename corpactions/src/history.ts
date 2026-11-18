@@ -25,13 +25,14 @@ export type Version = {
   /** Why, when a person changed the data by hand (the commit's subject). */
   note?: string;
 };
-export type Removal = { recorded: string; code: string; note?: string; last: CorporateAction };
+export type Removal<T = CorporateAction> = { recorded: string; code: string; note?: string; last: T };
 /** A time the event was out of the feed before coming back: from its removal to its return. */
 export type Gap = { from: string; to: string; note?: string };
-export type EventHistory = { versions: Version[]; removed?: Removal; gaps?: Gap[] };
-export type History = { format: typeof HISTORY_FORMAT; events: Record<string, EventHistory> };
+export type EventHistory<T = CorporateAction> = { versions: Version[]; removed?: Removal<T>; gaps?: Gap[] };
+/** Any dataset of records with an id: the corporate actions feed, and the Tokenized Asset Map (assetmap/src/history.ts). */
+export type History<T = CorporateAction> = { format: string; events: Record<string, EventHistory<T>> };
 
-export const emptyHistory = (): History => ({ format: HISTORY_FORMAT, events: {} });
+export const emptyHistory = <T = CorporateAction>(format: string = HISTORY_FORMAT): History<T> => ({ format, events: {} });
 
 /** An object as dotted paths to leaf values; arrays are leaves, compared whole. */
 export function flatten(o: unknown, prefix = '', out: Record<string, unknown> = {}): Record<string, unknown> {
@@ -89,7 +90,7 @@ export function undo<T>(record: T, changes: Change[]): T {
 }
 
 /** Records one published state of the feed: new events, changed ones and dropped ones. */
-export function record(h: History, prev: CorporateAction[], next: CorporateAction[], at: { recorded: string; code: string; note?: string }): { added: number; changed: number; removed: number } {
+export function record<T extends { id: string }>(h: History<T>, prev: T[], next: T[], at: { recorded: string; code: string; note?: string }): { added: number; changed: number; removed: number } {
   const before = new Map(prev.map((e) => [e.id, e]));
   const after = new Map(next.map((e) => [e.id, e]));
   const meta = { recorded: at.recorded, code: at.code, ...(at.note ? { note: at.note } : {}) };
@@ -124,7 +125,7 @@ export function record(h: History, prev: CorporateAction[], next: CorporateActio
 const endOf = (day: string) => `${day}T23:59:59.999Z`;
 
 /** One event as the feed showed it at the end of `day` (UTC), or null if the feed did not show it then. */
-export function eventAsOf(h: History, current: Map<string, CorporateAction>, id: string, day: string): CorporateAction | null {
+export function eventAsOf<T extends { id: string }>(h: History<T>, current: Map<string, T>, id: string, day: string): T | null {
   const eh = h.events[id];
   const now = current.get(id);
   if (!eh) return null;
@@ -132,7 +133,7 @@ export function eventAsOf(h: History, current: Map<string, CorporateAction>, id:
   if (!eh.versions.length || eh.versions[0].recorded > cut) return null;
   if (eh.removed && eh.removed.recorded <= cut) return null;
   if (eh.gaps?.some((g) => g.from <= cut && cut < g.to)) return null;
-  let rec: CorporateAction | undefined = now ?? eh.removed?.last;
+  let rec: T | undefined = now ?? eh.removed?.last;
   if (!rec) return null;
   for (const v of [...eh.versions].reverse()) {
     if (v.recorded <= cut) break;
@@ -142,9 +143,9 @@ export function eventAsOf(h: History, current: Map<string, CorporateAction>, id:
 }
 
 /** The whole feed as it stood at the end of `day` (UTC). */
-export function feedAsOf(h: History, current: CorporateAction[], day: string): CorporateAction[] {
+export function feedAsOf<T extends { id: string }>(h: History<T>, current: T[], day: string): T[] {
   const map = new Map(current.map((e) => [e.id, e]));
-  const out: CorporateAction[] = [];
+  const out: T[] = [];
   for (const id of Object.keys(h.events)) {
     const e = eventAsOf(h, map, id, day);
     if (e) out.push(e);
@@ -153,7 +154,7 @@ export function feedAsOf(h: History, current: CorporateAction[], day: string): C
 }
 
 /** An event's history in W3C PROV terms: what it was derived from, and each version with its time and code. */
-export function provenance(h: History, current: Map<string, CorporateAction>, id: string, repo = 'https://github.com/SergoVashakmadze/iomarkets-tech') {
+export function provenance(h: History<CorporateAction>, current: Map<string, CorporateAction>, id: string, repo = 'https://github.com/SergoVashakmadze/iomarkets-tech') {
   const eh = h.events[id];
   const rec = current.get(id) ?? eh?.removed?.last;
   if (!eh || !rec) return null;
