@@ -1161,31 +1161,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "merger-0001666138-2026-10-19",
-    "type": "merger",
-    "company": {
-      "name": "Atkore Inc.",
-      "cik": "0001666138",
-      "ticker": "ATKR"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1666138/000166613826000041/atkr-20261019.htm",
-      "form": "8-K",
-      "accession": "0001666138-26-000041",
-      "filed": "2026-10-19",
-      "quote": "...standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Introductory Note On October 19, 2026 (the \"Closing Date\"), Prysmian S.p.A., a company organized under the laws of the Republic of Italy (\"Buyer\"), completed the previously announced acquisition of Atkore Inc., a Delaware... Pursuant to the Merger Agreement, each share of the Company's common stock, par value $0.01 per share (the \"Company Stock\"), issued and outstanding immediately prior to the effective time of the Merger (the \"Effective Time\") (subject to certain customary exceptions specified in the Merger Agreement) was converted into the right to receive $95.00 in cash, without interest (the \"Merger Consideration\")."
-    },
-    "dates": {
-      "announced": "2026-10-19",
-      "effective": "2026-10-19"
-    },
-    "cash": {
-      "amount": "95.00",
-      "currency": "USD"
-    },
-    "acquirer": "Prysmian S.p.A."
-  },
-  {
     "id": "reverse-split-0000887151-2026-10-19",
     "type": "reverse-split",
     "company": {
@@ -1208,31 +1183,6 @@
     "ratio": {
       "new": 1,
       "old": 30
-    }
-  },
-  {
-    "id": "reverse-split-0001756064-2026-10-19",
-    "type": "reverse-split",
-    "company": {
-      "name": "Our Bond, Inc.",
-      "cik": "0001756064",
-      "ticker": "OBAI",
-      "figi": "BBG01M2WF4S2"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226047155/form8-k.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-047155",
-      "filed": "2026-10-15",
-      "quote": "...on Form 8-K filed October 1, 2026, the Board of Directors of Our Bond, Inc. (the \"Company\") approved a one-for-twenty (1-for-20) proportional reverse stock split (the \"Reverse Stock Split\") of the Company's common stock, par value $0.0001 per share (the \"Common Stock\"), pursuant to which each twenty (20) shares of issued and outstanding Common Stock will be combined into one (1) share of Common Stock and the number of authorized shares of Common Stock will be proportionately reduced. No fractional shares will be issued in connection with the Reverse Stock Split, and any fractional shares..."
-    },
-    "dates": {
-      "announced": "2026-10-15",
-      "effective": "2026-10-19"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 20
     }
   },
   {
@@ -7394,6 +7344,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001032220-2026-11-30",
+    "type": "dividend",
+    "company": {
+      "name": "MAXIMUS, INC.",
+      "cik": "0001032220",
+      "ticker": "MMS",
+      "figi": "BBG000BC5WJ4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1032220/000103222026000048/mms-2026x09x30x8kxex991.htm",
+      "form": "8-K",
+      "accession": "0001032220-26-000048",
+      "filed": "2026-11-19",
+      "quote": "On October 5, 2026, our Board of Directors declared a quarterly cash dividend of $0.33 for each share of our common stock outstanding. The dividend is payable on November 30, 2026, to shareholders of record on November 13, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-11-13",
+      "ex": "2026-11-13",
+      "pay": "2026-11-30"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.33",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001044777-2026-12-04",
     "type": "dividend",
     "company": {
@@ -10260,6 +10239,31 @@
     }
   },
   {
+    "id": "reverse-split-0001854270-2026-11-18",
+    "type": "reverse-split",
+    "company": {
+      "name": "Senti Biosciences Holdings, Inc.",
+      "cik": "0001854270",
+      "ticker": "SNTI",
+      "figi": "BBG021Y8RQQ5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026074812/snti-20261118.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-074812",
+      "filed": "2026-11-18",
+      "quote": "On October 26, 2026, following the Annual Meeting, the Board approved a reverse stock split of the Common Stock at a ratio of 1-for-33. Effective as of 5:00 p.m. Eastern Time on November 18, 2026, the Company filed the Reverse Stock Split Amendment and effected a 1-for-33 reverse stock split of its shares of Common Stock (the \"Reverse Stock Split\"). As a result of the Reverse Stock Split, every thirty-three (33) shares of the Company's Common Stock issued or outstanding were automatically reclassified into one validly issued, fully-paid and non-assessable new share of Common Stock, subject to..."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "effective": "2026-11-18"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 33
+    }
+  },
+  {
     "id": "reverse-split-0001991332-2026-11-18",
     "type": "reverse-split",
     "company": {
@@ -12063,6 +12067,32 @@
     "frequency": "other"
   },
   {
+    "id": "reverse-split-0000320017-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "LISATA THERAPEUTICS, INC.",
+      "cik": "0000320017",
+      "ticker": "LSTA",
+      "figi": "BBG000BNVDR4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320017/000114036126044826/ef20085899_ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001140361-26-044826",
+      "filed": "2026-11-19",
+      "quote": "Announces Reverse Stock Split Effective NOVEMBER 23, 2026 LIBERTY CORNER, N.J., Nov. 19, 2026 - Lisata Therapeutics, Inc. (NASDAQ: LSTA) (\"Lisata\" or the \"Company\") today announced a one-for-fifteen reverse stock split of its common stock. The Company's common stock will begin trading on a split-adjusted basis on The Nasdaq Capital Market at the market open on November 23, 2026 under the existing trading symbol \"LSTA\". The new CUSIP number for the Company's common stock following the reverse stock split will be 128058 401."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "effective": "2026-11-23",
+      "ex": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 15
+    }
+  },
+  {
     "id": "reverse-split-0001358190-2026-11-23",
     "type": "reverse-split",
     "company": {
@@ -12085,6 +12115,57 @@
     "ratio": {
       "new": 1,
       "old": 40
+    }
+  },
+  {
+    "id": "reverse-split-0001750106-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "Alset Inc.",
+      "cik": "0001750106",
+      "ticker": "AEI",
+      "figi": "BBG000PZLNH2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1750106/000149315226053085/form8-k.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-053085",
+      "filed": "2026-11-18",
+      "quote": "On November 16, 2026, Alset Inc., a Texas corporation (the \"Company\"), filed a Certificate of Amendment to the Company's Certificate of Formation with the Texas Secretary of State to effect a 1-for-5 reverse stock split (the \"Reverse Stock Split\"). The Reverse Stock Split will be effective as of November 23, 2026 at 8:00 a.m. (the \"Effective Time\"). At the Effective Time, each 5 shares of the Company's common stock issued and outstanding will be combined and converted into 1 share of the Company's common stock."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "effective": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
+    }
+  },
+  {
+    "id": "reverse-split-0001817760-2026-11-20",
+    "type": "reverse-split",
+    "company": {
+      "name": "SmartKem, Inc.",
+      "cik": "0001817760",
+      "ticker": "SMTK",
+      "figi": "BBG00ZL5V413"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926129975/tm2630206d1_ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-129975",
+      "filed": "2026-11-19",
+      "quote": "Exhibit 99.1 PRESS RELEASE Smartkem, Inc. announces reverse split of common stock to support continued Nasdaq listing WILMINGTON, DE, November 19, 2026 - Smartkem, Inc. (Nasdaq: SMTK) (\"Smartkem\" or the \"Company\") today announced that its Board of Directors has approved a reverse stock split of the Company's outstanding common stock at a ratio of 1-for-5, following authorization by shareholders at the Company's Annual Meeting of Shareholders held June 23, 2026. The reverse stock split will become effective on November 20, 2026 at 5:00 p.m. Eastern Time and Smartkem's common stock will begin..."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "effective": "2026-11-20",
+      "ex": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
     }
   },
   {
@@ -13099,6 +13180,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000063296-2026-12-14",
+    "type": "dividend",
+    "company": {
+      "name": "MATTHEWS INTERNATIONAL CORP",
+      "cik": "0000063296",
+      "ticker": "MATW",
+      "figi": "BBG000CJSNX7"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/63296/000006329626000116/ex991_4q2026dividendpr.htm",
+      "form": "8-K",
+      "accession": "0000063296-26-000116",
+      "filed": "2026-11-19",
+      "quote": "...consecutive dividend increase PITTSBURGH, PA, NOVEMBER 18, 2026 - Matthews International Corporation (NASDAQ GSM: MATW) announced that its Board of Directors declared, at its regularly scheduled meeting today, a dividend of $0.26 per share on the Company's common stock, representing an increase to the Company's quarterly dividend rate. Michael J. Whitehead, President and Chief Executive Officer, stated, \"We are pleased to announce the 33 rd consecutive increase to the Company's dividend. This increase reinforces our commitment to providing our shareholders with a competitive return on their..."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-11-30",
+      "ex": "2026-11-30",
+      "pay": "2026-12-14"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.26",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000084246-2026-12-07-special",
     "type": "dividend",
     "company": {
@@ -13883,6 +13993,35 @@
     "frequency": "semi-annual"
   },
   {
+    "id": "dividend-0000880417-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "CSB Bancorp, Inc.",
+      "cik": "0000880417",
+      "ticker": "CSBB",
+      "figi": "BBG000BS4616"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/880417/000119312526467070/csbb-ex99_1.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-467070",
+      "filed": "2026-11-18",
+      "quote": "EX-99.1 Exhibit 99.1 CSB Bancorp, Inc. Declares Fourth Quarter Cash Dividend MILLERSBURG, OH - November 18, 2026 - CSB Bancorp, Inc., (OTCID: CSBB) announced that the Company's Board of Directors has declared a fourth quarter cash dividend of $0.47 per share on its common stock, payable December 15, 2026, to shareholders of record as of December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.47",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0000889900-2026-12-15",
     "type": "dividend",
     "company": {
@@ -14200,6 +14339,35 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0001277902-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "MVB FINANCIAL CORP",
+      "cik": "0001277902",
+      "ticker": "MVBF",
+      "figi": "BBG000BPFFJ1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1277902/000127790226000103/q42026cashdividendpressrel.htm",
+      "form": "8-K",
+      "accession": "0001277902-26-000103",
+      "filed": "2026-11-18",
+      "quote": "(November 18, 2026) - MVB Financial Corp. (NASDAQ: MVBF) (\"MVB\" or the \"Company\") today announced that its Board of Directors has declared a quarterly cash dividend of $0.17 per share, consistent with the previous quarter's dividend. The dividend is payable on December 15, 2026, for shareholders of record as of December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.17",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0001302215-2026-12-15",
@@ -15188,6 +15356,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001178819-2026-12-17",
+    "type": "dividend",
+    "company": {
+      "name": "ALAMOS GOLD INC",
+      "cik": "0001178819",
+      "ticker": "AGI",
+      "figi": "BBG009HT6BL4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1178819/000117881926000098/ex991alamosgolddeclaresq42.htm",
+      "form": "6-K",
+      "accession": "0001178819-26-000098",
+      "filed": "2026-11-19",
+      "quote": "Alamos Gold Declares Quarterly Dividend Toronto, Ontario (November 19, 2026) - Alamos Gold Inc. ( TSX:AGI; NYSE:AGI ) (\"Alamos\" or the \"Company\") today announced that the Company's Board of Directors has declared a quarterly dividend of US$0.04 per common share. The Company has paid dividends for 17 consecutive years and including the upcoming dividend, has returned $143 million to shareholders thus far in 2026 through dividends and share buybacks. The dividend is payable on December 17, 2026 to shareholders of record as of the close of business on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2026-12-17"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.04",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001481582-2026-12-17",
     "type": "dividend",
     "company": {
@@ -15241,6 +15438,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.10",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001767837-2026-12-17",
+    "type": "dividend",
+    "company": {
+      "name": "Richmond Mutual Bancorporation, Inc.",
+      "cik": "0001767837",
+      "ticker": "RMBI",
+      "figi": "BBG000KWLYL5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1767837/000162828026074897/a202611188-kdividendex991.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-074897",
+      "filed": "2026-11-19",
+      "quote": "ANNOUNCES QUARTERLY DIVIDEND RICHMOND, IN - November 18, 2026 - Richmond Mutual Bancorporation, Inc. (NASDAQ: RMBI) announced today that its Board of Directors has declared a cash dividend on Richmond Mutual Bancorporation common stock of $0.15 per share. The cash dividend will be payable on December 17, 2026, to stockholders of record as of the close of business on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2026-12-17"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.15",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -15389,6 +15615,35 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0000357301-2027-01-04",
+    "type": "dividend",
+    "company": {
+      "name": "TRUSTCO BANK CORP N Y",
+      "cik": "0000357301",
+      "ticker": "TRST",
+      "figi": "BBG000BVNVQ6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/357301/000114036126044724/ef20085941_ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001140361-26-044724",
+      "filed": "2026-11-18",
+      "quote": "McCormick Vice President, Treasurer, and Assistant Corporate Secretary (518) 381-3673 TrustCo Declares Quarterly Dividend on the Heels of Strong Quarterly Results Glenville, New York - November 18, 2026 The Board of Directors of TrustCo Bank Corp NY (TrustCo, Nasdaq: TRST) on November 17, 2026 declared a quarterly cash dividend of $0.40 per share, or $1.60 per share on an annualized basis. The dividend will be payable on January 4, 2027 to shareholders of record at the close of business on December 4, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2027-01-04"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.40",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0000708781-2026-12-14",
@@ -16171,6 +16426,31 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001835654-2026-12-07",
+    "type": "reverse-split",
+    "company": {
+      "name": "Innoviz Technologies Ltd.",
+      "cik": "0001835654",
+      "ticker": "INVZ",
+      "figi": "BBG00DKCC5X1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1835654/000117891326005281/exhibit_99-1.htm",
+      "form": "6-K",
+      "accession": "0001178913-26-005281",
+      "filed": "2026-11-18",
+      "quote": "Exhibit 99.1 Innoviz Announces 1-for-20 Reverse Share Split TEL AVIV, Israel, Nov. 18, 2026 /PRNewswire/ -- Innoviz Technologies Ltd. (NASDAQ: INVZ) (the \"Company\", \"we\", or \"Innoviz\"), a leading supplier of high-performance, automotive-grade LiDAR sensor platforms for the automotive, security, defense, and industrial markets, today announced that it will effect a reverse share split of its ordinary shares, no par value (the \"Ordinary Shares\"), at a ratio of 1-for-20 (the \"Reverse Share Split\"), together with a proportionate reduction of its authorized share capital from 500,000,000 to..."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "effective": "2026-12-07"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 20
+    }
+  },
+  {
     "id": "dividend-0000868671-2026-12-17",
     "type": "dividend",
     "company": {
@@ -16282,6 +16562,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.05",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000885639-2026-12-23",
+    "type": "dividend",
+    "company": {
+      "name": "KOHLS Corp",
+      "cik": "0000885639",
+      "ticker": "KSS",
+      "figi": "BBG000CS7CT9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526467271/kss-ex99_1.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-467271",
+      "filed": "2026-11-18",
+      "quote": "EX-99.1 Exhibit 99.1 Kohl's Corporation Declares Quarterly Dividend MENOMONEE FALLS, Wis. - (BUSINESS WIRE) - November 18, 2026 -The Board of Directors of Kohl's Corporation (NYSE: KSS) (\"Kohl's\" or the \"Company\") today declared a regular quarterly dividend of $0.125 per share on the Company's common stock. The dividend is payable December 23, 2026, to shareholders of record at the close of business on December 9, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-09",
+      "ex": "2026-12-09",
+      "pay": "2026-12-23"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.125",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -16490,6 +16799,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000907471-2027-01-04",
+    "type": "dividend",
+    "company": {
+      "name": "PATHWARD FINANCIAL, INC.",
+      "cik": "0000907471",
+      "ticker": "CASH",
+      "figi": "BBG000BKLTP8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/907471/000090747126000060/ex991dividendpressrelease1.htm",
+      "form": "8-K",
+      "accession": "0000907471-26-000060",
+      "filed": "2026-11-19",
+      "quote": "Document Exhibit 99.1 Pathward Financial, Inc. Declares Cash Dividend SIOUX FALLS, S.D., November 19, 2026 - Pathward Financial, Inc. (\"Pathward Financial\" or the \"Company\") (Nasdaq: CASH), a U.S.-based financial holding company driven by its purpose to power financial inclusion for all, announced that the Company will pay a cash dividend of $0.05 per share for the first fiscal quarter of 2027. This dividend will be payable on January 4, 2027 to shareholders of record as of December 10, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-10",
+      "ex": "2026-12-10",
+      "pay": "2027-01-04"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.05",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001123360-2026-12-24",
     "type": "dividend",
     "company": {
@@ -16691,6 +17029,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000921557-2027-01-08-special",
+    "type": "dividend",
+    "company": {
+      "name": "REPUBLIC BANCORP INC",
+      "cik": "0000921557",
+      "ticker": "RBCAA",
+      "figi": "BBG000BJMHG6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/921557/000110465926129688/rbcaa-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-129688",
+      "filed": "2026-11-18",
+      "quote": "In addition to the regular quarterly dividend, the Board of Directors declared a one-time special cash dividend of $5.50 per share on Class A Common Stock and $5.00 per share on Class B Common Stock. The one-time special dividend is payable January 8, 2027, to shareholders of record as of December 11, 2026. \" The special dividend reflects the Company's strong capital position, consistent profitability, and commitment to delivering long-term value to our shareholders, \" said Logan Pichel, President and Chief Executive Officer of Republic Bank & Trust Company."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-11",
+      "ex": "2026-12-11",
+      "pay": "2027-01-08"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "5.50",
+      "currency": "USD"
+    },
+    "frequency": "special"
   },
   {
     "id": "dividend-0001075531-2026-12-31",
@@ -17650,6 +18017,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001629019-2027-01-04",
+    "type": "dividend",
+    "company": {
+      "name": "Merchants Bancorp",
+      "cik": "0001629019",
+      "ticker": "MBIN",
+      "figi": "BBG000RMQZS5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1629019/000110465926129693/tm2630081d1_ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-129693",
+      "filed": "2026-11-18",
+      "quote": "Exhibit 99.1 PRESS RELEASE Merchants Bancorp Declares Quarterly Common and Preferred Dividends For Release November 18, 2026 CARMEL, Indiana - Merchants Bancorp (\"Merchants\") (Nasdaq: MBIN), parent company and registered bank holding company of Merchants Bank of Indiana (\"Merchants Bank\"), today announced that its Board of Directors declared the following quarterly cash dividends for the fourth quarter of 2026, in each case to shareholders of record on December 15, 2026, payable on January 4, 2027: A dividend of $0.11 per share on the Company's outstanding shares of its common stock..."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-15",
+      "ex": "2026-12-15",
+      "pay": "2027-01-04"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "15.00",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001792580-2026-12-31",
     "type": "dividend",
     "company": {
@@ -18113,6 +18509,35 @@
       "quote": "[Record Date | Payment Date | Amount] [December 18, 2026 | December 30, 2026 | $0.10167 per common share]",
       "table": true
     }
+  },
+  {
+    "id": "dividend-0000921557-2027-01-15-special",
+    "type": "dividend",
+    "company": {
+      "name": "REPUBLIC BANCORP INC",
+      "cik": "0000921557",
+      "ticker": "RBCAA",
+      "figi": "BBG000BJMHG6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/921557/000110465926129688/rbcaa-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-129688",
+      "filed": "2026-11-18",
+      "quote": "EXHIBIT 99.1 Republic Bancorp, Inc. Declares Regular Quarterly Cash Dividend and Announces Special Cash Dividend LOUISVILLE, KY - Republic Bancorp, Inc. (NASDAQ: RBCAA), parent company of Republic Bank & Trust Company, announced today that its Board of Directors declared a quarterly cash dividend of $0.495 per share on Class A Common Stock and $0.45 per share on Class B Common Stock, payable January 15, 2027, to shareholders of record as of December 18, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2026-12-18",
+      "ex": "2026-12-18",
+      "pay": "2027-01-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.495",
+      "currency": "USD"
+    },
+    "frequency": "special"
   },
   {
     "id": "dividend-0001289308-2026-12-31",
@@ -19763,6 +20188,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000726854-2027-01-29",
+    "type": "dividend",
+    "company": {
+      "name": "CITY HOLDING CO",
+      "cik": "0000726854",
+      "ticker": "CHCO",
+      "figi": "BBG000BFJFX3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/726854/000072685426000199/chco-20261118.htm",
+      "form": "8-K",
+      "accession": "0000726854-26-000199",
+      "filed": "2026-11-18",
+      "quote": "On November 17, 2026, the Board of Directors of City Holding Company (the \"Company\"), declared a dividend of $1.00 per common share to shareholders of record as of January 15, 2027 payable on January 29, 2027."
+    },
+    "dates": {
+      "announced": "2026-11-18",
+      "record": "2027-01-15",
+      "ex": "2027-01-15",
+      "pay": "2027-01-29"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.00",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0001551152-2027-02-16",
