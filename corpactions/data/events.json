@@ -1161,31 +1161,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "reverse-split-0000887151-2026-10-19",
-    "type": "reverse-split",
-    "company": {
-      "name": "Capstone Holding Corp.",
-      "cik": "0000887151",
-      "ticker": "CAPS",
-      "figi": "BBG000BGY478"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926033134/caps20261021_8k.htm",
-      "form": "8-K",
-      "accession": "0001437749-26-033134",
-      "filed": "2026-10-21",
-      "quote": "...of Amendment (the \"Certificate of Amendment\") to the Articles of Incorporation of the Company with the Nevada Secretary of State to effect a reverse stock split of the Company's common stock, par value $0.0005 (the \"Common Stock\") at a ratio of 1-for-30 (the \"Reverse Stock Split\"), which became effective on October 19, 2026, at 12:01 a.m., Eastern time. The terms of the Reverse Stock Split were such that every thirty shares of the Company's issued and outstanding Common Stock were automatically combined into one issued and outstanding share of Common Stock, without any change in par value per..."
-    },
-    "dates": {
-      "announced": "2026-10-21",
-      "effective": "2026-10-19"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 30
-    }
-  },
-  {
     "id": "dividend-0000110621-2026-10-30",
     "type": "dividend",
     "company": {
@@ -1273,31 +1248,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "merger-0000915840-2026-10-20",
-    "type": "merger",
-    "company": {
-      "name": "BEAZER HOMES USA INC",
-      "cik": "0000915840",
-      "ticker": "BZH"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/915840/000110465926117198/tm2622398d20_8k.htm",
-      "form": "8-K",
-      "accession": "0001104659-26-117198",
-      "filed": "2026-10-20",
-      "quote": "On October 20, 2026 (the \" Closing Date \"), Beazer Homes USA, Inc., a Delaware corporation (the \" Company \", \" we \", \" our \" or \" us \"), completed the previously announced merger of Bulldogs Merger Sub, Inc., a Delaware corporation (\" Merger Sub \") and a wholly owned subsidiary of Dream Finders... ...than Merger Sub), in each case, immediately prior to the Effective Time, and Dissenting Shares (as defined below)) was converted into the right to receive $33.50 in cash, without interest (the \" Merger Consideration \"), and subject to any required withholding taxes."
-    },
-    "dates": {
-      "announced": "2026-10-20",
-      "effective": "2026-10-20"
-    },
-    "cash": {
-      "amount": "33.50",
-      "currency": "USD"
-    },
-    "acquirer": "Dream Finders Homes"
-  },
-  {
     "id": "reverse-split-0001593001-2026-10-20",
     "type": "reverse-split",
     "company": {
@@ -1319,31 +1269,6 @@
     "ratio": {
       "new": 1,
       "old": 150
-    }
-  },
-  {
-    "id": "reverse-split-0001659617-2026-10-20",
-    "type": "reverse-split",
-    "company": {
-      "name": "Moleculin Biotech, Inc.",
-      "cik": "0001659617",
-      "ticker": "MBRX",
-      "figi": "BBG00B9T47L9"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1659617/000143774926032969/mbrx20261015d_8k.htm",
-      "form": "8-K",
-      "accession": "0001437749-26-032969",
-      "filed": "2026-10-20",
-      "quote": "Pursuant to such authority granted by the Company's stockholders, the Company's board of directors approved a one-for-twenty (1:20) reverse stock split (the \"Reverse Stock Split\") of the Company's common stock and the filing of the Amendment to effectuate the Reverse Stock Split. The Amendment was filed with the Secretary of State of the State of Delaware and the Reverse Stock Split will become effective in accordance with the terms of the Amendment at 12:01 a.m. Eastern Time on October 20, 2026 (the \"Effective Time\"), and the Company's common stock will open for trading on The Nasdaq Capital..."
-    },
-    "dates": {
-      "announced": "2026-10-20",
-      "effective": "2026-10-20"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 20
     }
   },
   {
@@ -9277,14 +9202,14 @@
       "figi": "BBG011MS0NB7"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1855467/000149315226051572/form8-k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1855467/000149315226053579/form8-k.htm",
       "form": "8-K",
-      "accession": "0001493152-26-051572",
-      "filed": "2026-11-13",
-      "quote": "The Company hereby announces that its board of directors approved the Company's 1-for-7 reverse stock split (the \"Reverse Split\") of the Company's Class A common stock, par value $0.00001 per share (the \"Common Stock\"). The Reverse Split was approved by the stockholders of the Company at the special meeting held on October 2, 2026. The Reverse Split is expected to legally take effect at 4:00 p.m. Eastern Time, on November 16, 2026."
+      "accession": "0001493152-26-053579",
+      "filed": "2026-11-20",
+      "quote": "...(the \"Certificate of Amendment\"), which became effective at 4:00 p.m. Eastern Time on November 16, 2026, and implemented a one-for-seven (1:7) reverse stock split (the \"Reverse Stock Split\") of the Company's issued and outstanding shares of Class A Common Stock, each with a par value $0.00001 per share (together, the \"Common Stock\"). In connection with the Reverse Stock Split, the CUSIP number for the Common Stock changed to 60743G308. The trading symbol for the Common Stock remains \"MOBX\"."
     },
     "dates": {
-      "announced": "2026-11-13",
+      "announced": "2026-11-20",
       "effective": "2026-11-16"
     },
     "ratio": {
@@ -10840,28 +10765,28 @@
     "frequency": "other"
   },
   {
-    "id": "split-0002023554-2026-11-19",
-    "type": "split",
+    "id": "reverse-split-0001985337-2026-11-19",
+    "type": "reverse-split",
     "company": {
-      "name": "Sandisk Corp",
-      "cik": "0002023554",
-      "ticker": "SNDK",
-      "figi": "BBG01R388JG1"
+      "name": "YYForce Inc.",
+      "cik": "0001985337",
+      "ticker": "YFOR",
+      "figi": "BBG01K4M3BZ5"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
-      "form": "8-K",
-      "accession": "0001628280-26-068243",
-      "filed": "2026-10-29",
-      "quote": "Announced today an eight-for-one forward stock split, effective November 19, 2026, to make stock more accessible, including to employees through its employee stock purchase plan.. MILPITAS, Calif. - October 29, 2026 - Sandisk Corporation (Nasdaq: SNDK) today reported fiscal first quarter financial results."
+      "url": "https://www.sec.gov/Archives/edgar/data/1985337/000121390026122260/ea031289301ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-122260",
+      "filed": "2026-11-19",
+      "quote": "Exhibit 99.1 YYForce Announces Effective Date of 1-for-50 Reverse Stock Split November 17, 2026 Class A ordinary shares are expected to begin trading on a split-adjusted basis on November 19, 2026 SINGAPORE, Nov. 17, 2026 /PRNewswire/ -- YYForce Inc. (NASDAQ: YFOR) (\"YYForce\" or the \"Company\"), an AI-enabled frontline workforce, robotics, and facility solutions provider, today announced that its Board of Directors approved a 1-for-50 reverse stock split of the Company's Class A ordinary shares. The shares are expected to begin trading on Nasdaq on a split-adjusted basis on November 19, 2026,..."
     },
     "dates": {
-      "announced": "2026-10-29",
+      "announced": "2026-11-19",
       "effective": "2026-11-19"
     },
     "ratio": {
-      "new": 8,
-      "old": 1
+      "new": 1,
+      "old": 50
     }
   },
   {
@@ -11504,14 +11429,14 @@
       "figi": "BBG00W5FLW97"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1847806/000149315226050886/ex99-1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1847806/000149315226053384/ex99-2.htm",
       "form": "6-K",
-      "accession": "0001493152-26-050886",
-      "filed": "2026-11-10",
-      "quote": "SINGAPORE, November 10, 2026 - Genius Group Limited (NYSE American: GNS) (\"Genius Group\", \"GNS\" or the \"Company\"), a leading AI-powered education group, today announced that its Board of Directors has approved a 1-for-10 share consolidation of the Company's ordinary shares. The share consolidation is expected to become effective at 12:01 a.m. Eastern Time on November 20, 2026, and the Company's ordinary shares are expected to commence trading on a split-adjusted basis when NYSE American opens on November 20, 2026 under the existing trading symbol \"GNS\"."
+      "accession": "0001493152-26-053384",
+      "filed": "2026-11-20",
+      "quote": "Exhibit 99.2 Genius Group Announces Completion of Share Consolidation and Resumption of Trading on NYSE American 1-for-10 share consolidation effective November 20, 2026, ordinary shares to commence trading on a split-adjusted basis under the ticker symbol \"GNS\" SINGAPORE, November 20, 2026 - Genius Group Limited (NYSE American: GNS) (\"Genius Group\", \"GNS\" or the \"Company\"), a leading AI-powered education group, today announced that its previously disclosed 1-for-10 share consolidation became effective at 12:01 a.m. Eastern Time on November 20, 2026. The Company's ordinary shares are expected..."
     },
     "dates": {
-      "announced": "2026-11-10",
+      "announced": "2026-11-20",
       "effective": "2026-11-20"
     },
     "ratio": {
@@ -11543,6 +11468,57 @@
     "ratio": {
       "new": 1,
       "old": 24
+    }
+  },
+  {
+    "id": "reverse-split-0001927578-2026-11-20",
+    "type": "reverse-split",
+    "company": {
+      "name": "NetClass Technology Inc",
+      "cik": "0001927578",
+      "ticker": "NTCL",
+      "figi": "BBG01MYBM1K9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1927578/000110465926130633/tm2629903d1_6k.htm",
+      "form": "6-K",
+      "accession": "0001104659-26-130633",
+      "filed": "2026-11-20",
+      "quote": "...Shareholders held on November 10, 2026, at 10:00 a.m., Singapore Time (November 9, 2025, at 9:00 p.m. Eastern Time), the Company's shareholders approved the consolidation of the Company's issued and unissued Class A Ordinary Shares and Class B Ordinary Shares at a ratio of 1-for-10 (the \"Share Consolidation\" or the \"Reverse Stock Split\"). Specifically, the following matters, among others, were approved and authorized: \"The implementation of a share consolidation of all of the Company's issued and unissued Class A ordinary shares of a par value of US$0.0125 each (the \"Class A Ordinary Shares\")..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-20"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
+    }
+  },
+  {
+    "id": "split-0002023554-2026-11-19",
+    "type": "split",
+    "company": {
+      "name": "Sandisk Corp",
+      "cik": "0002023554",
+      "ticker": "SNDK",
+      "figi": "BBG01R388JG1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026075127/sndk-20261119.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-075127",
+      "filed": "2026-11-19",
+      "quote": "...to its Amended and Restated Certificate of Incorporation with the Secretary of State of Delaware to effect the previously announced 8-for-1 forward stock split of the Company's common stock and to proportionately increase the number of shares of the Company's authorized common stock from 450,000,000 to 3,600,000,000. The Amendment, which became effective at 4:01 p.m. Eastern Time on November 19, 2026 , is filed as Exhibit 3.1 to this Current Report on Form 8-K. Trading is expected to commence on a split-adjusted basis at market open on Friday, November 20, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "effective": "2026-11-19",
+      "ex": "2026-11-20"
+    },
+    "ratio": {
+      "new": 8,
+      "old": 1
     }
   },
   {
@@ -12093,6 +12069,31 @@
     }
   },
   {
+    "id": "reverse-split-0000923601-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "Algorhythm Holdings, Inc.",
+      "cik": "0000923601",
+      "ticker": "RIME",
+      "figi": "BBG000ND96D8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/923601/000149315226053478/ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-053478",
+      "filed": "2026-11-20",
+      "quote": "Exhibit 99.1 Algorhythm Announces Reverse Stock Split Fort Lauderdale, FL, Nov. 18, 2026 (GLOBE NEWSWIRE) - Algorhythm Holdings, Inc. (the \"Company\") (NASDAQ: RIME), a diversified holding company that owns and operates Azure Energy (\"Azure\"), a strategic advisor to renewable power plant developers, and SemiCab Holdings, an AI-enabled logistics technology company, today announced that its Board of Directors has approved a 1-for-10 reverse stock split of the Company's issued and outstanding common stock. The reverse stock split is expected to become effective at 12:01 a.m. Eastern Time on..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
+    }
+  },
+  {
     "id": "reverse-split-0001358190-2026-11-23",
     "type": "reverse-split",
     "company": {
@@ -12115,6 +12116,31 @@
     "ratio": {
       "new": 1,
       "old": 40
+    }
+  },
+  {
+    "id": "reverse-split-0001585608-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "Jaguar Health, Inc.",
+      "cik": "0001585608",
+      "ticker": "JAGX",
+      "figi": "BBG005Z20406"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526469575/d196905d8k.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-469575",
+      "filed": "2026-11-20",
+      "quote": "Pursuant to such authority granted by the Company's stockholders, the Board approved a one-for-twenty five (25) reverse stock split (the \"Reverse Stock Split\") of the Common Stock, and on November 18, 2026, the Company filed the Thirteenth Amendment with the Secretary of State of the State of Delaware (the \"Delaware Secretary of State\"), which provided for the Reverse Stock Split to become effective at 12:01 a.m. Eastern Time on November 23, 2026. On November 19, 2026, before the Thirteenth Amendment became effective, the Company filed a Certificate of Termination of Certificate of Thirteenth..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 20
     }
   },
   {
@@ -12401,6 +12427,83 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001585608-2026-11-24",
+    "type": "reverse-split",
+    "company": {
+      "name": "Jaguar Health, Inc.",
+      "cik": "0001585608",
+      "ticker": "JAGX",
+      "figi": "BBG005Z20406"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526469575/d196905dex991.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-469575",
+      "filed": "2026-11-20",
+      "quote": "EX-99.1 Exhibit 99.1 Jaguar Health, Inc. Announces Reverse Stock Split Reverse split approved at November 2026 Special Meeting of Stockholders Shares of Jaguar Health common stock to begin trading on split-adjusted basis on November 24, 2026 San Francisco, CA (November 20, 2026): Jaguar Health, Inc. (Nasdaq: JAGX) (\"Jaguar\" or the \"Company\") today announced that the Company will effect a reverse stock split of its issued and outstanding voting common stock (\"Common Stock\"), at an exchange ratio of 1-for-25, at 12:01 am Eastern Time on Tuesday, November 24, 2026 (the \"Effective Date\") in order..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-24",
+      "ex": "2026-11-24"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 25
+    }
+  },
+  {
+    "id": "reverse-split-0001692415-2026-11-24",
+    "type": "reverse-split",
+    "company": {
+      "name": "Co-Diagnostics, Inc.",
+      "cik": "0001692415",
+      "ticker": "CODX",
+      "figi": "BBG004HTR2D1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1692415/000149315226053304/ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-053304",
+      "filed": "2026-11-19",
+      "quote": "Exhibit 99.1 Co-Diagnostics Announces Reverse Stock Split SALT LAKE CITY, Nov. 19, 2026 /PRNewswire/ - Co-Diagnostics, Inc. (Nasdaq: CODX) (\"Co-Diagnostics\" or \"the Company\"), a molecular diagnostics company with a unique, patented platform for the development of molecular diagnostic tests, today announced that it has filed Articles of Amendment to its Articles of Incorporation (the \"Amendment\") to effect a reverse stock split of its issued and outstanding common stock at a ratio of 1-for-25 shares (the \"Reverse Stock Split\"). The Reverse Stock Split will become effective at 12:01 a.m. ET on..."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "effective": "2026-11-24",
+      "ex": "2026-11-24"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 25
+    }
+  },
+  {
+    "id": "reverse-split-0001804469-2026-11-24",
+    "type": "reverse-split",
+    "company": {
+      "name": "Guardforce AI Co., Ltd.",
+      "cik": "0001804469",
+      "ticker": "GFAI",
+      "figi": "BBG00X71NWL8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1804469/000121390026122382/ea031307501ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-122382",
+      "filed": "2026-11-20",
+      "quote": "Exhibit 99.1 Guardforce AI Announces 1-for-40 Reverse Share Split and Adoption of Dual-Class Share Structure Class A Ordinary Shares Expected to Begin Trading on a Split-Adjusted Basis on November 24, 2026 NEW YORK, NY / November 19, 2026 / Guardforce AI Co., Limited (\"Guardforce AI\" or the \"Company\") (NASDAQ: GFAI), a technology-enabled service company providing solutions in Agentic AI, smart solutions in automation, robotics, and secured logistics, today announced that, pursuant to the approval of its board of directors and the approval of its shareholders at the Company's reconvened..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-24"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 40
+    }
+  },
+  {
     "id": "reverse-split-0002039060-2026-11-24",
     "type": "reverse-split",
     "company": {
@@ -12410,14 +12513,14 @@
       "figi": "BBG01SQCN6X7"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/2039060/000114036126042632/ef20085153_6k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/2039060/000114036126045015/ef20085927_ex99-1.htm",
       "form": "6-K",
-      "accession": "0001140361-26-042632",
-      "filed": "2026-11-09",
-      "quote": "Form 20-F ☒ Form 40-F ☐ INFORMATION CONTAINED IN THIS FORM 6-K REPORT Reverse Stock Split The Board of Directors of Robin Energy Ltd. (\"Robin Energy\" or the \"Company\"), an international ship-owning company providing energy transportation services globally, has determined to effect a one-for-seventy five (1-for-75) reverse stock split of the Company's common shares, par value $0.001 per share. Subject to the requisite approval of The Nasdaq Stock Market (\"Nasdaq\"), the reverse stock split is expected to take effect on or about November 24, 2026 and the Company's common shares are expected to..."
+      "accession": "0001140361-26-045015",
+      "filed": "2026-11-20",
+      "quote": "Exhibit 99.1 Robin Energy Announces Reverse Stock Split to be Effective November 24, 2026 Limassol, Cyprus, November 20, 2026 - Robin Energy Ltd. (NASDAQ: RBNE) (\"Robin Energy\" or the \"Company\"), an international ship-owning company providing energy transportation services globally, announced today that its board of directors has determined to effect a one-for-seventy-five (1-for-75) reverse stock split of the Company's common shares, par value $0.001 per share. The reverse stock split will take effect at 11:59 p.m. Eastern Time on November 23, 2026, and the Company's common shares will begin..."
     },
     "dates": {
-      "announced": "2026-11-09",
+      "announced": "2026-11-20",
       "effective": "2026-11-24"
     },
     "ratio": {
@@ -13499,6 +13602,35 @@
     "frequency": "special"
   },
   {
+    "id": "dividend-0001518715-2026-12-10",
+    "type": "dividend",
+    "company": {
+      "name": "Mechanics Bancorp",
+      "cik": "0001518715",
+      "ticker": "MCHB",
+      "figi": "BBG001P717K5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1518715/000151871526000076/mchbq42026cashdividendanno.htm",
+      "form": "8-K",
+      "accession": "0001518715-26-000076",
+      "filed": "2026-11-20",
+      "quote": "Document Mechanics Bancorp Declares Fourth Quarter 2026 Cash Dividend 11/20/2026 WALNUT CREEK, Calif.- Mechanics Bancorp (Nasdaq: MCHB) today announced that its Board of Directors has declared a cash dividend of $0.43 per share of Class A common stock and $4.30 per share of Class B common stock, each payable on December 10, 2026, to shareholders of record as of the close of business on November 30, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "record": "2026-11-30",
+      "ex": "2026-11-30",
+      "pay": "2026-12-10"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.43",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001585389-2026-12-15",
     "type": "dividend",
     "company": {
@@ -13701,6 +13833,31 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "reverse-split-0001808110-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "DDC Enterprise Ltd",
+      "cik": "0001808110",
+      "ticker": "DDC",
+      "figi": "BBG01HMNCGD3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1808110/000121390026122713/ea031299701ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-122713",
+      "filed": "2026-11-20",
+      "quote": "Exhibit 99.1 DDC Enterprise Limited Announces 1-for-7.99 Reverse Share Split NEW YORK, Nov 20, 2026 (GLOBE NEWSWIRE) - DDC Enterprise Limited (NYSE American: DDC) (\"DDC\" or the \"Company\"), a global Asian food platform and digital asset treasury company, today announced that its Board of Directors has approved a reverse share split of the Company's Class A ordinary shares at a ratio of 1-for-7.99 (the \"Reverse Share Split\"), pursuant to the reverse share split authority approved by shareholders at the Company's shareholders meeting on June 29, 2026. The Reverse Share Split will become..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-11-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 7
+    }
   },
   {
     "id": "dividend-0000030697-2026-12-15",
@@ -14194,6 +14351,64 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0001132651-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "AMES NATIONAL CORP",
+      "cik": "0001132651",
+      "ticker": "ATLO",
+      "figi": "BBG000BHLJW9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1132651/000143774926037728/ex_1048463.htm",
+      "form": "8-K",
+      "accession": "0001437749-26-037728",
+      "filed": "2026-11-19",
+      "quote": "On November 18, 2026, Ames National Corporation declared a cash dividend of $0.24 per common share. The dividend is payable December 15, 2026, to shareholders of record at the close of business on December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.24",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
+    "id": "dividend-0001140102-2026-12-15",
+    "type": "dividend",
+    "company": {
+      "name": "HireQuest, Inc.",
+      "cik": "0001140102",
+      "ticker": "HQI",
+      "figi": "BBG000CX93B5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1140102/000143774926037725/ex_1048822.htm",
+      "form": "8-K",
+      "accession": "0001437749-26-037725",
+      "filed": "2026-11-19",
+      "quote": "ex_1048822.htm Exhibit 99.1 HireQuest, Inc. Declares Quarterly Dividend GOOSE CREEK, South Carolina - November 19, 2026 - HireQuest, Inc. (Nasdaq: HQI), a national franchisor of on-demand staffing and executive search services, today announced that its Board of Directors has declared a quarterly dividend of $0.06 per share. The dividend is payable December 15, 2026, to shareholders of record at the close of business on December 1, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-01",
+      "ex": "2026-12-01",
+      "pay": "2026-12-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.06",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0001144800-2027-01-01",
@@ -15124,6 +15339,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001381668-2026-12-16",
+    "type": "dividend",
+    "company": {
+      "name": "TFS Financial CORP",
+      "cik": "0001381668",
+      "ticker": "TFSL",
+      "figi": "BBG000F7GST7"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1381668/000138166826000047/dividend11192026.htm",
+      "form": "8-K",
+      "accession": "0001381668-26-000047",
+      "filed": "2026-11-19",
+      "quote": "Document Contact: Jennifer Rosa (216) 429-5037 Exhibit 99.1 TFS Financial Corporation Declares Dividend (Cleveland - November 19, 2026) - TFS Financial Corporation (NASDAQ: TFSL) (the \"Company\"), the holding company for Third Federal Savings and Loan Association of Cleveland (the \"Association\"), today announced that the Board of Directors declared a quarterly cash dividend of $0.3175 per share, payable on December 16, 2026, to stockholders of record on December 2, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-02",
+      "ex": "2026-12-02",
+      "pay": "2026-12-16"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.3175",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001429937-2026-12-15",
     "type": "dividend",
     "company": {
@@ -15209,6 +15453,32 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "reverse-split-0000894158-2026-12-01",
+    "type": "reverse-split",
+    "company": {
+      "name": "Theriva Biologics, Inc.",
+      "cik": "0000894158",
+      "ticker": "TOVX",
+      "figi": "BBG000BV6QX8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/894158/000110465926130644/tm2630359d1_8k.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-130644",
+      "filed": "2026-11-20",
+      "quote": "...Inc., a Nevada corporation (the \"Company\"), issued a press release announcing that the Company's Board of Directors approved a 1-for-30 reverse stock split of the Company's issued, outstanding and authorized common stock, pursuant to Section 78.207 of the Nevada Revised Statutes (the \"Reverse Stock Split\"). The Reverse Stock Split is anticipated to be effective as of 11:59 p.m. (Eastern Time) on December 1, 2026, and it is expected that the Company's common stock will begin trading on a split-adjusted basis as of the open of trading on December 2, 2026. A copy of the press release is attached..."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "effective": "2026-12-01",
+      "ex": "2026-12-02"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 30
+    }
   },
   {
     "id": "dividend-0000012659-2027-01-06",
@@ -15323,6 +15593,35 @@
     "cash": {
       "amount": "0.66",
       "currency": "CAD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001060822-2026-12-18",
+    "type": "dividend",
+    "company": {
+      "name": "CARTERS INC",
+      "cik": "0001060822",
+      "ticker": "CRI",
+      "figi": "BBG000CTM4J9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1060822/000106082226000129/cri-ex9912026q4dividendpre.htm",
+      "form": "8-K",
+      "accession": "0001060822-26-000129",
+      "filed": "2026-11-19",
+      "quote": "Robillard VP, Investor Relations TC.Robillard@carters.com Carter's, Inc. Announces Quarterly Dividend ATLANTA, November 19, 2026 - The Board of Directors of Carter's, Inc. (NYSE:CRI) today declared a quarterly dividend of $0.25 per share, payable on December 18, 2026, to shareholders of record at the close of business on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2026-12-18"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.25",
+      "currency": "USD"
     },
     "frequency": "quarterly"
   },
@@ -15588,6 +15887,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000101199-2026-12-18",
+    "type": "dividend",
+    "company": {
+      "name": "UNITED FIRE GROUP INC",
+      "cik": "0000101199",
+      "ticker": "UFCS",
+      "figi": "BBG000BVY6C4"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/101199/000010119926000069/ufgpressrelease11-20x2026.htm",
+      "form": "8-K",
+      "accession": "0000101199-26-000069",
+      "filed": "2026-11-20",
+      "quote": "Document Exhibit 99.1 United Fire Group, Inc. declares quarterly cash dividend of $0.20 per share CEDAR RAPIDS, IOWA, November 20, 2026 - Today, the board of directors of United Fire Group, Inc. (UFG) (Nasdaq: UFCS) declared a common stock quarterly cash dividend of $0.20 per share. This dividend will be payable December 18, 2026, to shareholders of record as of December 4, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2026-12-18"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.20",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000106040-2026-12-17",
     "type": "dividend",
     "company": {
@@ -15791,6 +16119,35 @@
     "frequency": "special"
   },
   {
+    "id": "dividend-0000920427-2026-12-18",
+    "type": "dividend",
+    "company": {
+      "name": "UNITY BANCORP INC",
+      "cik": "0000920427",
+      "ticker": "UNTY",
+      "figi": "BBG000K0KW21"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/920427/000119312526468515/unty-ex99_1.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-468515",
+      "filed": "2026-11-19",
+      "quote": "EX-99.1 Exhibit 99.1 Unity Bancorp, Inc. 64 Old Highway 22 Clinton, NJ 08809 800 618-BANK www.unitybank.com News For Immediate Release: November 19, 2026 News Media & Financial Analyst Contact: James Davies FSVP and Chief Financial Officer (908) 713-4330 Unity Bancorp Announces Fourth Quarter Dividend Clinton, NJ - Unity Bancorp, Inc. (NASDAQ: UNTY), parent company of Unity Bank, announced that its Board of Directors has declared a cash dividend of $0.17 per common share. Such dividend is payable on December 18, 2026, to shareholders of record as of December 4, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2026-12-18"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.17",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0000930420-2026-12-18",
     "type": "dividend",
     "company": {
@@ -15989,6 +16346,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.31",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001128928-2026-12-18",
+    "type": "dividend",
+    "company": {
+      "name": "FLOWERS FOODS INC",
+      "cik": "0001128928",
+      "ticker": "FLO",
+      "figi": "BBG000BB4D72"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1128928/000119312526469399/d168459d8k.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-469399",
+      "filed": "2026-11-20",
+      "quote": "On November 20, 2026, Flowers Foods, Inc. (the \"Company\") issued a press release announcing that the Company's board of directors declared a quarterly dividend of $0.03 per share, payable on December 18, 2026, to shareholders of record on December 4, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2026-12-18"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.03",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -16368,6 +16754,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001071236-2026-12-17",
+    "type": "dividend",
+    "company": {
+      "name": "RED RIVER BANCSHARES INC",
+      "cik": "0001071236",
+      "ticker": "RRBI",
+      "figi": "BBG000QKNLB2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1071236/000107123626000073/q42026dividendex991.htm",
+      "form": "8-K",
+      "accession": "0001071236-26-000073",
+      "filed": "2026-11-19",
+      "quote": "Document Exhibit 99.1 Red River Bancshares, Inc. Announces Quarterly Cash Dividend ALEXANDRIA, La., November 19, 2026 (GLOBE NEWSWIRE) - Red River Bancshares, Inc. (Nasdaq: RRBI) (the \"Company\") announced today that on November 19, 2026, its board of directors declared a quarterly cash dividend in an amount equal to $0.25 per share of common stock. The cash dividend is payable on December 17, 2026, to shareholders of record as of the close of business on December 7, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-07",
+      "ex": "2026-12-07",
+      "pay": "2026-12-17"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.25",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001492691-2026-12-21",
     "type": "dividend",
     "company": {
@@ -16449,6 +16864,35 @@
       "new": 1,
       "old": 20
     }
+  },
+  {
+    "id": "dividend-0000745732-2026-12-31",
+    "type": "dividend",
+    "company": {
+      "name": "ROSS STORES, INC.",
+      "cik": "0000745732",
+      "ticker": "ROST",
+      "figi": "BBG000BSBZH7"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000047/q326exhibit991.htm",
+      "form": "8-K",
+      "accession": "0000745732-26-000047",
+      "filed": "2026-11-19",
+      "quote": "In addition, the Company's Board of Directors declared a regular quarterly cash dividend of $0.445 per common share, payable on December 31, 2026 to stockholders of record as of December 8, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-08",
+      "ex": "2026-12-08",
+      "pay": "2026-12-31"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.445",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0000868671-2026-12-17",
@@ -16944,6 +17388,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0001730984-2027-01-07",
+    "type": "dividend",
+    "company": {
+      "name": "BayCom Corp",
+      "cik": "0001730984",
+      "ticker": "BCML",
+      "figi": "BBG00FWKRBS2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1730984/000173098426000089/bcml-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001730984-26-000089",
+      "filed": "2026-11-19",
+      "quote": "Exhibit 99.1 Press Release BAYCOM CORP ANNOUNCES CASH DIVIDEND WALNUT CREEK, California, November 19, 2026 - BayCom Corp ( NASDAQ: BCML ) (\"BayCom\" or the \"Company\"), the parent company of United Business Bank, today announced that its Board of Directors declared a quarterly cash dividend of $0.30 per share on the Company's common stock. The dividend is payable on January 7, 2027, to shareholders of record as of the close of business on December 10, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-10",
+      "ex": "2026-12-10",
+      "pay": "2027-01-07"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.30",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001856314-2026-12-24",
     "type": "dividend",
     "company": {
@@ -17377,6 +17850,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000779227-2026-12-29",
+    "type": "dividend",
+    "company": {
+      "name": "STEELE BANCORP INC",
+      "cik": "0000779227",
+      "ticker": "STLE",
+      "figi": "BBG000BWRKR3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/779227/000143774926037649/ex_1046517.htm",
+      "form": "8-K",
+      "accession": "0001437749-26-037649",
+      "filed": "2026-11-19",
+      "quote": "Dividend Declared On November 19, 2026, Steele's Board of Directors declared a regular semi-annual cash dividend of $0.77 per share for the six months-ended December 31, 2026. The dividend is payable December 29, 2026, to shareholders of record as of December 15, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-15",
+      "ex": "2026-12-15",
+      "pay": "2026-12-29"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.77",
+      "currency": "USD"
+    },
+    "frequency": "semi-annual"
   },
   {
     "id": "dividend-0000845877-2026-12-31",
@@ -18220,6 +18722,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000842517-2026-12-18",
+    "type": "dividend",
+    "company": {
+      "name": "ISABELLA BANK CORP",
+      "cik": "0000842517",
+      "ticker": "ISBA",
+      "figi": "BBG000CF3WB6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/842517/000084251726000243/isba_2026q4xdivannxex991.htm",
+      "form": "8-K",
+      "accession": "0000842517-26-000243",
+      "filed": "2026-11-19",
+      "quote": "Pleasant, Michigan, November 19, 2026 - Isabella Bank Corporation (Nasdaq: ISBA) today announced its Board of Directors declared a fourth-quarter cash dividend of $0.29 per common share, representing a 3.6% increase to the most recent dividend declaration. The dividend is payable December 18, 2026 to shareholders of record as of December 16, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-16",
+      "ex": "2026-12-16",
+      "pay": "2026-12-18"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.29",
+      "currency": "USD"
+    },
+    "frequency": "other"
+  },
+  {
     "id": "dividend-0001782430-2026-12-30",
     "type": "dividend",
     "company": {
@@ -18801,6 +19332,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0000049754-2027-01-08",
+    "type": "dividend",
+    "company": {
+      "name": "Dine Brands Global, Inc.",
+      "cik": "0000049754",
+      "ticker": "DIN",
+      "figi": "BBG000GZ9406"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/49754/000119312526469349/d116446dex991.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-469349",
+      "filed": "2026-11-20",
+      "quote": "...(NYSE: DIN), the parent company of Applebee's Neighborhood Grill + Bar , IHOP and Fuzzy's Taco Shop restaurants, today announced that its Board of Directors declared a quarterly cash dividend of $0.19 per share of common stock. The dividend will be payable on January 8, 2027 to the Company's stockholders of record at the close of business on December 23, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-20",
+      "record": "2026-12-23",
+      "ex": "2026-12-23",
+      "pay": "2027-01-08"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.19",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001137789-2027-01-07",
     "type": "dividend",
     "company": {
@@ -19115,6 +19675,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.87",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000760498-2027-01-15",
+    "type": "dividend",
+    "company": {
+      "name": "BANCFIRST CORP",
+      "cik": "0000760498",
+      "ticker": "BANF",
+      "figi": "BBG000BGJJX3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/760498/000119312526468432/banf-20261119.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-468432",
+      "filed": "2026-11-19",
+      "quote": "BancFirst Corporation Announces Declaration of Quarterly Dividend on its Common Stock and an Interest Payment on its BFC Capital Trust II On November 19, 2026, BancFirst Corporation's Board of Directors declared a $0.52 per share cash dividend on its common stock. The dividend is payable January 15, 2027, to shareholders of record on December 31, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-19",
+      "record": "2026-12-31",
+      "ex": "2026-12-31",
+      "pay": "2027-01-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.52",
       "currency": "USD"
     },
     "frequency": "quarterly"

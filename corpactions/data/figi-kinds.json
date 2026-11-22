@@ -11,12 +11,14 @@
   "CHOW": "Common Stock",
   "CISS": "Common Stock",
   "CMRE": "Common Stock",
+  "DDC": "Common Stock",
   "DHT": "Common Stock",
   "EFXT": "Common Stock",
   "EGO": "Common Stock",
   "EHLD": "Common Stock",
   "EQX": "Common Stock",
   "EZGO": "Common Stock",
+  "GFAI": "Common Stock",
   "GFS": "Common Stock",
   "GIB": "Common Stock",
   "GIL": "Common Stock",
@@ -35,6 +37,7 @@
   "NEXR": "Common Stock",
   "NOMD": "Common Stock",
   "NTB": "Common Stock",
+  "NTCL": "Common Stock",
   "NTR": "Common Stock",
   "OR": "Common Stock",
   "PAAS": "Common Stock",
@@ -56,5 +59,6 @@
   "USEA": "Common Stock",
   "VCIG": "Common Stock",
   "WCT": "Common Stock",
-  "XP": "Common Stock"
+  "XP": "Common Stock",
+  "YFOR": "Common Stock"
 }
