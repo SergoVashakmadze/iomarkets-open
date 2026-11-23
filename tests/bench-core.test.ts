@@ -240,7 +240,8 @@ describe('issue codes', () => {
   it('every code the bench can raise is explained, and none is explained twice', () => {
     const dir = new URL('../bench/src/', import.meta.url);
     const raised = new Set<string>()
-    for (const f of readdirSync(dir).filter((x) => x.endsWith('.ts') && x !== 'issues.ts')) {
+    // mt940.ts raises the MT940 converter's own notes, not Test Bench issues.
+    for (const f of readdirSync(dir).filter((x) => x.endsWith('.ts') && x !== 'issues.ts' && x !== 'mt940.ts')) {
       const src = readFileSync(new URL(f, dir), 'utf8')
       for (const m of src.matchAll(/code: '([A-Z_]+)'/g)) raised.add(m[1])
       for (const m of src.matchAll(/return \['([A-Z_]+)', /g)) raised.add(m[1])
