@@ -11,7 +11,7 @@
 // It then writes the fixes: the JSON-LD (issuer plus a notice per feed event), an llms.txt draft and robots.txt lines.
 
 import { CHAINS } from '../../assetmap/src/index.ts';
-import { questionsFor, gradeAll, score, type Finding, type Score, type Subject } from './check.ts';
+import { datesIn, questionsFor, gradeAll, score, type Finding, type Score, type Subject } from './check.ts';
 import { compareNotice, NOTICE_TYPE, noticeScript, toNotice } from './notice.ts';
 
 export type Level = 'pass' | 'warn' | 'fail' | 'info';
@@ -211,10 +211,27 @@ export function audit(a: AuditInput): Audit {
   if (s && text) {
     const qs = questionsFor(s).filter((q) => q.id !== 'tokens');
     if (qs.length) {
-      const findings = gradeAll(s, qs, text);
+      // A page is not an answer: dividend pages are often tables, where the date after a column header belongs to
+      // another column. So a date is right when the filing's date is anywhere on the page, and otherwise not stated:
+      // never wrong by proximity. (Wrong figures in structured form are caught by the notice check.)
+      const onPage = new Set(datesIn(text).map((d) => d.date));
+      const findings = gradeAll(s, qs, text).map((f): Finding =>
+        /^\d{4}-\d{2}-\d{2}$/.test(f.expected) ? (onPage.has(f.expected) ? { ...f, stated: f.expected, verdict: 'right' } : { ...f, stated: null, verdict: 'not-stated' }) : f,
+      );
       facts = { findings, score: score(findings) };
       const sc = facts.score;
-      add({ id: 'facts', title: 'The page’s own facts', level: sc.wrong + sc.outOfDate ? 'fail' : sc.right ? 'pass' : 'info', detail: sc.right + sc.wrong + sc.outOfDate ? `Against the SEC filing: ${sc.right} right, ${sc.wrong} wrong, ${sc.outOfDate} out of date.` : 'The page does not state the latest corporate action’s figures, so engines take them from other sites.' });
+      const missing = findings.filter((f) => f.verdict === 'not-stated').map((f) => f.fact.replace(/ \(.*\)$/, '').toLowerCase());
+      add({
+        id: 'facts',
+        title: 'The page’s own facts',
+        level: sc.wrong + sc.outOfDate ? 'fail' : missing.length ? 'warn' : 'pass',
+        detail: sc.wrong + sc.outOfDate
+          ? `Against the SEC filing: ${sc.right} right, ${sc.wrong} wrong, ${sc.outOfDate} out of date.`
+          : missing.length
+            ? `${sc.right ? `${sc.right} of the latest figures match the SEC filing, but the page` : 'The page'} does not state the ${missing.join(', ')}, so engines take ${missing.length === 1 ? 'it' : 'them'} from other sites.`
+            : 'Every latest figure on the page matches the SEC filing.',
+        ...(missing.length ? { fix: 'State each date of the latest dividend on the page, or add its corporate action notice (below), which carries them all.' } : {}),
+      });
     }
   }
 
