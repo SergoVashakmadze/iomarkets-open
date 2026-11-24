@@ -20,6 +20,13 @@ issuers' own contract lists). Live at https://iomarkets.tech/ai-check.
   the page's own figures graded like an AI answer. Writes the JSON-LD, an llms.txt draft and robots.txt lines.
   `checkUrl` / `fetchSite` fetch public hosts only.
 
+- `src/scoreboard.ts`: the weekly AI accuracy scoreboard (https://iomarkets.tech/ai-scoreboard): the week's
+  subjects, the CC0 benchmark, and the sums by engine, kind of asset and question.
+- `src/agentready.ts`: the agent-readiness check for financial APIs (https://iomarkets.tech/agent-ready): an
+  OpenAPI description or an MCP tool list checked for amounts with currency and unit (not floats), times with a
+  time zone, identifiers naming their standard, errors, rate limits, idempotency on calls that move money, and
+  trading tools marked destructive. `fetchSpec` and `fetchMcpTools` (initialize, then tools/list) read remote ones.
+
 Grading uses no model: dates, amounts, split ratios, acquirers, contract addresses and ISINs are read out of
 the answer and compared with the key. Verdicts: `right`, `wrong`, `out-of-date` (an earlier event, from the
 feed's history), `not-stated`, and `unverified` (a contract address the map has never seen; not in the map is
