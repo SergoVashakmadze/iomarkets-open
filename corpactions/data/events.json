@@ -29,35 +29,6 @@
     "frequency": "other"
   },
   {
-    "id": "dividend-0000811589-2026-10-23",
-    "type": "dividend",
-    "company": {
-      "name": "FIRST BANCORP",
-      "cik": "0000811589",
-      "ticker": "FBNC",
-      "figi": "BBG000BJ9RS6"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/811589/000081158926000155/exhibit991newsreleasedated.htm",
-      "form": "8-K",
-      "accession": "0000811589-26-000155",
-      "filed": "2026-09-15",
-      "quote": "Document News Release For Immediate Release: For More Information, September 15, 2026 Contact: Katie Doyle 336-286-8741 First Bancorp Announces Cash Dividend Southern Pines, NC, September 15, 2026 - The Board of Directors of First Bancorp (NASDAQ: FBNC) (the \"Company\"), the parent company of First Bank, has declared a cash dividend on its common stock of $0.24 per share payable on October 23, 2026 to shareholders of record as of September 30, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-15",
-      "record": "2026-09-30",
-      "ex": "2026-09-30",
-      "pay": "2026-10-23"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.24",
-      "currency": "USD"
-    },
-    "frequency": "other"
-  },
-  {
     "id": "dividend-0001411342-2026-10-30",
     "type": "dividend",
     "company": {
@@ -203,35 +174,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "dividend-0000790816-2026-10-22",
-    "type": "dividend",
-    "company": {
-      "name": "BRANDYWINE REALTY TRUST",
-      "cik": "0000790816",
-      "ticker": "BDN",
-      "figi": "BBG000CL6RJ3"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/790816/000079081626000041/bdnearningsrelease-ex991q3.htm",
-      "form": "8-K",
-      "accession": "0000790816-26-000041",
-      "filed": "2026-10-22",
-      "quote": "Distributions On September 15, 2026, our Board of Trustees declared a quarterly dividend distribution of $0.08 per common share that will be paid on October 22, 2026 to shareholders of record as of October 8, 2026."
-    },
-    "dates": {
-      "announced": "2026-10-22",
-      "record": "2026-10-08",
-      "ex": "2026-10-08",
-      "pay": "2026-10-22"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.08",
-      "currency": "USD"
-    },
-    "frequency": "quarterly"
-  },
-  {
     "id": "dividend-0000812011-2026-10-27",
     "type": "dividend",
     "company": {
@@ -290,34 +232,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "dividend-0000104894-2026-10-22-special",
-    "type": "dividend",
-    "company": {
-      "name": "Elme Communities",
-      "cik": "0000104894",
-      "ticker": "ELME"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/104894/000010489426000117/elme-pressreleaseseptember.htm",
-      "form": "8-K",
-      "accession": "0000104894-26-000117",
-      "filed": "2026-09-29",
-      "quote": "Declaration of Additional Liquidating Distribution Elme also announced today that its Board of Trustees (the \"Board\") has approved an additional special liquidating distribution of $1.74 (the \"Special Dividend\") per common share of beneficial interest, par value $0.01 per share (\"Common Share\"). The Special Dividend will be paid on October 22, 2026 to shareholders of record at the close of business on October 9, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-29",
-      "record": "2026-10-09",
-      "ex": "2026-10-09",
-      "pay": "2026-10-22"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.01",
-      "currency": "USD"
-    },
-    "frequency": "special"
-  },
-  {
     "id": "dividend-0000940944-2026-11-02",
     "type": "dividend",
     "company": {
@@ -342,35 +256,6 @@
     "exDateRule": true,
     "cash": {
       "amount": "1.62",
-      "currency": "USD"
-    },
-    "frequency": "quarterly"
-  },
-  {
-    "id": "dividend-0001341439-2026-10-23",
-    "type": "dividend",
-    "company": {
-      "name": "ORACLE CORP",
-      "cik": "0001341439",
-      "ticker": "ORCL",
-      "figi": "BBG000BQLTW7"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
-      "form": "8-K",
-      "accession": "0001193125-26-387905",
-      "filed": "2026-09-10",
-      "quote": "Common Stock Quarterly Dividend The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock. This dividend will be paid to stockholders of record as of the close of business on October 9, 2026, with a payment date of October 23, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-10",
-      "record": "2026-10-09",
-      "ex": "2026-10-09",
-      "pay": "2026-10-23"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.50",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -840,35 +725,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "dividend-0000846617-2026-10-23",
-    "type": "dividend",
-    "company": {
-      "name": "Dime Commercial Bancshares, Inc.",
-      "cik": "0000846617",
-      "ticker": "DCOM",
-      "figi": "BBG000BGD220"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/846617/000084661726000045/dcom-20260924xex99d1.htm",
-      "form": "8-K",
-      "accession": "0000846617-26-000045",
-      "filed": "2026-09-24",
-      "quote": "Preferred Dividends Press Release (2/1/21) (00377157.DOCX;2) EXHIBIT 99.1 Dime Commercial Bancshares Declares Quarterly Cash Dividend for Common Stock Hauppauge, NY - September 24, 2026 - Dime Commercial Bancshares, Inc. (NYSE: DCOM) (the \"Company\") announced that its Board of Directors declared a quarterly cash dividend of $0.25 per share of Common Stock, payable on October 23, 2026 to common stockholders of record as of October 16, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-24",
-      "record": "2026-10-16",
-      "ex": "2026-10-16",
-      "pay": "2026-10-23"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.25",
-      "currency": "USD"
-    },
-    "frequency": "quarterly"
-  },
-  {
     "id": "dividend-0001058811-2026-10-30",
     "type": "dividend",
     "company": {
@@ -983,35 +839,6 @@
       "currency": "USD"
     },
     "frequency": "other"
-  },
-  {
-    "id": "dividend-0001654595-2026-10-23",
-    "type": "dividend",
-    "company": {
-      "name": "Medalist Diversified, Inc.",
-      "cik": "0001654595",
-      "ticker": "MDRR",
-      "figi": "BBG00LVGRM32"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1654595/000110465926114041/mdrr-ex99d1.htm",
-      "form": "8-K",
-      "accession": "0001104659-26-114041",
-      "filed": "2026-10-06",
-      "quote": "ANNOUNCES DIVIDEND OF $0.0675 PER SHARE ON ITS COMMON STOCK RICHMOND, VA., OCTOBER 6, 2026--( BUSINESS WIRE )--Medalist Diversified, Inc. (NASDAQ: MDRR) (the \"Company\" or \"Medalist\"), a Virginia-based sponsor of Delaware Statutory Trusts, announced that its Board of Directors has authorized and the Company has declared a quarterly dividend on its common stock (the \"Common Stock\") in the amount of $0.0675 per share (the \"Dividend\"). The Dividend will be payable in cash on October 23, 2026 to holders of record of the Common Stock as of October 16, 2026."
-    },
-    "dates": {
-      "announced": "2026-10-06",
-      "record": "2026-10-16",
-      "ex": "2026-10-16",
-      "pay": "2026-10-23"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.0675",
-      "currency": "USD"
-    },
-    "frequency": "quarterly"
   },
   {
     "id": "dividend-0002100805-2026-10-28",
@@ -1248,30 +1075,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "reverse-split-0001593001-2026-10-20",
-    "type": "reverse-split",
-    "company": {
-      "name": "NightFood Holdings, Inc.",
-      "cik": "0001593001",
-      "ticker": "NGTF"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1593001/000149315226048032/form8-k.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-048032",
-      "filed": "2026-10-22",
-      "quote": "After giving effect to the Company's 1 for 150 reverse stock split which was effective on October 20, 2026, the Closing Shares are convertible into an aggregate of 6,000,000 shares of common stock, par value $0.001 per share (the \"Common Stock\") and the Contingent Shares, if fully earned, into an additional 2,000,000 shares of Common Stock. Other Terms The Asset Purchase Agreement contains customary representations, warranties and covenants, including a five-year worldwide non-competition covenant by the Seller with respect to the products covered by the Purchased Assets, perpetual..."
-    },
-    "dates": {
-      "announced": "2026-10-22",
-      "effective": "2026-10-20"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 150
-    }
-  },
-  {
     "id": "dividend-0000100591-2026-10-30",
     "type": "dividend",
     "company": {
@@ -1443,30 +1246,6 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
-  },
-  {
-    "id": "merger-0001739445-2026-10-23",
-    "type": "merger",
-    "company": {
-      "name": "Arcosa, Inc.",
-      "cik": "0001739445",
-      "ticker": "ACA"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1739445/000114036126040596/ef20084131_8k.htm",
-      "form": "8-K",
-      "accession": "0001140361-26-040596",
-      "filed": "2026-10-23",
-      "quote": "On October 23 , 2026 (the \"Closing Date\"), Merger Sub merged with and into the Company (the \"Merger\"), with the Company surviving the Merger as a wholly owned subsidiary of Parent. ...in respect of such shares in accordance with Section 262 of the General Corporation Law of the State of Delaware) was converted into the right to receive $150.00 in cash, without interest, less any applicable withholding taxes (the \"Merger Consideration\"), and all such shares of Common Stock ceased to be outstanding, were automatically cancelled and ceased to exist."
-    },
-    "dates": {
-      "announced": "2026-10-23",
-      "effective": "2026-10-23"
-    },
-    "cash": {
-      "amount": "150.00",
-      "currency": "USD"
-    }
   },
   {
     "id": "reverse-split-0001958399-2026-10-23",
@@ -9645,6 +9424,31 @@
     }
   },
   {
+    "id": "reverse-split-0001951294-2026-11-17",
+    "type": "reverse-split",
+    "company": {
+      "name": "Forcendra Holding Ltd",
+      "cik": "0001951294",
+      "ticker": "FCDH",
+      "figi": "BBG01HW30PK1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1951294/000149315226053657/form6-k.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-053657",
+      "filed": "2026-11-23",
+      "quote": "The Reverse Share Split became effective on November 16, 2026, at 4:30 PM ET, and the Class A Ordinary Shares began trading on the Nasdaq Capital Market on a split-adjusted basis at the market open on November 17, 2026 under the Company's existing symbol \"FCDH.\" The CUSIP number for the Class A Ordinary Shares changed to G9517U129. Split Adjustment; No Fractional Shares . On the Effective Date, every five (5) issued Class A Ordinary Shares held by each shareholder automatically combined into one (1) Class A Ordinary Share of no par value."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-17"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
+    }
+  },
+  {
     "id": "dividend-0000004977-2026-12-01",
     "type": "dividend",
     "company": {
@@ -11395,6 +11199,31 @@
     }
   },
   {
+    "id": "reverse-split-0001554818-2026-11-20",
+    "type": "reverse-split",
+    "company": {
+      "name": "AUDDIA INC.",
+      "cik": "0001554818",
+      "ticker": "AUUD",
+      "figi": "BBG00Y0537N9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1554818/000168316826009069/auddia_8k.htm",
+      "form": "8-K",
+      "accession": "0001683168-26-009069",
+      "filed": "2026-11-23",
+      "quote": "...Certificate of Incorporation of the Company (the \"Certificate of Amendment\") with the Secretary of State of the State of Delaware to effect a reverse stock split of the Company's common stock at a ratio of 1-for-13.9. The Certificate of Amendment provides that the reverse stock split became effective as of 5:00 P.M. Eastern Time on November 20, 2026 (the \"Effective Time\"), at which time every 13.9 shares of the Company's issued and outstanding common stock were automatically combined into one (1) issued and outstanding share of common stock, without any change in the par value per share."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-20"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 13
+    }
+  },
+  {
     "id": "reverse-split-0001739410-2026-11-20",
     "type": "reverse-split",
     "company": {
@@ -11417,6 +11246,31 @@
     "ratio": {
       "new": 1,
       "old": 2
+    }
+  },
+  {
+    "id": "reverse-split-0001817760-2026-11-20",
+    "type": "reverse-split",
+    "company": {
+      "name": "SmartKem, Inc.",
+      "cik": "0001817760",
+      "ticker": "SMTK",
+      "figi": "BBG00ZL5V413"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926130965/tm2630206d2_8k.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-130965",
+      "filed": "2026-11-23",
+      "quote": "...and Restated Certificate of Incorporation with the Secretary of State of the State of Delaware (the \" Certificiate of Amendment \") to effect a reverse stock split (the \" Reverse Stock Split \") of its common stock, par value $0.0001 per share (\" Common Stock \"), on a 1-for-5 basis. The Certifficate of Amendment became effective at 5:00 p.m., Eastern Time, on November 20, 2026 (the \" Effective Time \"). As of the Effective Time, every five shares of issued and outstanding Common Stock were converted into one share of Common Stock."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-20"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
     }
   },
   {
@@ -12169,32 +12023,6 @@
     }
   },
   {
-    "id": "reverse-split-0001817760-2026-11-20",
-    "type": "reverse-split",
-    "company": {
-      "name": "SmartKem, Inc.",
-      "cik": "0001817760",
-      "ticker": "SMTK",
-      "figi": "BBG00ZL5V413"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926129975/tm2630206d1_ex99-1.htm",
-      "form": "8-K",
-      "accession": "0001104659-26-129975",
-      "filed": "2026-11-19",
-      "quote": "Exhibit 99.1 PRESS RELEASE Smartkem, Inc. announces reverse split of common stock to support continued Nasdaq listing WILMINGTON, DE, November 19, 2026 - Smartkem, Inc. (Nasdaq: SMTK) (\"Smartkem\" or the \"Company\") today announced that its Board of Directors has approved a reverse stock split of the Company's outstanding common stock at a ratio of 1-for-5, following authorization by shareholders at the Company's Annual Meeting of Shareholders held June 23, 2026. The reverse stock split will become effective on November 20, 2026 at 5:00 p.m. Eastern Time and Smartkem's common stock will begin..."
-    },
-    "dates": {
-      "announced": "2026-11-19",
-      "effective": "2026-11-20",
-      "ex": "2026-11-23"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 5
-    }
-  },
-  {
     "id": "dividend-0000731122-2026-12-10",
     "type": "dividend",
     "company": {
@@ -12906,6 +12734,31 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001769697-2026-11-25",
+    "type": "reverse-split",
+    "company": {
+      "name": "Frontier Nuclear & Minerals Inc.",
+      "cik": "0001769697",
+      "ticker": "FNUC",
+      "figi": "BBG00YB8QPZ3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769697/000106299326006217/exhibit99-1.htm",
+      "form": "6-K",
+      "accession": "0001062993-26-006217",
+      "filed": "2026-11-23",
+      "quote": "Frontier Nuclear and Minerals Inc.: Exhibit 99.1 - Filed by newsfilecorp.com Frontier Nuclear Announces Reverse Stock Split Reverse Stock-Split to be effective on November 25, 2026 Winnipeg, Manitoba - November 23, 2026 - Frontier Nuclear and Minerals Inc. (Nasdaq:FNUC) (the \" Company \" or \" Frontier \"), a nuclear fuel cycle, today announced that it will effect a 1-for-15 reverse stock split (\"Reverse Stock Split\") of its common shares, no par value per share (\"Common Shares\"). The Reverse Stock Split will become effective at 12:01 a.m. Eastern Time on Wednesday November 25, 2026, and the..."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-25"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 15
+    }
+  },
+  {
     "id": "dividend-0000010456-2027-01-04",
     "type": "dividend",
     "company": {
@@ -13223,6 +13076,106 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "reverse-split-0001422892-2026-11-27",
+    "type": "reverse-split",
+    "company": {
+      "name": "Singularity Future Technology Ltd.",
+      "cik": "0001422892",
+      "ticker": "SGLY",
+      "figi": "BBG000FYWZ32"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026123446/ea0313291-8k_singularity.htm",
+      "form": "8-K",
+      "accession": "0001213900-26-123446",
+      "filed": "2026-11-24",
+      "quote": "...approved at its special meeting of shareholders an amendment to the Company's Amended and Restated Certificate of Incorporation to effect a reverse stock split of the Company's common stock by one of the following ratios: 1-for-5, 1-for-10, or 1-for-20, with such ratio to be determined in the discretion of the board of directors of the Company (the \"Board\") and with such action to be effected at such time and date, if at all, as determined by the Board within one year after the conclusion of the annual meeting (the \"Reverse Stock Split\"). On November 9, 2026, the Board fixed the Reverse Stock..."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-11-27"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
+    }
+  },
+  {
+    "id": "reverse-split-0001928581-2026-11-27",
+    "type": "reverse-split",
+    "company": {
+      "name": "GMEX Robotics Corp",
+      "cik": "0001928581",
+      "ticker": "GMEX",
+      "figi": "BBG019ZPW223"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1928581/000149315226053789/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-053789",
+      "filed": "2026-11-23",
+      "quote": "Exhibit 99.1 GMEX Robotics Corporation Announces Share Consolidation SYDNEY, Australia, November 23, 2026 (GLOBE NEWSWIRE) - GMEX Robotics Corporation (Nasdaq: GMEX) (the \"Company\"), today announced that it will effect a share consolidation of all of its issued and unissued existing Class A ordinary shares, Class B ordinary shares and Class C ordinary shares, of US$0.000001 par value each, at a ratio of 1-for-19, into one Class A, Class B and class C ordinary share of US$0.000019 par value, effective on November 27, 2026 (the \"Share Consolidation\"). The Company's Class A ordinary shares are..."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-27"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 19
+    }
+  },
+  {
+    "id": "reverse-split-0001933951-2026-11-27",
+    "type": "reverse-split",
+    "company": {
+      "name": "INNEOVA Holdings Ltd",
+      "cik": "0001933951",
+      "ticker": "INEO",
+      "figi": "BBG019ZWTC39"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1933951/000149315226053879/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-053879",
+      "filed": "2026-11-24",
+      "quote": "Exhibit 99.1 INNEOVA Holdings Limited to Effect 1-for-5 Share Consolidation on November 27, 2026 SINGAPORE, November 24, 2026 (GLOBE NEWSWIRE) - INNEOVA Holdings Limited (\"INNEOVA Holdings\", \"INNEOVA\" or the \"Company\") (NASDAQ: INEO) today announced that the Company's shareholders approved, at the Company's annual general meeting held on September 3, 2026, that the authorized, issued, and outstanding shares of the Company be consolidated on a 5-for-1 ratio, with the marketplace effective date of November 27, 2026. The objective of the share consolidation is to ensure the Company maintains..."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-11-27"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
+    }
+  },
+  {
+    "id": "reverse-split-0001964946-2026-11-27",
+    "type": "reverse-split",
+    "company": {
+      "name": "Youxin Technology Ltd",
+      "cik": "0001964946",
+      "ticker": "YAAS",
+      "figi": "BBG01J7FMF80"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1964946/000149315226053781/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-053781",
+      "filed": "2026-11-23",
+      "quote": "Exhibit 99.1 Youxin Technology Ltd Announces 1-for-6 Share Consolidation Guangzhou, China, November 23, 2026 (GLOBE NEWSWIRE) -- Youxin Technology Ltd (Nasdaq: YAAS) (\"Youxin Technology\" or the \"Company\"), a software as a service (\"SaaS\") and platform as a service (\"PaaS\") provider committed to helping retail enterprises digitally transform their businesses, today announced that, at the Company's annual general meeting, the Company's shareholders have approved, by ordinary resolution, authorizing the Company's board of directors to conduct a share consolidation of the Company's Class A..."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-27"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 6
+    }
   },
   {
     "id": "dividend-0000039263-2026-12-15",
@@ -15136,6 +15089,32 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001108205-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "CURIS INC",
+      "cik": "0001108205",
+      "ticker": "CRIS",
+      "figi": "BBG000C1GTC9"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1108205/000110465926131051/tm2630388d1_8k.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-131051",
+      "filed": "2026-11-23",
+      "quote": "Following the Special Meeting, the Board approved a 1-for-12 reverse stock split (the \"Reverse Stock Split\") of the Company's common stock, par value $0.01 per share (\"Common Stock\"). The Reverse Stock Split is expected to become effective on November 30, 2026 at 5:00 p.m. ET (the \"Effective Time\"), with the Company's Common Stock to begin trading on a split-adjusted basis at market open on December 1, 2026 (the \"Market Effective Date\") under the existing symbol \"CRIS\" and new CUSIP number 231269507. In connection with the Reverse Stock Split, every 12 shares of the Company's Common Stock..."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-11-30",
+      "ex": "2026-12-01"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 12
+    }
+  },
+  {
     "id": "dividend-0000087347-2027-01-07",
     "type": "dividend",
     "company": {
@@ -15464,14 +15443,14 @@
       "figi": "BBG000BV6QX8"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/894158/000110465926130644/tm2630359d1_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/894158/000110465926131095/tm2630506d1_ex99-1.htm",
       "form": "8-K",
-      "accession": "0001104659-26-130644",
-      "filed": "2026-11-20",
-      "quote": "...Inc., a Nevada corporation (the \"Company\"), issued a press release announcing that the Company's Board of Directors approved a 1-for-30 reverse stock split of the Company's issued, outstanding and authorized common stock, pursuant to Section 78.207 of the Nevada Revised Statutes (the \"Reverse Stock Split\"). The Reverse Stock Split is anticipated to be effective as of 11:59 p.m. (Eastern Time) on December 1, 2026, and it is expected that the Company's common stock will begin trading on a split-adjusted basis as of the open of trading on December 2, 2026. A copy of the press release is attached..."
+      "accession": "0001104659-26-131095",
+      "filed": "2026-11-23",
+      "quote": "The Company expects the halt in trading to continue until the Company effectuates the 1-for-30 reverse stock split of its common stock that it announced on November 20, 2026 (the \"Reverse Split\"). The Company anticipates that the Reverse Stock Split will be effective at 11:59 p.m., Eastern Time, on December 1, 2026 (the \"Effective Time\"), and that, subject to NYSE American approval, the Company's common stock will begin trading on the NYSE American on a split-adjusted basis when the market opens on December 2, 2026. Although not anticipated by the Company, the NYSE American could suspend..."
     },
     "dates": {
-      "announced": "2026-11-20",
+      "announced": "2026-11-23",
       "effective": "2026-12-01",
       "ex": "2026-12-02"
     },
@@ -15708,6 +15687,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.1875",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001585521-2026-12-17",
+    "type": "dividend",
+    "company": {
+      "name": "Zoom Communications, Inc.",
+      "cik": "0001585521",
+      "ticker": "ZM",
+      "figi": "BBG0042V6JM8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552126000170/zm-20261031ex991.htm",
+      "form": "8-K",
+      "accession": "0001585521-26-000170",
+      "filed": "2026-11-23",
+      "quote": "Dividend Program In November 2026, Zoom's Board of Directors approved the initiation of a quarterly cash dividend program and declared a cash dividend of $0.25 per share on Zoom's outstanding common stock, payable on December 17, 2026, to stockholders of record as of the close of business on December 3, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "record": "2026-12-03",
+      "ex": "2026-12-03",
+      "pay": "2026-12-17"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.25",
       "currency": "USD"
     },
     "frequency": "quarterly"
@@ -16146,6 +16154,35 @@
       "currency": "USD"
     },
     "frequency": "other"
+  },
+  {
+    "id": "dividend-0000928658-2026-12-28",
+    "type": "dividend",
+    "company": {
+      "name": "COVENANT LOGISTICS GROUP, INC.",
+      "cik": "0000928658",
+      "ticker": "CVLG",
+      "figi": "BBG000DNYKG5"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/928658/000100888626000252/exhibit991.htm",
+      "form": "8-K",
+      "accession": "0001008886-26-000252",
+      "filed": "2026-11-23",
+      "quote": "Exhibit 99.1 COVENANT LOGISTICS GROUP ANNOUNCES QUARTERLY CASH DIVIDEND CHATTANOOGA, TENNESSEE - November 23, 2026 - Covenant Logistics Group, Inc. (NYSE: CVLG) (\"Covenant\" or the \"Company\") announced today that its board of directors has declared a quarterly cash dividend of $0.07 per share of Class A and Class B common stock. The quarterly cash dividend is payable to stockholders of record on December 4, 2026, and is expected to be paid on December 28, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "record": "2026-12-04",
+      "ex": "2026-12-04",
+      "pay": "2026-12-28"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.07",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0000930420-2026-12-18",
@@ -16725,6 +16762,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000006281-2026-12-21",
+    "type": "dividend",
+    "company": {
+      "name": "ANALOG DEVICES INC",
+      "cik": "0000006281",
+      "ticker": "ADI",
+      "figi": "BBG000BB6G37"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000087/adiq426exhibit991.htm",
+      "form": "8-K",
+      "accession": "0000006281-26-000087",
+      "filed": "2026-11-24",
+      "quote": "Dividend Payment The ADI Board of Directors has declared a quarterly cash dividend of $1.10 per outstanding share of common stock. The dividend will be paid on December 21, 2026 to all shareholders of record at the close of business on December 7, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-07",
+      "ex": "2026-12-07",
+      "pay": "2026-12-21"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.10",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000924822-2026-12-14",
     "type": "dividend",
     "company": {
@@ -16839,6 +16905,31 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "reverse-split-0001527590-2026-12-07",
+    "type": "reverse-split",
+    "company": {
+      "name": "Ready Capital Corp",
+      "cik": "0001527590",
+      "ticker": "RC",
+      "figi": "BBG003TCRRN1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1527590/000162828026075530/reversestocksplitpressrele.htm",
+      "form": "8-K",
+      "accession": "0001628280-26-075530",
+      "filed": "2026-11-23",
+      "quote": "Document Ready Capital Corporation Announces One-For-Ten Reverse Stock Split NEW YORK, Nov. 23, 2026 (GLOBE NEWSWIRE) -- Ready Capital Corporation (\"Ready Capital\" or the \"Company\") (NYSE: RC) today announced that its Board of Directors (the \"Board\") has approved a reverse stock split of Ready Capital's outstanding shares of common stock at a ratio of one-for-ten (the \"Reverse Stock Split\"). One-for-Ten Reverse Stock Split The Reverse Stock Split is scheduled to take effect at 5:00 p.m. Eastern Time on December 7, 2026 (the \"Effective Time\"). At the Effective Time, every ten issued and..."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "effective": "2026-12-07"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
+    }
   },
   {
     "id": "reverse-split-0001835654-2026-12-07",
@@ -17020,14 +17111,14 @@
       "figi": "BBG000CS7CT9"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526467271/kss-ex99_1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526473133/d168523dex991.htm",
       "form": "8-K",
-      "accession": "0001193125-26-467271",
-      "filed": "2026-11-18",
-      "quote": "EX-99.1 Exhibit 99.1 Kohl's Corporation Declares Quarterly Dividend MENOMONEE FALLS, Wis. - (BUSINESS WIRE) - November 18, 2026 -The Board of Directors of Kohl's Corporation (NYSE: KSS) (\"Kohl's\" or the \"Company\") today declared a regular quarterly dividend of $0.125 per share on the Company's common stock. The dividend is payable December 23, 2026, to shareholders of record at the close of business on December 9, 2026."
+      "accession": "0001193125-26-473133",
+      "filed": "2026-11-24",
+      "quote": "... $1.17 from the tax benefit  Capital Expenditures: In the range of $365 million to $375 million  Dividend: On November 18, 2026, Kohl's Board of Directors declared a quarterly cash dividend on the Company's common stock of $0.125 per share. The dividend is payable December 23, 2026 to shareholders of record at the close of business on December 9, 2026.  Share Repurchase Program : Planning share repurchases of up to $100 million in 2026 under existing $3 billion authorization Fourth Quarter 2026 Financial Outlook Based on the updated full year outlook, The Company expects the following..."
     },
     "dates": {
-      "announced": "2026-11-18",
+      "announced": "2026-11-24",
       "record": "2026-12-09",
       "ex": "2026-12-09",
       "pay": "2026-12-23"
@@ -17038,6 +17129,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001645590-2027-01-08",
+    "type": "dividend",
+    "company": {
+      "name": "Hewlett Packard Enterprise Co",
+      "cik": "0001645590",
+      "ticker": "HPE",
+      "figi": "BBG0078W3NQ3"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm",
+      "form": "8-K",
+      "accession": "0001645590-26-000097",
+      "filed": "2026-11-23",
+      "quote": "Dividend and Share Repurchase Authorization The HPE Board of Directors declared a regular cash dividend of $0.17 per share on the company's common stock, payable on or about January 8, 2027, to stockholders of record as of the close of business on December 9, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "record": "2026-12-09",
+      "ex": "2026-12-09",
+      "pay": "2027-01-08"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.17",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0001679049-2026-12-23",
@@ -17562,6 +17682,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001089063-2026-12-24",
+    "type": "dividend",
+    "company": {
+      "name": "DICK'S SPORTING GOODS, INC.",
+      "cik": "0001089063",
+      "ticker": "DKS",
+      "figi": "BBG000F6ZWH2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1089063/000108906326000039/dks-20261123.htm",
+      "form": "8-K",
+      "accession": "0001089063-26-000039",
+      "filed": "2026-11-24",
+      "quote": "OTHER EVENTS On November 23, 2026, the Board of Directors of the Company authorized and declared a quarterly dividend in the amount of $1.25 per share on the Company's Common Stock and Class B Common Stock. The dividend is payable in cash on December 24, 2026 to stockholders of record at the close of business on December 11, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-11",
+      "ex": "2026-12-11",
+      "pay": "2026-12-24"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "1.25",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0001549966-2026-12-18",
     "type": "dividend",
     "company": {
@@ -17852,6 +18001,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000764478-2027-01-05",
+    "type": "dividend",
+    "company": {
+      "name": "BEST BUY CO INC",
+      "cik": "0000764478",
+      "ticker": "BBY",
+      "figi": "BBG000BCWCG1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm",
+      "form": "8-K",
+      "accession": "0000764478-26-000045",
+      "filed": "2026-11-24",
+      "quote": "Today, the company announced its board of directors has authorized the payment of a regular quarterly cash dividend of $0.96 per common share. The regular quarterly dividend is payable on January 5, 2027, to shareholders of record as of the close of business on December 15, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-15",
+      "ex": "2026-12-15",
+      "pay": "2027-01-05"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.96",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000779227-2026-12-29",
     "type": "dividend",
     "company": {
@@ -17879,6 +18057,35 @@
       "currency": "USD"
     },
     "frequency": "semi-annual"
+  },
+  {
+    "id": "dividend-0000821002-2026-12-29",
+    "type": "dividend",
+    "company": {
+      "name": "G III APPAREL GROUP LTD",
+      "cik": "0000821002",
+      "ticker": "GIII",
+      "figi": "BBG000C2YZ60"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/821002/000110465926131350/giii-ex99d1.htm",
+      "form": "8-K",
+      "accession": "0001104659-26-131350",
+      "filed": "2026-11-24",
+      "quote": "G-III Apparel Group Declares Quarterly Dividend G-III Apparel Group, Ltd. (NASDAQ: GIII) today announced that its Board of Directors has declared a quarterly cash dividend of $0.10 per share. The dividend is payable on December 29, 2026 to stockholders of record on December 15, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-15",
+      "ex": "2026-12-15",
+      "pay": "2026-12-29"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.10",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
   },
   {
     "id": "dividend-0000845877-2026-12-31",
@@ -19244,6 +19451,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000906465-2027-01-06",
+    "type": "dividend",
+    "company": {
+      "name": "QCR HOLDINGS INC",
+      "cik": "0000906465",
+      "ticker": "QCRH",
+      "figi": "BBG000BYZSM8"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/906465/000117184326007630/f8k_112026.htm",
+      "form": "8-K",
+      "accession": "0001171843-26-007630",
+      "filed": "2026-11-23",
+      "quote": "On November 18, 2026, the Company declared a cash dividend of $0.15 per share of its common stock. The dividend is payable on January 6, 2027, to stockholders of record on December 22, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-23",
+      "record": "2026-12-22",
+      "ex": "2026-12-22",
+      "pay": "2027-01-06"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.15",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0001618755-2027-01-05",
