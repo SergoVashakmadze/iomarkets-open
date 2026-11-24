@@ -11,6 +11,8 @@ import eventSchema from '../formats/corporate-action.v1.schema.json'
 import reportSchema from '../formats/test-bench-report.v1.schema.json'
 import packSchema from '../formats/conformance-pack.v1.schema.json'
 import historySchema from '../formats/record-history.v1.schema.json'
+import noticeSchema from '../formats/corporate-action-notice.v1.schema.json'
+import { toNotice } from '../aicheck/src/notice'
 import examplePack from '../bench/packs/example-cbpr-outbound.json'
 import feedHistory from '../corpactions/data/history.json'
 import mapHistory from '../assetmap/data/history.json'
@@ -66,6 +68,11 @@ describe('the open formats', () => {
     for (const e of EVENTS) expect(check(eventSchema as Schema, e), e.id).toEqual([])
   })
 
+  it('every corporate action, as a notice an issuer embeds, fits corporate-action-notice.v1', () => {
+    for (const e of EVENTS) expect(check(noticeSchema as Schema, JSON.parse(JSON.stringify(toNotice(e)))), e.id).toEqual([])
+    expect(check(noticeSchema as Schema, { ...toNotice(EVENTS[0]), exDate: '1 Jan' })).not.toEqual([])
+  })
+
   it('every Test Bench report fits test-bench-report.v1, valid or not', () => {
     for (const s of SAMPLES) expect(check(reportSchema as Schema, validate(s.xml)), s.id).toEqual([])
     expect(check(reportSchema as Schema, validate('not xml'))).toEqual([])
@@ -102,7 +109,7 @@ function findOrg(): string | null {
 const org = findOrg()
 
 describe.skipIf(!org)('iomarkets.org publishes the same formats', () => {
-  it.each(['asset-map-entry.v1', 'asset-map-issuer-keys.v1', 'corporate-action.v1', 'test-bench-report.v1', 'conformance-pack.v1', 'record-history.v1'])('%s', (name) => {
+  it.each(['asset-map-entry.v1', 'asset-map-issuer-keys.v1', 'corporate-action.v1', 'test-bench-report.v1', 'conformance-pack.v1', 'record-history.v1', 'corporate-action-notice.v1'])('%s', (name) => {
     const ours = readFileSync(join(process.cwd(), 'formats', `${name}.schema.json`), 'utf8')
     expect(readFileSync(join(org!, `${name}.schema.json`), 'utf8')).toBe(ours)
   })

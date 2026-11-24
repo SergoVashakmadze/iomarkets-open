@@ -11,6 +11,15 @@ issuers' own contract lists). Live at https://iomarkets.tech/ai-check.
   grounding), each with its own key, or all three through one OpenRouter key using each provider's own
   search. `fetch` is injected; errors never echo the provider's body.
 
+- `src/notice.ts`: the corporate action notice, an open JSON-LD format an issuer embeds in its own page
+  (`../formats/corporate-action-notice.v1.schema.json`, governed at https://iomarkets.org/formats): `toNotice`
+  from a feed event, `compareNotice` against one.
+- `src/audit.ts`: the AI-readiness audit for issuers (https://iomarkets.tech/ai-readiness). Pure `audit()` over
+  a page, its robots.txt and llms.txt: AI crawler rules (RFC 9309 groups, longest match), llms.txt, text without
+  JavaScript, title and description, noindex, schema.org issuer markup, notices checked against the feed, and
+  the page's own figures graded like an AI answer. Writes the JSON-LD, an llms.txt draft and robots.txt lines.
+  `checkUrl` / `fetchSite` fetch public hosts only.
+
 Grading uses no model: dates, amounts, split ratios, acquirers, contract addresses and ISINs are read out of
 the answer and compared with the key. Verdicts: `right`, `wrong`, `out-of-date` (an earlier event, from the
 feed's history), `not-stated`, and `unverified` (a contract address the map has never seen; not in the map is
