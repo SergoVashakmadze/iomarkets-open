@@ -41,7 +41,7 @@ const LEGAL = /\b(inc|incorporated|corp|corporation|co|company|ltd|limited|plc|s
 const core = (name: string) => norm(name).replace(LEGAL, ' ').replace(/\s+/g, ' ').trim();
 /** SEC names come in capitals (NUCOR CORP): shown as Nucor Corp. */
 export const displayName = (n: string) =>
-  n === n.toUpperCase() && /[A-Z]{3}/.test(n) ? n.toLowerCase().replace(/\b([a-z])/g, (c) => c.toUpperCase()).replace(/\b(Llc|Lp|Plc|Nv|Sa|Ag|Reit|Etf|Ads|Usa|Us)\b/g, (w) => w.toUpperCase()) : n;
+  (n.match(/[A-Z]/g)?.length ?? 0) >= 0.8 * (n.match(/[A-Za-z]/g)?.length ?? 1) && /[A-Z]{3}/.test(n) ? n.toLowerCase().replace(/\b([a-z])/g, (c) => c.toUpperCase()).replace(/\b(Llc|Lp|Plc|Nv|Sa|Ag|Reit|Etf|Ads|Usa|Us)\b/g, (w) => w.toUpperCase()) : n;
 const REMOVED = Object.values(HISTORY.events).flatMap((h) => (h.removed ? [h.removed.last] : []));
 const hostOf = (u: string) => {
   try {
@@ -52,29 +52,39 @@ const hostOf = (u: string) => {
 };
 
 /** A ticker, company name, CIK, FIGI, ISIN, token symbol or Asset Map id → the subject, or null. */
+/** A stock known only through its tokens: "Microsoft xStock" and "Microsoft (Ondo Tokenized)" both say Microsoft. */
+function stockName(entries: Entry[], ticker: string): string {
+  const names = entries.map((e) => e.security.name.replace(/\s*(xStock|\(Ondo Tokenized\))\s*$/i, '').trim()).filter((x) => x && !/^SP500$/i.test(x));
+  return names.sort((a, b) => b.length - a.length)[0] ?? ticker;
+}
+
 export function findSubject(input: string, events: CorporateAction[] = EVENTS, entries: Entry[] = ENTRIES, removed: CorporateAction[] = REMOVED): Subject | null {
   const q = input.trim();
   if (!q || q.length > MAX_SUBJECT) return null;
   const up = q.toUpperCase();
   const n = core(q);
   const cik = /^\d{1,10}$/.test(q) ? q.padStart(10, '0') : null;
-  // Exact identifiers first, then a name match.
+  // Exact identifiers first (a ticker, CIK, FIGI, ISIN, map id or token symbol, and the tokens tracking that ticker);
+  // a name match only when nothing matched exactly, so META is Meta's tokens and not Commercial Metals.
   const exact = (e: CorporateAction) => e.company.ticker?.toUpperCase() === up || e.company.figi === up || e.company.cik === cik;
   let evs = events.filter(exact);
-  if (!evs.length && n.length >= 3) evs = events.filter((e) => core(e.company.name) === n || (n.length >= 4 && core(e.company.name).startsWith(n + ' ')));
-  if (!evs.length && n.length >= 4) evs = events.filter((e) => core(e.company.name).includes(n));
-  // One company only: the first match's CIK.
   if (evs.length) evs = events.filter((e) => e.company.cik === evs[0].company.cik);
-
   const exactEntry = (e: Entry) =>
     e.id === q.toLowerCase() || e.security.ticker?.toUpperCase() === up || e.security.isin === up || e.security.figi === up || e.tokens.some((t) => t.symbol.toUpperCase() === up);
   let ens = entries.filter(exactEntry);
-  // A stock's ticker also finds its tokenized versions (AAPL → AAPLx, AAPLon).
-  const company = evs[0]?.company;
-  const tickers = new Set([up, company?.ticker?.toUpperCase()].filter(Boolean) as string[]);
-  const underlying = entries.filter((e) => e.security.underlying && (tickers.has(e.security.underlying.ticker.toUpperCase()) || (company?.figi && e.security.underlying.figi === company.figi)));
-  if (!ens.length && !evs.length && n.length >= 4) ens = entries.filter((e) => core(e.security.name).includes(n) || core(e.security.issuer) === n);
+  const tracks = (e: Entry, c?: CorporateAction['company']) => !!e.security.underlying && (e.security.underlying.ticker.toUpperCase() === (c?.ticker ?? up).toUpperCase() || (!!c?.figi && e.security.underlying.figi === c.figi));
+  let underlying = entries.filter((e) => tracks(e, evs[0]?.company));
+  if (!evs.length && !ens.length && !underlying.length) {
+    if (n.length >= 3) evs = events.filter((e) => core(e.company.name) === n || (n.length >= 4 && core(e.company.name).startsWith(n + ' ')));
+    if (!evs.length && n.length >= 4) evs = events.filter((e) => core(e.company.name).includes(n));
+    if (evs.length) evs = events.filter((e) => e.company.cik === evs[0].company.cik);
+    if (evs.length) underlying = entries.filter((e) => tracks(e, evs[0].company));
+    else if (n.length >= 4) ens = entries.filter((e) => core(e.security.name).includes(n) || core(e.security.issuer) === n);
+  }
+  // A token symbol that is also a tracked stock's ticker means the stock.
+  if (ens.length && underlying.length && !ens.some((e) => e.security.ticker?.toUpperCase() === up || e.id === q.toLowerCase())) ens = [];
   if (!evs.length && !ens.length && !underlying.length) return null;
+  const company = evs[0]?.company;
   const all = [...new Map([...ens, ...underlying].map((e) => [e.id, e])).values()];
 
   const sorted = [...evs].sort((a, b) => (b.dates.announced + b.id).localeCompare(a.dates.announced + a.id));
@@ -82,7 +92,7 @@ export function findSubject(input: string, events: CorporateAction[] = EVENTS, e
   // A token ticker (BENJI) names the fund; a stock ticker (AAPL) names the company even when tokens track it.
   const own = ens.length && !evs.length ? head : null;
   return {
-    name: own ? own.security.name : company ? displayName(company.name) : head.security.underlying ? head.security.underlying.ticker : head.security.name,
+    name: own ? own.security.name : company ? displayName(company.name) : head.security.underlying ? stockName(all, head.security.underlying.ticker) : head.security.name,
     ticker: own ? own.security.ticker ?? own.tokens[0]?.symbol : company?.ticker ?? head?.security.underlying?.ticker,
     cik: company?.cik,
     figi: own ? own.security.figi : company?.figi ?? head?.security.underlying?.figi,

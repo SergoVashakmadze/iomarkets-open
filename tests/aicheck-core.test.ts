@@ -30,6 +30,7 @@ describe('reading facts out of text', () => {
     expect(addressesIn(`Ethereum: ${BENJI_ETH}. Solana: 5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1`)).toEqual([BENJI_ETH, '5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1'])
     expect(displayName('NUCOR CORP')).toBe('Nucor Corp')
     expect(displayName('Apple Inc.')).toBe('Apple Inc.')
+    expect(displayName('PROCTER & GAMBLE Co')).toBe('Procter & Gamble Co')
   })
   it('splits a numbered reply back into one answer per question', () => {
     expect(splitAnswers('**1.** first\nmore\n2. second\n3) third', 3)).toEqual(['**1.** first\nmore', '\n2. second', '\n3) third'])
