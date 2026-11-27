@@ -5,6 +5,8 @@
 // limits are described so an agent can act on them, calls that move money take an idempotency key, and MCP tools that
 // trade or pay are marked destructive. Field names with an ISO 20022 equivalent are suggested, not required.
 
+import { checkUrl } from './audit.ts';
+
 export type Level = 'pass' | 'warn' | 'fail' | 'info';
 export type Issue = { level: Exclude<Level, 'pass'>; code: string; where: string; message: string; fix: string };
 export type Result = {
@@ -283,11 +285,30 @@ export function checkAgentReadiness(text: string): Result | { error: string } {
 export const MAX_SPEC = 5_000_000;
 type F = typeof fetch;
 
+
+/** fetch that follows at most 4 redirects, re-checking every hop with checkUrl (public host, port 80/443). A 307/308 keeps the method and body. */
+async function safeFetch(u: URL, init: RequestInit, f: F): Promise<Response | null> {
+  let url = u;
+  for (let hop = 0; hop < 5; hop++) {
+    const r = await f(url.toString(), { ...init, redirect: 'manual' }).catch(() => null);
+    if (!r) return null;
+    if (r.status >= 300 && r.status < 400 && r.headers.get('location')) {
+      const next = checkUrl(new URL(r.headers.get('location')!, url).toString());
+      if ('error' in next) return null;
+      url = next;
+      continue;
+    }
+    return r;
+  }
+  return null;
+}
+
 /** An OpenAPI description at a public URL (checkUrl in audit.ts decides what is public). */
 export async function fetchSpec(u: URL, f: F = fetch): Promise<{ text: string } | { error: string }> {
-  const r = await f(u.toString(), { headers: { accept: 'application/json, */*', 'user-agent': 'IoMarkets-Agent-Readiness/1.0 (+https://iomarkets.tech/agent-ready)' }, redirect: 'follow', signal: AbortSignal.timeout(10_000) }).catch(() => null);
+  const r = await safeFetch(u, { headers: { accept: 'application/json, */*', 'user-agent': 'IoMarkets-Agent-Readiness/1.0 (+https://iomarkets.tech/agent-ready)' }, signal: AbortSignal.timeout(10_000) }, f);
   if (!r) return { error: 'The description could not be fetched.' };
   if (!r.ok) return { error: `The description answered HTTP ${r.status}.` };
+  if (Number(r.headers.get('content-length') ?? 0) > MAX_SPEC) return { error: `The description is over ${MAX_SPEC.toLocaleString('en')} characters.` };
   const text = await r.text();
   return text.length > MAX_SPEC ? { error: `The description is over ${MAX_SPEC.toLocaleString('en')} characters.` } : { text };
 }
@@ -317,7 +338,7 @@ async function rpcAnswer(r: Response): Promise<Obj | null> {
 /** A remote MCP server's tool list: initialize, initialized, then tools/list, as any client would. No tool is called. */
 export async function fetchMcpTools(u: URL, f: F = fetch): Promise<{ tools: unknown[]; server: string } | { error: string }> {
   const headers: Record<string, string> = { 'content-type': 'application/json', accept: 'application/json, text/event-stream', 'mcp-protocol-version': '2025-06-18' };
-  const call = (body: unknown) => f(u.toString(), { method: 'POST', headers, body: JSON.stringify(body), signal: AbortSignal.timeout(10_000) }).catch(() => null);
+  const call = (body: unknown) => safeFetch(u, { method: 'POST', headers, body: JSON.stringify(body), signal: AbortSignal.timeout(10_000) }, f);
   const init = await call({ jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'iomarkets-agent-readiness', version: '1.0.0' } } });
   if (!init) return { error: 'The MCP server could not be reached.' };
   if (init.status === 401 || init.status === 403) return { error: 'The MCP server wants authentication; paste its tools/list result instead.' };

@@ -1,0 +1,18 @@
+{
+  "format": "iomarkets.conformance-pack.v1",
+  "name": "Illustrative: camt.053 reconciliation-ready",
+  "counterparty": "ILLUSTRATIVE example, not any bank's rules",
+  "messages": ["camt.053.001.08"],
+  "strict": false,
+  "rules": [
+    { "id": "REC-01", "message": "camt.053.001.08", "path": "Stmt/Id", "require": true, "why": "each statement needs its own identifier to be matched once" },
+    { "id": "REC-02", "message": "camt.053.001.08", "path": "Stmt/ElctrncSeqNb", "require": true, "why": "the sequence number shows a statement was missed" },
+    { "id": "REC-03", "message": "camt.053.001.08", "path": "Stmt/Acct/Id/IBAN", "require": true, "why": "entries are matched to a ledger account by IBAN" },
+    { "id": "REC-04", "message": "camt.053.001.08", "path": "Stmt/Acct/Ccy", "require": true, "why": "the account currency anchors every entry's amount" },
+    { "id": "REC-05", "message": "camt.053.001.08", "path": "Stmt/Bal/Tp/CdOrPrtry/Cd", "allowed": ["OPBD", "CLBD"], "why": "opening and closing booked balances prove the statement adds up" },
+    { "id": "REC-06", "message": "camt.053.001.08", "path": "Stmt/Ntry/NtryRef", "require": true, "why": "an entry reference lets an exception be quoted back to the bank" },
+    { "id": "REC-07", "message": "camt.053.001.08", "path": "Stmt/Ntry/Sts/Cd", "allowed": ["BOOK"], "why": "only booked entries are reconciled; pending ones arrive in camt.054" },
+    { "id": "REC-08", "message": "camt.053.001.08", "path": "Stmt/Ntry/BookgDt/Dt", "require": true, "why": "the booking date drives the matching window" },
+    { "id": "REC-09", "message": "camt.053.001.08", "path": "Stmt/Ntry/NtryDtls/TxDtls/Refs/EndToEndId", "require": true, "severity": "warning", "why": "the end-to-end id is the usual key back to an invoice" }
+  ]
+}
