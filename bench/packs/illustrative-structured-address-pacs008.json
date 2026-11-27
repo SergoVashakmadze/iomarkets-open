@@ -1,0 +1,17 @@
+{
+  "format": "iomarkets.conformance-pack.v1",
+  "name": "Illustrative: minimal structured address for pacs.008",
+  "counterparty": "ILLUSTRATIVE example, not any bank's or scheme's rules",
+  "messages": ["pacs.008.001.08"],
+  "strict": false,
+  "rules": [
+    { "id": "ADDR-01", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Dbtr/PstlAdr/TwnNm", "require": true, "why": "the debtor's town is sent as its own element" },
+    { "id": "ADDR-02", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Dbtr/PstlAdr/Ctry", "require": true, "why": "the debtor's country is sent as its own element" },
+    { "id": "ADDR-03", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Cdtr/PstlAdr/TwnNm", "require": true, "why": "the creditor's town is sent as its own element" },
+    { "id": "ADDR-04", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Cdtr/PstlAdr/Ctry", "require": true, "why": "the creditor's country is sent as its own element" },
+    { "id": "ADDR-05", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Dbtr/PstlAdr/AdrLine", "forbid": true, "why": "unstructured address lines are not accepted; use StrtNm, BldgNb, PstCd, TwnNm" },
+    { "id": "ADDR-06", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Cdtr/PstlAdr/AdrLine", "forbid": true, "why": "unstructured address lines are not accepted; use StrtNm, BldgNb, PstCd, TwnNm" },
+    { "id": "ADDR-07", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Dbtr/PstlAdr/TwnNm", "maxLength": 35, "why": "the town field is cut at 35 characters downstream" },
+    { "id": "ADDR-08", "message": "pacs.008.001.08", "path": "CdtTrfTxInf/Cdtr/PstlAdr/PstCd", "maxLength": 16, "severity": "warning", "why": "a longer postal code is probably free text" }
+  ]
+}

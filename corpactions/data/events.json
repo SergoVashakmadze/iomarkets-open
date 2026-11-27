@@ -261,35 +261,6 @@
     "frequency": "quarterly"
   },
   {
-    "id": "dividend-0001024795-2026-10-26",
-    "type": "dividend",
-    "company": {
-      "name": "HELIOS TECHNOLOGIES, INC.",
-      "cik": "0001024795",
-      "ticker": "HLIO",
-      "figi": "BBG000HL4L03"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1024795/000119312526406905/hlio-ex99_1.htm",
-      "form": "8-K",
-      "accession": "0001193125-26-406905",
-      "filed": "2026-09-29",
-      "quote": "...(\"Helios\" or the \"Company\"), a global leader in highly engineered motion control and electronic controls technology, announced that its Board of Directors declared a quarterly cash dividend of $0.12 per common share. Helios has declared consecutive quarterly dividends to its stockholders for over 29 years, beginning with the first quarter of 1997. The dividend will be payable on October 26, 2026, to stockholders of record as of October 13, 2026."
-    },
-    "dates": {
-      "announced": "2026-09-29",
-      "record": "2026-10-13",
-      "ex": "2026-10-13",
-      "pay": "2026-10-26"
-    },
-    "exDateRule": true,
-    "cash": {
-      "amount": "0.12",
-      "currency": "USD"
-    },
-    "frequency": "quarterly"
-  },
-  {
     "id": "dividend-0001467373-2026-11-13",
     "type": "dividend",
     "company": {
@@ -1383,107 +1354,6 @@
       "currency": "USD"
     },
     "frequency": "other"
-  },
-  {
-    "id": "merger-0000069733-2026-10-26",
-    "type": "merger",
-    "company": {
-      "name": "NATHANS FAMOUS, INC.",
-      "cik": "0000069733",
-      "ticker": "NATH"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/69733/000110465926118639/tm2628126d1_8k.htm",
-      "form": "8-K",
-      "accession": "0001104659-26-118639",
-      "filed": "2026-10-26",
-      "quote": "On October 26, 2026 (the \" Closing Date \"), pursuant to the Merger Agreement, and upon the terms and subject to the conditions thereof, Merger Sub merged with and into the Company (the \" Merger \" and the effective time of the Merger, the \" Effective Time \"), with the Company continuing as the... ...rights for such shares in accordance with Section 262 of the Delaware General Corporation Law) was automatically converted into the right to receive $102.00 in cash, without interest and less any applicable withholding tax (the \" Merger Consideration \")."
-    },
-    "dates": {
-      "announced": "2026-10-26",
-      "effective": "2026-10-26"
-    },
-    "cash": {
-      "amount": "102.00",
-      "currency": "USD"
-    },
-    "acquirer": "Smithfield Foods, Inc."
-  },
-  {
-    "id": "merger-0001609151-2026-10-26",
-    "type": "merger",
-    "company": {
-      "name": "Weave Communications, Inc.",
-      "cik": "0001609151",
-      "ticker": "WEAV"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1609151/000160915126000120/weav-20261026.htm",
-      "form": "8-K",
-      "accession": "0001609151-26-000120",
-      "filed": "2026-10-26",
-      "quote": "On October 26, 2026 (the \"Closing Date\"), pursuant to the Merger Agreement, Merger Sub merged with and into the Company (the \"Merger\"), with the Company surviving the Merger as a wholly owned subsidiary of Parent. ...Law of the State of Delaware (the \"DGCL\")) ceased to be outstanding, was automatically canceled and was automatically converted into the right to receive $7.40 in cash, without interest (the \"Merger Consideration\"), less any applicable withholding taxes."
-    },
-    "dates": {
-      "announced": "2026-10-26",
-      "effective": "2026-10-26"
-    },
-    "cash": {
-      "amount": "7.40",
-      "currency": "USD"
-    },
-    "acquirer": "Willow Parent, LLC"
-  },
-  {
-    "id": "reverse-split-0001506983-2026-10-26",
-    "type": "reverse-split",
-    "company": {
-      "name": "Glucotrack, Inc.",
-      "cik": "0001506983",
-      "ticker": "GCTK",
-      "figi": "BBG0025SKQ53"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1506983/000149315226048139/ex99-1.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-048139",
-      "filed": "2026-10-22",
-      "quote": "Exhibit 99.1 Glucotrack, Inc. Announces Reverse Stock Split 1-for-2 reverse stock split to become effective as of the opening of trading on October 26, 2026 RUTHERFORD, N.J., and LA JOLLA, C.A., October 22, 2026 - Glucotrack, Inc. (Nasdaq: GCTK) (\"Glucotrack\" or the \"Company\"), a healthcare technology and biopharmaceutical company operating Lōkahi Therapeutics, today announced that it will effect a 1-for-2 reverse stock split (the \"Reverse Stock Split\") of its issued and outstanding common stock, par value $0.001 per share (the \"Common Stock\"), effective with the opening of trading on Monday,..."
-    },
-    "dates": {
-      "announced": "2026-10-22",
-      "effective": "2026-10-26"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 2
-    }
-  },
-  {
-    "id": "reverse-split-0001701478-2026-10-26",
-    "type": "reverse-split",
-    "company": {
-      "name": "Azitra, Inc.",
-      "cik": "0001701478",
-      "ticker": "AZTR",
-      "figi": "BBG00GDC73T8"
-    },
-    "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1701478/000149315226048103/form8-k.htm",
-      "form": "8-K",
-      "accession": "0001493152-26-048103",
-      "filed": "2026-10-22",
-      "quote": "...and Restated Certificate of Incorporation (the \"Amendment\") with the Secretary of State of the State of Delaware to effectuate a 1-for-10 reverse stock split (the \"Reverse Stock Split\") of the outstanding shares of the Company's common stock (\"Common Stock\"). At the Company's annual meeting of stockholders held on June 15, 2026, the Company's stockholders approved an amendment to the Company's certificate of incorporation to effect reverse stock splits of the Common Stock at a ratio of not less than 1 for 2 and not more than 1 for 30, with the exact ratio for each reverse stock split within..."
-    },
-    "dates": {
-      "announced": "2026-10-22",
-      "effective": "2026-10-26",
-      "ex": "2026-10-26"
-    },
-    "ratio": {
-      "new": 1,
-      "old": 10
-    }
   },
   {
     "id": "reverse-split-0001839285-2026-10-26",
@@ -10569,6 +10439,31 @@
     "frequency": "other"
   },
   {
+    "id": "merger-0002000775-2026-11-19",
+    "type": "merger",
+    "company": {
+      "name": "Vesicor Therapeutics Holdings, Inc.",
+      "cik": "0002000775",
+      "ticker": "VESI",
+      "figi": "BBG01M9PC9K0"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2000775/000182912626012883/vesicorsuper_8k.htm",
+      "form": "8-K",
+      "accession": "0001829126-26-012883",
+      "filed": "2026-11-25",
+      "quote": "On November 19, 2026 (the \"Closing Date\"), Black Hawk consummated the previously announced business combination contemplated by the Business Combination Agreement (the \"Business Combination\"), as described below. Upon consummation of the Business Combination, the outstanding Black Hawk Rights were converted into the right to receive an aggregate of 1,379,980 shares of PubCo Common Stock in accordance with their terms."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-19"
+    },
+    "ratio": {
+      "new": 980,
+      "old": 1
+    }
+  },
+  {
     "id": "reverse-split-0001985337-2026-11-19",
     "type": "reverse-split",
     "company": {
@@ -11174,6 +11069,32 @@
     "frequency": "quarterly"
   },
   {
+    "id": "merger-0001739410-2026-11-20",
+    "type": "merger",
+    "company": {
+      "name": "Avenzo Therapeutics, Inc.",
+      "cik": "0001739410",
+      "ticker": "AVZO",
+      "figi": "BBG011PFKF54"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1739410/000119312526478423/d128039d8k.htm",
+      "form": "8-K",
+      "accession": "0001193125-26-478423",
+      "filed": "2026-11-25",
+      "quote": "...accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Explanatory Note On November 20, 2026, Rallybio Corporation, a Delaware corporation (\"Rallybio\"), completed its previously announced merger with Avenzo Therapeutics, Inc., a Delaware corporation (\"Avenzo\"), in accordance... ...held as treasury stock by Avenzo or held or owned by Rallybio, Merger Sub or any subsidiary of Rallybio or Avenzo) was converted into the right to receive approximately 0.2611 shares of the Company's common stock, based on an exchange ratio of 0.2611 (the \"Exchange Ratio\"), and each share of Avenzo Class A common stock issued in the Concurrent Financing was converted into the right to receive a number of shares of..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-20"
+    },
+    "ratio": {
+      "new": 0.2611,
+      "old": 1
+    },
+    "acquirer": "Rallybio Corporation"
+  },
+  {
     "id": "reverse-split-0001009891-2026-11-20",
     "type": "reverse-split",
     "company": {
@@ -11196,6 +11117,31 @@
     "ratio": {
       "new": 1,
       "old": 5
+    }
+  },
+  {
+    "id": "reverse-split-0001462223-2026-11-20",
+    "type": "reverse-split",
+    "company": {
+      "name": "Nixxy, Inc.",
+      "cik": "0001462223",
+      "ticker": "NIXX",
+      "figi": "BBG000BNF9L7"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826009097/nixxy_ex9901.htm",
+      "form": "8-K",
+      "accession": "0001683168-26-009097",
+      "filed": "2026-11-24",
+      "quote": "Exhibit 99.1 November 18, 2026 CORRECTION FROM SOURCE: Nixxy Announces 1-for-20 Reverse Stock Split NEW YORK--(BUSINESS WIRE)--Nixxy, Inc. (Nasdaq: NIXX) today announced that it will conduct a reverse stock split of its outstanding shares of common stock at a ratio of 1-for-20. The reverse stock split will become effective at 12:01 a.m. Eastern Time on November 20, 2026. The Company's common stock will begin trading on a post-split basis at the market open on November 20, 2026, under the Company's existing trading symbol \"NIXX\", with the new CUSIP number, 75630B501."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-11-20"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 20
     }
   },
   {
@@ -11227,20 +11173,20 @@
     "id": "reverse-split-0001739410-2026-11-20",
     "type": "reverse-split",
     "company": {
-      "name": "Rallybio Corp",
+      "name": "Avenzo Therapeutics, Inc.",
       "cik": "0001739410",
-      "ticker": "RLYB",
+      "ticker": "AVZO",
       "figi": "BBG011PFKF54"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/1739410/000119312526455762/d162317dex991.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1739410/000119312526478423/d128039d8k.htm",
       "form": "8-K",
-      "accession": "0001193125-26-455762",
-      "filed": "2026-11-10",
-      "quote": "...held on November 4, 2026, stockholders approved an amendment to Rallybio's Amended and Restated Certificate of Incorporation to effect a reverse stock split at a ratio ranging from one-for-two to one-for-nine, inclusive, with the final ratio to be mutually determined by Rallybio and Avenzo. On November 8, 2026, Rallybio's Board of Directors, with Avenzo's mutual agreement, approved a one-for-two reverse stock split of Rallybio's issued and outstanding common stock. The reverse stock split is expected to become effective at 12:01 a.m., Eastern Time, on November 20, 2026, prior to the..."
+      "accession": "0001193125-26-478423",
+      "filed": "2026-11-25",
+      "quote": "Effective as of 4:01 p.m. Eastern Time on November 20, 2026, immediately prior to the closing of the Merger, Rallybio effected a one-for-two reverse stock split of its outstanding shares of common stock (the \"Reverse Stock Split\"). Effective as of 4:02 p.m. Eastern Time on November 20, 2026, pursuant to the certificate of merger filed with the Secretary of State of the State of Delaware, Merger Sub merged with and into Avenzo, with Avenzo surviving as a wholly owned subsidiary of the Company and changing its name to \"Avenzo Operating Company, Inc.\" Effective as of 4:03 p.m. Eastern Time on..."
     },
     "dates": {
-      "announced": "2026-11-10",
+      "announced": "2026-11-25",
       "effective": "2026-11-20"
     },
     "ratio": {
@@ -11973,6 +11919,31 @@
     }
   },
   {
+    "id": "reverse-split-0001558569-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "iSpecimen Inc.",
+      "cik": "0001558569",
+      "ticker": "ISPC",
+      "figi": "BBG00734QDL2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1558569/000121390026123756/ea0313333-8k_ispecimen.htm",
+      "form": "8-K",
+      "accession": "0001213900-26-123756",
+      "filed": "2026-11-24",
+      "quote": "...to the Company's Fifth Amended and Restated Certificate of Incorporation with the Secretary of State of the State of Delaware to effect a reverse stock split of the Company's common stock, par value $0.0001 per share (\"Common Stock\"), at a ratio of 1-for-6 (the \"Reverse Stock Split\"), effective as of 4:30 p.m. Eastern Time on November 23, 2026 (the \"Effective Time\"). The Reverse Stock Split was approved by the Company's stockholders at the reconvened special meeting of stockholders held on October 30, 2026, at which the stockholders authorized the Company's Board of Directors to effect a..."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 6
+    }
+  },
+  {
     "id": "reverse-split-0001585608-2026-11-23",
     "type": "reverse-split",
     "company": {
@@ -12015,6 +11986,31 @@
     },
     "dates": {
       "announced": "2026-11-18",
+      "effective": "2026-11-23"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 5
+    }
+  },
+  {
+    "id": "reverse-split-0001960847-2026-11-23",
+    "type": "reverse-split",
+    "company": {
+      "name": "Toppoint Holdings Inc.",
+      "cik": "0001960847",
+      "ticker": "TOPP",
+      "figi": "BBG01P7MQM00"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1960847/000121390026124222/ea0313133-8k_toppoint.htm",
+      "form": "8-K",
+      "accession": "0001213900-26-124222",
+      "filed": "2026-11-25",
+      "quote": "...\"Company\"), with the U.S. Securities and Exchange Commission on September 11, 2026 and November 12, 2026, the Company's stockholders approved reverse stock split authority at the annual meeting of stockholders held on September 8, 2026, and the Company's Board of Directors approved a one-for-five reverse stock split of the Company's common stock, par value $0.0001 per share (the \"Common Stock\"), on November 11, 2026 (the \"Reverse Stock Split\"). On November 19, 2026, the Company filed a Certificate of Amendment to its Certificate of Incorporation (the \"Certificate of Amendment\") with the..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
       "effective": "2026-11-23"
     },
     "ratio": {
@@ -12332,6 +12328,30 @@
     }
   },
   {
+    "id": "reverse-split-0001880343-2026-11-24",
+    "type": "reverse-split",
+    "company": {
+      "name": "AMAZE HOLDINGS, INC.",
+      "cik": "0001880343",
+      "ticker": "AMZE"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1880343/000149315226054072/form8-k.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-054072",
+      "filed": "2026-11-25",
+      "quote": "On November 18, 2026, the Board approved a 1-for-100 reverse stock split of the Common Stock (the \"Reverse Stock Split\"), and, on the same date, the Company filed with the Nevada Secretary of State a Certificate of Amendment to its Articles of Incorporation, as amended, to effect the Reverse Stock Split (the \"Certificate of Amendment\"), effective at 4:31 p.m., Eastern Time, on November 24, 2026 (the \"Effective Time\"). At the Effective Time, every 100 shares of Common Stock issued and outstanding are automatically converted into one share of Common Stock, reducing the number of outstanding..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-24"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 100
+    }
+  },
+  {
     "id": "reverse-split-0002039060-2026-11-24",
     "type": "reverse-split",
     "company": {
@@ -12341,14 +12361,14 @@
       "figi": "BBG01SQCN6X7"
     },
     "source": {
-      "url": "https://www.sec.gov/Archives/edgar/data/2039060/000114036126045015/ef20085927_ex99-1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/2039060/000114036126045388/ef20086201_6k.htm",
       "form": "6-K",
-      "accession": "0001140361-26-045015",
-      "filed": "2026-11-20",
-      "quote": "Exhibit 99.1 Robin Energy Announces Reverse Stock Split to be Effective November 24, 2026 Limassol, Cyprus, November 20, 2026 - Robin Energy Ltd. (NASDAQ: RBNE) (\"Robin Energy\" or the \"Company\"), an international ship-owning company providing energy transportation services globally, announced today that its board of directors has determined to effect a one-for-seventy-five (1-for-75) reverse stock split of the Company's common shares, par value $0.001 per share. The reverse stock split will take effect at 11:59 p.m. Eastern Time on November 23, 2026, and the Company's common shares will begin..."
+      "accession": "0001140361-26-045388",
+      "filed": "2026-11-24",
+      "quote": "Effective as of 11:59 p.m. Eastern time on November 23, 2026, the Company effected a one-for-seventy-five (1-for-75) reverse stock split of its shares of common stock, and the Company's common stock began trading on a split-adjusted basis on The Nasdaq Capital Market (\"Nasdaq\") as of the opening of trading on November 24, 2026. The reverse stock split reduced the number of outstanding shares of the Company's common stock from approximately 81.9 million to approximately 1.1 million and affected all outstanding shares of common stock. No fractional shares were issued in connection with the..."
     },
     "dates": {
-      "announced": "2026-11-20",
+      "announced": "2026-11-24",
       "effective": "2026-11-24"
     },
     "ratio": {
@@ -13103,6 +13123,31 @@
     }
   },
   {
+    "id": "reverse-split-0001527541-2026-11-27",
+    "type": "reverse-split",
+    "company": {
+      "name": "Wheeler Real Estate Investment Trust, Inc.",
+      "cik": "0001527541",
+      "ticker": "WHLR",
+      "figi": "BBG0025F8B94"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1527541/000152754126000469/whlr-20261124.htm",
+      "form": "8-K",
+      "accession": "0001527541-26-000469",
+      "filed": "2026-11-24",
+      "quote": "Charter Amendments for One-for -Four Reverse Stock Split O n November 24, 2026 , in connection with a one- for-four reve rse stock split (the \" Reverse Stock Split \") of the common stock, $0.01 par value per share (the \"Common Stock\"), of Wheeler Real Estate Investment Trust, Inc. (the \"Company\"), to be effective on November 27, 202 6 the Company filed two Articles of Amendment to its charter with the State Department of Assessments and Taxation of Maryland that provide for: i a one-for -four Re verse Stock Split of the Common Stock, to be effective at 5:00 p.m. Eastern Time (the \" Effective..."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-11-27"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 4
+    }
+  },
+  {
     "id": "reverse-split-0001928581-2026-11-27",
     "type": "reverse-split",
     "company": {
@@ -13788,6 +13833,81 @@
     "frequency": "other"
   },
   {
+    "id": "reverse-split-0001162194-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "STANDARD BIOTOOLS INC.",
+      "cik": "0001162194",
+      "ticker": "LAB",
+      "figi": "BBG000S8WQB6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1162194/000114036126045589/lab-20261124.htm",
+      "form": "8-K",
+      "accession": "0001140361-26-045589",
+      "filed": "2026-11-25",
+      "quote": "The Company's Board of Directors approved the final Reverse Stock Split ratio, which was mutually agreed to by Treeline, of 1-for-35 (the \"Reverse Stock Split Ratio\"). On November 24, 2026, the Company filed the third certificate of amendment (the \"Certificate of Amendment\") to the Company's Eighth Amended and Restated Certificate of Incorporation, as amended, with the Secretary of State of the State of Delaware to effect the Reverse Stock Split, with such Certificate of Amendment to be effective as of 8:00 a.m. Eastern Time on November 30, 2026 (the \"Reverse Stock Split Effective Time\"). As..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 35
+    }
+  },
+  {
+    "id": "reverse-split-0001649009-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "Core AI Holdings, Inc.",
+      "cik": "0001649009",
+      "ticker": "CHAI",
+      "figi": "BBG000BXPF58"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1649009/000149315226054122/ex99-1.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-054122",
+      "filed": "2026-11-25",
+      "quote": "Exhibit 99.1 Core AI Announces Reverse Stock Split MIAMI, FL - November 25, 2026 - Core AI Holdings, Inc. (Nasdaq: CHAI) (\"Core AI\" or the \"Company\"), a global AI infrastructure and technology platform, today announced that it will effect a 1-for-20 reverse stock split (the \"Reverse Stock Split\") of its common stock. The Reverse Stock Split will become effective at 12:01 a.m. Eastern Time on Monday, November 30, 2026. The Company's common stock will continue to trade on The Nasdaq Capital Market under the symbol \"CHAI\" and will begin trading on a post-split basis when the market opens on..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 20
+    }
+  },
+  {
+    "id": "reverse-split-0001787740-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "Valion Bio, Inc.",
+      "cik": "0001787740",
+      "ticker": "VBIO",
+      "figi": "BBG00PT2YC04"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1787740/000168316826009146/valion_8k.htm",
+      "form": "8-K",
+      "accession": "0001683168-26-009146",
+      "filed": "2026-11-25",
+      "quote": "The board of directors (the \"Board\") of Valion Bio, Inc., a Delaware corporation (the \"Company\"), has approved a reverse stock split of the Company's issued and outstanding common stock, par value $0.0001 per share (the \"Common Stock\"), at a ratio of 1-for-4 (the \"Reverse Split\"). The Reverse Split is scheduled to become effective on November 30, 2026 (the \"Effective Date\")."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 4
+    }
+  },
+  {
     "id": "reverse-split-0001808110-2026-11-30",
     "type": "reverse-split",
     "company": {
@@ -13810,6 +13930,32 @@
     "ratio": {
       "new": 1,
       "old": 7
+    }
+  },
+  {
+    "id": "reverse-split-0001829247-2026-11-30",
+    "type": "reverse-split",
+    "company": {
+      "name": "BullFrog AI Holdings, Inc.",
+      "cik": "0001829247",
+      "ticker": "BFRG",
+      "figi": "BBG01BXY7SH6"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1829247/000149315226054121/ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-054121",
+      "filed": "2026-11-25",
+      "quote": "Exhibit 99.1 BullFrog AI Holdings Announces 1-for-10 Reverse Stock Split Shares Expected to Begin Trading on a Split-Adjusted Basis on November 30, 2026 GAITHERSBURG, Md., November 25, 2026 - BullFrog AI Holdings, Inc. (NASDAQ: BFRG; BFRGW) (\"BullFrog AI\"), an AI company using its proprietary platform to turn complex biomedical data into actionable insights, today announced that a 1-for-10 reverse stock split of BullFrog AI's common stock, par value $0.00001 per share. BullFrog AI's common stock is expected to begin trading on a split-adjusted basis on The Nasdaq Capital Market (\"Nasdaq\") at..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-11-30",
+      "ex": "2026-11-30"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
     }
   },
   {
@@ -15115,6 +15261,31 @@
     }
   },
   {
+    "id": "reverse-split-0001936817-2026-12-01",
+    "type": "reverse-split",
+    "company": {
+      "name": "Haoxin Holdings Ltd",
+      "cik": "0001936817",
+      "ticker": "HXHX",
+      "figi": "BBG01F781P49"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1936817/000121390026123663/ea0313287-6k_haoxin.htm",
+      "form": "6-K",
+      "accession": "0001213900-26-123663",
+      "filed": "2026-11-24",
+      "quote": "On November 13, 2026, the Company's shareholders approved the Share Consolidation and the Increase of Share Capital at an extraordinary general meeting of shareholders. The Company's Class A ordinary shares are expected to trade on a share consolidation-adjusted basis on the Nasdaq Capital Market under the existing trading symbol \"HXHX\" and a newly assigned CUSIP number of G4290D204 at the opening of trading on December 1, 2026. When the Share Consolidation becomes effective, every eighteen (18) issued and unissued Class A ordinary shares will be consolidated into one (1) Class A ordinary..."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "effective": "2026-12-01"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 18
+    }
+  },
+  {
     "id": "dividend-0000087347-2027-01-07",
     "type": "dividend",
     "company": {
@@ -15457,6 +15628,31 @@
     "ratio": {
       "new": 1,
       "old": 30
+    }
+  },
+  {
+    "id": "reverse-split-0002024114-2026-12-02",
+    "type": "reverse-split",
+    "company": {
+      "name": "GrowHub Ltd",
+      "cik": "0002024114",
+      "ticker": "TGHL",
+      "figi": "BBG01QLJZW07"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/2024114/000149315226054219/form6-k.htm",
+      "form": "6-K",
+      "accession": "0001493152-26-054219",
+      "filed": "2026-11-25",
+      "quote": "...Class A ordinary shares of the Company (\"Class A Ordinary Shares\"), representing an aggregate of 24,000,000 shares at a price of US$0.25 per share on a pre-reverse split basis, equivalent to 2,400,000 shares, par value US$0.005 per share, at a price of US$2.50 per share on a post-reverse split basis, giving effect to the Company's one-for-ten reverse share split, for an aggregate subscription amount of approximately US$6 million (the \"Private Placement\"). Trading of the Class A Ordinary Shares on Nasdaq on a split-adjusted basis is expected to commence on December 2, 2026. The closing of the..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-12-02"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 10
     }
   },
   {
@@ -16907,6 +17103,32 @@
     "frequency": "quarterly"
   },
   {
+    "id": "reverse-split-0001174940-2026-12-07",
+    "type": "reverse-split",
+    "company": {
+      "name": "ORAGENICS INC",
+      "cik": "0001174940",
+      "ticker": "OGEN",
+      "figi": "BBG000PTF8K2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1174940/000149315226054295/ex99-1.htm",
+      "form": "8-K",
+      "accession": "0001493152-26-054295",
+      "filed": "2026-11-25",
+      "quote": "Exhibit 99.1 November 25, 2026 Oragenics, Inc. Announces One-for-Six and One-Half (1-for-6.5) Reverse Stock Split SARASOTA, FL. (November 25, 2026) - Oragenics, Inc. (NYSE American: OGEN) (\"Oragenics\" or the \"Company\"), a biotech company advancing innovative treatments for brain-related health conditions, today announced that its Board of Directors (the \"Board\") on November 25, 2026 approved a One-for-Six and One-Half (1-for-6.5) reverse stock split of the Company's issued and outstanding shares of common stock, par value $0.001 per share (the \"Reverse Stock Split\"). As a result of the..."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "effective": "2026-12-07",
+      "ex": "2026-12-07"
+    },
+    "ratio": {
+      "new": 1,
+      "old": 6
+    }
+  },
+  {
     "id": "reverse-split-0001527590-2026-12-07",
     "type": "reverse-split",
     "company": {
@@ -17044,6 +17266,35 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001337068-2026-12-22-special",
+    "type": "dividend",
+    "company": {
+      "name": "Magyar Bancorp, Inc.",
+      "cik": "0001337068",
+      "ticker": "MGYR",
+      "figi": "BBG000BQD095"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1337068/000207709626000367/ea0313279-8k_magyar.htm",
+      "form": "8-K",
+      "accession": "0002077096-26-000367",
+      "filed": "2026-11-24",
+      "quote": "Emerging growth company ☐ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Item 8.01 Other Events On November 24, 2026, Magyar Bancorp, Inc. (the \"Company\") announced that its Board of Directors has approved a special cash dividend of $0.20 per common share to shareholders of record at the close of business on December 8, 2026, payable on December 22, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-08",
+      "ex": "2026-12-08",
+      "pay": "2026-12-22"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.20",
+      "currency": "USD"
+    },
+    "frequency": "special"
+  },
+  {
     "id": "dividend-0001760965-2026-12-18",
     "type": "dividend",
     "company": {
@@ -17102,6 +17353,35 @@
     "frequency": "quarterly"
   },
   {
+    "id": "dividend-0000047217-2027-01-06",
+    "type": "dividend",
+    "company": {
+      "name": "HP INC",
+      "cik": "0000047217",
+      "ticker": "HPQ",
+      "figi": "BBG000KHWT55"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000054/hp103126exhibit991q426.htm",
+      "form": "8-K",
+      "accession": "0000047217-26-000054",
+      "filed": "2026-11-24",
+      "quote": "The HP board of directors has declared a quarterly cash dividend of $0.31 per share on the Company's common stock, payable on January 6, 2027 to stockholders of record as of the close of business on December 9, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-09",
+      "ex": "2026-12-09",
+      "pay": "2027-01-06"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.31",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
     "id": "dividend-0000885639-2026-12-23",
     "type": "dividend",
     "company": {
@@ -17129,6 +17409,35 @@
       "currency": "USD"
     },
     "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0001318885-2026-12-16",
+    "type": "dividend",
+    "company": {
+      "name": "DIANA SHIPPING INC.",
+      "cik": "0001318885",
+      "ticker": "DSX",
+      "figi": "BBG000BV1NV2"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1318885/000091957426008255/p15167154_ex-99.htm",
+      "form": "6-K",
+      "accession": "0000919574-26-008255",
+      "filed": "2026-11-25",
+      "quote": "Dividend Declaration The Company has declared a cash dividend on its common stock of $0.05 per share, based on the Company's results of operations for the quarter ended September 30, 2026. The cash dividend will be payable on December 16, 2026, to all common shareholders of record as of December 9, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "record": "2026-12-09",
+      "ex": "2026-12-09",
+      "pay": "2026-12-16"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.05",
+      "currency": "USD"
+    },
+    "frequency": "other"
   },
   {
     "id": "dividend-0001645590-2027-01-08",
@@ -18523,6 +18832,36 @@
     "frequency": "other"
   },
   {
+    "id": "dividend-0001428205-2026-12-30",
+    "type": "dividend",
+    "company": {
+      "name": "Armour Residential REIT, Inc.",
+      "cik": "0001428205",
+      "ticker": "ARR",
+      "figi": "BBG000PRZNN8"
+    },
+    "dates": {
+      "announced": "2026-11-25",
+      "record": "2026-12-15",
+      "ex": "2026-12-15",
+      "pay": "2026-12-30"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.24",
+      "currency": "USD"
+    },
+    "frequency": "other",
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1428205/000142820526000134/prfordecember2026commondiv.htm",
+      "form": "8-K",
+      "accession": "0001428205-26-000134",
+      "filed": "2026-11-25",
+      "quote": "December 2026 Common Stock Dividend Information [Month | Dividend | Holder of Record Date | Payment Date] [December 2026 | $0.24 | December 15, 2026 | December 30, 2026]",
+      "table": true
+    }
+  },
+  {
     "id": "dividend-0001442145-2026-12-31",
     "type": "dividend",
     "company": {
@@ -19911,6 +20250,35 @@
     "exDateRule": true,
     "cash": {
       "amount": "0.87",
+      "currency": "USD"
+    },
+    "frequency": "quarterly"
+  },
+  {
+    "id": "dividend-0000108985-2027-01-15",
+    "type": "dividend",
+    "company": {
+      "name": "YORK WATER CO",
+      "cik": "0000108985",
+      "ticker": "YORW",
+      "figi": "BBG000BRZKC1"
+    },
+    "source": {
+      "url": "https://www.sec.gov/Archives/edgar/data/108985/000114036126045468/ef20086497_8k.htm",
+      "form": "8-K",
+      "accession": "0001140361-26-045468",
+      "filed": "2026-11-24",
+      "quote": "THE YORK WATER COMPANY DECLARES 624 th CONSECUTIVE DIVIDEND York, Pennsylvania, November 24, 2026: The York Water Company's (NASDAQ: YORW) President and CEO, JT Hand, announced today that the Board of Directors at their November 23 rd meeting declared a quarterly dividend of $0.2372 per share, a 4% increase. The dividend is payable January 15, 2027, to shareholders as of record date December 31, 2026."
+    },
+    "dates": {
+      "announced": "2026-11-24",
+      "record": "2026-12-31",
+      "ex": "2026-12-31",
+      "pay": "2027-01-15"
+    },
+    "exDateRule": true,
+    "cash": {
+      "amount": "0.2372",
       "currency": "USD"
     },
     "frequency": "quarterly"
